@@ -13,7 +13,7 @@ Contents:
    
    introduction
    government_budget_constraint
-
+   debt_ceiling
 
 
 Indices and tables

@@ -10,7 +10,10 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
-
+   
+   introduction
+   government_budget_constraint
+   debt_celing
 
 
 Indices and tables
