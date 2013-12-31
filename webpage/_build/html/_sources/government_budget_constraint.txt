@@ -1,11 +1,11 @@
-.. _ government_budget_constraint:
+.. _government_budget_constraint:
 
 *********************************
 The Government Budget Constraint
 *********************************
 
 Your Credit Card Bill
-=====================
+======================
 
 If you have a credit card, you get a bill each month.
 
@@ -34,8 +34,7 @@ where we let
 * :math:`T` be payments.
 
 Stock Variables and Flow Variables
-==================================
-
+----------------------------------
 
 *Stock variables* are measured at a point in time.
 
@@ -72,7 +71,7 @@ Many macro textbooks write it this way
      B_{t} =  B_{t-1} + INT_t + G_t + TR_t - T_t
 
 Fiscal Data: Federal Government
-===============================
+-------------------------------
 
 * Prior to 1790
 
@@ -89,7 +88,7 @@ Fiscal Data: Federal Government
    * National Income and Product Accounts (NIPA)
 
 NIPA vs Treasury/OMB
-====================
+--------------------
 
 * NIPA
 
@@ -116,7 +115,7 @@ NIPA vs Treasury/OMB
       * 1934-present: national defense, human resources, physical resources, net interest, ...
 
 Comparison Between Federal and State \& Local
-=============================================
+---------------------------------------------
 
 * Combined U.S. federal, state, and local government together.
 
@@ -132,51 +131,51 @@ Comparison Between Federal and State \& Local
 * State and local governments more directly involved in government purchases
 
 NIPA: Total Government Receipts and Expenditures as a Percent of GDP
-====================================================================
+--------------------------------------------------------------------
 
 .. figure:: _static/figures/all_gov_rec_exp.png
     :scale: 60%
     
 NIPA: Total Government Expenditures Decomposed By Type
-======================================================
+-------------------------------------------------------
 
 .. figure:: _static/figures/all_gov_exp_decomp.png
     :scale: 60%
 
 NIPA: Federal Expenditures Decomposed By Type
-=============================================
+---------------------------------------------
 
 .. figure:: _static/figures/fed_gov_exp_decomp.png
     :scale: 60%
 
 
 NIPA: State and Local Expenditures Decomposed By Type
-=====================================================
+-----------------------------------------------------
 
 .. figure:: _static/figures/sl_gov_exp_decomp.png
     :scale: 60%
 
 1790-1940: Federal Government Expenditures Decomposed By Type
-=============================================================
+-------------------------------------------------------------
 
 .. figure:: _static/figures/fed_expend_decomp_1776_1940.png
     :scale: 60%
 
 OMB: Federal Government Expenditures Decomposed By Type
-=======================================================
+-------------------------------------------------------
 
 .. figure:: _static/figures/federal_expend_decomp_1940_2011.png
     :scale: 60%
 
 OMB: Medicare and Social Security Spending
-==========================================
+------------------------------------------
 
 .. figure:: _static/figures/Med_SS_per_GDP.png
     :scale: 60%
 
 
 Revenue Side
-============
+------------
 
 NIPA: Six principal categories
 
@@ -204,8 +203,21 @@ NIPA: Six principal categories
 
   * income on assets and government enterprises
 
+NIPA: Federal Revenues Decomposed By Type
+------------------------------------------
+
+.. figure:: _static/figures/fed_gov_rec_decomp.png
+    :scale: 60%
+
+NIPA: State and Local Revenues Decomposed By Type
+-------------------------------------------------
+
+.. figure:: _static/figures/sl_gov_rec_decomp.png
+    :scale: 60%
+
+
 Revenue: Federal vs. State/Local
-================================
+--------------------------------
 
 * Federal government
 
@@ -223,8 +235,14 @@ Revenue: Federal vs. State/Local
 
   * customs to internal revenue (income taxes)
 
+1790-1940: Federal Revenues Decomposed by Type
+----------------------------------------------
+
+.. figure:: _static/figures/fed_receipts_decomp_1776_1940.png
+    :scale: 60%
+
 Deficits and Surpluses
-======================
+----------------------
 
 The budget deficit that gets reported in the newspaper is
 
@@ -250,8 +268,20 @@ cover all of its expenditures.
 
 The primary deficit ignores interest payments
 
+Federal Government Receipts and Expenditures as a Percentage of GDP
+-------------------------------------------------------------------
+
+.. figure:: _static/figures/fed_expend_rev_gdp_1775_2011.png
+    :scale: 60%
+
+Federal Government Deficit as a Percentage of GDP
+-----------------------------------------------------
+
+.. figure:: _static/figures/federal_gross_deficit_1770_2011.png
+    :scale: 60%
+
 The Printing Press
-======================
+-------------------
 
 Since the signing of the U.S. Constitution, the Federal government can raise revenue by issuing money.
 
@@ -269,7 +299,7 @@ where
     P_t           &=& \mbox{Price level this period ($t$)} \\
     & & \mbox{i.e. the relative price of money in terms of goods}
 
-This additional term is called {\em seignorage} or the inflation tax.
+This additional term is called *seignorage* or the inflation tax.
 
 So the government budget constraint becomes
 
@@ -301,8 +331,14 @@ Suppose the credit card balance is :math:`\$20,000`.  Is this a big balance?
 So we might be interested in the ratio of debt-to-income.  Let's call income :math:`Y`, and the ratio of
 debt-to-income :math:`\frac{B}{Y}`.
 
+Federal Debt to GDP Ratio
+-------------------------
+
+.. figure:: _static/figures/long_total_fed_debt_to_gdp.png
+    :scale: 60%
+
 A Digression on the U.S. Debt
-=============================
+-----------------------------
 
 See the `U.S. Treasury Monthly Statement of the Public Debt
 <http://www.savingsbonds.gov/govt/reports/pd/mspd/mspd.htm>`_.
@@ -324,6 +360,9 @@ See the `U.S. Treasury Monthly Statement of the Public Debt
 * Held inside the government
 
   * Social Security Trust Fund
+
+The Evolution of the Debt to GDP Ratio
+---------------------------------------
 
 Ignore seignorage for now, set :math:`TR = 0`.
 
@@ -384,4 +423,199 @@ in output is greater than the real interest rate.
 In the U.S. :math:`r = 0.016`  and :math:`g = 0.033`.
 
 Don't necessarily need a balanced budget.
+
+Seignorage
+---------------
+
+But first, a few basics about money ...
+
+
+Velocity and the Quantity Theory of Money
+----------------------------------------=
+
+Velocity, :math:`V`, measures how much money turns over each period.
+
+.. math::
+   V \equiv \frac{\mbox{Nominal GDP}}{\mbox{nominal money stock}} = \frac{PY}{M}. 
+
+The way the quantity theory of money is usually written is:
+
+.. math::
+   Money \times Velocity &=& Price \times Output \\
+   M     \times  V       &=& P     \times   Y    \\
+
+
+Real money demand is proportional to real income.  So
+:math:`\frac{M^d}{P} = kY` Assumes constant velocity.
+
+
+Money and Inflation
+====================
+
+Inflation is an increase in the price level. That is, define
+inflation as: :math:`\pi = \frac{\Delta P}{P}`
+
+
+A famous quote from Milton Friedman:
+
+  *Inflation is always and everywhere a monetary phenomenon.*
+
+In a world without frictions, doubling the money supply has
+no effect on output, it just doubles the price level.  So
+:math:`\pi = \frac{P_{t+1} - P_{t}}{P_t} = \frac{\Delta P}{P} =
+\frac{\Delta M}{M}`
+
+Output does not change, velocity does not change.  Quantity theory
+of money.
+
+Money had no effect on anything anybody cared about.  In other
+words money is *neutral.*
+
+The classic dichotomy: money only changes the price level.
+
+
+Deficits and Inflation
+-----------------------
+
+* Recall the government budget constraint
+
+.. math::
+      B_{t}  =  B_{t-1} + r B_{t-1} + G_t + TR_t - T_t  - \frac{M_t - M_{t-1}}{P_t}
+
+* Set transfers and government borrowing to zero, so we get
+  
+.. math::
+      G_t  - T_{t} = {{M_{t} - M_{t-1}}\over{P_t}}
+
+* So this is an all-currency economy.
+
+* The revenue that a government raises by printing money is called *seignorage*.  This is the inflation tax.
+
+* Revolutionary War
+
+* A great quote by John Maynard Keynes
+
+        Lenin is said to have declared that the best way to destroy the
+        capitalist system was to debauch its currency.  By a continuing
+        process of inflation, governments can confiscate, secretly and
+        unobserved, an important wealth of their citizens.
+
+Real seignorage and inflation
+------------------------------
+
+Consider our all-currency economy. No government debt.
+
+If the velocity of money is fixed and output is fixed, so real money demand is constant. Then 
+
+.. math::
+   \pi = \frac{\Delta P}{P} = \frac{\Delta M}{M}
+
+Real seignorage revenue, :math:`R`, is
+
+.. math::
+    \frac{M_{t} - M_{t-1}}{P_t}  = \frac{\Delta M}{P}.
+
+Since :math:`\pi = \frac{\Delta M}{M}`, real seignorage revenue is
+:math:`R = \pi \frac{M}{P}`.
+
+So seignorage is a tax at the rate of inflation on real money balances.
+That's why it is called the inflation tax.
+
+The government collect revenue from the inflation tax when it
+buys goods with newly printed money.
+
+So Friedman's really should have said,
+  *Inflation is always and everywhere a fiscal phenomenon.*
+
+Since seignorage is a distortionary tax, as the government
+increases this tax, people will hold lower real balances.
+
+
+Whether seignorage rises or falls depends on whether inflation
+rises more or less than the decline in money holdings.
+
+Government Debt is a Weighted Accumulation of Past Deficits
+------------------------------------------------------------
+
+To keep the analysis simple, ignore transfers and money creation for now.
+
+A time :math:`t` the G.B.C. is:
+
+.. math::
+    B_{t}  =  (1+r)B_{t-1} + G_t  - T_t
+
+A time :math:`t-1` the G.B.C. is:
+
+.. math::
+    B_{t-1}  =  (1+r)B_{t-2} + G_{t-1}  - T_{t-1}
+
+A time :math:`t-2` the G.B.C. is:
+
+.. math::
+    B_{t-2} =  (1+r)B_{t-3} + G_{t-2}  - T_{t-2}
+
+Substitute for :math:`B_{t-1}`
+
+.. math::
+    B_{t}  &=&  (1+r) \left((1+r)B_{t-2} + G_{t-1}  - T_{t-1} \right)  + G_t  - T_t \\
+           &=&  (1+r)^2 B_{t-2} +(1+r)\left( G_{t-1}  - T_{t-1} \right)  + G_t  - T_t
+
+Substitute for :math:`B_{t-2}`
+
+.. math::
+   B_{t}  &=&  (1+r)^3 B_{t-3} + (1+r)^2\left( G_{t-2}  - T_{t-2} \right) + (1+r)\left( G_{t-1} - T_{t-1} \right)  + G_t  - T_t
+
+Keep going to the beginning of time (i.e. :math`t=0`)
+
+.. math::
+     B_{t} =  (1+r)^t B_{0} + \sum_{j=0}^{t} (1+r)^j \left( G_{t-j}  - T_{t-j} \right)
+
+
+Government Debt is a Weighted Sum of Future Surpluses
+------------------------------------------------------
+
+A time :math:`t` the G.B.C. is:
+
+.. math::
+    B_{t}  =  (1+r)B_{t-1} + G_t  - T_t
+
+A time :math:`t+1`
+
+.. math::
+    B_{t+1}  =  (1+r)B_{t} + G_{t+1}  - T_{t+1}
+
+or
+
+.. math::
+    B_{t}  =  \frac{1}{1+r} \left( B_{t+1} + T_{t+1}  - G_{t+1} \right)
+
+Thus we can write :math:`B_{t+1}` as
+
+.. math::
+    B_{t+1}  =  \frac{1}{1+r} \left( B_{t+2} + T_{t+2}  - G_{t+2} \right)
+
+Substitute
+
+.. math::
+    B_{t}  =  \frac{1}{1+r} \left( \frac{1}{1+r}\left( B_{t+2} + T_{t+2}  - G_{t+2} \right)+ T_{t+1}  - G_{t+1} \right)
+
+Do this 100 times
+
+.. math::
+   B_{t}  =  \left(\frac{1}{1+r}\right)^{100} B_{t+100}  + \sum_{j=1}^{100} \left(\frac{1}{1+r}\right)^{j}(T_{t+j} -G_{t+j})
+
+Do this an infinite number of times
+
+.. math::
+   B_{t}  =   \sum_{j=1}^{\infty} \left(\frac{1}{1+r}\right)^{j}(T_{t+j} -G_{t+j})
+
+
+Debt is both a backward-looking and a forward-looking variable
+---------------------------------------------------------------
+
+Sum of past spending
+
+Sum of future surpluses
+
+   *just like your credit card balance ...*
 

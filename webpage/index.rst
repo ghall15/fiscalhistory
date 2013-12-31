@@ -14,6 +14,9 @@ Contents:
    introduction
    government_budget_constraint
    debt_ceiling
+   bond_pricing_primer
+   american_revolution
+   act1790
 
 
 Indices and tables

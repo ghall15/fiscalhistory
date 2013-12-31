@@ -1,0 +1,566 @@
+.. _bond_pricing_primer:
+
+*************************
+A Primer on Bond Pricing
+*************************
+
+What's a Bond?
+--------------
+
+A bond is an I.O.U.  It is a piece of paper that states
+
+     *on date* :math:`t`, *I will pay you* :math:`y` *dollars.*
+
+
+Of course things can be a little more complicated than this.
+
+Non-Coupon and Coupon Bonds
+---------------------------
+
+1. *Non-coupon* or *pure discount* bonds state
+
+    on (just one) date :math:`t`, I will pay you :math:`P` dollars.
+
+2. *Coupon* bonds promise a stream of payments.
+
++---------------+-----------------+
+|  On date      + I will pay you  | 
++---------------+-----------------+
+| :math:`t_1`   |  :math:`c`      |
++---------------+-----------------+
+| :math:`t_2`   |  :math:`c`      |
++---------------+-----------------+
+|:math:`\vdots` |  :math:`\vdots` |
++---------------+-----------------+
+| :math:`T`     |  :math:`c+P`    |
++---------------+-----------------+
+
+
+:math:`c` stands for *coupon*.
+
+:math:`P` stands for *principal* or *par value* or *face value* of the bond.
+
+Present Value
+-------------
+
+Is a dollar today and dollar one year (365 days) from now worth the same amount
+today?
+
+* Time preference
+
+* Could take a dollar today, invest it at an interest rate :math:`r` and have :math:`$1 \times (1+r)` in a year.
+
+* In other words
+
+.. math::
+     \mbox{present value}  = \frac{\mbox{future value}}{1+r}
+
+* In this equation :math:`r` is often referred to as the *discount rate*.
+
+* If the discount rate is 6 percent, what is a dollar one year from now worth today?
+
+.. math:: 
+    \mbox{present value}  &=& \frac{\$1}{1+.06}  \\
+                      &=&  \$0.943
+
+* What is a dollar two years from now worth today?
+
+.. math::
+
+    \mbox{present value}  &=& \frac{1}{1+.06} \times \frac{\$1}{1+.06}  \\
+                      &=&  \frac{1}{1+.06} \times \$0.943 \\
+                      &=&  \$0.890 
+
+Relationship between bond prices and yields for zero-coupon bonds
+-----------------------------------------------------------------
+
+* Real, not nominal, variables
+
+.. math::
+    q_{t,t+j} &=& \mbox{real price of one unit of time $t+j$ consumption}\\
+          &&  \mbox{at time t}\\
+    r_{t,t+j} &=& \mbox{yield of a $j$-period $t+j$ pure discount}\\
+           && \mbox{(zero coupon) bond at time t} \\
+    q_{t,t+j} &=& \exp(-j r_{t,t+j}) \approx \frac{1}{(1+r_{t,t+j})^j} 
+
+* Take logs of both sides
+
+.. math::
+    \log q_{t,t+j} &=& -j r_{t,t+j} \\
+    r_{t,t+j} &=& - \frac{\log q_{t,t+j}}{j}
+
+A Handy Math Fact
+-----------------
+
+.. math::
+    \log (1+ r_{t,t+j}) \approx r_{t,t+j} \mbox{for ``small''} r_{t,t+j}'s
+
+* Why?  Taylor Series (Newton)
+
+.. math::
+     f(x) &=& \log(1+x)\\
+          &\approx& f(x_0) + (x-x_0)f'(x_0) |_{x=x_0}
+
+
+* Apply with :math:`f(x) = \log(1+x)` and :math:`x_0 = 0`, then
+
+.. math::
+    \log(1+x) &\approx& 0 + x\left(\frac{1}{1+x}\right) |_{x=x_0} \\
+          &\approx& x
+
+
+Happy Meal Theorem of Bond Pricing
+----------------------------------
+
+* Happy meal: burger, fries, drink, toy
+
+* Consider a bond that at time :math:`t` promises to pay
+
++---------+-----------+----------+---------+---------+---------+
+|  t      |    t+1    |   t+2    |   t+3   | ...     |  t+T    |
++---------+-----------+----------+---------+---------+---------+
+|   0     |     c     |    c     |    c    |  ...    |  P+c    |
++---------+-----------+----------+---------+---------+---------+
+
+* The value of the bond at time :math:`t` is then
+
+.. math::
+    V_t &=& c q_{t,t+1} + c q_{t,t+2} +  ... + c q_{t,t+T} + P q_{t,t+T} \\
+        &=& c (q_{t,t+1} + q_{t,t+2} +  ... + q_{t,t+T}) + P q_{t,t+T}
+
+* The value of this same bond at :math:`t+1`, after :math:`c` has been paid, is
+
+.. math::
+    V_{t+1}  = c (q_{t+1,t+2} + q_{t+1,t+3} +  ... + q_{t+1,t+T}) + P q_{t+1,t+T}
+
+* Evidently
+
+.. math::
+    V_t = q_{t,t+1} \left( c + V_{t+1} \right)
+
+Forward Rates
+-------------
+
+* With no uncertainty, the law of one price asserts that
+
+.. math::
+    q_{t,t+j} = q_{t,t+1} q_{t+1,t+j}
+
+
+* Two ways at time :math:`t` to buy one unit of consumption at :math:`t+j`
+
+     * either pay :math:`q_{t,t+j}` at time :math:`t`, or
+
+     * pay :math:`q_{t,t+1}` at time :math:`t` and :math:`q_{t+1,t+j}` at time :math:`t+1`
+
+* Define
+
+.. math::
+    \tilde{q}^t_{t+1,t+j} \equiv \frac{q_{t,t+j}}{q_{t,t+1}}
+
+as the *forward price* at :math:`t`.
+
+* With no uncertainty about future interest rates
+
+.. math:: 
+    \tilde{q}^t_{t+1,t+j} = q_{t+1,t+j}
+
+* When there is uncertainty, these two won't necessarily be equal.
+
+Yield to Maturity
+-----------------
+
+* The yield to maturity is the unique :math:`r` that satisfies
+
+.. math::
+    V = \frac{c}{1+r}  + \frac{c}{(1+r)^2} + \frac{c}{(1+r)^3} + ... + \frac{c+P}{(1+r)^T}
+
+
+given :math:`V`, :math:`c`, :math:`P`, and :math:`T`.
+
+* Usually can not be solved for by hand.
+
+* It is sometimes just called the yield.
+
+A Three Period Coupon Bond Example
+----------------------------------
+
+* Bond issued at :math:`t=0` and is a riskless claim on stream
+
++--------+---------+---------+
+|   0    |   1     |    2    |
++--------+---------+---------+ 
+|   0    |   c     |   c+P   |
++--------+---------+---------+
+
+* Again, :math:`c` is the coupon and :math:`P` is the principal or par value
+
+* The time :math:`t=0` price of the bond is
+
+.. math::
+    V_0 = q_{0,1} c + q_{0,2}(c+P)
+
+* After payment of the coupon, the price of the bond at time :math:`t=1` is
+
+.. math::
+    V_1 = q_{1,2}(c+P)
+
+Value of a Call Option
+----------------------
+
+* At :math:`t=0`, you purchase the right to buy the bond at :math:`t=1` at a price :math:`P`.
+
+    * thus, :math:`P` serves as both the *par value* and the *strike price*.
+
+* The value of this option at time 1 is :math:`\max(0,V_1 - P)`.
+
+* You will want to exercise the call option is
+
+.. math::
+    P <  V_1 = q_{1,2}(c+P)
+
+* An interesting benchmark case: when is :math:`V_1 = P`?
+
+Solve equation
+
+.. math::
+    V_1 = P = q_{1,2}(c+P)
+
+for :math:`q_{1,2}`
+
+That is:
+
+.. math::
+    q_{1,2} = \frac{P}{c+P}
+
+or
+
+.. math::
+    1+r_{1,2} \approx \frac{c+P}{P}
+
+* Question:  when is :math:`V_0 = V_1 = P`?
+
+* Often see that Congress is reluctant to issue bonds selling at less than :math:`P`.
+
+Extend the Example: Interest rate risk
+--------------------------------------
+
+* payouts known for certain
+
+* uncertain future interest rates
+
+* three time periods: :math:`0`, :math:`1`, and :math:`2`.
+
+.. math::
+    q_{0,1}, \; \; q_{1,2}(H), \; \; q_{1,2}(L) \; \; \mbox{ where $q_{1,2}(H) > q_{1,2}(L)$}
+
+* Assume :math:`q_{1,2}(H)` occurs with probability :math:`\pi_0`.
+
+* And :math:`q_{1,2}(L)` occurs with probability :math:`1-\pi_0`.
+
+* Simple "expectations theory" of the term structure
+
+.. math::
+    q_{0,2} &=& q_{0,1}(\pi_0 q_{1,2}(H) + (1-\pi_0) q_{1,2}(L)) \\
+    \frac{q_{0,2}}{q_{0,1}} &\equiv& \tilde{q}^0_{1,2} = \pi_0 q_{1,2}(H) + (1-\pi_0) q_{1,2}(L)
+
+* :math:`\tilde{q}^0_{1,2}` is the *forward price*.
+
+   - is an average of the two possible prices next period
+
+   - no adjustment for risk
+
+   - fancier theories adjust for risk
+
+   - whose :math:`\pi_0`? (rational expectations)
+
+* Similarly
+
+.. math::
+     \tilde{r}^0_{1,2} = \pi_0 r_{1,2}(L) + (1-\pi_0) r_{1,2}(H)
+
+flip the :math:`H` and :math:`L` because high bond prices mean low interest rates
+
+Value of a Call Option
+----------------------
+
+* At :math:`t=0`, you purchase the right to buy the bond at :math:`t=1` at a price :math:`P`.
+
+* Assume that
+
+.. math::
+     q_{1,2}(H) > q_{1,2}(L)
+
+and
+
+.. math::
+     q_{1,2}(H)(c+P) > P > q_{1,2}(L)(c+P)
+
+* If state :math:`H` occurs the time :math:`1` value of the call is
+
+.. math::
+     V_1^{call} = \max(0,q_{1,2}(H)(c+P) -P) > 0
+
+* If state :math:`L` occurs the time :math:`1` value of the call is
+
+.. math::
+     V_1^{call} = \max(0, q_{1,2}(L)(c+P) -P) = 0
+
+* Therefore, the time :math:`0` value of the call is
+
+.. math::
+     V_0^{call} = q_{0,1} \left[ \pi_0(q_{1,2}(H)(c+P) -P) \right]
+
+Example
+-------
+
+*  Example: With constant interest rates satisfying the "Congress wishful thinking condition"
+
+.. math::
+     P = q_{t,t+1}(c+P)
+
+or
+
+.. math::
+     q_{t,t+1} = \frac{P}{c+P} \; \mbox{ for all $t$}
+
+then the value of the call is zero.
+
+* Hence
+
+.. math::
+     q_{1,2}(H) = q_{1,2}(L) = \frac{P}{P+c}
+
+Pricing a Callable Bond
+-----------------------
+
+* Consider
+
+.. math::
+    q_{1,2}(H)  > \frac{P}{P+c} > q_{1,2}(L)
+
+* Value of a non-callable bond
+
+.. math::
+    V_0 = q_{0,1} c + q_{0,2}(c+P)
+
+* Suppose the government issues a two period bond that is callable in period 1 at par.
+
+* A callable bond can be decomposed into two parts
+   1. non-callable bond
+   2. call option
+
+* When the government issues a callable bond, it sells part 1 and buys part 2.
+
+* Happy Meal Theorem:  Value of a callable bond
+
+.. math::
+    V_0 - V_0^{call}
+
+Example: 20 Year Coupon Bond
+----------------------------
+
+* Suppose that this year (January 1, 2014) you purchase a 6\% percent 2034 U.S. Treasury bond with a face value of \$100.
+
++--------+----------+--------+---------+------+-------+------+
+|  2014  |   2015   |  2016  |  2017   | ...  | 2033  | 2034 |
++--------+----------+--------+---------+------+-------+------+
+|   0    |    6     |   6    |   6     |  ... | 6     | 106  |
++--------+----------+--------+---------+------+-------+------+
+
+* No uncertainty
+
+* Apply the Happy Meal Theorem
+
+.. math::
+    V_{2013} &=& q_{2013,2014} C + q_{2013,2015} C + q_{2013,2016} C + q_{2013,2033} ( C + P)
+
+* Assume a constant interest rate
+
+* a flat term structure
+
+.. math::
+     r_{2013,2014} = r_{2014,2015} = r_{2015,2016} = r_{2016,2017} ... = \bar{r}
+
+* So :math:`\bar{r}` is the yield-to-maturity or YTM.
+
+Use Excel to do the valuations
+------------------------------
+
+* Let EXCEL do the calculations for us
+
+   - Set :math:`\bar{r}=.06`
+
+   - Set :math:`\bar{r}=.03`
+
+* Set :math:`\bar{r} =.09`
+
+* If a bond's coupon rate is
+    - less than its YTM, then the bond is selling at a *discount*.
+    - more than its YTM, then the bond is selling at a *premium*.
+    - equal to its YTM, then the bond is selling at *par*.
+
+One Type of Risk:  Interest Rate Risk
+-------------------------------------
+
+* Suppose that the (constant) interest rate is 6 percent
+
+* Five years from now, in 2019, (after we receive the 2019 coupon payment), there is
+   - :math:`\pi` chance the interest rate will fall to 3\% from 2019 on
+   - :math:`1-\pi` chance the interest rate will rise to 9\% from 2019 on
+
+* How does this risk affect our bond pricing?
+
+   - Assumption:  we are risk-neutral.
+
+   - We need to price both possibilities.
+ 
+* Work Backwards
+
+* What is our 20 year, \$100 face value, 6\% coupon, bond worth in 2019?
+
+   - CASE I:  Interest rate falls to 3 percent
+
+.. math::
+      V_{2019}^{.03} = \sum_{t=1}^{15}\frac{C}{(1+0.03)^t} + \frac{P}{(1+.03)^{15}}
+
+   - CASE II: Interest rate rises to 9 percent
+
+.. math;:
+      V_{2019}^{.09} = \sum_{t=1}^{15}\frac{C}{(1+0.09)^t} + \frac{P}{(1+.09)^{15}}
+
+* So what is our bond worth today in 2014?
+
+.. math::
+      V_{2014} =  \sum_{t=1}^{5}\frac{C}{(1+0.06)^t} + \pi \frac{V_{2019}^{.03}}{(1+.06)^5} + (1-\pi) \frac{V_{2019}^{.09}}{(1+.06)^5}
+
+A Call Option
+-------------
+
+* Consider the following contract: Today (in 2014) I sell you the right to purchase this bond in year 2019 for $100.
+
+   -You don't have to purchase the bond.  It is an option.
+
+* How much is this option worth?
+
+    - Again, work backwards.  In 2019, consider both cases
+
+         1. CASE I:  $ \max(0, V_{2018}^{.03} - 100) $
+
+         2. CASE II: $ \max(0, V_{2018}^{.09} - 100) $
+
+* In 2019
+
+.. math::
+      V_{2019}^{call} = \pi \max(0, V_{2019}^{.03} - 100) + (1-\pi) \max(0, V_{2019}^{.09}- 100)
+
+* In 2014
+
+.. math::
+      V_{2014}^{call}  = \frac{V_{2019}^{call}}{(1+.06)^5}
+
+What's the price of a 5-20 bond?
+--------------------------------
+
+* Consider a 20 year coupon bond that callable at par by the Treasury after five years.
+
+* Happy Meal Theorem
+
+.. math::
+     V_{2014} - V_{2014}^{call}
+
+* If a callable bond always sells for less than a non-callable bond, why would a government ever issue a callable bond?
+
+Using the G. B. C. to Price Government Debt
+-------------------------------------------
+
+* The price of a bond is the discounted present value of the stream of promised
+    payments
+
+* We could think of the government budget constraint much the same way.  Recall we can rewrite the g.b.c. as:
+
+.. math::
+       B_{t}  =   \sum_{j=1}^{\infty} \left(\frac{1}{1+r}\right)^{j}(T_{t+j} - G_{t+j})
+
+* Last lecture, we assumed the future paths of :math:`T` and :math:`G` will have to adjust to satisfy the current value of :math:`B_t`.
+
+* But what if the expected value of
+
+   .. math::
+       \sum_{j=1}^{\infty} \left(\frac{1}{1+r}\right)^{j}(T_{t+j} - G_{t+j})
+
+  is less than the face value of the current stock of debt?
+
+   - If future :math:`T` s and :math:`G` s are constrained, bond prices will adjust.
+
+* So is the government budget constraint a constraint?  Or is it a pricing formula?
+
+Bond Returns
+------------
+
+* Suppose you buy a bond at period :math:`t` a price :math:`V_t`, hold it one period, and sell it at price :math:`V_{t+1}`.  What is your return?
+
+* In period :math:`t+1` you receive the coupon payment and the sales price.
+
+* So the one-period ex-post holding return for a bond is
+
+.. math::
+      1+r_{t,t+1} = \frac{C + V_{t+1}}{V_t}
+
+Recorded Government Interest Payments
+-------------------------------------
+
+* What the Bureau of the Public Debt reports as its nominal interest payments
+    - discount the bills
+    - add up the coupons on notes and bonds
+
+* Answers the question 
+
+    *how many dollars must the Treasury devote to paying coupons on 
+    this period's outstanding government bonds while rolling over 
+    the nominal stock of treasury bills?*  
+
+* Leaves out capital gains and losses on Treasury notes and bonds obligations.
+
+* Does not answer the question  
+
+    *what return did government bond holders receive?*
+
+Comparison Between Official Interest Payments and Returns to Bondholders
+------------------------------------------------------------------------
+
+ put cof_returns_gdpdef.png here
+
+Means and Standard Deviations of Returns
+-----------------------------------------
+
++------------------------------------+----------+----------+
+| Variable                           |  Mean    | Std Dev  |
++------------------------------------+----------+----------+
+| Official Interest/Debt             |   5.20   |    2.54  |
++------------------------------------+----------+----------+
+| Inflation                          |   3.73   |    2.67  |
++------------------------------------+----------+----------+
+| Official Interest/Debt - inflation |   1.47   |    3.31  |
++------------------------------------+----------+----------+
+| Real Return on Marketable Debt     |   1.63   |    4.86  |
++------------------------------------+----------+----------+
+
+Does this Accounting Issue Matter?
+----------------------------------
+
+* Reported interest payments on the debt are not the :math:`R_t B^G_{t}` in the government budget constraint.
+     - Is this a big deal?
+
+* The Treasury
+    1. reports the par value rather than the market value of its debt, and
+    2. typically sets the coupon rate so that at auction, bonds sell near par.
+
+* In this case the ytm equals the coupon rate, and the par value and the market value will not be that different.
+
+* Will get big differences between the par value and market value when there are large capital gains and losses (perhaps due to changes in inflation)
+
+    - War of 1812
+
+* Talk these days about using inflation to erode the debt. To frame the tradeoff, need to properly account for interest the government actually pays.
+

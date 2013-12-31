@@ -1,0 +1,1168 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>The American Revolution &mdash; Fiscal History 1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="Fiscal History 1 documentation" href="index.html" />
+    <link rel="next" title="The American Revolution" href="act1790.html" />
+    <link rel="prev" title="A Primer on Bond Pricing" href="bond_pricing_primer.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="act1790.html" title="The American Revolution"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="bond_pricing_primer.html" title="A Primer on Bond Pricing"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Fiscal History 1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="the-american-revolution">
+<span id="american-revolution"></span><h1>The American Revolution<a class="headerlink" href="#the-american-revolution" title="Permalink to this headline">¶</a></h1>
+<p><em>A revolution, a war, the dissolution of government, the creating of it anew, cruelty, rapine,
+and devastation in the midst of our very bowels.  These sir are circumstances by no means
+favorable to finance.</em></p>
+<p>Robert Morris in a letter to Ben Franklin, November 27, 1781.</p>
+<div class="section" id="important-dates">
+<h2>Important Dates<a class="headerlink" href="#important-dates" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="76%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>1765</td>
+<td>Stamp Act</td>
+</tr>
+<tr class="row-even"><td>March 5, 1770</td>
+<td>Boston Massacre</td>
+</tr>
+<tr class="row-odd"><td>December 16, 1773</td>
+<td>Boston Tea Party</td>
+</tr>
+<tr class="row-even"><td>September 5, 1774</td>
+<td>First Continental Congress convenes</td>
+</tr>
+<tr class="row-odd"><td>April 19, 1775</td>
+<td>Battles of Lexington and Concord &#8211; American Revolution begins</td>
+</tr>
+<tr class="row-even"><td>May 10, 1775</td>
+<td>Second Continental Congress convenes</td>
+</tr>
+<tr class="row-odd"><td>July 4, 1776</td>
+<td>Declaration of Independence adopted</td>
+</tr>
+<tr class="row-even"><td>December 20, 1776</td>
+<td>Third Continental Congress convenes</td>
+</tr>
+<tr class="row-odd"><td>November 11, 1777</td>
+<td>Articles of Confederation proposed</td>
+</tr>
+<tr class="row-even"><td>March 1, 1781</td>
+<td>Articles of Confederation ratified</td>
+</tr>
+<tr class="row-odd"><td>October 19, 1781</td>
+<td>Surrender of Yorktown</td>
+</tr>
+<tr class="row-even"><td>September 3, 1783</td>
+<td>Treaty of Paris signed</td>
+</tr>
+<tr class="row-odd"><td>Summer 1787</td>
+<td>Constitutional Convention in Philadelphia</td>
+</tr>
+<tr class="row-even"><td>June 1788</td>
+<td>Constitution Ratified</td>
+</tr>
+<tr class="row-odd"><td>March 4, 1789</td>
+<td>The Constitution goes into effect</td>
+</tr>
+<tr class="row-even"><td>April 30, 1789</td>
+<td>Inauguration of President George Washington</td>
+</tr>
+<tr class="row-odd"><td>July 14, 1789</td>
+<td>Storming of the Bastille &#8211; French Revolution begins</td>
+</tr>
+<tr class="row-even"><td>1790</td>
+<td>Establishment of the Department of Treasury</td>
+</tr>
+<tr class="row-odd"><td>August 4, 1790</td>
+<td>Funding Act</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="how-does-one-finance-a-revolution">
+<h2>How does one finance a revolution?<a class="headerlink" href="#how-does-one-finance-a-revolution" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><dl class="first docutils">
+<dt>Continental Congress first met in 1774</dt>
+<dd><ul class="first last simple">
+<li>Not clear whether the goal was independence or to change Britain&#8217;s policies</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Consider the government budget constraint</p>
+</li>
+</ul>
+<div class="math">
+\[B_{t}  =  (1+r)B_{t-1} + G_t - T_t  - \frac{M_t - M_{t-1}}{P_t}\]</div>
+<ul>
+<li><p class="first">The Congress&#8217;s options were
+- tax
+- borrow
+- print money</p>
+</li>
+<li><p class="first">Problems become obvious immediately</p>
+<blockquote>
+<div><ol class="arabic">
+<li><dl class="first docutils">
+<dt>Who is going to pay taxes?</dt>
+<dd><ul class="first last simple">
+<li>revolution based on &#8220;taxation without representation&#8221;</li>
+<li>already paying taxes to Britain</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Who is going to lend the Congress resources?</dt>
+<dd><ul class="first simple">
+<li>How many periods will the Congress going to be in existence?</li>
+</ul>
+<div class="last math">
+\[B_{t}  =   \sum_{j=1}^{\infty} \left(\frac{1}{1+r}\right)^{j}(T_{t+j} -G_{t+j})\]</div>
+</dd>
+</dl>
+</li>
+<li><p class="first">Who is going to accept Congress&#8217;s money as payment for goods and services?</p>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p class="first">Congress tried all three with mixed success</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">taxes
+- requisitions from the states
+- sell public goods
+- gifts
+- privateering</p>
+</li>
+<li><dl class="first docutils">
+<dt>loans</dt>
+<dd><ul class="first last simple">
+<li>domestic &#8211; loan office certificates, certificates of indebtedness</li>
+<li>foreign &#8211; France, Holland, Spain</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>seignorage</dt>
+<dd><ul class="first last simple">
+<li>Continental dollars (i.e bills of credit)</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+</div></blockquote>
+</li>
+</ul>
+<div class="section" id="attempts-at-taxation">
+<h3>Attempts at &#8220;Taxation&#8221;<a class="headerlink" href="#attempts-at-taxation" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">lotteries</p>
+</li>
+<li><p class="first">requisitions from the states</p>
+</li>
+<li><p class="first">sell public goods</p>
+</li>
+<li><p class="first">gifts</p>
+</li>
+<li><p class="first">privateering</p>
+<blockquote>
+<div><p><em>What is missing from this list?</em></p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="bills-of-credit">
+<h3>Bills of Credit<a class="headerlink" href="#bills-of-credit" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">Continental Dollars</p>
+</li>
+<li><p class="first">The first authorization of <em>bills of credit</em> was made in Philadelphia in May 1775.</p>
+</li>
+<li><p class="first">The colonists had prior experience with bills of credit</p>
+<blockquote>
+<div><ul class="simple">
+<li>A colony would issue perhaps $20,000 bills of credit, and then</li>
+<li>over the next four years, require $5,000 in taxes payable in these bills.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Prior to the war, many colonies had issued bills of credit with success</p>
+<blockquote>
+<div><ul class="simple">
+<li>developed a good reputation</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">In 1775, what is a dollar?</p>
+<ul class="simple">
+<li>Spanish milled dollar</li>
+</ul>
+</li>
+<li><p class="first">Shortage of media of exchange</p>
+<blockquote>
+<div><ul>
+<li><p class="first">Largely rural society</p>
+<blockquote>
+<div><ul class="simple">
+<li>illiquid assets: land, animals, tools</li>
+<li>agricultural goods often poor assets</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">No banks</p>
+</li>
+<li><p class="first">No ability to mine gold and silver in the colonies</p>
+</li>
+<li><p class="first">If the colonies wanted gold or silver coins, then they needed to run a current account surplus</p>
+<blockquote>
+<div><ul class="simple">
+<li>could only trade with Britain, who set the rules</li>
+<li>not enough trade, not large enough surpluses to import the quantity of money needed</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Colonial governments issued bills of credit</p>
+<blockquote>
+<div><ul class="simple">
+<li>for the most part worked</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="definitions-fiat-vs-commodity-money">
+<h3>Definitions: Fiat vs. Commodity Money<a class="headerlink" href="#definitions-fiat-vs-commodity-money" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">fiat money</p>
+<blockquote>
+<div><ul class="simple">
+<li>fiat &#8211; Latin for <em>let it be done</em></li>
+<li>money with no intrinsic value</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">commodity money</p>
+<blockquote>
+<div><ul class="simple">
+<li>money backed by something of intrinsic value</li>
+<li>for example gold certificates</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">specie</p>
+<blockquote>
+<div><ul class="simple">
+<li>money in gold or silver</li>
+<li>hard money</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="why-did-anyone-accept-bills-of-credit">
+<h3>Why did anyone accept bills of credit?<a class="headerlink" href="#why-did-anyone-accept-bills-of-credit" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">What is money?</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>medium of exchange</li>
+<li>store of value</li>
+<li>unit of account</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p class="first">Shortage of medium of exchange</p>
+</li>
+<li><p class="first">Thought experiment:  disintegrating money ...</p>
+</li>
+<li><p class="first">Continental government requested that the states accept bills of credit for payment of taxes.</p>
+<blockquote>
+<div><ul class="simple">
+<li>each colony given a quota</li>
+<li>these bills of credit would then be returned to the Continental government to be burned.</li>
+<li>riding on the good reputations of the colonies</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Congress had harsh words for those who did not accept these bills</p>
+<blockquote>
+<div><p><em>That if any person shall hereafter be so
+lost to all virtue and regard for his country to refuse ...,
+such person shall be deemed an enemy of his country</em></p>
+</div></blockquote>
+</li>
+<li><p class="first">Congress also recommended to states that the state legislatures pass laws making these bills of credit <em>legal tender</em>.</p>
+</li>
+<li><p class="first">link here to <a class="reference external" href="http://www.frbsf.org/currency/independence/show.html">http://www.frbsf.org/currency/independence/show.html</a></p>
+</li>
+<li><p class="first">The first of eleven emissions occurred on June 22, 1775.</p>
+</li>
+<li><p class="first">The bills were apportioned across the colonies on the basis of population.</p>
+</li>
+<li><p class="first">By November 1779 the total outstanding was $199,990,000.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Gross emission were $241,550,000, but some were redeemed or exchanged.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Colonies had trouble fulfilling their quotas</p>
+<blockquote>
+<div><ul class="simple">
+<li>revolution wrecks an economy</li>
+<li>tax collection still rudimentary</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="continental-dollar-quantity-outstanding">
+<h3>Continental Dollar: Quantity Outstanding<a class="headerlink" href="#continental-dollar-quantity-outstanding" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>post cont_dollar_out_1781.png here</li>
+<li>Too Many Pieces of Paper chasing too few goods</li>
+<li>Recall the quantity theory of money</li>
+</ul>
+<div class="math">
+\[\begin{split}\mbox{Money $\times$ Velocity} &amp; = &amp; \mbox{Price  $\times$  Output}  \\
+M  \times  V                  &amp; = &amp;  P \times Y\end{split}\]</div>
+<ul>
+<li><p class="first">If <span class="math">\(Y\)</span> and <span class="math">\(V\)</span> are constant, then <span class="math">\(P\)</span> moves with <span class="math">\(M\)</span>.</p>
+</li>
+<li><p class="first">Value of Continental dollar fell.</p>
+<blockquote>
+<div><ul class="simple">
+<li>blame profiteers, monopolists ...</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Continental dollars were used to pay state taxes during in 1780s</p>
+<blockquote>
+<div><ul class="simple">
+<li>Congress accepted 40 Continental dollars in place of 1 Spanish dollar in remittances.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">The face value of the Continental dollars outstanding in 1789: $80,527,630.</p>
+</li>
+<li><p class="first">Continental Dollar: Quantity Outstanding and Price Level</p>
+</li>
+<li><p class="first">place here cont_dollar_quant_price.ps</p>
+</li>
+<li><p class="first">Face and Specie Value of the Continental Dollar along with Price Level</p>
+</li>
+<li><p class="first">place here cont_dollar_three_scale.ps</p>
+</li>
+</ul>
+</div>
+<div class="section" id="loan-office-certificates">
+<h3>Loan Office Certificates<a class="headerlink" href="#loan-office-certificates" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">On October 3, 1776 Congress voted to borrow $5 million Continental dollars at a 4% interest rate.</p>
+</li>
+<li><p class="first">Loan offices were opened in each state and authorized to receive subscriptions.</p>
+</li>
+<li><p class="first">At a 4% interest rate, few loan certificates were sold and the loan failed.</p>
+</li>
+<li><p class="first">On January 14 and February 22, 1777 Congress authorized $15 million in new loans.</p>
+</li>
+<li><p class="first">On February 26, the interest rate was raised to 6%. Over the next three years $12 million of these loan certificates were sold.</p>
+</li>
+<li><p class="first">There were two types of these certificates</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>ones that promised to pay species</li>
+<li>ones that repaid in Continental currency.</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p class="first">Minimum denomination was $300.  These certificates were not intended to circulate as currency,</p>
+</li>
+<li><p class="first">place here loan_office_certificate.jpg</p>
+</li>
+</ul>
+</div>
+<div class="section" id="why-would-someone-loan-money-to-the-revolutionaries">
+<h3>Why Would Someone Loan Money to the Revolutionaries?<a class="headerlink" href="#why-would-someone-loan-money-to-the-revolutionaries" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">Lack of liquid stores of value</p>
+</li>
+<li><p class="first">Congress voted that for any loan office certificate purchased prior to March 1, 1778, the government would</p>
+<blockquote>
+<div><ul class="simple">
+<li>accept bills of credit at face value to purchase loan office certificates</li>
+<li>pay interest in specie (ie. Spanish dollars)</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">At that time, Continental dollars traded 1.25 and 5 C.D. to Spanish dollar</p>
+<blockquote>
+<div><ul class="simple">
+<li>7.5 to 30 percent return</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="what-the-difference-between-bonds-and-money">
+<h3>What the difference between bonds and money?<a class="headerlink" href="#what-the-difference-between-bonds-and-money" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Re-write the government budget constraint as</li>
+</ul>
+<div class="math">
+\[B_{t} + \frac{M_t}{P_t} =  B_{t-1} + r B_{t-1} + G_t + TR_t - T_t  - \frac{M_{t-1}}{P_t}\]</div>
+<ul class="simple">
+<li>bonds pay interest, money does not</li>
+<li>Loan Office Certificates vs. Bills of Credit</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="38%" />
+<col width="62%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">loan office certificates</th>
+<th class="head">bills of credit</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>bear interest</td>
+<td>bear no interest</td>
+</tr>
+<tr class="row-odd"><td>written denominations</td>
+<td>printed denominations</td>
+</tr>
+<tr class="row-even"><td>minimum denomination: $300</td>
+<td>minimum denomination: $0.17</td>
+</tr>
+<tr class="row-odd"><td>payable to a specific individual</td>
+<td>payable to bearer</td>
+</tr>
+<tr class="row-even"><td>transferable but not intended for
+general circulation;
+not legal tender, but
+receivable for taxes</td>
+<td>intended to create a circulating medium</td>
+</tr>
+<tr class="row-odd"><td>printed on one side of thick large
+size paper</td>
+<td>printed on both sides of heavy small size paper for
+convenient circulation</td>
+</tr>
+<tr class="row-even"><td>written date of issue</td>
+<td>printed date of authorization</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p class="first">If bonds pay interest, and money does not why doesn&#8217;t every use bonds to carry out trade?</p>
+<blockquote>
+<div><ul class="simple">
+<li>There were essentially three types of currency circulating simultaneously.</li>
+<li>Reduced demand for Continental dollars, exacerbating their depreciation.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Pennsylvania Packet, January 20, 1780</p>
+</li>
+</ul>
+<p><em>I only contend for the immediate dissolution of the loan office; for
+why should the community be burdened with an addition of taxes, merely
+to pay an interest to moneyed men, for lending paper to government;
+when the very paper could be as well made without any other expense
+than striking it; and the larger these bills the better: if a thousand
+dollars each, it might help to retard the circulation and lessen the
+charge of printing and signing.  It is to be observed, that the whole
+of my reasoning on this subject, turns upon the assertion, that loan
+office certificates are money to all intents and purposes, and operate
+in proportion to their quantity equal to alike sum of Continental
+bills &#8211; if I am wrong my conclusions fall to the ground.</em></p>
+</div>
+<div class="section" id="certificates-of-indebtedness">
+<h3>Certificates of Indebtedness<a class="headerlink" href="#certificates-of-indebtedness" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Congress authorized quartermasters, commissaries, and other officers to issue certificates of indebtedness for supplies taken for the army.</li>
+<li>Often a form of impressment or expropriation.</li>
+<li>In February 1782, Robert Morris nominated a commissioner for each state to review all civilian claims and exchange old certificates and such for <em>final settlement certificates</em>.</li>
+<li>These final settlement certificates promised a 6 per cent interest rate.</li>
+</ul>
+</div>
+<div class="section" id="final-settlement-certificates">
+<h3>Final Settlement Certificates<a class="headerlink" href="#final-settlement-certificates" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>A typical final settlement certificate:</li>
+<li>show picture of final settlment certificate here</li>
+</ul>
+</div>
+<div class="section" id="interest-in-arrears">
+<h3>Interest in Arrears<a class="headerlink" href="#interest-in-arrears" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>After March 1, 1782 the Congress of the Confederation had no resources to pay interest or principal on loan office certificates or final settlement certificates.</li>
+<li>place here graph of loan_office.ps</li>
+<li>Specie Value of the Outstanding Loan Office Certificates</li>
+<li>Specie Value of the Final Settlement Certificates</li>
+<li>place graph of cert_of_indebt.ps</li>
+</ul>
+</div>
+<div class="section" id="foreign-loans">
+<h3>Foreign Loans<a class="headerlink" href="#foreign-loans" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">Congress also borrowed extensively from France, Holland, and Spain.</p>
+<blockquote>
+<div><ul class="simple">
+<li>financed military supplies from these countries</li>
+<li>Some loans represent subsidies</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">France</p>
+<blockquote>
+<div><ul class="simple">
+<li>Borrowing began in 1777.</li>
+<li>First loans payable in tobacco; stopped due to British navy</li>
+<li>Total borrowing from France exceeded $6.5 million</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Spain</p>
+<blockquote>
+<div><ul class="simple">
+<li>Single loan from Spain for $174,011 issued though out 1781-1782</li>
+<li>Secret loan</li>
+<li>American negotiators tried to get Florida in the deal.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Holland</p>
+</li>
+</ul>
+</div>
+<div class="section" id="debts-due-to-foreign-officers">
+<h3>Debts Due to Foreign Officers<a class="headerlink" href="#debts-due-to-foreign-officers" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">Needed to compensate  foreign officers who fought in the Continental Army during the Revolutionary War.</p>
+</li>
+<li><p class="first">Many were destitute and unable to go home.</p>
+</li>
+<li><p class="first">Initially paid certificated of indebtedness bearing an interest of 6 per cent.</p>
+<blockquote>
+<div><ul class="simple">
+<li>value quickly depreciated</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">On January 22, 1784 the Continental Congress authorized these certificates to be called in and new certificates to be issued.  These new certificates paid a 6 per cent coupon, payable in gold annually at a Paris bank.</p>
+</li>
+<li><p class="first">Foreign officers probably did better than their American counterparts.</p>
+</li>
+<li><p class="first">Face Value Foreign Loans Outstanding</p>
+</li>
+<li><p class="first">place here foreign_loans.ps</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="fiscal-accounting-two-approaches">
+<h2>Fiscal Accounting: Two Approaches<a class="headerlink" href="#fiscal-accounting-two-approaches" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Stock Approach<ul>
+<li>aggregate the debt bond-by-bond, period-by-period</li>
+<li>precise data on foreign bonds</li>
+<li>incomplete data on the domestic debt, almost no data on state debts</li>
+</ul>
+</li>
+<li>Flow Approach<ul>
+<li>impute the debt from the stream of expenditures and revenue</li>
+<li>know debt in 1775 = 0 and 1792 = $80 million</li>
+<li>no complete set of accounts for the 1776 to 1789 period</li>
+</ul>
+</li>
+</ol>
+<div class="section" id="federal-expenditure-by-type">
+<h3>Federal Expenditure by Type<a class="headerlink" href="#federal-expenditure-by-type" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="13%" />
+<col width="17%" />
+<col width="13%" />
+<col width="11%" />
+<col width="17%" />
+<col width="18%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Year</th>
+<th class="head">Indians</th>
+<th class="head">War</th>
+<th class="head">Interest</th>
+<th class="head">Pensions</th>
+<th class="head">Miscellaneous</th>
+<th class="head">Total</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1775-76</td>
+<td>$38,476</td>
+<td>$14,799,896</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>$5,226,294</td>
+<td>$20,064,667</td>
+</tr>
+<tr class="row-odd"><td>1777</td>
+<td>22,162</td>
+<td>20,133,489</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>4,830,996</td>
+<td>24,986,647</td>
+</tr>
+<tr class="row-even"><td>1778</td>
+<td>1,553</td>
+<td>22,177,112</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>2,110,773</td>
+<td>24,289,438</td>
+</tr>
+<tr class="row-odd"><td>1779</td>
+<td>&nbsp;</td>
+<td>10,133,473</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>661,147</td>
+<td>10,794,620</td>
+</tr>
+<tr class="row-even"><td>1780</td>
+<td>3,981</td>
+<td>2,765,038</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>230,980</td>
+<td>3,000,000</td>
+</tr>
+<tr class="row-odd"><td>1781</td>
+<td>823</td>
+<td>1,568,580</td>
+<td>&nbsp;</td>
+<td>$3,970</td>
+<td>229,764</td>
+<td>1,803,137</td>
+</tr>
+<tr class="row-even"><td>1782</td>
+<td>562</td>
+<td>2,299,289</td>
+<td>$30,398</td>
+<td>4,469</td>
+<td>136,172</td>
+<td>2,470,891</td>
+</tr>
+<tr class="row-odd"><td>1783</td>
+<td>1,244</td>
+<td>2,516,090</td>
+<td>17,913</td>
+<td>8,596</td>
+<td>112,512</td>
+<td>2,656,354</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="federal-revenue-by-source">
+<h3>Federal Revenue by Source<a class="headerlink" href="#federal-revenue-by-source" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="17%" />
+<col width="18%" />
+<col width="18%" />
+<col width="18%" />
+<col width="18%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" rowspan="2">Year</th>
+<th class="head" rowspan="2">Money</th>
+<th class="head" rowspan="2">Taxes</th>
+<th class="head" rowspan="2"><blockquote class="first">
+<div>Sale of</div></blockquote>
+<p class="last">Public Goods</p>
+</th>
+<th class="head" rowspan="2">Miscellaneous</th>
+<th class="head" rowspan="2">Total</th>
+</tr>
+<tr class="row-even"></tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td>1775</td>
+<td>$6,000,000</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>$6,000,000</td>
+</tr>
+<tr class="row-even"><td>1776</td>
+<td>15,270,553</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>15,270,553</td>
+</tr>
+<tr class="row-odd"><td>1777</td>
+<td>4,062,903</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>4,062,903</td>
+</tr>
+<tr class="row-even"><td>1778</td>
+<td>10,383,373</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>$592,000</td>
+<td>10,975,373</td>
+</tr>
+<tr class="row-odd"><td>1779</td>
+<td>3,927,322</td>
+<td>$1,856,000</td>
+<td>&nbsp;</td>
+<td>1,996,500</td>
+<td>7,779,822</td>
+</tr>
+<tr class="row-even"><td>1780</td>
+<td>&nbsp;</td>
+<td>881,000</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>881,000</td>
+</tr>
+<tr class="row-odd"><td>1781</td>
+<td>462,598</td>
+<td>1,592,000</td>
+<td>$117,228</td>
+<td>94,091</td>
+<td>2,265,916</td>
+</tr>
+<tr class="row-even"><td>1782</td>
+<td>525</td>
+<td>646,036</td>
+<td>149,485</td>
+<td>144,436</td>
+<td>940,483</td>
+</tr>
+<tr class="row-odd"><td>1783</td>
+<td>111,924</td>
+<td>820,030</td>
+<td>215,159</td>
+<td>188,241</td>
+<td>1,335,353</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="expenditures-and-revenue">
+<h3>Expenditures and Revenue<a class="headerlink" href="#expenditures-and-revenue" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>The inflation tax largely paid for the war</li>
+<li>For the first four years, the Continental government able to raise and spend considerable resources</li>
+<li>Different story after 1779, difficult to raise revenue</li>
+<li>accumulating unpaid interest</li>
+</ul>
+</div>
+<div class="section" id="deficits">
+<h3>Deficits<a class="headerlink" href="#deficits" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%" />
+<col width="22%" />
+<col width="15%" />
+<col width="19%" />
+<col width="19%" />
+<col width="18%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" rowspan="2">Year</th>
+<th class="head" colspan="2">Interest</th>
+<th class="head" rowspan="2"><p class="first">Spending net</p>
+<p class="last">of Interest</p>
+</th>
+<th class="head" rowspan="2">Revenue</th>
+<th class="head" rowspan="2"><p class="first">Deficit</p>
+<p class="last">(Surplus)</p>
+</th>
+</tr>
+<tr class="row-even"><th class="head" colspan="2">Due        |   Paid</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td>1775</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>$6,000,000</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>1776</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>$20,064,667</td>
+<td>15,270,553</td>
+<td>$4,794,114</td>
+</tr>
+<tr class="row-odd"><td>1777</td>
+<td>$203,695</td>
+<td>$203,695</td>
+<td>24,986,647</td>
+<td>4,062,903</td>
+<td>20,923,744</td>
+</tr>
+<tr class="row-even"><td>1778</td>
+<td>459,505</td>
+<td>459,505</td>
+<td>24,289,438</td>
+<td>10,975,373</td>
+<td>13,314,065</td>
+</tr>
+<tr class="row-odd"><td>1779</td>
+<td>630,828</td>
+<td>630,828</td>
+<td>10,794,620</td>
+<td>7,779,822</td>
+<td>3,014,798</td>
+</tr>
+<tr class="row-even"><td>1780</td>
+<td>753,305</td>
+<td>745,805</td>
+<td>3,000,000</td>
+<td>881,000</td>
+<td>2,119,000</td>
+</tr>
+<tr class="row-odd"><td>1781</td>
+<td>1,144,622</td>
+<td>281,044</td>
+<td>1,803,137</td>
+<td>2,265,916</td>
+<td>(462,779)</td>
+</tr>
+<tr class="row-even"><td>1782</td>
+<td>1,296,494</td>
+<td>265,117</td>
+<td>2,440,493</td>
+<td>940,483</td>
+<td>1,500,010</td>
+</tr>
+<tr class="row-odd"><td>1783</td>
+<td>1,646,424</td>
+<td>17,913</td>
+<td>2,638,441</td>
+<td>1,335,353</td>
+<td>1,303,088</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="the-interest-bearing-debt">
+<h3>The Interest-Bearing Debt<a class="headerlink" href="#the-interest-bearing-debt" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">Foreign debt</p>
+<blockquote>
+<div><ul class="simple">
+<li>France, Holland, Spain</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Domestic Debt</p>
+<blockquote>
+<div><ul class="simple">
+<li>loan office certificates</li>
+<li>certificates of indebtedness</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="composition-of-the-continental-revolutionary-debt">
+<h3>Composition of the Continental Revolutionary Debt<a class="headerlink" href="#composition-of-the-continental-revolutionary-debt" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%" />
+<col width="17%" />
+<col width="14%" />
+<col width="16%" />
+<col width="17%" />
+<col width="12%" />
+<col width="17%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" rowspan="2">Year</th>
+<th class="head" colspan="2">Domestic Debt</th>
+<th class="head" colspan="2">Foreign Debt</th>
+<th class="head" rowspan="2"><p class="first">Temporary</p>
+<blockquote class="last">
+<div>Loans</div></blockquote>
+</th>
+<th class="head" rowspan="2">Total</th>
+</tr>
+<tr class="row-even"><th class="head" colspan="2">Principal    | Interest</th>
+<th class="head" colspan="2">Principal   | Interest</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td>1776</td>
+<td>$946,975</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>$946,975</td>
+</tr>
+<tr class="row-even"><td>1777</td>
+<td>5,056,900</td>
+<td>&nbsp;</td>
+<td>$181,500</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>5,238,400</td>
+</tr>
+<tr class="row-odd"><td>1778</td>
+<td>8,255,774</td>
+<td>&nbsp;</td>
+<td>723,379</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>8,979,153</td>
+</tr>
+<tr class="row-even"><td>1779</td>
+<td>10,828,939</td>
+<td>&nbsp;</td>
+<td>879,689</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>11,708,628</td>
+</tr>
+<tr class="row-odd"><td>1780</td>
+<td>11,472,230</td>
+<td>&nbsp;</td>
+<td>1,605,689</td>
+<td>$7,500</td>
+<td>&nbsp;</td>
+<td>13,085,419</td>
+</tr>
+<tr class="row-even"><td>1781</td>
+<td>17,921,956</td>
+<td>$856,078</td>
+<td>3,472,255</td>
+<td>15,000</td>
+<td>&nbsp;</td>
+<td>22,265,289</td>
+</tr>
+<tr class="row-odd"><td>1782</td>
+<td>31,358,594</td>
+<td>1,879,955</td>
+<td>6,129,706</td>
+<td>22,500</td>
+<td>$57,914</td>
+<td>39,448,669</td>
+</tr>
+<tr class="row-even"><td>1783</td>
+<td>28,983,171</td>
+<td>3,151,314</td>
+<td>7,802,706</td>
+<td>379,653</td>
+<td>68,467</td>
+<td>40,385,311</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="continental-government-at-the-end-of-the-war">
+<h2>Continental Government at the End of the War<a class="headerlink" href="#continental-government-at-the-end-of-the-war" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">On one hand</p>
+<blockquote>
+<div><ul class="simple">
+<li>were responsible for a hyperinflation</li>
+<li>owed $40 million in debts (and this amount will continue to grow)</li>
+<li>had not made an interest payment since 1782</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">On the other hand</p>
+<blockquote>
+<div><ul class="simple">
+<li>just won their independence</li>
+<li>now controlled 1/3 of a continent</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="section" id="a-big-caveat">
+<h3>A Big Caveat<a class="headerlink" href="#a-big-caveat" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">This lecture focused on Continental finance</p>
+<blockquote>
+<div><ul class="simple">
+<li>only one part of the story</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Clearly a lot going on at the colony (i.e. state) level</p>
+<blockquote>
+<div><ul class="simple">
+<li>I don&#8217;t know the details</li>
+<li>I would like to learn these details</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">The American Revolution</a><ul>
+<li><a class="reference internal" href="#important-dates">Important Dates</a></li>
+<li><a class="reference internal" href="#how-does-one-finance-a-revolution">How does one finance a revolution?</a><ul>
+<li><a class="reference internal" href="#attempts-at-taxation">Attempts at &#8220;Taxation&#8221;</a></li>
+<li><a class="reference internal" href="#bills-of-credit">Bills of Credit</a></li>
+<li><a class="reference internal" href="#definitions-fiat-vs-commodity-money">Definitions: Fiat vs. Commodity Money</a></li>
+<li><a class="reference internal" href="#why-did-anyone-accept-bills-of-credit">Why did anyone accept bills of credit?</a></li>
+<li><a class="reference internal" href="#continental-dollar-quantity-outstanding">Continental Dollar: Quantity Outstanding</a></li>
+<li><a class="reference internal" href="#loan-office-certificates">Loan Office Certificates</a></li>
+<li><a class="reference internal" href="#why-would-someone-loan-money-to-the-revolutionaries">Why Would Someone Loan Money to the Revolutionaries?</a></li>
+<li><a class="reference internal" href="#what-the-difference-between-bonds-and-money">What the difference between bonds and money?</a></li>
+<li><a class="reference internal" href="#certificates-of-indebtedness">Certificates of Indebtedness</a></li>
+<li><a class="reference internal" href="#final-settlement-certificates">Final Settlement Certificates</a></li>
+<li><a class="reference internal" href="#interest-in-arrears">Interest in Arrears</a></li>
+<li><a class="reference internal" href="#foreign-loans">Foreign Loans</a></li>
+<li><a class="reference internal" href="#debts-due-to-foreign-officers">Debts Due to Foreign Officers</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#fiscal-accounting-two-approaches">Fiscal Accounting: Two Approaches</a><ul>
+<li><a class="reference internal" href="#federal-expenditure-by-type">Federal Expenditure by Type</a></li>
+<li><a class="reference internal" href="#federal-revenue-by-source">Federal Revenue by Source</a></li>
+<li><a class="reference internal" href="#expenditures-and-revenue">Expenditures and Revenue</a></li>
+<li><a class="reference internal" href="#deficits">Deficits</a></li>
+<li><a class="reference internal" href="#the-interest-bearing-debt">The Interest-Bearing Debt</a></li>
+<li><a class="reference internal" href="#composition-of-the-continental-revolutionary-debt">Composition of the Continental Revolutionary Debt</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#continental-government-at-the-end-of-the-war">Continental Government at the End of the War</a><ul>
+<li><a class="reference internal" href="#a-big-caveat">A Big Caveat</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="bond_pricing_primer.html"
+                        title="previous chapter">A Primer on Bond Pricing</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="act1790.html"
+                        title="next chapter">The American Revolution</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/american_revolution.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="act1790.html" title="The American Revolution"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="bond_pricing_primer.html" title="A Primer on Bond Pricing"
+             >previous</a> |</li>
+        <li><a href="index.html">Fiscal History 1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, George Hall and Thomas Sargent.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
