@@ -5,7 +5,7 @@ A Primer on Bond Pricing
 *************************
 
 What's a Bond?
---------------
+==============
 
 A bond is an I.O.U.  It is a piece of paper that states
 
@@ -23,22 +23,31 @@ Non-Coupon and Coupon Bonds
 
 2. *Coupon* bonds promise a stream of payments.
 
-+---------------+-----------------+
-|  On date      + I will pay you  | 
-+---------------+-----------------+
-| :math:`t_1`   |  :math:`c`      |
-+---------------+-----------------+
-| :math:`t_2`   |  :math:`c`      |
-+---------------+-----------------+
-|:math:`\vdots` |  :math:`\vdots` |
-+---------------+-----------------+
-| :math:`T`     |  :math:`c+P`    |
-+---------------+-----------------+
+      +---------------+-----------------+
+      |  On date      | I will pay you  | 
+      +===============+=================+
+      | :math:`t_1`   |  :math:`c`      |     
+      +---------------+-----------------+
+      | :math:`t_2`   |  :math:`c`      |
+      +---------------+-----------------+
+      |:math:`\vdots` |  :math:`\vdots` |
+      +---------------+-----------------+
+      | :math:`T`     |  :math:`c+P`    |
+      +---------------+-----------------+
 
 
 :math:`c` stands for *coupon*.
 
 :math:`P` stands for *principal* or *par value* or *face value* of the bond.
+
+
+* An example of a coupon bond
+
+.. image:: _static/images/confederate_bond.jpg
+    :scale: 70%
+    :align: center
+
+    **A Confederate Coupon Bonds**
 
 Present Value
 -------------
@@ -72,7 +81,7 @@ today?
                       &=&  \$0.890 
 
 Relationship between bond prices and yields for zero-coupon bonds
------------------------------------------------------------------
+==================================================================
 
 * Real, not nominal, variables
 
@@ -116,11 +125,11 @@ Happy Meal Theorem of Bond Pricing
 
 * Consider a bond that at time :math:`t` promises to pay
 
-+---------+-----------+----------+---------+---------+---------+
-|  t      |    t+1    |   t+2    |   t+3   | ...     |  t+T    |
-+---------+-----------+----------+---------+---------+---------+
-|   0     |     c     |    c     |    c    |  ...    |  P+c    |
-+---------+-----------+----------+---------+---------+---------+
+      +---------+-----------+----------+---------+---------+---------+
+      |  t      |    t+1    |   t+2    |   t+3   | ...     |  t+T    |
+      +=========+===========+==========+=========+=========+=========+
+      |   0     |     c     |    c     |    c    |  ...    |  P+c    |
+      +---------+-----------+----------+---------+---------+---------+
 
 * The value of the bond at time :math:`t` is then
 
@@ -139,7 +148,7 @@ Happy Meal Theorem of Bond Pricing
     V_t = q_{t,t+1} \left( c + V_{t+1} \right)
 
 Forward Rates
--------------
+==============
 
 * With no uncertainty, the law of one price asserts that
 
@@ -187,11 +196,11 @@ A Three Period Coupon Bond Example
 
 * Bond issued at :math:`t=0` and is a riskless claim on stream
 
-+--------+---------+---------+
-|   0    |   1     |    2    |
-+--------+---------+---------+ 
-|   0    |   c     |   c+P   |
-+--------+---------+---------+
+      +--------+---------+---------+
+      |   0    |   1     |    2    |
+      +========+=========+=========+ 
+      |   0    |   c     |   c+P   |
+      +--------+---------+---------+
 
 * Again, :math:`c` is the coupon and :math:`P` is the principal or par value
 
@@ -206,7 +215,7 @@ A Three Period Coupon Bond Example
     V_1 = q_{1,2}(c+P)
 
 Value of a Call Option
-----------------------
+=======================
 
 * At :math:`t=0`, you purchase the right to buy the bond at :math:`t=1` at a price :math:`P`.
 
@@ -332,7 +341,7 @@ then the value of the call is zero.
      q_{1,2}(H) = q_{1,2}(L) = \frac{P}{P+c}
 
 Pricing a Callable Bond
------------------------
+=======================
 
 * Consider
 
@@ -472,7 +481,7 @@ What's the price of a 5-20 bond?
 * If a callable bond always sells for less than a non-callable bond, why would a government ever issue a callable bond?
 
 Using the G. B. C. to Price Government Debt
--------------------------------------------
+============================================
 
 * The price of a bond is the discounted present value of the stream of promised
     payments
@@ -508,7 +517,7 @@ Bond Returns
       1+r_{t,t+1} = \frac{C + V_{t+1}}{V_t}
 
 Recorded Government Interest Payments
--------------------------------------
+======================================
 
 * What the Bureau of the Public Debt reports as its nominal interest payments
     - discount the bills

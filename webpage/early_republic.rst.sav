@@ -1,0 +1,1020 @@
+.. _early_republic:
+
+********************************
+The Early Republic: 1792 to 1812
+********************************
+
+Rough Partition
+===============
+
+* Two groups
+
+   1. Federalists -- Hamilton, Adams
+   2. Republicans -- Jefferson, Gallatin, Madison
+
+* Two periods
+
+    1. 1790-1801 Washington and Adams
+    
+        * Dewey, chapter V.
+
+    2. 1801-1812 Jefferson and Madison
+
+        * Dewey, chapter VI.
+
+
+Fiscal/Monetary Debates
+-----------------------
+
+* Revenue: The Role of Tariffs
+
+     * source of revenue
+     * industrial policy: "picking winners and losers"
+     * foreign policy tool
+
+* Expenditures
+     * standing army and navy
+     * internal improvements
+
+* Role of Public Debt
+     * a "blessing" or an "evil"?
+
+* Central Banking
+
+Hamilton's Vision
+------------------
+
+* Political: Strong federal government
+
+      * Washington's Aide de Camp in Revolution -- saw first-hand impact of underfunded military
+      * wanted the monied interests to support a strong Federal government.
+
+* Financial development
+
+      * create a liquid store of value
+      * strong banking system
+
+* Diversified economy
+
+      * use tariffs to provide protection to U.S. manufacturing
+
+* Strong ties to Europe, particular Britain
+
+Jefferson's Vision
+------------------
+
+* Wanted to avoid what he viewed as grievous flaws of the British and European system
+
+     * monarchy
+     * luxury
+     * rigid class system
+     * financial corruption
+     * military adventurism
+     * heavy tax burden
+
+* Wanted U.S. to remain predominately rural with an economy based on agriculture
+
+*While we have land to labour then, let us never wish to see our citizens occupied at the work
+bench, or twirling a distaff ... Let our workshops remain in Europe.*
+
+* Narrow interpretation of the constitution, limited role for the federal government
+
+* Strong proponent of free trade.
+
+     * export agricultural goods
+     * import manufactured goods
+
+* Use trade to reshape the U.S. relationship with Europe, particularly Britain.
+
+* U.S. future is to the west, not back to Europe. (Gallatin)
+
+* Government Revenue by Type as a Share of GDP
+
+*  put here revenue_1791_1812.ps
+
+* Federal Government Expenditures by Type as a Share of GDP
+
+* put here expenditures_1791_1812.ps
+
+Federal Receipts and Expenditures
+---------------------------------
+
+* Receipts
+
+     * customs made up bulk on all revenues.
+     * little revenue from land sales
+     * drop in revenue in 1809 (Jefferson's trade embargo).
+
+* Expenditures
+
+     * largely for military and interest payments
+     * big spikes for Bank of U.S. and Louisiana Purchase
+
+Expenditures: Federalists, 1790-1801
+------------------------------------
+
+* With the "grand bargain" of 1789-1790, expenditures jump.
+
+     * In ten years, federal government ten times larger
+
+* By 1795
+
+     * 40 percent of expenditures going to army and navy
+     * 40 percent going to interest payments.
+
+* Country is growing rapidly, so :math:`G/Y` or :math:`G/POP` steady
+
+* Both Washington and Adams had to borrow to cover expenditures.
+
+
+* Federal Expenditure by Type
+
++------+----------+-----------+-------------+----------+---------------+--------------+
+| Year |  Indians | War+Navy  | Interest    | Pensions | Miscellaneous | Total        |
++======+==========+===========+=============+==========+===============+==============+
+| 1788 | \$15,677 | \$200,699 | \$1,054,000 | \$72,178 | \$98,562      | \$1,441,117  |
++------+----------+-----------+-------------+----------+---------------+--------------+
+| 1789 |   22,385 |    81,266 |      90,721 |      817 |        52,922 |     248,112  | 
++------+----------+-----------+-------------+----------+---------------+--------------+
+| 1791 |   27,000 |   632,804 |   1,177,863 |  175,813 |     1,083,971 | 3,097,452    |
++------+----------+-----------+-------------+----------+---------------+--------------+
+| 1795 |   23,476 | 2,891,472 |   2,947,059 |   68,673 |     1,378,921 | 7,309,601    |
++------+----------+-----------+-------------+----------+---------------+--------------+
+| 1800 |       31 | 6,009,595 |   3,402,601 |   64,131 |     1,337,613 | 10,813,970   |
++------+----------+-----------+-------------+----------+---------------+--------------+
+
+* Per Capita Federal Expenditure by Type
+
+* put here per_cap_pre1790_expenditures.ps
+ 
+* put here per_cap_expenditures_1791_1805.ps
+
+Revenue: Federalists, 1792-1800
+-------------------------------
+
+* Under the new constitution, the federal government gets control of customs revenue.  But ... 
+
+   by 1791 clear that more revenue was needed to cover military and interest expenditures
+
+
+* Hamilton proposed a set of taxes on luxuries and "indulgences"
+
+    * bitter opposition
+    * direct taxes?
+
+* Whiskey excise tax was passed
+
+    * a poor man's necessity?
+    * very little revenue
+
+* 1794:  Whiskey Rebellion
+
+    * Western Pennsylvania
+    * President Washington sent troops to suppress the rebelion
+    * Gallatin is outraged
+
+* 1794 carriage tax
+
+* 1797 Stamp tax on legal documents
+
+* Running primary surpluses; but gross deficits!!
+
+* Federal Revenue by Source
+
++-------+-------------+------------------+---------------+---------------+-------------+
+| Year  | Customs     | Internal Revenue | Sale of       | Miscellaneous | Total       |
++-------+-------------+------------------+---------------+---------------+-------------+
+|       |             | + Direct Taxes   | Public Lands  |               |             |
++=======+=============+==================+===============+===============+=============+
+|  1788 |     ---     | \$1,303,435      | ---           | \$79,555      | \$1,382,989 |
++-------+-------------+------------------+---------------+---------------+-------------+
+|  1789 |         --- | 178,461          | ---           | 54,470        | 232,931     |
++-------+-------------+------------------+---------------+---------------+-------------+
+|  1791 | \$4,399,473 | ---              | ---           | 10,478        | 4,409,951   |
++-------+-------------+------------------+---------------+---------------+-------------+
+|  1795 | 5,588,461   | 337,755          | ---           | 188,318       | 6,114,535   |
++-------+-------------+------------------+---------------+---------------+-------------+
+|  1800 | 9,080,932   | 1,543,621        | \$444         | 223,752       | 10,848,749  |
++-------+-------------+------------------+---------------+---------------+-------------+
+
+* Per Capita Federal Revenue by Type
+
+* put here per_cap_pre1790_receipts.ps
+
+* put here per_cap_revenue_1791_1805.ps
+
+Tariff Policy:  Tariff of July 4, 1789
+--------------------------------------
+
+* Preamble
+
+*Whereas it is necessary for the support of the government for the discharge
+of the debts of the United States, and the encouragement and protection of
+manufactures that duties by laid ...*
+
+* Manufacturers in the northeast wanted protection.  Farmers and settlers in South and West wanted low tariffs.
+
+* Rates higher for items brought in on foreign ships than on U.S. ships.
+
+* Federal Gross and Primary Deficits as a Share of GDP
+
+* put here primary_deficit_to_gdp_1791_1810.ps
+
+Tariffs for revenue or foreign policy?
+--------------------------------------
+
+* Revenue
+
+     * 1795: 91\% of revenue from tariffs
+     * largely from Britain
+
+* Internal revenue unpopular and difficult (Whiskey Rebelion)
+
+* Federalists:  tariffs for revenue and protection of some industries
+
+* Republicans: use trade to reshape the U.S. relationship to Europe, particularly Britain.
+
+The European war and Customs
+----------------------------
+
+* Under the mercantile system, most European colonies
+
+     * were forbidden to trade with other nations
+     * trade was forbidden on foreign ships.
+
+* From 1792 to 1815 Europe was engaged in a series of wars.
+
+     * British Navy controlled the seas
+     * France and Spain find it too dangerous to use their own ships to carry goods between their Caribbean colonies and Europe
+
+* The U.S. is neutral
+
+     * *re-export trade* or *carry trade*
+     * broken voyages: islands -to- US - to - Europe
+     * Gordon Wood's discussion is excellent
+
+* British Rule of 1756: trade prohibited during peace is prohibited during war
+
+     * set up a conflict between the U.S. and Britain
+
+* Both Federalists and Republicans want U.S. to remain neutral
+
+* Republicans: U.S. has right to trade with belligerents without restraint or restrictions.
+
+     * "free ships made free goods"
+     * willing to go to war over this
+
+Expenditures: Standing Army and Navy
+------------------------------------
+
+* From 1792 to 1815 Europe was engaged in a series of wars.
+
+     * Britain and France
+     * essentially every European nation was drawn in
+
+* Federalists determined to have a strong central government which would command respect from its own citizens and from foreign governments.
+
+     * Saw need for an army and navy adequate for defense, but also offense.
+
+Navy
+----
+
+* Both England and France had 200 ship navies
+
+      * including dozens of "ships of the line"
+
+* In 1794 modest shipbuilding program: 6 frigates
+
+       * USS *Constitution* 
+       * USS *Constellation* 
+       * USS *United States*
+       * USS *President*
+       * USS *Congress* 
+       * USS *Chesapeake*
+       
+* put here pitcure of USS Constitution
+
+* Republicans did not want a standing army
+
+     * With standing army, more likely to get involved in European war
+     * believed in "citizen-army" (e.g. Second Amendment)
+     * Neither Jefferson nor Madison nor Gallatin fought in the Revolution
+
+* Republicans wanted a navy of small inexpensive gunboats to protect the shoreline.
+
+     * did not want seafaring vessels
+     * how are they going to backup "free ships made free goods"?
+
+* Gallatin in 1801
+
+*pretended tax preparations, treasure preparations, and army preparations against contingent
+wars tend only to encourage wars*
+
+Expenditures: Internal Improvements
+-----------------------------------
+
+* In today's language, infrastructure.
+
+* U.S. a young, undeveloped nation
+
+    * Primitive transportation system made it difficult, if not impossible, for farmers and others to move their goods to market.
+
+    * Roads were rough and unreliable.
+
+    * Transportation by rivers was often impossible due to waterfalls and rapids.
+
+* Want roads and canals
+
+* Different visions of America put forward
+
+* Dividing line in debates not so clear
+
+     * George Washington has a vision
+     * Jefferson and Gallatin put forward a plan -- includes "I-95"
+
+* Constitutional issues: who should pay: federal government? state government?
+
+* Is the Union a mere confederation of states or is it a national government?
+
+* More on this later
+
+Bank of the United States
+-------------------------
+
+* December 13, 1790 Hamilton puts forward plan for a federal bank
+ 
+     * increase the money supply
+     * easier for the federal government to borrow 
+     * easier for private citizen to borrow, pay taxes.
+
+* Federal Charter on February 25, 1791
+
+     * 20 years
+     * \$10,000,000 capital stock, 1/5 from the federal government
+
+* Central bank opened December 12, 1791 in Philadelphia
+
+     * 8 branches
+     * capitalization: spike in 1792 expenditures
+
+* Madison and Jefferson were strongly opposed in 1791
+
+     * unconstitutional
+     * no long term loans to agriculture
+     * monopoly power seen as anti-democratic
+     * foreign ownership
+
+* create link for the following footnote -- Jefferson, Madison, and Gallatin all changed their tunes. In 1832, Madison and
+Gallatin supported Clay against Jackson!
+
+Debt Policy Under the Federalists
+----------------------------------
+
+* Despite all the new revenue,  debt (face value) grew
+
+      * 1791: \$75,463,000
+      * 1795:   80,748,000
+      * 1801:   83,038,000
+
+* "Fiscal space"
+
+* Due to strong economic growth, debt-to-GDP ratio fell
+
+      * 1791  37\%
+      * 1795  21\%
+      * 1801  16\%
+
+* Federal Debt by Type: 1790-1812
+
+* put here debt_decomp_1792_to_1812.ps
+
+* Debt-to-GDP Ratio: 1791-1820
+
+* put here debt_to_gdp_1791_1820.ps
+
+* Inflation and GDP Growth
+
+* put here inflation_gdpgrowth_1790_1810.ps
+
+* George: eventually, let's get at least the inflation numbers for the UK and link to Napoleonic wars.
+
+* During the 1790 short-term borrowing from the Bank of the United States
+
+* Long-term borrowing
+
+* Sinking fund
+
+* Foreign debt was paid off in 1808 % See page 114 and 115 of Schultz
+
+
+Hamilton's View on Debt
+-----------------------
+
+* Hamilton in 1781
+
+*A national debt, if it is not excessive, will be to us a national blessing.*
+
+* Political support for a strong federal government
+
+* government bonds provide liquidity to the private sector
+
+     * how do you store wealth from one period to the next?
+
+Gallatin's Critique of Hamilton 
+-------------------------------
+
+* 1796: Writes *A Sketch of the Finances of the United States one year after joining Congress
+
+* National debt as no legitimacy and produces endless mischief
+
+    * corruption of public morals
+    * excessive military establishment
+    * financial class favored by the government
+
+the same system the British had ...
+
+* The national debt rose from \$75 million in 1789 to \$85  million in 1796
+
+     * no recognition of the "debt/GDP" ratio
+
+* Critical of assumption of state debts
+
+* argued would not cement the bonds of national union
+
+* "Experience shown that the additional debt laid upon the Union by the assumption, so far from
+strengthening government, has created more discontent and more uneasiness than any other measure"
+
+* *Sketch* is a call to extinguish the debt
+
+* Later in life Gallatin states
+
+*a public debt was always an evil to be avoided whenever practical; hardly ever justifiable
+except in time of war.*
+
+Election of 1800: The Republican Revolution
+===========================================
+
+* Federalists self-destruct
+
+* Jefferson becomes president
+
+* Gallatin become Secretary of Treasury, Madison becomes Secretary of State
+
+Expenditures: Republicans, 1801-1812
+------------------------------------
+
+* At the outset of the Jefferson Adminstration desire to cut military expenditures as much as possible
+
+* France and Britain are at war
+
+    * American shippers are doing great business
+    * customs revenue is booming
+    * Gallatin viewed this situation as *temporary*
+
+* More on *temporary* versus *permanent* to come.
+
+* Federal Expenditure by Type
+
++------+----------+-----------+-------------+----------+---------------+--------------+
+| Year |  Indians | War+Navy  | Interest    | Pensions | Miscellaneous | Total        |
++======+==========+===========+=============+==========+===============+==============+
+| 1795 |   23,476 | 2,891,472 |  2,947,059  | 68,673   |  1,378,921    | 7,309,601    | 
++------+----------+-----------+-------------+----------+---------------+--------------+
+| 1800 |       31 | 6,009,595 |  3,402,601  | 64,131   |  1,337,613    | 10,813,970   | 
++------+----------+-----------+-------------+----------+---------------+--------------+
+| 1801 |   9,000  | 3,784,368 |  4,411,830  |  73,533  |  1,114,768    | 9,393,500    | 
++------+----------+-----------+-------------+----------+---------------+--------------+
+| 1802 |  94,000  | 2,094,710 |  4,239,172  | 85,440   |  1,462,929    | 7,976,252    | 
++------+----------+-----------+-------------+----------+---------------+--------------+
+| 1803 |  60,000  | 2,037,286 |  3,949,462  | 62,902   |  1,842,636    | 7,952,287    | 
++------+----------+-----------+-------------+----------+---------------+--------------+
+| 1804 |  116,500 | 2,065,257 |  4,185,049  | 80,093   |  2,191,009    | 8,637,908    | 
++------+----------+-----------+-------------+----------+---------------+--------------+
+| 1805 |  196,500 | 2,310,281 |  2,657,114  | 81,855   |  3,768,599    | 9,014,349    | 
++------+----------+-----------+-------------+----------+---------------+--------------+
+| 1806 |  234,200 | 2,873,977 |  3,368,968  | 81,876   |  2,890,137    | 9,449,158    | 
++------+----------+-----------+-------------+----------+---------------+--------------+
+| 1807 |  205,425 | 3,010,750 |  3,369,578  | 70,500   |  1,697,898    | 8,354,151    | 
++------+----------+-----------+-------------+----------+---------------+--------------+
+| 1808 |  213,575 | 4,784,902 |  2,557,074  | 82,576   |  1,423,286    | 9,061,413    | 
++------+----------+-----------+-------------+----------+---------------+--------------+
+| 1809 |  337,504 | 5,773,531 |  2,866,075  | 87,834   |  1,215,804    | 10,280,747   | 
++------+----------+-----------+-------------+----------+---------------+--------------+
+| 1810 |  117,625 | 3,948,568 |  3,163,671  | 83,744   |  1,101,145    | 8,414,753    | 
++------+----------+-----------+-------------+----------+---------------+--------------+
+| 1811 |  151,875 | 3,998,395 |  2,585,436  | 75,044   |  1,367,291    | 8,178,040    | 
++------+----------+-----------+-------------+----------+---------------+--------------+
+
+* Federal Government Expenditures by Type as a Share of GDP
+
+* put here expenditures_1791_1812.ps
+
+Louisiana Purchase
+==================
+
+* 1800 France acquires the Louisiana Territory west of the Mississippi from Spain in a secret treaty.
+
+* By early 1800s France's treasury depleted by its war with Britain
+
+      * North American holding costly to France, does not want to defend Louisiana
+      * Napoleon wants to strengthen the U.S. against the British
+
+* At first, the U.S. just wants to buy New Orleans, France wants to sell the whole thing
+
+* Treaty signed on May 2, 1802, reached Washington July 14, 1802.
+
+       * negotiated by Monroe and Livingston
+       * price \$15 million
+       * what has been the return on this investment?
+
+* This purchase is strongly opposed by the Federalists and states rights/narrow interpretation of
+the Constitution
+ 
+       * even Jefferson did not believe deal was constitutional
+
+Financing the Louisiana Purchase
+--------------------------------
+
+* \$15 million
+
+     * off the balance sheet
+          * \$15 million
+          * all other expenditures \$8 million
+
+* U.S. borrowed \$11.25 million, 6\% bonds, 15 year
+
+      * Baring Brothers
+      * 6\% coupon, 15 year bonds
+      * creditworthiness established by Hamilton paid off
+
+* paid \$3.75 owed by French debtors to U.S. creditors
+
+* Vote to authorize expenditure passed the House 59 to 57.
+
+* George: it would be great to have a party and regional breakdown if not too difficult to find.
+
+Revenue: Republicans, 1801-1812
+-------------------------------
+
+* American foreign trade boomed during the early part of the Jefferson Adminstration
+
+     * benefit of the European war
+
+* From 1801 to 1807 customs duties alone were more than sufficient to cover expenditures
+
+* Eliminate internal revenue
+
+* Federal Revenue by Source
+
++-------+-------------+------------------+---------------+---------------+-------------+
+| Year  | Customs     | Internal Revenue | Sale of       | Miscellaneous | Total       |
++-------+-------------+------------------+---------------+---------------+-------------+
+|       |             | + Direct Taxes   | Public Lands  |               |             |
++=======+=============+==================+===============+===============+=============+
+|  1795 |   5,588,461 | 337,755          | ---           | 188,318       |   6,114,535 | 
++-------+-------------+------------------+---------------+---------------+-------------+
+|  1800 |   9,080,932 | 1,543,621        | \$444         | 223,752       |  10,848,749 | 
++-------+-------------+------------------+---------------+---------------+-------------+
+|  1801 |  10,750,779 | 1,582,377        | 	 167,726     |  434,449      |  12,935,331 | 
++-------+-------------+------------------+---------------+---------------+-------------+
+|  1802 |  12,438,236 |   828,464 	     |  188,628      |   1,540,466   |  14,995,794 | 
++-------+-------------+------------------+---------------+---------------+-------------+
+|  1803 |  10,479,418 |   287,059 	     |  165,676      | 131,945 	     |  11,064,098 | 
++-------+-------------+------------------+---------------+---------------+-------------+
+|  1804 |  11,098,565 |   101,140 	     |  487,527      | 139,076 	     |  11,826,307 | 
++-------+-------------+------------------+---------------+---------------+-------------+
+|  1805 |  12,936,487 |    43,630 	     |  540,194      |  40,382 	     |  13,560,693 | 
++-------+-------------+------------------+---------------+---------------+-------------+
+|  1806 |  14,667,698 |    75,865 	     |  765,246      |  51,122 	     |  15,559,931 | 
++-------+-------------+------------------+---------------+---------------+-------------+
+|  1807 |  15,845,522 |    47,784 	     |  466,163      |  38,550 	     |  16,398,019 | 
++-------+-------------+------------------+---------------+---------------+-------------+
+|  1808 |  16,361,551 |    27,349 	     |  647,939      |  21,823 	     |  17,058,662 | 
++-------+-------------+------------------+---------------+---------------+-------------+
+|  1809 |   7,257,507 |    11,552 	     | 442,252       |  62,163       |   7,773,473 | 
++-------+-------------+------------------+---------------+---------------+-------------+
+|  1810 |   8,583,309 |    19,879 	     | 696,549       |  84,477       |   9,384,214 | 
++-------+-------------+------------------+---------------+---------------+-------------+
+|  1811 |  13,313,223 | 	9,963 	     | 1,040,238     |  59,211       |  14,422,634 | 
++-------+-------------+------------------+---------------+---------------+-------------+
+
+* Government Revenue by Type as a Share of GDP
+
+* put here revenue_1791_1812.ps
+
+Jefferson Trade Policy
+----------------------
+
+* Jefferson wanted the U.S. to be agricultural economy without manufacturing
+
+* Needed free trade to sell U.S. agricultural goods
+
+* U.S. is no longer a British colony, now treated like a foreign country
+
+* But the U.S. was dependent on Britain for commerce.
+
+* In Jefferson's mind
+
+      * agriculture = necessities
+      * manufactured goods = luxuries or superluities
+      * therefore the U.S. had Britain over a barrel
+
+* Britain Flexes Its Muscles
+
+* 1805 Royal Navy began
+
+      * seizing U.S. merchant ships engaged in broken voyages.
+      * British presumption that it had the right to decide what American trade was permissible and what was not.
+      * impressment into Royal Navy of sailors on U.S. ships
+
+* For Republicans impressment is a raw issue ...
+
+      * ... but even Gallatin conceded that many of those being impressed were actually British citizens (See Woods).
+
+* 1806 Britain Orders in Council
+
+      * European ports under French control were closed to foreign shipping unless the vessels first stopped in a British port.
+
+* June 22, 1807 HMS Leopard fired on the USS Chesapeake
+
+      * Jefferson declared British ships are "enemies"
+
+Jefferson's Trade Embargo
+=========================
+
+* December 18, 1807 President Jefferson announces a trade embargo. Congress passes the Embargo Act.
+
+* Prohibited American ships from departing U.S. ports to engage in international trade.
+
+* Forbid U.S. exports
+
+      * foreign ships could bring imports into the U.S., but had to leave empty.
+
+* Wildly unpopular in New England, lots of smuggling
+
+* In January 1809  Congress passed and Jefferson signed a draconian enforcement act.
+
+* Embargo ended on March 4, 1809, the day James Madison took office.
+
+     * Non-intercourse Act of 1809
+     * Opened up trade with all nations except Britain and France
+
+* Value of Imports, Tariff Rates, and Tariff Revenue
+
+* put here tariff_three_scale_1790_1810.ps
+
+Gallatin: Public Lands and Internal Improvement
+===============================================
+
+* Gallatin's 1808 *Report on the Subject of Public Roads and Canals*
+
+* Share of Federal Revenue Derived from Land Sales}
+
+* put here land_sales_share_of_receipts_1790_1810.ps
+
+Debt Policy Under the Republicans
+----------------------------------
+
+* During the 1790 short-term borrowing from the Bank of the United States
+
+* Long-term borrowing:
+
+* Sinking fund
+
+* Foreign debt was paid off in 1808  See page 114 and 115 of schultz
+
+* Federal Debt by Type: 1790-1812
+
+* put here debt_decomp_1792_to_1812.ps
+
+* Debt-to-GDP Ratio: 1791-1820
+
+* put here debt_to_gdp_1791_1820.ps
+
+* End-of Year Balance Held at the Treasury as a Percentage of GDP
+
+* put here balance_in_treas_1791_1810.ps
+
+* Prices of Various Federal Bonds
+
+* put here three_bond_prices.ps
+
+End of the Bank of the United States
+------------------------------------
+
+* Bank continued to be unpopular (reasons did not change)
+
+    * unconstitutional
+    * no long term loans to agriculture
+    * monopoly power seen as anti-democratic
+    * foreign ownership
+
+* Gallatin now supports renewal of the chapter
+
+* Charter was not renewed in 1811
+
+Market Value vs Par Value of the Debt
+-------------------------------------
+
+* Par or Face Value
+
+     * the nominal dollars the bonds will pay at maturity.
+
+* The U.S. Treasury always reports the principal outstanding.
+
+     * Bonds that do not pay coupons sell at a discount.
+
+     * Bonds that pay regular coupons prior to maturity may sell for more or less than their face value depending on the current rate of interest relative to the coupon rate.
+
+* The par value of the debt answers the question:  how many dollars will the government ultimately have to pay in principal to bondholders?
+
+* The market value of the debt answers the question:  how much would it cost for the government now to purchase back its entire portfolio of debt?
+
+Nominal Government Budget Constraint
+------------------------------------
+
+* Recall we stated the government budget constraint as:
+
+.. math::
+       B_{t} = (1+r) B_{t-1} + G_t - T_t - \frac{M_t - M_{t-1}}{P_t}
+
+where
+
+.. math::
+G_t  & = &  \mbox{Government spending during period $t$} \\ 
+T_t  & = &  \mbox{Taxes collected during period $t$}  \\
+B_t  & = &  \mbox{End of period government debt}  \\ 
+P_t  & = &  \mbox{Price level (in dollars/goods)}  \\
+r    & = &  \mbox{Real interest rate}
+
+* Every variable is "real"
+
+     * denominated in goods, not dollars
+     * even the debt is real; not in dollars
+
+*Rewrite the government budget constraint so the debt is in dollars
+
+.. math::
+       P_t B_t  =  (1+r) P_t B_{t-1} + P_t G_t  - P_t T_t - (M_t - M_{t-1})
+
+.. math::
+       P_t B_{t-1}  = \mbox{The number of dollars the government owes at time $t$}
+
+* Now everything is nominal (except for :math:`r`)
+
+* Multiple first term on the right hand side by :math:`\frac{P_{t-1}}{P_{t-1}}`
+
+.. math::
+      P_t B_t  =  (1+r) \frac{P_t}{P_{t-1}} P_{t-1} B_{t-1} + P_t G_t  - P_t T_t + M_t - M_{t-1}
+
+.. math::
+      \frac{P_t}{P_{t-1}}  = \mbox{1 plus the inflation rate:  $1+\pi$}
+
+.. math::
+      P_t B_t  &=&   (1+r)(1+\pi)  P_{t-1} B_{t-1} + P_t G_t  - P_t T_t + M_t - M_{t-1}  \\ 
+               &=&   (1+i)  P_{t-1} B_{t-1} + P_t G_t  - P_t T_t + M_t - M_{t-1}
+
+.. math::
+      i  = \mbox{nominal interest rate: $i \approx r + \pi$}
+
+Debt-to-GDP Ratio
+------------------
+
+*Drop seignorage term and divide through by nominal GDP: :math:`P_t Y_t`
+
+.. math::
+     \frac{P_t B_t}{P_t Y_t} &=&  (1+i_t) \frac{P_{t-1} B_{t-1}}{P_t Y_t} +  \frac{P_t G_t  - P_t T_t}{P_t Y_t}  \\ 
+                             &=&  (1+i_t) \frac{P_{t-1} B_{t-1}}{P_t Y_t}\frac{P_{t-1} Y_{t-1}}{P_{t-1} Y_{t-1}} +  \frac{P_t G_t  - P_t T_t}{P_t Y_t}  \\ 
+                             &=&  (1+i_t) \frac{P_{t-1} Y_{t-1}}{P_{t} Y_{t}} \frac{P_{t-1} B_{t-1}}{P_{t-1} Y_{t-1}} +  \frac{P_t G_t  - P_t T_t}{P_t Y_t} \\ 
+                             &=&  (1+i_t) \frac{1}{1+\pi_t} \frac{1}{1+g_t}\frac{P_{t-1}B_{t-1}}{P_{t-1} Y_{t-1}} +  \frac{P_t G_t  - P_t T_t}{P_t Y_t}
+
+.. math::
+      \frac{B_t}{Y_t}  = (1+i_t-\pi_t-g_t) \frac{B_{t-1}}{Y_{t-1}} +  \frac{G_t  - T_t}{Y_t}
+
+* Quantity of the Federal Debt: Principal Outstanding and Market Value
+
+* put here par_and_market_value_debt.ps
+
+* So is :math:`B` the market value or the par value?
+
+    * It is the market value of the debt.
+
+Ratio of the Market Value to the Par Value of the Outstanding Debt
+\centerline{\psfig{file=ratio_market_to_par.ps,width=3.5in}}
+
+
+Why does the market value differ so much from the par value?}
+
+\begin{itemize}
+
+* Prices of four bonds associated with the 1790 refinancing of the debt
+  \begin{enumerate}
+* 6 percent stock of 1790
+* deferred 6 percent stock of 1790
+* 3 percent stock of 1790
+* exchanged 6 percent stock
+\end{enumerate}
+
+
+
+* The first three bonds had no maturity date (e.g., they were `consols').
+
+
+
+* The exchanged 6 percent stock was issued in 1812 and used to refinance the original 6
+    percent stock and deferred 6 percent stock; it also paid a 6 percent coupon but had a fixed
+    maturity of 12 years.
+
+\end{itemize}
+
+
+
+Why does the market value differ so much from the par value?}
+
+\begin{itemize}
+
+ * In the 1790s holders of Continental debt, state debt, and interest payments in arrears
+     were required to exchange their claims for these bonds in order to receive payment.
+
+
+
+* Example: an owner of a claim on \$100 of unpaid interest was required to exchange this
+    claim for \$100 in face value of the 3 percent stock.
+    \begin{itemize}
+    * If this claimant then wanted to sell this \$100 in face value of 3 percent stock on
+        the open market, he would receive  less than \$100.
+\end{itemize}
+\end{itemize}
+
+
+
+Prices of Bonds Issued Under the Act of August 4, 1790}
+\centerline{\psfig{file=three_bond_prices.ps,width=3.5in}}
+
+
+
+
+\begin{itemize}
+
+
+* Since the 6 percent stock traded around \$100, its face value,
+interest rates during this period appear to average about 6 percent.
+
+* After 1800, the 6 percent stock and the deferred 6 percent stock promised the identical
+    stream of payments and traded at the same prices
+     \begin{itemize}
+     * prior to 1800, the 6's paid coupons while the deferred 6's did not.
+     * prior to 1800, deferred 6's traded at prices below their face value.
+\end{itemize}
+
+* Since the 3 percent stock paid coupons that were half the value of the 6 percent stock,
+    the price of the 3 percent stocks is roughly half that of the 6 percent stocks.
+    \begin{itemize}
+
+    * Since these 3 percent stock accounted for between 20 and 35 percent of the
+        outstanding debt, these bonds alone lowered the market value of debt between 10 and 15
+        percent.
+\end{itemize}
+
+\end{itemize}
+
+
+
+Treasury Also Held Balances}
+
+\begin{itemize}
+* While the U.S. Treasury had outstanding debts, in order to manage its cash flow it
+    simultaneously held balances in species and bonds.
+    \begin{itemize}
+* balance rose and fell with the timing and relative size of revenues and expenditures.
+\end{itemize}
+
+
+
+* When appropriate we report the {\em net position of the Treasury}; in other words, the
+    different between the debt and the balance held by the Treasury.
+
+\end{itemize}
+
+
+
+Measuring Returns to Bondholders
+================================
+* Recall the one-period ex-post holding return for a bond is
+.. math::
+     1+r_{t,t+1} = \frac{C + V_{t+1}}{V_t}
+
+* Bondholders are compensated for lending money to the government
+
+     * explicitly through coupon payments;
+     * implicitly through capital gains and losses due to changes in interest rates and declining time to maturity.
+
+* Treasury reports its interest costs as
+
+.. math::
+     \mbox{year $t$ coupon payments} = \sum_{i=1}{N} q_t^i c^i
+
+where
+
+.. math::
+     N   & = &  \mbox{number of bonds outstanding}  | 
+     q_t^i  & = &  \mbox{quantity of bond $i$ outstanding at time $t$}  | 
+     c^i  & = &  \mbox{coupon rate of bond $i$}
+
+* Coupon Payments and Official Interest Payments
+
+* put here coupons_level.ps
+
+* The two series track each other quite closely.
+
+* In the early 1790s interest payments were low since much of the outstanding debt was "old
+    unfunded debt" which the government no longer paid coupons.  To receive coupon payments,
+    lenders needed to refinance their old debt into the new coupon-bearing debt.
+
+* After 1795 interest payments track the quantity of outstanding quantity of debt falling
+    between 1805 and 1812, and then doubling during the War of 1812, before falling again after
+    the war's conclusion.
+
+* To translate these coupon payments into a "rate of return" we divide both series by the
+    market value of the outstanding debt.
+
+* Coupon Payments and Official Interest Payments as a Percent of the Market Value of
+the Debt
+
+* put here coupons_return.ps
+
+* However this "rate of return" fails to capture the capital gains and losses.  If ask which value of
+
+* Recall we derived
+
+.. math::
+     \frac{B_t}{Y_t} = (1+i_t-\pi_t-g_t) \frac{B_{t-1}}{Y_{t-1}} +  \frac{G_t  - T_t}{Y_t}
+
+* The appropriate concept of a nominal return $i_t$ is the one that satisfies this equation.
+
+* Real and Nominal Returns to Bondholders
+
+* put here rate_of_return_1792_1825.ps
+
+* Decomposing the Evolution of the Debt/GDP Ratio
+
+.. math::
+     \frac{B_t}{Y_t} - \frac{B_{t-1}}{Y_{t-1}} =  i_t \frac{B_{t-1}}{Y_{t-1}} -\pi_t \frac{B_{t-1}}{Y_{t-1}} -g_t \frac{B_{t-1}}{Y_{t-1}}  +  \frac{G_t  - T_t}{Y_t}
+
+* The left hand side (LHS)  of equation is the change in the (market value of the) debt/GDP ratio from period
+    $t-1$ to period $t$.
+
+* The terms on the right hand side (RHS) how this ratio changes due to
+
+     * nominal returns
+     * inflation
+     * GDP growth
+     * ratio of the primary deficit to GDP
+ 
+* Contributions to Changes in the Debt-to-GDP Ratio
+
++-------+--------+-------+------+--------+------+------+--------+---------+
+| Year1 | Year 2 | start | end  | change |      |      |        |         | 
++=======+========+=======+======+========+======+======+========+=========+  
+| 1792  |  1796  | 33.8  | 14.6 | -19.2  | 0.6  | -7.3 |   -9.8 |   -2.6  |
++-------+--------+-------+------+--------+------+------+--------+---------+
+| 1797  |  1800  | 14.6  | 14.4 | -0.2   | 5.1  |  0.7 |   -2.7 |   -3.2  | 
++-------+--------+-------+------+--------+------+------+--------+---------+
+| 1801  |  1808  | 14.4  |  7.4 | -7.0   | 7.4  | -0.2 |   -3.1 |  -11.1  | 
++-------+--------+-------+------+--------+------+------+--------+---------+
+| 1809  |  1812  |  7.4  |  5.9 | -1.5   | 0.6  |  0.1 |   -1.4 |   -0.8  | 
++-------+--------+-------+------+--------+------+------+--------+---------+
+| 1792  |  1812  | 33.8  |  5.9 | -27.9  | 13.7 | -6.7 |  -17.1 |  -17.7  | 
++-------+--------+-------+------+--------+------+------+--------+---------+
+
+* The debt/GDP ratio ...
+
+      * falls sharply during Washington's second term
+
+            * strong GDP growth
+            * inflation
+  
+      * stays constant under Adams
+
+      * falls sharply under Jefferson
+
+            * primary surpluses
+            * high returns to bond holders
+
+* Means and Standard Deviations of Components to Debt-to-GDP Dynamics: 1792-1812}
+
++-------------------------------------------+-------+----------+
+|  Variable                                 | Mean  | Std Dev  | 
++===========================================+=======+==========+
+| Nominal Rate of Return                    | 5.24  | 6.27     | 
++-------------------------------------------+-------+----------+
+| Inflation                                 | 1.44  | 6.37     | 
++-------------------------------------------+-------+----------+
+| Real Rate of Return                       | 3.80  | 8.98     | 
++-------------------------------------------+-------+----------+
+| Real GDP growth                           | 4.89  | 2.93     | 
++-------------------------------------------+-------+----------+
+| :math:`100 \times` primary Deficit-to-GDP | -0.81 | 1.04     | 
++-------------------------------------------+-------+----------+
+
+

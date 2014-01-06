@@ -9,14 +9,19 @@ Your Credit Card Bill
 
 If you have a credit card, you get a bill each month.
 
+
+.. image:: _static/images/creditbill.jpg
+    :scale: 80%
+    :align: center
+
+
 Your balance this month is
 
 .. math::
-        \mbox{Balance this month}  &=&  \mbox{Balance last month} \\
-        && \; + \; \mbox{ Finance Charge} \\
-        && \; + \; \mbox{ New Purchases} \\
-        && \; - \; \mbox{ Payments}
-        :label: credit_card_lom
+        \mbox{New Balance}  &=&  \mbox{Previous Balance} \\
+        & + & \mbox{ Finance Charge} \\
+        & + & \mbox{ New Purchases} \\
+        & - & \mbox{ Payments}
 
 Let's re-write this as
 
@@ -87,9 +92,6 @@ Fiscal Data: Federal Government
 
    * National Income and Product Accounts (NIPA)
 
-NIPA vs Treasury/OMB
---------------------
-
 * NIPA
 
   * calendar year/quarter, 1929-present
@@ -130,49 +132,47 @@ Comparison Between Federal and State \& Local
 
 * State and local governments more directly involved in government purchases
 
-NIPA: Total Government Receipts and Expenditures as a Percent of GDP
---------------------------------------------------------------------
-
 .. figure:: _static/figures/all_gov_rec_exp.png
     :scale: 60%
-    
-NIPA: Total Government Expenditures Decomposed By Type
--------------------------------------------------------
+    :align: center
 
+    **NIPA: Total Government Receipts and Expenditures as a Percent of GDP**
+    
 .. figure:: _static/figures/all_gov_exp_decomp.png
     :scale: 60%
-
-NIPA: Federal Expenditures Decomposed By Type
----------------------------------------------
+    :align: center
+    
+    **NIPA: Total Government Expenditures Decomposed By Type**
 
 .. figure:: _static/figures/fed_gov_exp_decomp.png
     :scale: 60%
+    :align: center
 
-
-NIPA: State and Local Expenditures Decomposed By Type
------------------------------------------------------
+    **NIPA: Federal Expenditures Decomposed By Type**
 
 .. figure:: _static/figures/sl_gov_exp_decomp.png
     :scale: 60%
+    :align: center
 
-1790-1940: Federal Government Expenditures Decomposed By Type
--------------------------------------------------------------
+    **NIPA: State and Local Expenditures Decomposed By Type**
 
 .. figure:: _static/figures/fed_expend_decomp_1776_1940.png
     :scale: 60%
+    :align: center
 
-OMB: Federal Government Expenditures Decomposed By Type
--------------------------------------------------------
+    **1790-1940: Federal Government Expenditures Decomposed By Type**
 
 .. figure:: _static/figures/federal_expend_decomp_1940_2011.png
     :scale: 60%
+    :align: center
 
-OMB: Medicare and Social Security Spending
-------------------------------------------
+    **OMB: Federal Government Expenditures Decomposed By Type**
 
 .. figure:: _static/figures/Med_SS_per_GDP.png
     :scale: 60%
-
+    :align: center
+    
+    **OMB: Medicare and Social Security Spending**
 
 Revenue Side
 ------------
@@ -203,18 +203,17 @@ NIPA: Six principal categories
 
   * income on assets and government enterprises
 
-NIPA: Federal Revenues Decomposed By Type
-------------------------------------------
-
 .. figure:: _static/figures/fed_gov_rec_decomp.png
     :scale: 60%
-
-NIPA: State and Local Revenues Decomposed By Type
--------------------------------------------------
+    :align: center
+     
+    **NIPA: Federal Revenues Decomposed By Type**
 
 .. figure:: _static/figures/sl_gov_rec_decomp.png
     :scale: 60%
+    :align: center
 
+    **NIPA: State and Local Revenues Decomposed By Type**
 
 Revenue: Federal vs. State/Local
 --------------------------------
@@ -235,11 +234,12 @@ Revenue: Federal vs. State/Local
 
   * customs to internal revenue (income taxes)
 
-1790-1940: Federal Revenues Decomposed by Type
-----------------------------------------------
-
 .. figure:: _static/figures/fed_receipts_decomp_1776_1940.png
     :scale: 60%
+    :align: center
+    
+    **1790-1940: Federal Revenues Decomposed by Type**
+     
 
 Deficits and Surpluses
 ----------------------
@@ -268,17 +268,17 @@ cover all of its expenditures.
 
 The primary deficit ignores interest payments
 
-Federal Government Receipts and Expenditures as a Percentage of GDP
--------------------------------------------------------------------
-
 .. figure:: _static/figures/fed_expend_rev_gdp_1775_2011.png
     :scale: 60%
+    :align: center
 
-Federal Government Deficit as a Percentage of GDP
------------------------------------------------------
+    **Federal Government Receipts and Expenditures as a Percentage of GDP**
 
 .. figure:: _static/figures/federal_gross_deficit_1770_2011.png
     :scale: 60%
+    :align: center
+
+    **Federal Government Deficit as a Percentage of GDP**
 
 The Printing Press
 -------------------
@@ -331,11 +331,11 @@ Suppose the credit card balance is :math:`\$20,000`.  Is this a big balance?
 So we might be interested in the ratio of debt-to-income.  Let's call income :math:`Y`, and the ratio of
 debt-to-income :math:`\frac{B}{Y}`.
 
-Federal Debt to GDP Ratio
--------------------------
-
 .. figure:: _static/figures/long_total_fed_debt_to_gdp.png
     :scale: 60%
+    :align: center
+
+    **Federal Debt to GDP Ratio**
 
 A Digression on the U.S. Debt
 -----------------------------
@@ -431,7 +431,7 @@ But first, a few basics about money ...
 
 
 Velocity and the Quantity Theory of Money
-----------------------------------------=
+------------------------------------------
 
 Velocity, :math:`V`, measures how much money turns over each period.
 
@@ -565,7 +565,7 @@ Substitute for :math:`B_{t-2}`
 .. math::
    B_{t}  &=&  (1+r)^3 B_{t-3} + (1+r)^2\left( G_{t-2}  - T_{t-2} \right) + (1+r)\left( G_{t-1} - T_{t-1} \right)  + G_t  - T_t
 
-Keep going to the beginning of time (i.e. :math`t=0`)
+Keep going to the beginning of time (i.e. :math:`t=0`)
 
 .. math::
      B_{t} =  (1+r)^t B_{0} + \sum_{j=0}^{t} (1+r)^j \left( G_{t-j}  - T_{t-j} \right)

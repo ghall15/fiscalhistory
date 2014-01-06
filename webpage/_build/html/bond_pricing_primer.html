@@ -69,34 +69,44 @@
 </div></blockquote>
 </li>
 <li><p class="first"><em>Coupon</em> bonds promise a stream of payments.</p>
-</li>
-</ol>
-<table border="1" class="docutils">
+<blockquote>
+<div><table border="1" class="docutils">
 <colgroup>
 <col width="47%" />
 <col width="53%" />
 </colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">On date</th>
+<th class="head">I will pay you</th>
+</tr>
+</thead>
 <tbody valign="top">
-<tr class="row-odd"><td rowspan="2">On date</td>
-<td rowspan="2">I will pay you</td>
-</tr>
-<tr class="row-even"></tr>
-<tr class="row-odd"><td><span class="math">\(t_1\)</span></td>
+<tr class="row-even"><td><span class="math">\(t_1\)</span></td>
 <td><span class="math">\(c\)</span></td>
 </tr>
-<tr class="row-even"><td><span class="math">\(t_2\)</span></td>
+<tr class="row-odd"><td><span class="math">\(t_2\)</span></td>
 <td><span class="math">\(c\)</span></td>
 </tr>
-<tr class="row-odd"><td><span class="math">\(\vdots\)</span></td>
+<tr class="row-even"><td><span class="math">\(\vdots\)</span></td>
 <td><span class="math">\(\vdots\)</span></td>
 </tr>
-<tr class="row-even"><td><span class="math">\(T\)</span></td>
+<tr class="row-odd"><td><span class="math">\(T\)</span></td>
 <td><span class="math">\(c+P\)</span></td>
 </tr>
 </tbody>
 </table>
+</div></blockquote>
+</li>
+</ol>
 <p><span class="math">\(c\)</span> stands for <em>coupon</em>.</p>
 <p><span class="math">\(P\)</span> stands for <em>principal</em> or <em>par value</em> or <em>face value</em> of the bond.</p>
+<ul class="simple">
+<li>An example of a coupon bond</li>
+</ul>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/confederate_bond.jpg"><img alt="_images/confederate_bond.jpg" src="_images/confederate_bond.jpg" style="width: 540.0px; height: 480.0px;" /></a>
+<p class="caption"><strong>A Confederate Coupon Bonds</strong></p>
+</div>
 </div>
 <div class="section" id="present-value">
 <h3>Present Value<a class="headerlink" href="#present-value" title="Permalink to this headline">¶</a></h3>
@@ -161,11 +171,12 @@ r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
 </div>
 <div class="section" id="happy-meal-theorem-of-bond-pricing">
 <h3>Happy Meal Theorem of Bond Pricing<a class="headerlink" href="#happy-meal-theorem-of-bond-pricing" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>Happy meal: burger, fries, drink, toy</li>
-<li>Consider a bond that at time <span class="math">\(t\)</span> promises to pay</li>
-</ul>
-<table border="1" class="docutils">
+<ul>
+<li><p class="first">Happy meal: burger, fries, drink, toy</p>
+</li>
+<li><p class="first">Consider a bond that at time <span class="math">\(t\)</span> promises to pay</p>
+<blockquote>
+<div><table border="1" class="docutils">
 <colgroup>
 <col width="16%" />
 <col width="19%" />
@@ -174,14 +185,16 @@ r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
 <col width="16%" />
 <col width="16%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>t</td>
-<td>t+1</td>
-<td>t+2</td>
-<td>t+3</td>
-<td>...</td>
-<td>t+T</td>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">t</th>
+<th class="head">t+1</th>
+<th class="head">t+2</th>
+<th class="head">t+3</th>
+<th class="head">...</th>
+<th class="head">t+T</th>
 </tr>
+</thead>
+<tbody valign="top">
 <tr class="row-even"><td>0</td>
 <td>c</td>
 <td>c</td>
@@ -191,8 +204,10 @@ r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
 </tr>
 </tbody>
 </table>
-<ul class="simple">
-<li>The value of the bond at time <span class="math">\(t\)</span> is then</li>
+</div></blockquote>
+</li>
+<li><p class="first">The value of the bond at time <span class="math">\(t\)</span> is then</p>
+</li>
 </ul>
 <div class="math">
 \[\begin{split}V_t &amp;=&amp; c q_{t,t+1} + c q_{t,t+2} +  ... + c q_{t,t+T} + P q_{t,t+T} \\
@@ -254,29 +269,34 @@ r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
 </div>
 <div class="section" id="a-three-period-coupon-bond-example">
 <h3>A Three Period Coupon Bond Example<a class="headerlink" href="#a-three-period-coupon-bond-example" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>Bond issued at <span class="math">\(t=0\)</span> and is a riskless claim on stream</li>
-</ul>
-<table border="1" class="docutils">
+<ul>
+<li><p class="first">Bond issued at <span class="math">\(t=0\)</span> and is a riskless claim on stream</p>
+<blockquote>
+<div><table border="1" class="docutils">
 <colgroup>
 <col width="31%" />
 <col width="35%" />
 <col width="35%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>0</td>
-<td>1</td>
-<td>2</td>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">0</th>
+<th class="head">1</th>
+<th class="head">2</th>
 </tr>
+</thead>
+<tbody valign="top">
 <tr class="row-even"><td>0</td>
 <td>c</td>
 <td>c+P</td>
 </tr>
 </tbody>
 </table>
-<ul class="simple">
-<li>Again, <span class="math">\(c\)</span> is the coupon and <span class="math">\(P\)</span> is the principal or par value</li>
-<li>The time <span class="math">\(t=0\)</span> price of the bond is</li>
+</div></blockquote>
+</li>
+<li><p class="first">Again, <span class="math">\(c\)</span> is the coupon and <span class="math">\(P\)</span> is the principal or par value</p>
+</li>
+<li><p class="first">The time <span class="math">\(t=0\)</span> price of the bond is</p>
+</li>
 </ul>
 <div class="math">
 \[V_0 = q_{0,1} c + q_{0,2}(c+P)\]</div>
@@ -434,10 +454,10 @@ r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
 \[V_0 - V_0^{call}\]</div>
 <div class="section" id="example-20-year-coupon-bond">
 <h3>Example: 20 Year Coupon Bond<a class="headerlink" href="#example-20-year-coupon-bond" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>Suppose that this year (January 1, 2014) you purchase a 6% percent 2034 U.S. Treasury bond with a face value of $100.</li>
-</ul>
-<table border="1" class="docutils">
+<ul>
+<li><p class="first">Suppose that this year (January 1, 2014) you purchase a 6% percent 2034 U.S. Treasury bond with a face value of $100.</p>
+<blockquote>
+<div><table border="1" class="docutils">
 <colgroup>
 <col width="15%" />
 <col width="19%" />
@@ -447,15 +467,17 @@ r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
 <col width="13%" />
 <col width="11%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>2014</td>
-<td>2015</td>
-<td>2016</td>
-<td>2017</td>
-<td>...</td>
-<td>2033</td>
-<td>2034</td>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">2014</th>
+<th class="head">2015</th>
+<th class="head">2016</th>
+<th class="head">2017</th>
+<th class="head">...</th>
+<th class="head">2033</th>
+<th class="head">2034</th>
 </tr>
+</thead>
+<tbody valign="top">
 <tr class="row-even"><td>0</td>
 <td>6</td>
 <td>6</td>
@@ -466,9 +488,12 @@ r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
 </tr>
 </tbody>
 </table>
-<ul class="simple">
-<li>No uncertainty</li>
-<li>Apply the Happy Meal Theorem</li>
+</div></blockquote>
+</li>
+<li><p class="first">No uncertainty</p>
+</li>
+<li><p class="first">Apply the Happy Meal Theorem</p>
+</li>
 </ul>
 <div class="math">
 \[\begin{split}V_{2013} &amp;=&amp; q_{2013,2014} C + q_{2013,2015} C + q_{2013,2016} C + q_{2013,2033} ( C + P)\end{split}\]</div>
@@ -536,13 +561,19 @@ r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
 <div><ul class="simple">
 <li>CASE I:  Interest rate falls to 3 percent</li>
 </ul>
+<div class="math">
+\[V_{2019}^{.03} = \sum_{t=1}^{15}\frac{C}{(1+0.03)^t} + \frac{P}{(1+.03)^{15}}\]</div>
+<ul class="simple">
+<li>CASE II: Interest rate rises to 9 percent</li>
+</ul>
+<blockquote>
+<div><div class="math">
+\[V_{2019}^{.09} = \sum_{t=1}^{15}\frac{C}{(1+0.09)^t} + \frac{P}{(1+.09)^{15}}\]</div>
+</div></blockquote>
 </div></blockquote>
 </li>
-</ul>
-<div class="math">
-\[V_{2019}^{.03} = \sum_{t=1}^{15}\frac{C}{(1+0.03)^t} + \frac{P}{(1+.03)^{15}}\]\[- CASE II: Interest rate rises to 9 percent\]</div>
-<ul class="simple">
-<li>So what is our bond worth today in 2014?</li>
+<li><p class="first">So what is our bond worth today in 2014?</p>
+</li>
 </ul>
 <div class="math">
 \[V_{2014} =  \sum_{t=1}^{5}\frac{C}{(1+0.06)^t} + \pi \frac{V_{2019}^{.03}}{(1+.06)^5} + (1-\pi) \frac{V_{2019}^{.09}}{(1+.06)^5}\]</div>
@@ -670,17 +701,20 @@ the nominal stock of treasury bills?</em></p>
 </div>
 <div class="section" id="means-and-standard-deviations-of-returns">
 <h3>Means and Standard Deviations of Returns<a class="headerlink" href="#means-and-standard-deviations-of-returns" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="docutils">
+<blockquote>
+<div><table border="1" class="docutils">
 <colgroup>
 <col width="64%" />
 <col width="18%" />
 <col width="18%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>Variable</td>
-<td>Mean</td>
-<td>Std Dev</td>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Variable</th>
+<th class="head">Mean</th>
+<th class="head">Std Dev</th>
 </tr>
+</thead>
+<tbody valign="top">
 <tr class="row-even"><td>Official Interest/Debt</td>
 <td>5.20</td>
 <td>2.54</td>
@@ -699,6 +733,7 @@ the nominal stock of treasury bills?</em></p>
 </tr>
 </tbody>
 </table>
+</div></blockquote>
 </div>
 <div class="section" id="does-this-accounting-issue-matter">
 <h3>Does this Accounting Issue Matter?<a class="headerlink" href="#does-this-accounting-issue-matter" title="Permalink to this headline">¶</a></h3>
