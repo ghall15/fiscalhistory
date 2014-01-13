@@ -4,18 +4,22 @@
 The Government Budget Constraint
 *********************************
 
+As we mentioned in the previous lecture, government deficits (i.e. the difference between spending and tax revenues) imply an increase in the nation's public debt.
+
+Debts and deficits are linked through an equation called the government budget constraint.
+
+You may be familar with this is a relationship between the flow of deficit spending and the stock of debt from your credit card account.
+
 Your Credit Card Bill
 ======================
 
-If you have a credit card, you get a bill each month.
-
+If you have a credit card, you get a bill each month.  It probably looks something like this.
 
 .. image:: _static/images/creditbill.jpg
     :scale: 80%
     :align: center
 
-
-Your balance this month is
+Under the heading "Here is your Account Summary," the holder's new balance is determined by the equation:
 
 .. math::
         \mbox{New Balance}  &=&  \mbox{Previous Balance} \\
@@ -23,7 +27,7 @@ Your balance this month is
         & + & \mbox{ New Purchases} \\
         & - & \mbox{ Payments}
 
-Let's re-write this as
+Let's re-write this equation as
 
 .. math::
         B_t  =  B_{t-1} + r B_{t-1} + G_t - T_t
@@ -38,26 +42,31 @@ where we let
 
 * :math:`T` be payments.
 
+Before we proceed any further, let's recall the distinction between *stock* and *flow* variables.
+
 Stock Variables and Flow Variables
 ----------------------------------
 
-*Stock variables* are measured at a point in time.
+*Stock variables* are measured at a point in time.  In example of a stock variable is the location of your car on a highway.  At 1 o'clock on Tuesday you were at mile marker 43.
 
-*Flow variables* are measured over a period of time.
+*Flow variables* are measured over a period of time.  An example of a flow variable is the speed of your car -- measured in miles per hour.  Between 1 o'clock and 2 o'clock, you traveled 60 miles.
 
 So for your credit card
 
-* :math:`B` is a stock variable, and  
+* :math:`B` is a stock variable.  It is the quantity of debt you owe *at a particular point in time*.  
 
-* :math:`r B`,  :math:`G`, and :math:`T` are flow variables.
+* :math:`r B`,  :math:`G`, and :math:`T` are flow variables.  They represent how much you spent and paid *over a period of time*.
 
+We call equations that link flow variables to their corresponding stock variables, stock-flow equations.  
 
 The Government Budget Constraint
 ================================
 
-A sovereign government faces a budget constraint that
-must hold at each period, :math:`t`:
+Just as your credit card balance evolves from month to month, a sovereign government's debt evolves period to period according to a stock-flow equation we call
+the government budget constraint.
 
+At each date :math:`t`:, the following equation must hold.
+ 
 .. math::
         B_{t} =  B_{t-1} + r B_{t-1} + G_t + TR_t - T_t
 
@@ -70,51 +79,90 @@ where
    B_{t}  &=& \mbox{this period's } t \mbox{ government debt} \\
    r  &=& \mbox{real interest rate}
 
-Many macro textbooks write it this way
+You may have seen this equation in one form or another when you took macroeconomics.
+Many undergraduate macroeconomics textbooks write it this way
 
 .. math::
      B_{t} =  B_{t-1} + INT_t + G_t + TR_t - T_t
 
+With this equation in mind, let's take a stroll through the data.
+
+The Distinction Between Government Spending and Transfer Payments
+------------------------------------------------------------------
+
+*Government spending* is the government purchase of goods and services to XXXXX.  
+These goods and services are valued at their cost to the government.  Examples of government spending 
+include providing public education, building of roads, and providing of national defense.
+
+*Transfer payments* on the other hand is spending in which the government redistributes income.  
+the government does not provide a good or a service.  It simply writes check to a particular group.
+Example include crop subsidies, Social Security, and unemployment insurance.  
+
 Fiscal Data: Federal Government
 -------------------------------
 
-* Prior to 1790
+Federal government spending and revenue are determined by its annual budgets 
+passed by Congress and signed by the President.  Since 1934, these budget numbers 
+are reported by the `Office of Management and Budget (OMB)`_.
+
+.. _Office of Management and Budget (OMB): http://www.whitehouse.gov/omb/budget  
+
+Budget spending and revenue number are reported by the fiscal year.  
+
+The federal government operates on a fiscal year which begins on October 1 and ends on 
+September 30 of the next calendar year. 
+Prior to 1976, the federal fiscal year began on July 1 and ended on June 30.  
+
+The federal budget divides government spending by its function
+
+      since 1934, the  
+      
+          1. national defense
+          2. human resources
+          3. physical resources 
+          4. net interest
+
+
+Between 1790 and 1940, the U.S. Treasury reported the budget numbers.  These numbers are avialble
+from the `Annual Report of the Secretary of the Treasury on the State of the Finances`_.
+
+.. _Annual Report of the Secretary of the Treasury on the State of the Finances: http://fraser.stlouisfed.org/publication/?pid=194
+
+Prior to 1940 there were five primary (or top level) categories 
+      
+          1. war 
+          2. navy 
+          3. pensions
+          4. indians 
+          5. interest
+
+
+Government spending is also recorded in a second set of accounts: `the National Income and Product Accounts (NIPA)`_
+
+.. _the National Income and Product Accounts (NIPA): http://www.bea.gov/iTable/index_nipa.cfm
+
+Unlike the budget number reported by the OMB, the numbers reported by the NIPA are  
+
+  * from 1929 to the present
+  
+  * based on the calendar year/quarter, 
+
+  * consistent accounting with state and local government accounts as well as GDP
+  
+The three primary or top level categories are
+
+     1. Government consumption, :math:`G_t`
+
+     2. Transfer payments, :math:`TR_t`
+
+     3. Net interest payments, :math:`INT_t`
+
+Prior to the establishment of the Department of Treasury in 1790, 
 
   * constructed accounts from various reports
 
-* 1790-present
 
-   * U.S. Treasury (1790-1940)
 
-   * Office of Management and Budget (1934-present)
-
-* 1929-present
-
-   * National Income and Product Accounts (NIPA)
-
-* NIPA
-
-  * calendar year/quarter, 1929-present
-
-  * consistent accounting with state/local as well as GDP
-
-  * main spending categories
-
-     * Government consumption, :math:`G_t`
-
-     * Transfer payments, :math:`TR_t`
-
-     * Net interest payments, :math:`INT_t`
-
-* Treasury/OMB
-
-  * fiscal year
-
-  * spending divided by function
-
-      * pre-1940: war, navy, pensions, indians, interest, ...
-
-      * 1934-present: national defense, human resources, physical resources, net interest, ...
 
 Comparison Between Federal and State \& Local
 ---------------------------------------------
@@ -123,14 +171,6 @@ Comparison Between Federal and State \& Local
 
    * spending well over 1/3 of GDP.
 
-*  Current composition of the federal government budget is quite different from state and local budgets.
-
-   * One often hears
-
-     *The federal government is a gigantic insurance company 
-     with a side business in defense.*
-
-* State and local governments more directly involved in government purchases
 
 .. figure:: _static/figures/all_gov_rec_exp.png
     :scale: 60%
@@ -144,11 +184,33 @@ Comparison Between Federal and State \& Local
     
     **NIPA: Total Government Expenditures Decomposed By Type**
 
+
+*  Current composition of the federal government budget is quite different from state and local budgets.
+
+   * One often hears
+
+     *The federal government is a gigantic insurance company 
+     with a side business in defense.*
+
+* State and local governments more directly involved in government purchases
+
+
+
+
 .. figure:: _static/figures/fed_gov_exp_decomp.png
     :scale: 60%
     :align: center
 
     **NIPA: Federal Expenditures Decomposed By Type**
+
+During World War II, government consumption spending spikes
+
+Since World War II transfer payments have steadily grown as larger share 
+
+
+
+
+
 
 .. figure:: _static/figures/sl_gov_exp_decomp.png
     :scale: 60%
@@ -253,7 +315,7 @@ When this number is positive there is a budget deficit.
 
 When this number is negative there is a budget surplus.
 
-Change in the debt is equal to the deficit
+The change in the debt is equal to the deficit
 
 .. math::
   B_{t} - B_{t-1}  =  INT_t + G_t + TR_t - T_t
@@ -266,7 +328,9 @@ The *net-of-interest deficit* or *primary deficit* is
 The total or gross deficit tells the amount the government must borrow to
 cover all of its expenditures.
 
-The primary deficit ignores interest payments
+The primary deficit ignores interest payments.
+
+Recall the two graphs we saw in the previous lecture.
 
 .. figure:: _static/figures/fed_expend_rev_gdp_1775_2011.png
     :scale: 60%
@@ -283,11 +347,13 @@ The primary deficit ignores interest payments
 The Printing Press
 -------------------
 
-Since the signing of the U.S. Constitution, the Federal government can raise revenue by issuing money.
+Since the signing of the U.S. Constitution, 
+the federal government can raise revenue by issuing money.  As we will see in a few lectures,
+this power has been hotly contested.
 
-   State and local governments can not.
+   The U.S. Consitution explicitly states that state and local governments can not issue their own money.
 
-For the Federal government
+Therefore the federal government's budget constriant becomes
 
 .. math::
   B_{t}  =  B_{t-1} + r B_{t-1} + G_t + TR_t - T_t  - \frac{M_t - M_{t-1}}{P_t}
@@ -301,30 +367,29 @@ where
 
 This additional term is called *seignorage* or the inflation tax.
 
-So the government budget constraint becomes
-
-.. math::
-    B_{t}  &=&  B_{t-1} + r B_{t-1} + G_t + TR_t - T_t  - \frac{M_t - M_{t-1}}{P_t}
-
-Write it as
+Let's re-write the budget constraint as
 
 .. math::
     B_{t}  -  B_{t-1} + \frac{M_t - M_{t-1}}{P_t}  =  r B_{t-1} + G_t + TR_t - T_t
 
-Decisions about :math:`G_t`, :math:`TR_t` and :math:`T_t` are called *fiscal policy*
+It is common parlance to state that:
 
-Decision about :math:`B_t` and :math`M_t` are called *monetary policy*.
+      Decisions about :math:`G_t`, :math:`TR_t` and :math:`T_t` are called *fiscal policy*
+
+      Decision about :math:`B_t` and :math:`M_t` are called *monetary policy*.
+      
+It is clear from the government budget constraint that these two policies are inherently intertwined.      
 
 Debt-to-GDP Ratio
 =================
 
-Suppose the credit card balance is :math:`\$20,000`.  Is this a big balance?
+Suppose the credit card balance is $20,000.  Is this a big balance?
 
 * Well it depends
 
-  * If your annual income is :math:`\$15,000`, then yes.
+  * If your annual income is $15,000, then yes.
 
-  * If your annual income is :math:`\$1,500,000`, then no.
+  * If your annual income is $1,500,000, then no.
 
 * It also depends on how fast your income is growing.
 
@@ -340,26 +405,66 @@ debt-to-income :math:`\frac{B}{Y}`.
 A Digression on the U.S. Debt
 -----------------------------
 
-See the `U.S. Treasury Monthly Statement of the Public Debt
+Each month, the Bureau of the Public Debt within the U.S. Treasury 
+publishes the `U.S. Treasury Monthly Statement of the Public Debt
 <http://www.savingsbonds.gov/govt/reports/pd/mspd/mspd.htm>`_.
 
-* Marketable Debt
+In this statement, the total outstanding
+debt is partitioned two different ways: 
 
-  * Treasury bills, notes, and bonds
+    1. marketable and non-marketable; and
 
-  * can be bought and sold on secondary markets
+    2. held by the public and held within the government.  
+    
+After being issued by the Treasury, ownership of marketable securities
+can be transferred through purchases and sales in the secondary
+market.  Marketable securities are largely made up of Treasury bills,
+notes, bonds, and Treasury Inflation-Protected Securities (TIPS).  
 
-* Non-marketable Debt
+In contrast, non-marketable securities are registered to the owner and
+cannot be sold in the secondary market, though typically they can be
+redeemed on demand. 
 
-  * no secondary market -- saving bonds,  state and local governments
+Yields on nonmarketable securities are set
+administratively, usually by a formula based on the returns for
+marketable debt.  
 
-* Held by the Public
+The nonmarketable debt held by the public is largely
+held by small investors in the form of savings bonds (U.S. Savings
+Securities) or by state and local governments who by law must hold the
+proceeds from their own debt issues in Treasury debt until they use
+the funds.  
 
-  * you, me, China
+The largest share of the nonmarketable debt,
+is held  in the "Government Account Series", a collection of bonds
+mostly held by the Social Security trust fund.
 
-* Held inside the government
+While  marketable securities today represent the lion's share of the
+debt held by the public, this has not always been the case.  I
 
-  * Social Security Trust Fund
+In the figure below, we plot the debt-GDP ratio for three
+different measures of the debt: 
+
+     1.  the marketable debt held by the public; 
+     
+     2. the sum of the marketable and the nonmarketable debt held
+     by the public; and 
+     
+     3. the total outstanding debt.  
+     
+Over the entire period, marketable debt has averaged about 80 percent of the total
+debt held by the public (i.e the ratio of the solid-blue line to the
+dashed-red line).  
+
+Early in the sample, this ratio was about
+two-thirds, and it has steadily increased over time. 
+
+Nonmarketable
+savings bonds and Victory loans played a much larger role in Treasury
+borrowing during World War II and the Korean War than they do today.
+
+Our focus on the government budget constraint compels us to concentrate
+on the debt held by the public.  
 
 The Evolution of the Debt to GDP Ratio
 ---------------------------------------
@@ -412,11 +517,12 @@ In other words, which paths of :math:`B/Y` are stable? which are explosive?
 
 Consider two cases
 
-1. :math:`g>r`
+1. :math:`g>r` (i.e. the growth rate of GDP exceeds the interest rate)
 
-2. :math:`g \le r`
+2. :math:`g \le r` (i.e. the growth rate of GDP is less than the interest rate)
 
 If :math`g > r`, the debt-to-GDP ratio will not blow up.
+
 So a government can sustain persistent deficits as long as growth
 in output is greater than the real interest rate.
 
@@ -428,7 +534,6 @@ Seignorage
 ---------------
 
 But first, a few basics about money ...
-
 
 Velocity and the Quantity Theory of Money
 ------------------------------------------
@@ -491,19 +596,24 @@ Deficits and Inflation
 
 * The revenue that a government raises by printing money is called *seignorage*.  This is the inflation tax.
 
-* Revolutionary War
+Typically in the United States seignorage is only a trival share of government revenue.  
+But as we will see, during the Revolutionary War, seignorage comprised
 
-* A great quote by John Maynard Keynes
+* A great quote by John Maynard Keynes in his 1919 book `The Economic Consequences of the Peace`_, page 235
 
         Lenin is said to have declared that the best way to destroy the
         capitalist system was to debauch its currency.  By a continuing
         process of inflation, governments can confiscate, secretly and
-        unobserved, an important wealth of their citizens.
+        unobserved, an important wealth of their citizens. By this method 
+        they not only confiscate, but they confiscate arbitrarily; and, 
+        while the process impoverishes many, it actually enriches some.
+        
+.. _The Economic Consequences of the Peace: http://books.google.com/books?id=AX1EAAAAIAAJ&dq=John+Maynard+Keynes,+The+Economic+Consequences+of+the+Peace&source=gbs_navlinks_s
 
 Real seignorage and inflation
 ------------------------------
 
-Consider our all-currency economy. No government debt.
+Consider our all-currency economy with no government debt.
 
 If the velocity of money is fixed and output is fixed, so real money demand is constant. Then 
 

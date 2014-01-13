@@ -3,11 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Fiscal History's documentation!
-==========================================
+This website presents a series of lectures on the history of the United States
+through decisions at the federal and state levels on taxes, spending,
+and debts.  These lectures were designed and written by `George J. Hall`_ and `Thomas J. Sargent`_.
 
-Contents:
+.. _George J. Hall: http://people.brandeis.edu/~ghall/
 
+.. _Thomas J. Sargent: https://files.nyu.edu/ts43/public/
+
+
+Table of Contents:
+------------------
 .. toctree::
    :maxdepth: 2
    

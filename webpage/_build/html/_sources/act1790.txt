@@ -287,7 +287,7 @@ Par Value vs. Market Value of Debt
 
 * *Market value* is how much it would cost to buy all the debt outstanding
 
-     * value every bond :math:`i` at its current market price (i.e. :math`V^i_t`)
+     * value every bond :math:`i` at its current market price (i.e. :math:`V^i_t`)
      * total market value it is :math:`\sum_{i}  V^i_t \times P^i`
 
 * We will do an example.
@@ -442,6 +442,7 @@ State Debts
 
 * Record keeping was not always carefully done.
 
+   
      +----------------+--------------------+---------------------+---------------+
      |  State         |  Hamilton's        | Authorized in       |  Actually     |
      +                +                    +                     +               +
@@ -475,6 +476,169 @@ State Debts
      +----------------+--------------------+---------------------+---------------+
      | Total          |  \$25,000,000      |   \$21,500,000      | \$18,271,787  |
      +----------------+--------------------+---------------------+---------------+
+
+
+The framers' hatred of paper money
+==================================
+
+The framers of the U.S. Constitution wanted to prevent the U.S. and the states from issuing and repudiating a currency again.
+
+An earlier draft of the Constitution had actually given the Congress substantially more authority than that, including the right to issue bills of credit.
+
+On the morning of August 16, 1787, the eighth clause of the seventh article in the draft of the constitution said
+that "The legislature of the United States shall have the power to borrow money and emit bills on the credit of the United States."   
+
+`Madison\`s notes of the convention\`s proceedings on August 16, 1787`_  record a debate about a motion 
+to strike out the clause authorizing congress to emit bills of credit, 
+excerpts that impress us for their sophistication in
+
+.. _Madison\`s notes of the convention\`s proceedings on August 16, 1787: http://avalon.law.yale.edu/18th_century/debates_816.asp
+
+   1. stressing the *ex ante* advantages in terms of promoting credit to be reaped by denying future 
+   government decision makers the authority to take actions that *ex post*  would occasionally tempt 
+   them (James Wilson)  
+   
+   2. appreciating  advantages of reserving for future decision makers the flexibility to deal with 
+   unforeseeable contingencies (George Mason and Edmund Randolph); and  
+   
+   3. arguing that the most damaging effects from issuing a Federal paper money would be prevented if the 
+   government could not make it  legal tender (James Madison).
+   
+On pages 67-68, Dewey discusses and cites the entire debate of August 16, including contributions we have omitted.
+
+Here are some excerpts from the debate:
+
+    **Mr. Govr. MORRIS** moved to strike out "and emit bills on the credit of the U. States" -- If
+    the United States had credit such bills would be unnecessary: if they had not, unjust  \& useless.
+
+    **Mr. BUTLER**, 2ds. the motion.
+
+    **Mr. MADISON**, will it not be sufficient to prohibit the making them
+    a *[legal] tender*? This will remove the temptation to emit
+    them with unjust views. And promissory notes in that shape may in
+    some emergencies be best.
+
+    **Mr. Govr. MORRIS.** striking out the words will leave room still for
+    notes of a responsible minister which will do all the good without
+    the mischief. The Monied interest will oppose the plan of
+    Government, if paper emissions be not prohibited.
+
+    **Mr. GHORUM** was for striking out, without inserting any prohibition. 
+    if the words stand they may suggest and lead to the measure.
+
+    **Col.  MASON** had doubts on the subject. Congs. he thought
+    would not have the power unless it were expressed. Though he had a
+    mortal hatred to paper money, yet *as he could not foresee all
+    emergences, he was unwilling to tie the hands of the Legislature.*
+    He observed that the late war could not have been carried on, had
+    such a prohibition existed.
+
+    **Mr. GHORUM** The power as far as it will be necessary or safe, is involved in that of borrowing.
+
+    **Mr. MERCER** was a friend to paper money, though in the present state  \& temper of America, 
+    he should neither propose nor approve of such a measure.  He was consequently opposed 
+    to a prohibition of it altogether. It will stamp suspicion on the Government to deny 
+    it a discretion on this point. It was impolitic also to excite the opposition 
+    of all those who were friends to paper money. The people of 
+    property would be sure to be on the side of the plan, and it 
+    was impolitic to purchase their further attachment with the loss of the opposite class of Citizens
+
+    **Mr. ELSEWORTH** thought this a favorable moment to shut and bar the door against paper money.
+    The mischiefs of the various experiments which had been made, were
+    now fresh in the public mind and had excited the disgust of all
+    the respectable part of America. By withholding the power from the
+    new Governt. more friends of influence would be gained to it than
+    by almost any thing else. Paper money can in no case be necessary.
+    Give the Government credit, and other resources will offer. The
+    power may do harm, never good.
+
+    **Mr. RANDOLPH**, notwithstanding his antipathy to paper money, could
+    not agree to strike out the words, as *he could not foresee
+    all the occasions which might arise.*
+
+    **Mr. WILSON.** It will have a most salutary influence on the credit
+    of the U. States to remove the possibility of paper money. This
+    expedient can never succeed whilst its mischiefs are remembered,
+    and as long as it can be resorted to, it will be a bar to other
+    resources.
+
+    **Mr. BUTLER.** remarked that paper was a legal tender in no Country in Europe.
+    He was urgent for disarming the Government of such a power.
+
+    **Mr. MASON** was still averse to tying the hands of the Legislature
+    altogether. If there was no example in Europe as just remarked, it
+    might be observed on the other side, that there was none in which
+    the Government was restrained on this head.
+
+    **Mr. READ,** thought the words, if not struck out, would be as
+    alarming as the mark of the Beast in Revelations.
+
+    **Mr. LANGDON** had rather reject the whole plan than retain the three
+    words "and emit bills".
+
+    On the motion for striking out
+
+    N. H. ay. Mas. ay. Ct ay. N. J. no. Pa. ay. Del. ay. Md. no. Va.
+    ay. [FN23] N. C. ay. S. C. ay. Geo. ay.
+
+The motion to strike out carried 9 states to 2, but the Convention did not  go further and  
+impose an explicit prohibition. 
+
+Thus, the framers opted for silence instead of  explicitly prohibiting the federal government
+from issuing bills of credit. 
+
+Nevertheless, during the first three quarters of the nineteenth century, it was widely believed 
+that the framers had intended to shut the door on making
+a paper money a legal tender, and that the fact that they did not go further and
+explicitly prohibit the federal government from issuing bills of credit simply reflected the 
+constitutional convention delegates' presumption that powers not explicitly awarded should be 
+understood to be denied to Congress.
+
+Or could it have reflected a preference for leaving some ambiguity about their intentions 
+as a concession to George Mason's argument about unforeseen contingencies.
+
+His extensive review of the documentary record convinced
+Bancroft (1886) that  the  framers intended that
+Congress not be permitted to make a paper currency a legal tender:
+
+     *The refusal of the convention to confer on the legislature of the United States the power to emit bills of credit or irredeemable paper money in any form is so complete that according to all rules by which public documents are interpreted, it should not be treated as questionable;*
+     
+page 43 of Bancroft (1886).
+ 
+To strengthen his point, Bancroft cited rousing statements from Washington, Madison, and 
+many others deploring the evils that flow when government makes
+a paper currency a legal tender.    
+
+In light of the tone of the debate reported by Madison and  Bancroft's evidence,
+to represent the consensus of opinion before the civil war, Bancroft quoted Daniel Webster:
+
+     *Most unquestionably there is no legal tender, and there can be no legal tender, in this country, 
+     under the authority of this government or any other but gold and silver, either the coinage of our 
+     own mints or foreign coins, at rates regulated by congress. This is a constitutional 
+     principle, perfectly plain, and of the very highest importance. The states are expressly prohibited 
+     from making anything but gold and silver a tender in payment of debts; and although no such express 
+     prohibition is applied to congress, yet as congress has no power granted to it in this respect, 
+     but to coin money and to regulate the value of foreign coins, it clearly has no power to substitute 
+     paper, or anything else, for coin as a tender in payment of debts and in discharge of contracts.*
+
+Extract from a speech delivered by Daniel Webster in the Senate of the United States on the 21st of December 1836 on the subject of the Specie Circular, quoted by \citet[p.~93]{Bancroft1886}
+
+page 93 of Bancroft
+
+Bancroft's review of the historical evidence was prompted by his disapproval of the Supreme Court's 1884
+decision in  *Juilliard v Greenman*, which uphold the Union's making greenback a legal tender during the civil war.
+
+The court reasoned that because Congress had the power to pay debts,  it could do so by any means not expressly 
+prohibited by the constitution; and that little  attention needed to be paid to the debates and votes at the 
+constitutional convention because it was difficult to glean a consensus from them; that Congress's power to 
+borrow money included the power to issue obligations in any appropriate form, including hand-to-hand
+currency; and that the authority to  issue  legal tender notes accompanied the right of coinage.  
+
+(see \citet[p.~366-67]{Dewey1912})}
+
+As we will see,  by 1884, outcomes of decisions of President Ulysses S. Grant and the post-Civil War Republican 
+Congresses had removed the stigma that Madison
+and his colleagues had cast against Federal legal tender paper money. 
 
 Hamilton's *Report Relative to a Provision for the Support of Public Credit*
 =============================================================================

@@ -40,11 +40,10 @@ Non-Coupon and Coupon Bonds
 
 :math:`P` stands for *principal* or *par value* or *face value* of the bond.
 
-
 * An example of a coupon bond
 
-.. image:: _static/images/confederate_bond.jpg
-    :scale: 70%
+.. figure:: _static/images/confederate_bond.jpg
+    :scale: 100%
     :align: center
 
     **A Confederate Coupon Bonds**
@@ -371,11 +370,11 @@ Example: 20 Year Coupon Bond
 
 * Suppose that this year (January 1, 2014) you purchase a 6\% percent 2034 U.S. Treasury bond with a face value of \$100.
 
-+--------+----------+--------+---------+------+-------+------+
-|  2014  |   2015   |  2016  |  2017   | ...  | 2033  | 2034 |
-+--------+----------+--------+---------+------+-------+------+
-|   0    |    6     |   6    |   6     |  ... | 6     | 106  |
-+--------+----------+--------+---------+------+-------+------+
+     +--------+----------+--------+---------+------+-------+------+
+     |  2014  |   2015   |  2016  |  2017   | ...  | 2033  | 2034 |
+     +========+==========+========+=========+======+=======+======+
+     |   0    |    6     |   6    |   6     |  ... | 6     | 106  |
+     +--------+----------+--------+---------+------+-------+------+
 
 * No uncertainty
 
@@ -427,16 +426,16 @@ One Type of Risk:  Interest Rate Risk
 * Work Backwards
 
 * What is our 20 year, \$100 face value, 6\% coupon, bond worth in 2019?
+  
+    * CASE I:  Interest rate falls to 3 percent
 
-   - CASE I:  Interest rate falls to 3 percent
+    .. math::
+            V_{2019}^{.03} = \sum_{t=1}^{15}\frac{C}{(1+0.03)^t} + \frac{P}{(1+.03)^{15}}
 
-.. math::
-      V_{2019}^{.03} = \sum_{t=1}^{15}\frac{C}{(1+0.03)^t} + \frac{P}{(1+.03)^{15}}
+    * CASE II: Interest rate rises to 9 percent
 
-   - CASE II: Interest rate rises to 9 percent
-
-.. math;:
-      V_{2019}^{.09} = \sum_{t=1}^{15}\frac{C}{(1+0.09)^t} + \frac{P}{(1+.09)^{15}}
+     .. math::
+            V_{2019}^{.09} = \sum_{t=1}^{15}\frac{C}{(1+0.09)^t} + \frac{P}{(1+.09)^{15}}
 
 * So what is our bond worth today in 2014?
 
@@ -543,17 +542,17 @@ Comparison Between Official Interest Payments and Returns to Bondholders
 Means and Standard Deviations of Returns
 -----------------------------------------
 
-+------------------------------------+----------+----------+
-| Variable                           |  Mean    | Std Dev  |
-+------------------------------------+----------+----------+
-| Official Interest/Debt             |   5.20   |    2.54  |
-+------------------------------------+----------+----------+
-| Inflation                          |   3.73   |    2.67  |
-+------------------------------------+----------+----------+
-| Official Interest/Debt - inflation |   1.47   |    3.31  |
-+------------------------------------+----------+----------+
-| Real Return on Marketable Debt     |   1.63   |    4.86  |
-+------------------------------------+----------+----------+
+     +------------------------------------+----------+----------+
+     | Variable                           |  Mean    | Std Dev  |
+     +====================================+==========+==========+
+     | Official Interest/Debt             |   5.20   |    2.54  |
+     +------------------------------------+----------+----------+
+     | Inflation                          |   3.73   |    2.67  |
+     +------------------------------------+----------+----------+
+     | Official Interest/Debt - inflation |   1.47   |    3.31  |
+     +------------------------------------+----------+----------+
+     | Real Return on Marketable Debt     |   1.63   |    4.86  |
+     +------------------------------------+----------+----------+
 
 Does this Accounting Issue Matter?
 ----------------------------------

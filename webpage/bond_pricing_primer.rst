@@ -46,7 +46,11 @@ Non-Coupon and Coupon Bonds
     :scale: 100%
     :align: center
 
-    **A Confederate Coupon Bonds**
+    **A Confederate Coupon Bond**
+
+The top half of the bond is the principal. The promised principal payment is $500. 
+
+Below are twelve coupon payments each promising to pay $20.
 
 Present Value
 -------------

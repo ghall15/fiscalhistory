@@ -8,9 +8,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>The Government Budget Constraint &mdash; Fiscal History 1 documentation</title>
+    <title>The Government Budget Constraint &mdash; A Fiscal History of the United States</title>
     
-    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/agogo.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
@@ -26,45 +26,50 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="Fiscal History 1 documentation" href="index.html" />
+    <link rel="top" title="A Fiscal History of the United States" href="index.html" />
     <link rel="next" title="The Debt Ceiling" href="debt_ceiling.html" />
-    <link rel="prev" title="An Introduction to Our Page" href="introduction.html" /> 
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
   </head>
   <body>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
+    <div class="header-wrapper">
+      <div class="header">
+        <div class="headertitle"><a
+          href="index.html">A Fiscal History of the United States</a></div>
+        <div class="rel">
+          <a href="introduction.html" title="Introduction"
+             accesskey="P">previous</a> |
           <a href="debt_ceiling.html" title="The Debt Ceiling"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="introduction.html" title="An Introduction to Our Page"
-             accesskey="P">previous</a> |</li>
-        <li><a href="index.html">Fiscal History 1 documentation</a> &raquo;</li> 
-      </ul>
-    </div>  
+             accesskey="N">next</a> |
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a>
+        </div>
+       </div>
+    </div>
 
-    <div class="document">
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="document">
+            
       <div class="documentwrapper">
         <div class="bodywrapper">
           <div class="body">
             
   <div class="section" id="the-government-budget-constraint">
 <span id="government-budget-constraint"></span><h1>The Government Budget Constraint<a class="headerlink" href="#the-government-budget-constraint" title="Permalink to this headline">¶</a></h1>
+<p>As we mentioned in the previous lecture, government deficits (i.e. the difference between spending and tax revenues) imply an increase in the nation&#8217;s public debt.</p>
+<p>Debts and deficits are linked through an equation called the government budget constraint.</p>
+<p>You may be familar with this is a relationship between the flow of deficit spending and the stock of debt from your credit card account.</p>
 <div class="section" id="your-credit-card-bill">
 <h2>Your Credit Card Bill<a class="headerlink" href="#your-credit-card-bill" title="Permalink to this headline">¶</a></h2>
-<p>If you have a credit card, you get a bill each month.</p>
+<p>If you have a credit card, you get a bill each month.  It probably looks something like this.</p>
 <a class="reference internal image-reference" href="_images/creditbill.jpg"><img alt="_images/creditbill.jpg" class="align-center" src="_images/creditbill.jpg" style="width: 560.0px; height: 477.6px;" /></a>
-<p>Your balance this month is</p>
+<p>Under the heading &#8220;Here is your Account Summary,&#8221; the holder&#8217;s new balance is determined by the equation:</p>
 <div class="math">
 \[\begin{split}\mbox{New Balance}  &amp;=&amp;  \mbox{Previous Balance} \\
 &amp; + &amp; \mbox{ Finance Charge} \\
 &amp; + &amp; \mbox{ New Purchases} \\
 &amp; - &amp; \mbox{ Payments}\end{split}\]</div>
-<p>Let&#8217;s re-write this as</p>
+<p>Let&#8217;s re-write this equation as</p>
 <div class="math">
 \[B_t  =  B_{t-1} + r B_{t-1} + G_t - T_t\]</div>
 <p>where we let</p>
@@ -74,21 +79,24 @@
 <li><span class="math">\(G\)</span> be new purchases, and</li>
 <li><span class="math">\(T\)</span> be payments.</li>
 </ul>
+<p>Before we proceed any further, let&#8217;s recall the distinction between <em>stock</em> and <em>flow</em> variables.</p>
 <div class="section" id="stock-variables-and-flow-variables">
 <h3>Stock Variables and Flow Variables<a class="headerlink" href="#stock-variables-and-flow-variables" title="Permalink to this headline">¶</a></h3>
-<p><em>Stock variables</em> are measured at a point in time.</p>
-<p><em>Flow variables</em> are measured over a period of time.</p>
+<p><em>Stock variables</em> are measured at a point in time.  In example of a stock variable is the location of your car on a highway.  At 1 o&#8217;clock on Tuesday you were at mile marker 43.</p>
+<p><em>Flow variables</em> are measured over a period of time.  An example of a flow variable is the speed of your car &#8211; measured in miles per hour.  Between 1 o&#8217;clock and 2 o&#8217;clock, you traveled 60 miles.</p>
 <p>So for your credit card</p>
 <ul class="simple">
-<li><span class="math">\(B\)</span> is a stock variable, and</li>
-<li><span class="math">\(r B\)</span>,  <span class="math">\(G\)</span>, and <span class="math">\(T\)</span> are flow variables.</li>
+<li><span class="math">\(B\)</span> is a stock variable.  It is the quantity of debt you owe <em>at a particular point in time</em>.</li>
+<li><span class="math">\(r B\)</span>,  <span class="math">\(G\)</span>, and <span class="math">\(T\)</span> are flow variables.  They represent how much you spent and paid <em>over a period of time</em>.</li>
 </ul>
+<p>We call equations that link flow variables to their corresponding stock variables, stock-flow equations.</p>
 </div>
 </div>
 <div class="section" id="id1">
 <h2>The Government Budget Constraint<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>A sovereign government faces a budget constraint that
-must hold at each period, <span class="math">\(t\)</span>:</p>
+<p>Just as your credit card balance evolves from month to month, a sovereign government&#8217;s debt evolves period to period according to a stock-flow equation we call
+the government budget constraint.</p>
+<p>At each date <span class="math">\(t\)</span>:, the following equation must hold.</p>
 <div class="math">
 \[B_{t} =  B_{t-1} + r B_{t-1} + G_t + TR_t - T_t\]</div>
 <p>where</p>
@@ -98,64 +106,76 @@ TR_t &amp;=&amp; \mbox{transfer payments (e.g. social security) during period } 
 T_t &amp;=&amp; \mbox{taxes collected during period } t \\
 B_{t}  &amp;=&amp; \mbox{this period's } t \mbox{ government debt} \\
 r  &amp;=&amp; \mbox{real interest rate}\end{split}\]</div>
-<p>Many macro textbooks write it this way</p>
+<p>You may have seen this equation in one form or another when you took macroeconomics.
+Many undergraduate macroeconomics textbooks write it this way</p>
 <div class="math">
 \[B_{t} =  B_{t-1} + INT_t + G_t + TR_t - T_t\]</div>
+<p>With this equation in mind, let&#8217;s take a stroll through the data.</p>
+<div class="section" id="the-distinction-between-government-spending-and-transfer-payments">
+<h3>The Distinction Between Government Spending and Transfer Payments<a class="headerlink" href="#the-distinction-between-government-spending-and-transfer-payments" title="Permalink to this headline">¶</a></h3>
+<p><em>Government spending</em> is the government purchase of goods and services to XXXXX.
+These goods and services are valued at their cost to the government.  Examples of government spending
+include providing public education, building of roads, and providing of national defense.</p>
+<p><em>Transfer payments</em> on the other hand is spending in which the government redistributes income.
+the government does not provide a good or a service.  It simply writes check to a particular group.
+Example include crop subsidies, Social Security, and unemployment insurance.</p>
+</div>
 <div class="section" id="fiscal-data-federal-government">
 <h3>Fiscal Data: Federal Government<a class="headerlink" href="#fiscal-data-federal-government" title="Permalink to this headline">¶</a></h3>
-<ul>
-<li><p class="first">Prior to 1790</p>
-<ul class="simple">
-<li>constructed accounts from various reports</li>
-</ul>
-</li>
-<li><p class="first">1790-present</p>
+<p>Federal government spending and revenue are determined by its annual budgets
+passed by Congress and signed by the President.  Since 1934, these budget numbers
+are reported by the <a class="reference external" href="http://www.whitehouse.gov/omb/budget">Office of Management and Budget (OMB)</a>.</p>
+<p>Budget spending and revenue number are reported by the fiscal year.</p>
+<p>The federal government operates on a fiscal year which begins on October 1 and ends on
+September 30 of the next calendar year.
+Prior to 1976, the federal fiscal year began on July 1 and ended on June 30.</p>
+<p>The federal budget divides government spending by its function</p>
+<blockquote>
+<div><p>since 1934, the</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>national defense</li>
+<li>human resources</li>
+<li>physical resources</li>
+<li>net interest</li>
+</ol>
+</div></blockquote>
+</div></blockquote>
+<p>Between 1790 and 1940, the U.S. Treasury reported the budget numbers.  These numbers are avialble
+from the <a class="reference external" href="http://fraser.stlouisfed.org/publication/?pid=194">Annual Report of the Secretary of the Treasury on the State of the Finances</a>.</p>
+<p>Prior to 1940 there were five primary (or top level) categories</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>war</li>
+<li>navy</li>
+<li>pensions</li>
+<li>indians</li>
+<li>interest</li>
+</ol>
+</div></blockquote>
+<p>Government spending is also recorded in a second set of accounts: <a class="reference external" href="http://www.bea.gov/iTable/index_nipa.cfm">the National Income and Product Accounts (NIPA)</a></p>
+<p>Unlike the budget number reported by the OMB, the numbers reported by the NIPA are</p>
 <blockquote>
 <div><ul class="simple">
-<li>U.S. Treasury (1790-1940)</li>
-<li>Office of Management and Budget (1934-present)</li>
+<li>from 1929 to the present</li>
+<li>based on the calendar year/quarter,</li>
+<li>consistent accounting with state and local government accounts as well as GDP</li>
 </ul>
 </div></blockquote>
-</li>
-<li><p class="first">1929-present</p>
+<p>The three primary or top level categories are</p>
 <blockquote>
-<div><ul class="simple">
-<li>National Income and Product Accounts (NIPA)</li>
-</ul>
-</div></blockquote>
-</li>
-<li><p class="first">NIPA</p>
-<ul>
-<li><p class="first">calendar year/quarter, 1929-present</p>
-</li>
-<li><p class="first">consistent accounting with state/local as well as GDP</p>
-</li>
-<li><p class="first">main spending categories</p>
-<blockquote>
-<div><ul class="simple">
+<div><ol class="arabic simple">
 <li>Government consumption, <span class="math">\(G_t\)</span></li>
 <li>Transfer payments, <span class="math">\(TR_t\)</span></li>
 <li>Net interest payments, <span class="math">\(INT_t\)</span></li>
-</ul>
+</ol>
 </div></blockquote>
-</li>
-</ul>
-</li>
-<li><p class="first">Treasury/OMB</p>
-<ul>
-<li><p class="first">fiscal year</p>
-</li>
-<li><p class="first">spending divided by function</p>
+<p>Prior to the establishment of the Department of Treasury in 1790,</p>
 <blockquote>
 <div><ul class="simple">
-<li>pre-1940: war, navy, pensions, indians, interest, ...</li>
-<li>1934-present: national defense, human resources, physical resources, net interest, ...</li>
+<li>constructed accounts from various reports</li>
 </ul>
 </div></blockquote>
-</li>
-</ul>
-</li>
-</ul>
 </div>
 <div class="section" id="comparison-between-federal-and-state-local">
 <h3>Comparison Between Federal and State &amp; Local<a class="headerlink" href="#comparison-between-federal-and-state-local" title="Permalink to this headline">¶</a></h3>
@@ -167,6 +187,16 @@ r  &amp;=&amp; \mbox{real interest rate}\end{split}\]</div>
 </ul>
 </div></blockquote>
 </li>
+</ul>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/all_gov_rec_exp.png"><img alt="_images/all_gov_rec_exp.png" src="_images/all_gov_rec_exp.png" style="width: 720.0px; height: 540.0px;" /></a>
+<p class="caption"><strong>NIPA: Total Government Receipts and Expenditures as a Percent of GDP</strong></p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/all_gov_exp_decomp.png"><img alt="_images/all_gov_exp_decomp.png" src="_images/all_gov_exp_decomp.png" style="width: 720.0px; height: 540.0px;" /></a>
+<p class="caption"><strong>NIPA: Total Government Expenditures Decomposed By Type</strong></p>
+</div>
+<ul>
 <li><p class="first">Current composition of the federal government budget is quite different from state and local budgets.</p>
 <ul>
 <li><p class="first">One often hears</p>
@@ -179,17 +209,11 @@ with a side business in defense.</em></p>
 </li>
 </ul>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="_images/all_gov_rec_exp.png"><img alt="_images/all_gov_rec_exp.png" src="_images/all_gov_rec_exp.png" style="width: 720.0px; height: 540.0px;" /></a>
-<p class="caption"><strong>NIPA: Total Government Receipts and Expenditures as a Percent of GDP</strong></p>
-</div>
-<div class="figure align-center">
-<a class="reference internal image-reference" href="_images/all_gov_exp_decomp.png"><img alt="_images/all_gov_exp_decomp.png" src="_images/all_gov_exp_decomp.png" style="width: 720.0px; height: 540.0px;" /></a>
-<p class="caption"><strong>NIPA: Total Government Expenditures Decomposed By Type</strong></p>
-</div>
-<div class="figure align-center">
 <a class="reference internal image-reference" href="_images/fed_gov_exp_decomp.png"><img alt="_images/fed_gov_exp_decomp.png" src="_images/fed_gov_exp_decomp.png" style="width: 720.0px; height: 540.0px;" /></a>
 <p class="caption"><strong>NIPA: Federal Expenditures Decomposed By Type</strong></p>
 </div>
+<p>During World War II, government consumption spending spikes</p>
+<p>Since World War II transfer payments have steadily grown as larger share</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/sl_gov_exp_decomp.png"><img alt="_images/sl_gov_exp_decomp.png" src="_images/sl_gov_exp_decomp.png" style="width: 720.0px; height: 540.0px;" /></a>
 <p class="caption"><strong>NIPA: State and Local Expenditures Decomposed By Type</strong></p>
@@ -285,7 +309,7 @@ with a side business in defense.</em></p>
 \[G_t + TR_t + INT_t - T_t\]</div>
 <p>When this number is positive there is a budget deficit.</p>
 <p>When this number is negative there is a budget surplus.</p>
-<p>Change in the debt is equal to the deficit</p>
+<p>The change in the debt is equal to the deficit</p>
 <div class="math">
 \[B_{t} - B_{t-1}  =  INT_t + G_t + TR_t - T_t\]</div>
 <p>The <em>net-of-interest deficit</em> or <em>primary deficit</em> is</p>
@@ -293,7 +317,8 @@ with a side business in defense.</em></p>
 \[G_t + TR_t - T_t\]</div>
 <p>The total or gross deficit tells the amount the government must borrow to
 cover all of its expenditures.</p>
-<p>The primary deficit ignores interest payments</p>
+<p>The primary deficit ignores interest payments.</p>
+<p>Recall the two graphs we saw in the previous lecture.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/fed_expend_rev_gdp_1775_2011.png"><img alt="_images/fed_expend_rev_gdp_1775_2011.png" src="_images/fed_expend_rev_gdp_1775_2011.png" style="width: 720.0px; height: 540.0px;" /></a>
 <p class="caption"><strong>Federal Government Receipts and Expenditures as a Percentage of GDP</strong></p>
@@ -305,10 +330,12 @@ cover all of its expenditures.</p>
 </div>
 <div class="section" id="the-printing-press">
 <h3>The Printing Press<a class="headerlink" href="#the-printing-press" title="Permalink to this headline">¶</a></h3>
-<p>Since the signing of the U.S. Constitution, the Federal government can raise revenue by issuing money.</p>
+<p>Since the signing of the U.S. Constitution,
+the federal government can raise revenue by issuing money.  As we will see in a few lectures,
+this power has been hotly contested.</p>
 <blockquote>
-<div>State and local governments can not.</div></blockquote>
-<p>For the Federal government</p>
+<div>The U.S. Consitution explicitly states that state and local governments can not issue their own money.</div></blockquote>
+<p>Therefore the federal government&#8217;s budget constriant becomes</p>
 <div class="math">
 \[B_{t}  =  B_{t-1} + r B_{t-1} + G_t + TR_t - T_t  - \frac{M_t - M_{t-1}}{P_t}\]</div>
 <p>where</p>
@@ -317,23 +344,24 @@ cover all of its expenditures.</p>
 P_t           &amp;=&amp; \mbox{Price level this period ($t$)} \\
 &amp; &amp; \mbox{i.e. the relative price of money in terms of goods}\end{split}\]</div>
 <p>This additional term is called <em>seignorage</em> or the inflation tax.</p>
-<p>So the government budget constraint becomes</p>
-<div class="math">
-\[\begin{split}B_{t}  &amp;=&amp;  B_{t-1} + r B_{t-1} + G_t + TR_t - T_t  - \frac{M_t - M_{t-1}}{P_t}\end{split}\]</div>
-<p>Write it as</p>
+<p>Let&#8217;s re-write the budget constraint as</p>
 <div class="math">
 \[B_{t}  -  B_{t-1} + \frac{M_t - M_{t-1}}{P_t}  =  r B_{t-1} + G_t + TR_t - T_t\]</div>
-<p>Decisions about <span class="math">\(G_t\)</span>, <span class="math">\(TR_t\)</span> and <span class="math">\(T_t\)</span> are called <em>fiscal policy</em></p>
-<p>Decision about <span class="math">\(B_t\)</span> and :math`M_t` are called <em>monetary policy</em>.</p>
+<p>It is common parlance to state that:</p>
+<blockquote>
+<div><p>Decisions about <span class="math">\(G_t\)</span>, <span class="math">\(TR_t\)</span> and <span class="math">\(T_t\)</span> are called <em>fiscal policy</em></p>
+<p>Decision about <span class="math">\(B_t\)</span> and <span class="math">\(M_t\)</span> are called <em>monetary policy</em>.</p>
+</div></blockquote>
+<p>It is clear from the government budget constraint that these two policies are inherently intertwined.</p>
 </div>
 </div>
 <div class="section" id="debt-to-gdp-ratio">
 <h2>Debt-to-GDP Ratio<a class="headerlink" href="#debt-to-gdp-ratio" title="Permalink to this headline">¶</a></h2>
-<p>Suppose the credit card balance is <span class="math">\(\$20,000\)</span>.  Is this a big balance?</p>
+<p>Suppose the credit card balance is $20,000.  Is this a big balance?</p>
 <ul class="simple">
 <li>Well it depends<ul>
-<li>If your annual income is <span class="math">\(\$15,000\)</span>, then yes.</li>
-<li>If your annual income is <span class="math">\(\$1,500,000\)</span>, then no.</li>
+<li>If your annual income is $15,000, then yes.</li>
+<li>If your annual income is $1,500,000, then no.</li>
 </ul>
 </li>
 <li>It also depends on how fast your income is growing.</li>
@@ -346,26 +374,58 @@ debt-to-income <span class="math">\(\frac{B}{Y}\)</span>.</p>
 </div>
 <div class="section" id="a-digression-on-the-u-s-debt">
 <h3>A Digression on the U.S. Debt<a class="headerlink" href="#a-digression-on-the-u-s-debt" title="Permalink to this headline">¶</a></h3>
-<p>See the <a class="reference external" href="http://www.savingsbonds.gov/govt/reports/pd/mspd/mspd.htm">U.S. Treasury Monthly Statement of the Public Debt</a>.</p>
-<ul class="simple">
-<li>Marketable Debt<ul>
-<li>Treasury bills, notes, and bonds</li>
-<li>can be bought and sold on secondary markets</li>
-</ul>
-</li>
-<li>Non-marketable Debt<ul>
-<li>no secondary market &#8211; saving bonds,  state and local governments</li>
-</ul>
-</li>
-<li>Held by the Public<ul>
-<li>you, me, China</li>
-</ul>
-</li>
-<li>Held inside the government<ul>
-<li>Social Security Trust Fund</li>
-</ul>
-</li>
-</ul>
+<p>Each month, the Bureau of the Public Debt within the U.S. Treasury
+publishes the <a class="reference external" href="http://www.savingsbonds.gov/govt/reports/pd/mspd/mspd.htm">U.S. Treasury Monthly Statement of the Public Debt</a>.</p>
+<p>In this statement, the total outstanding
+debt is partitioned two different ways:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>marketable and non-marketable; and</li>
+<li>held by the public and held within the government.</li>
+</ol>
+</div></blockquote>
+<p>After being issued by the Treasury, ownership of marketable securities
+can be transferred through purchases and sales in the secondary
+market.  Marketable securities are largely made up of Treasury bills,
+notes, bonds, and Treasury Inflation-Protected Securities (TIPS).</p>
+<p>In contrast, non-marketable securities are registered to the owner and
+cannot be sold in the secondary market, though typically they can be
+redeemed on demand.</p>
+<p>Yields on nonmarketable securities are set
+administratively, usually by a formula based on the returns for
+marketable debt.</p>
+<p>The nonmarketable debt held by the public is largely
+held by small investors in the form of savings bonds (U.S. Savings
+Securities) or by state and local governments who by law must hold the
+proceeds from their own debt issues in Treasury debt until they use
+the funds.</p>
+<p>The largest share of the nonmarketable debt,
+is held  in the &#8220;Government Account Series&#8221;, a collection of bonds
+mostly held by the Social Security trust fund.</p>
+<p>While  marketable securities today represent the lion&#8217;s share of the
+debt held by the public, this has not always been the case.  I</p>
+<p>In the figure below, we plot the debt-GDP ratio for three
+different measures of the debt:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>the marketable debt held by the public;</li>
+</ol>
+<p>2. the sum of the marketable and the nonmarketable debt held
+by the public; and</p>
+<ol class="arabic simple" start="3">
+<li>the total outstanding debt.</li>
+</ol>
+</div></blockquote>
+<p>Over the entire period, marketable debt has averaged about 80 percent of the total
+debt held by the public (i.e the ratio of the solid-blue line to the
+dashed-red line).</p>
+<p>Early in the sample, this ratio was about
+two-thirds, and it has steadily increased over time.</p>
+<p>Nonmarketable
+savings bonds and Victory loans played a much larger role in Treasury
+borrowing during World War II and the Korean War than they do today.</p>
+<p>Our focus on the government budget constraint compels us to concentrate
+on the debt held by the public.</p>
 </div>
 <div class="section" id="the-evolution-of-the-debt-to-gdp-ratio">
 <h3>The Evolution of the Debt to GDP Ratio<a class="headerlink" href="#the-evolution-of-the-debt-to-gdp-ratio" title="Permalink to this headline">¶</a></h3>
@@ -403,11 +463,11 @@ debt-to-income <span class="math">\(\frac{B}{Y}\)</span>.</p>
 \[\frac{B_{t}}{Y_t} =  (1+r-g) \frac{B_{t-1}}{Y_{t-1}} + \frac{G - T}{Y_t}\]</div>
 <p>Consider two cases</p>
 <ol class="arabic simple">
-<li><span class="math">\(g&gt;r\)</span></li>
-<li><span class="math">\(g \le r\)</span></li>
+<li><span class="math">\(g&gt;r\)</span> (i.e. the growth rate of GDP exceeds the interest rate)</li>
+<li><span class="math">\(g \le r\)</span> (i.e. the growth rate of GDP is less than the interest rate)</li>
 </ol>
-<p>If :math`g &gt; r`, the debt-to-GDP ratio will not blow up.
-So a government can sustain persistent deficits as long as growth
+<p>If :math`g &gt; r`, the debt-to-GDP ratio will not blow up.</p>
+<p>So a government can sustain persistent deficits as long as growth
 in output is greater than the real interest rate.</p>
 <p>In the U.S. <span class="math">\(r = 0.016\)</span>  and <span class="math">\(g = 0.033\)</span>.</p>
 <p>Don&#8217;t necessarily need a balanced budget.</p>
@@ -457,26 +517,28 @@ words money is <em>neutral.</em></p>
 </ul>
 <div class="math">
 \[G_t  - T_{t} = {{M_{t} - M_{t-1}}\over{P_t}}\]</div>
+<ul class="simple">
+<li>So this is an all-currency economy.</li>
+<li>The revenue that a government raises by printing money is called <em>seignorage</em>.  This is the inflation tax.</li>
+</ul>
+<p>Typically in the United States seignorage is only a trival share of government revenue.
+But as we will see, during the Revolutionary War, seignorage comprised</p>
 <ul>
-<li><p class="first">So this is an all-currency economy.</p>
-</li>
-<li><p class="first">The revenue that a government raises by printing money is called <em>seignorage</em>.  This is the inflation tax.</p>
-</li>
-<li><p class="first">Revolutionary War</p>
-</li>
-<li><p class="first">A great quote by John Maynard Keynes</p>
+<li><p class="first">A great quote by John Maynard Keynes in his 1919 book <a class="reference external" href="http://books.google.com/books?id=AX1EAAAAIAAJ&amp;dq=John+Maynard+Keynes,+The+Economic+Consequences+of+the+Peace&amp;source=gbs_navlinks_s">The Economic Consequences of the Peace</a>, page 235</p>
 <blockquote>
 <div><p>Lenin is said to have declared that the best way to destroy the
 capitalist system was to debauch its currency.  By a continuing
 process of inflation, governments can confiscate, secretly and
-unobserved, an important wealth of their citizens.</p>
+unobserved, an important wealth of their citizens. By this method
+they not only confiscate, but they confiscate arbitrarily; and,
+while the process impoverishes many, it actually enriches some.</p>
 </div></blockquote>
 </li>
 </ul>
 </div>
 <div class="section" id="real-seignorage-and-inflation">
 <h3>Real seignorage and inflation<a class="headerlink" href="#real-seignorage-and-inflation" title="Permalink to this headline">¶</a></h3>
-<p>Consider our all-currency economy. No government debt.</p>
+<p>Consider our all-currency economy with no government debt.</p>
 <p>If the velocity of money is fixed and output is fixed, so real money demand is constant. Then</p>
 <div class="math">
 \[\pi = \frac{\Delta P}{P} = \frac{\Delta M}{M}\]</div>
@@ -559,89 +621,64 @@ rises more or less than the decline in money holdings.</p>
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">The Government Budget Constraint</a><ul>
-<li><a class="reference internal" href="#your-credit-card-bill">Your Credit Card Bill</a><ul>
-<li><a class="reference internal" href="#stock-variables-and-flow-variables">Stock Variables and Flow Variables</a></li>
+        </div>
+        <div class="sidebar">
+          <h3>Table Of Contents</h3>
+          <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">The Government Budget Constraint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#your-credit-card-bill">Your Credit Card Bill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">The Government Budget Constraint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#debt-to-gdp-ratio">Debt-to-GDP Ratio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#money-and-inflation">Money and Inflation</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id1">The Government Budget Constraint</a><ul>
-<li><a class="reference internal" href="#fiscal-data-federal-government">Fiscal Data: Federal Government</a></li>
-<li><a class="reference internal" href="#comparison-between-federal-and-state-local">Comparison Between Federal and State &amp; Local</a></li>
-<li><a class="reference internal" href="#revenue-side">Revenue Side</a></li>
-<li><a class="reference internal" href="#revenue-federal-vs-state-local">Revenue: Federal vs. State/Local</a></li>
-<li><a class="reference internal" href="#deficits-and-surpluses">Deficits and Surpluses</a></li>
-<li><a class="reference internal" href="#the-printing-press">The Printing Press</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#debt-to-gdp-ratio">Debt-to-GDP Ratio</a><ul>
-<li><a class="reference internal" href="#a-digression-on-the-u-s-debt">A Digression on the U.S. Debt</a></li>
-<li><a class="reference internal" href="#the-evolution-of-the-debt-to-gdp-ratio">The Evolution of the Debt to GDP Ratio</a></li>
-<li><a class="reference internal" href="#seignorage">Seignorage</a></li>
-<li><a class="reference internal" href="#velocity-and-the-quantity-theory-of-money">Velocity and the Quantity Theory of Money</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#money-and-inflation">Money and Inflation</a><ul>
-<li><a class="reference internal" href="#deficits-and-inflation">Deficits and Inflation</a></li>
-<li><a class="reference internal" href="#real-seignorage-and-inflation">Real seignorage and inflation</a></li>
-<li><a class="reference internal" href="#government-debt-is-a-weighted-accumulation-of-past-deficits">Government Debt is a Weighted Accumulation of Past Deficits</a></li>
-<li><a class="reference internal" href="#government-debt-is-a-weighted-sum-of-future-surpluses">Government Debt is a Weighted Sum of Future Surpluses</a></li>
-<li><a class="reference internal" href="#debt-is-both-a-backward-looking-and-a-forward-looking-variable">Debt is both a backward-looking and a forward-looking variable</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="debt_ceiling.html">The Debt Ceiling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bond_pricing_primer.html">A Primer on Bond Pricing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="american_revolution.html">The American Revolution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="act1790.html">The Articles of Confederation, the Constitution, and the Funding Act of August 4, 1790</a></li>
+<li class="toctree-l1"><a class="reference internal" href="early_republic.html">The Early Republic: 1792 to 1812</a></li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="introduction.html"
-                        title="previous chapter">An Introduction to Our Page</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="debt_ceiling.html"
-                        title="next chapter">The Debt Ceiling</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="_sources/government_budget_constraint.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+          <h3 style="margin-top: 1.5em;">Search</h3>
+          <form class="search" action="search.html" method="get">
+            <input type="text" name="q" />
+            <input type="submit" value="Go" />
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+          </form>
+          <p class="searchtip" style="font-size: 90%">
+            Enter search terms or a module, class or function name.
+          </p>
         </div>
+        <div class="clearer"></div>
       </div>
-      <div class="clearer"></div>
     </div>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
+
+    <div class="footer-wrapper">
+      <div class="footer">
+        <div class="left">
+          <a href="introduction.html" title="Introduction"
+             >previous</a> |
           <a href="debt_ceiling.html" title="The Debt Ceiling"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="introduction.html" title="An Introduction to Our Page"
-             >previous</a> |</li>
-        <li><a href="index.html">Fiscal History 1 documentation</a> &raquo;</li> 
-      </ul>
-    </div>
+             >next</a> |
+          <a href="genindex.html" title="General Index"
+             >index</a>
+            <br/>
+            <a href="_sources/government_budget_constraint.txt"
+               rel="nofollow">Show Source</a>
+        </div>
+
+        <div class="right">
+          
     <div class="footer">
         &copy; Copyright 2013, George Hall and Thomas Sargent.
       Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
   </body>
 </html>

@@ -107,7 +107,7 @@ html_theme = 'agogo'
 html_title = "A Fiscal History of the United States"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = "A Fiscal History of the United States"
+html_short_title = "U.S. Fiscal History"
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
