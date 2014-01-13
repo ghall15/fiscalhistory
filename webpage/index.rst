@@ -22,6 +22,7 @@ Table of Contents:
    debt_ceiling
    bond_pricing_primer
    american_revolution
+   articles_of_confederation
    act1790
    early_republic
 

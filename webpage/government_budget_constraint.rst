@@ -8,7 +8,7 @@ As we mentioned in the previous lecture, government deficits (i.e. the differenc
 
 Debts and deficits are linked through an equation called the government budget constraint.
 
-You may be familar with this is a relationship between the flow of deficit spending and the stock of debt from your credit card account.
+You may be familiar with this is a relationship between the flow of deficit spending and the stock of debt from your credit card account.
 
 Your Credit Card Bill
 ======================
@@ -123,7 +123,7 @@ The federal budget divides government spending by its function
           4. net interest
 
 
-Between 1790 and 1940, the U.S. Treasury reported the budget numbers.  These numbers are avialble
+Between 1790 and 1940, the U.S. Treasury reported the budget numbers.  These numbers are available
 from the `Annual Report of the Secretary of the Treasury on the State of the Finances`_.
 
 .. _Annual Report of the Secretary of the Treasury on the State of the Finances: http://fraser.stlouisfed.org/publication/?pid=194
@@ -133,7 +133,7 @@ Prior to 1940 there were five primary (or top level) categories
           1. war 
           2. navy 
           3. pensions
-          4. indians 
+          4. Indians 
           5. interest
 
 
@@ -351,9 +351,9 @@ Since the signing of the U.S. Constitution,
 the federal government can raise revenue by issuing money.  As we will see in a few lectures,
 this power has been hotly contested.
 
-   The U.S. Consitution explicitly states that state and local governments can not issue their own money.
+   The U.S. Constitution explicitly states that state and local governments can not issue their own money.
 
-Therefore the federal government's budget constriant becomes
+Therefore the federal government's budget constraint becomes
 
 .. math::
   B_{t}  =  B_{t-1} + r B_{t-1} + G_t + TR_t - T_t  - \frac{M_t - M_{t-1}}{P_t}
@@ -596,7 +596,7 @@ Deficits and Inflation
 
 * The revenue that a government raises by printing money is called *seignorage*.  This is the inflation tax.
 
-Typically in the United States seignorage is only a trival share of government revenue.  
+Typically in the United States seignorage is only a trivial share of government revenue.  
 But as we will see, during the Revolutionary War, seignorage comprised
 
 * A great quote by John Maynard Keynes in his 1919 book `The Economic Consequences of the Peace`_, page 235
@@ -640,7 +640,6 @@ So Friedman's really should have said,
 Since seignorage is a distortionary tax, as the government
 increases this tax, people will hold lower real balances.
 
-
 Whether seignorage rises or falls depends on whether inflation
 rises more or less than the decline in money holdings.
 
@@ -679,6 +678,8 @@ Keep going to the beginning of time (i.e. :math:`t=0`)
 
 .. math::
      B_{t} =  (1+r)^t B_{0} + \sum_{j=0}^{t} (1+r)^j \left( G_{t-j}  - T_{t-j} \right)
+
+The left hand side of this equation is the current stock of debt.  The right hand side of this equation 
 
 
 Government Debt is a Weighted Sum of Future Surpluses

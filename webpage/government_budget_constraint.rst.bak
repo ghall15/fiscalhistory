@@ -4,11 +4,11 @@
 The Government Budget Constraint
 *********************************
 
-As we mentioned in the previous lecture, govenrment deficits (i.e. the different between spending and tax revenues) imply an increase in the nation's public debt.
+As we mentioned in the previous lecture, government deficits (i.e. the difference between spending and tax revenues) imply an increase in the nation's public debt.
 
 Debts and deficits are linked through an equation called the government budget constraint.
 
-You may be familar with this is a relationship between the flow of deficit spending and the stock debt from your credit card account.
+You may be familiar with this is a relationship between the flow of deficit spending and the stock of debt from your credit card account.
 
 Your Credit Card Bill
 ======================
@@ -87,12 +87,25 @@ Many undergraduate macroeconomics textbooks write it this way
 
 With this equation in mind, let's take a stroll through the data.
 
+The Distinction Between Government Spending and Transfer Payments
+------------------------------------------------------------------
+
+*Government spending* is the government purchase of goods and services to XXXXX.  
+These goods and services are valued at their cost to the government.  Examples of government spending 
+include providing public education, building of roads, and providing of national defense.
+
+*Transfer payments* on the other hand is spending in which the government redistributes income.  
+the government does not provide a good or a service.  It simply writes check to a particular group.
+Example include crop subsidies, Social Security, and unemployment insurance.  
+
 Fiscal Data: Federal Government
 -------------------------------
 
 Federal government spending and revenue are determined by its annual budgets 
-passed by Congress and signed by the President.  These budget numbers are now 
-reported by the Office of Management and Budget (OMB).  
+passed by Congress and signed by the President.  Since 1934, these budget numbers 
+are reported by the `Office of Management and Budget (OMB)`_.
+
+.. _Office of Management and Budget (OMB): http://www.whitehouse.gov/omb/budget  
 
 Budget spending and revenue number are reported by the fiscal year.  
 
@@ -102,20 +115,26 @@ Prior to 1976, the federal fiscal year began on July 1 and ended on June 30.
 
 The federal budget divides government spending by its function
 
-      Prior to 1940 there were five primary (or top level) categories 
-      
-          1. war 
-          2. navy 
-          3. pensions
-          4. indians 
-          5. interest
-
       since 1934, the  
       
           1. national defense
           2. human resources
           3. physical resources 
           4. net interest
+
+
+Between 1790 and 1940, the U.S. Treasury reported the budget numbers.  These numbers are available
+from the `Annual Report of the Secretary of the Treasury on the State of the Finances`_.
+
+.. _Annual Report of the Secretary of the Treasury on the State of the Finances: http://fraser.stlouisfed.org/publication/?pid=194
+
+Prior to 1940 there were five primary (or top level) categories 
+      
+          1. war 
+          2. navy 
+          3. pensions
+          4. Indians 
+          5. interest
 
 
 Government spending is also recorded in a second set of accounts: `the National Income and Product Accounts (NIPA)`_
@@ -143,13 +162,6 @@ Prior to the establishment of the Department of Treasury in 1790,
   * constructed accounts from various reports
 
 
-* 1790-present
-
-   * U.S. Treasury (1790-1940)
-
-   * Office of Management and Budget (1934-present)
-
-* 1929-present
 
 
 Comparison Between Federal and State \& Local
@@ -159,14 +171,6 @@ Comparison Between Federal and State \& Local
 
    * spending well over 1/3 of GDP.
 
-*  Current composition of the federal government budget is quite different from state and local budgets.
-
-   * One often hears
-
-     *The federal government is a gigantic insurance company 
-     with a side business in defense.*
-
-* State and local governments more directly involved in government purchases
 
 .. figure:: _static/figures/all_gov_rec_exp.png
     :scale: 60%
@@ -180,11 +184,33 @@ Comparison Between Federal and State \& Local
     
     **NIPA: Total Government Expenditures Decomposed By Type**
 
+
+*  Current composition of the federal government budget is quite different from state and local budgets.
+
+   * One often hears
+
+     *The federal government is a gigantic insurance company 
+     with a side business in defense.*
+
+* State and local governments more directly involved in government purchases
+
+
+
+
 .. figure:: _static/figures/fed_gov_exp_decomp.png
     :scale: 60%
     :align: center
 
     **NIPA: Federal Expenditures Decomposed By Type**
+
+During World War II, government consumption spending spikes
+
+Since World War II transfer payments have steadily grown as larger share 
+
+
+
+
+
 
 .. figure:: _static/figures/sl_gov_exp_decomp.png
     :scale: 60%
@@ -289,7 +315,7 @@ When this number is positive there is a budget deficit.
 
 When this number is negative there is a budget surplus.
 
-Change in the debt is equal to the deficit
+The change in the debt is equal to the deficit
 
 .. math::
   B_{t} - B_{t-1}  =  INT_t + G_t + TR_t - T_t
@@ -303,6 +329,8 @@ The total or gross deficit tells the amount the government must borrow to
 cover all of its expenditures.
 
 The primary deficit ignores interest payments.
+
+Recall the two graphs we saw in the previous lecture.
 
 .. figure:: _static/figures/fed_expend_rev_gdp_1775_2011.png
     :scale: 60%
@@ -319,11 +347,13 @@ The primary deficit ignores interest payments.
 The Printing Press
 -------------------
 
-Since the signing of the U.S. Constitution, the federal government can raise revenue by issuing money.
+Since the signing of the U.S. Constitution, 
+the federal government can raise revenue by issuing money.  As we will see in a few lectures,
+this power has been hotly contested.
 
-   State and local governments can not.
+   The U.S. Constitution explicitly states that state and local governments can not issue their own money.
 
-Therefore the federal government's budget constriant becomes
+Therefore the federal government's budget constraint becomes
 
 .. math::
   B_{t}  =  B_{t-1} + r B_{t-1} + G_t + TR_t - T_t  - \frac{M_t - M_{t-1}}{P_t}
@@ -337,19 +367,18 @@ where
 
 This additional term is called *seignorage* or the inflation tax.
 
-So the government budget constraint becomes
-
-.. math::
-    B_{t}  &=&  B_{t-1} + r B_{t-1} + G_t + TR_t - T_t  - \frac{M_t - M_{t-1}}{P_t}
-
-Write it as
+Let's re-write the budget constraint as
 
 .. math::
     B_{t}  -  B_{t-1} + \frac{M_t - M_{t-1}}{P_t}  =  r B_{t-1} + G_t + TR_t - T_t
 
-Decisions about :math:`G_t`, :math:`TR_t` and :math:`T_t` are called *fiscal policy*
+It is common parlance to state that:
 
-Decision about :math:`B_t` and :math:`M_t` are called *monetary policy*.
+      Decisions about :math:`G_t`, :math:`TR_t` and :math:`T_t` are called *fiscal policy*
+
+      Decision about :math:`B_t` and :math:`M_t` are called *monetary policy*.
+      
+It is clear from the government budget constraint that these two policies are inherently intertwined.      
 
 Debt-to-GDP Ratio
 =================
@@ -434,7 +463,7 @@ Nonmarketable
 savings bonds and Victory loans played a much larger role in Treasury
 borrowing during World War II and the Korean War than they do today.
 
-Our focus on the government budget constraint impels us to concentrate
+Our focus on the government budget constraint compels us to concentrate
 on the debt held by the public.  
 
 The Evolution of the Debt to GDP Ratio
@@ -567,9 +596,10 @@ Deficits and Inflation
 
 * The revenue that a government raises by printing money is called *seignorage*.  This is the inflation tax.
 
-* Revolutionary War
+Typically in the United States seignorage is only a trivial share of government revenue.  
+But as we will see, during the Revolutionary War, seignorage comprised
 
-* A great quote by John Maynard Keynes *`The Economic Consequences of the Peace`_*, 1919, page 235
+* A great quote by John Maynard Keynes in his 1919 book `The Economic Consequences of the Peace`_, page 235
 
         Lenin is said to have declared that the best way to destroy the
         capitalist system was to debauch its currency.  By a continuing
@@ -610,7 +640,6 @@ So Friedman's really should have said,
 Since seignorage is a distortionary tax, as the government
 increases this tax, people will hold lower real balances.
 
-
 Whether seignorage rises or falls depends on whether inflation
 rises more or less than the decline in money holdings.
 
@@ -649,6 +678,8 @@ Keep going to the beginning of time (i.e. :math:`t=0`)
 
 .. math::
      B_{t} =  (1+r)^t B_{0} + \sum_{j=0}^{t} (1+r)^j \left( G_{t-j}  - T_{t-j} \right)
+
+The left hand side of this equation is the current stock of debt.  The right hand side of this equation 
 
 
 Government Debt is a Weighted Sum of Future Surpluses

@@ -220,7 +220,6 @@ Why did anyone accept bills of credit?
 
 * Congress also recommended to states that the state legislatures pass laws making these bills of credit *legal tender*.
 
-
 * The first of eleven emissions occurred on June 22, 1775.
 
 * The bills were apportioned across the colonies on the basis of population.
@@ -383,20 +382,24 @@ Final Settlement Certificates
 
 * A typical final settlement certificate:
 
-* show picture of final settlment certificate here
+* show picture of final settlement certificate here
 
 Interest in Arrears
 -------------------
 
 * After March 1, 1782 the Congress of the Confederation had no resources to pay interest or principal on loan office certificates or final settlement certificates.
 
-* place here graph of loan_office.ps
+.. figure:: _static/figures/loan_office.png
+    :scale: 60%
+    :align: center
 
-* Specie Value of the Outstanding Loan Office Certificates
+    **Specie Value of the Outstanding Loan Office Certificates**
 
-* Specie Value of the Final Settlement Certificates
+.. figure:: _static/figures/cert_of_indebt.png
+    :scale: 60%
+    :align: center
 
-* place graph of cert_of_indebt.ps
+    **Specie Value of the Final Settlement Certificates**
 
 Foreign Loans
 -------------
@@ -436,9 +439,11 @@ Debts Due to Foreign Officers
 
 * Foreign officers probably did better than their American counterparts.
 
-* Face Value Foreign Loans Outstanding
+.. figure:: _static/figures/foreign_loans.png
+    :scale: 60%
+    :align: center
 
-* place here foreign_loans.ps
+    **Face Value Foreign Loans Outstanding**
 
 Fiscal Accounting: Two Approaches
 =================================
