@@ -62,7 +62,8 @@ We call equations that link flow variables to their corresponding stock variable
 The Government Budget Constraint
 ================================
 
-Just as your credit card balance evolves from month to month, a sovereign government's debt evolves period to period according to a stock-flow equation we call
+Just as your credit card balance evolves from month to month, a sovereign government's debt 
+evolves period to period according to a stock-flow equation we call
 the government budget constraint.
 
 At each date :math:`t`:, the following equation must hold.
@@ -73,7 +74,7 @@ At each date :math:`t`:, the following equation must hold.
 where
 
 .. math::
-   G_t  &=& \mbox{government spending during period } t \\
+   G_t  &=& \mbox{government purchases during period } t \\
    TR_t &=& \mbox{transfer payments (e.g. social security) during period } t \\
    T_t &=& \mbox{taxes collected during period } t \\
    B_{t}  &=& \mbox{this period's } t \mbox{ government debt} \\
@@ -85,21 +86,29 @@ Many undergraduate macroeconomics textbooks write it this way
 .. math::
      B_{t} =  B_{t-1} + INT_t + G_t + TR_t - T_t
 
-With this equation in mind, let's take a stroll through the data.
+where :math:`INT_t` denotes *net interest payments*.
 
-The Distinction Between Government Spending and Transfer Payments
-------------------------------------------------------------------
+Defining Government Outlays
+----------------------------
 
-*Government spending* is the government purchase of goods and services to XXXXX.  
-These goods and services are valued at their cost to the government.  Examples of government spending 
-include providing public education, building of roads, and providing of national defense.
+*Government purchases* are government expenditures on newly produced goods and services.  
+These goods and services are valued at their cost to the government.  Examples of government purchases 
+include the provision of public education and national defense and the building of roads.
 
 *Transfer payments* on the other hand is spending in which the government redistributes income.  
-the government does not provide a good or a service.  It simply writes check to a particular group.
-Example include crop subsidies, Social Security, and unemployment insurance.  
+These are payments for which government does not receive a good or a service in return.  
+It simply writes check to a particular group.
+Examples of transfer payments include Medicare, Social Security, and unemployment insurance.  
 
-Fiscal Data: Federal Government
--------------------------------
+*Net interest payments* are the interest paid to government creditors less the interest paid to the government by
+its debtors (e.g. government loans to small businesses or farmers).  As we will see below, there is more than one
+way to measure the costs the government pays to borrow.
+
+Federal Government Fiscal Accounts
+----------------------------------
+
+OMB
+---
 
 Federal government spending and revenue are determined by its annual budgets 
 passed by Congress and signed by the President.  Since 1934, these budget numbers 
@@ -113,15 +122,25 @@ The federal government operates on a fiscal year which begins on October 1 and e
 September 30 of the next calendar year. 
 Prior to 1976, the federal fiscal year began on July 1 and ended on June 30.  
 
-The federal budget divides government spending by its function
+The federal budget divides government spending into five categories known as *superfunctions*.  These
+categories include all spending for a given topic, regardless of the federal agency that oversees the 
+individual federal program. 
 
-      since 1934, the  
+The five superfunctions are:
       
           1. national defense
           2. human resources
           3. physical resources 
           4. net interest
+          5. other
 
+Spending within these superfunctions are broken down further into twenty functions.
+
+Revenues
+
+
+U.S. Treasury
+-------------
 
 Between 1790 and 1940, the U.S. Treasury reported the budget numbers.  These numbers are available
 from the `Annual Report of the Secretary of the Treasury on the State of the Finances`_.
@@ -135,7 +154,6 @@ Prior to 1940 there were five primary (or top level) categories
           3. pensions
           4. Indians 
           5. interest
-
 
 Government spending is also recorded in a second set of accounts: `the National Income and Product Accounts (NIPA)`_
 
@@ -157,26 +175,27 @@ The three primary or top level categories are
 
      3. Net interest payments, :math:`INT_t`
 
-Prior to the establishment of the Department of Treasury in 1790, 
+The Revolutionary and Continental Accounts
+-------------------------------------------
 
-  * constructed accounts from various reports
+Prior to the establishment of the Department of Treasury in 1790, we will construct our own accounts 
+from various reports and ledgers.
 
-
-
+With these accounts in mind, let's take a stroll through the data.
 
 Comparison Between Federal and State \& Local
 ---------------------------------------------
 
-* Combined U.S. federal, state, and local government together.
-
-   * spending well over 1/3 of GDP.
-
+If we combine U.S. federal, state, and local government together, total spending 
+is well over 1/3 of GDP.
 
 .. figure:: _static/figures/all_gov_rec_exp.png
     :scale: 60%
     :align: center
 
     **NIPA: Total Government Receipts and Expenditures as a Percent of GDP**
+
+In the following graph shows the expenditures trends in the primary categories
     
 .. figure:: _static/figures/all_gov_exp_decomp.png
     :scale: 60%
@@ -185,16 +204,15 @@ Comparison Between Federal and State \& Local
     **NIPA: Total Government Expenditures Decomposed By Type**
 
 
-*  Current composition of the federal government budget is quite different from state and local budgets.
 
-   * One often hears
+Current composition of the federal government budget is quite different from state and local budgets.
+
+Federal spending is more heavily weighted toward transfer payments.  
 
      *The federal government is a gigantic insurance company 
      with a side business in defense.*
 
-* State and local governments more directly involved in government purchases
-
-
+State and local governments more directly involved in government purchases
 
 
 .. figure:: _static/figures/fed_gov_exp_decomp.png
@@ -206,10 +224,6 @@ Comparison Between Federal and State \& Local
 During World War II, government consumption spending spikes
 
 Since World War II transfer payments have steadily grown as larger share 
-
-
-
-
 
 
 .. figure:: _static/figures/sl_gov_exp_decomp.png
@@ -239,6 +253,7 @@ Since World War II transfer payments have steadily grown as larger share
 Revenue Side
 ------------
 
+On the 
 NIPA: Six principal categories
 
 #. Personal taxes:

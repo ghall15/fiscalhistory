@@ -588,7 +588,7 @@ Implications for Federal Spending
 
 .. epigraph::
 
-     The natural progress of things is for liberty to yeild, and government to gain ground.
+     *The natural progress of things is for liberty to yeild, and government to gain ground.*
 
      -- Thomas Jefferson to Edward Carrington, Paris, May 27, 1788
 

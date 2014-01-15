@@ -94,14 +94,15 @@
 </div>
 <div class="section" id="id1">
 <h2>The Government Budget Constraint<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>Just as your credit card balance evolves from month to month, a sovereign government&#8217;s debt evolves period to period according to a stock-flow equation we call
+<p>Just as your credit card balance evolves from month to month, a sovereign government&#8217;s debt
+evolves period to period according to a stock-flow equation we call
 the government budget constraint.</p>
 <p>At each date <span class="math">\(t\)</span>:, the following equation must hold.</p>
 <div class="math">
 \[B_{t} =  B_{t-1} + r B_{t-1} + G_t + TR_t - T_t\]</div>
 <p>where</p>
 <div class="math">
-\[\begin{split}G_t  &amp;=&amp; \mbox{government spending during period } t \\
+\[\begin{split}G_t  &amp;=&amp; \mbox{government purchases during period } t \\
 TR_t &amp;=&amp; \mbox{transfer payments (e.g. social security) during period } t \\
 T_t &amp;=&amp; \mbox{taxes collected during period } t \\
 B_{t}  &amp;=&amp; \mbox{this period's } t \mbox{ government debt} \\
@@ -110,18 +111,25 @@ r  &amp;=&amp; \mbox{real interest rate}\end{split}\]</div>
 Many undergraduate macroeconomics textbooks write it this way</p>
 <div class="math">
 \[B_{t} =  B_{t-1} + INT_t + G_t + TR_t - T_t\]</div>
-<p>With this equation in mind, let&#8217;s take a stroll through the data.</p>
-<div class="section" id="the-distinction-between-government-spending-and-transfer-payments">
-<h3>The Distinction Between Government Spending and Transfer Payments<a class="headerlink" href="#the-distinction-between-government-spending-and-transfer-payments" title="Permalink to this headline">¶</a></h3>
-<p><em>Government spending</em> is the government purchase of goods and services to XXXXX.
-These goods and services are valued at their cost to the government.  Examples of government spending
-include providing public education, building of roads, and providing of national defense.</p>
+<p>where <span class="math">\(INT_t\)</span> denotes <em>net interest payments</em>.</p>
+<div class="section" id="defining-government-outlays">
+<h3>Defining Government Outlays<a class="headerlink" href="#defining-government-outlays" title="Permalink to this headline">¶</a></h3>
+<p><em>Government purchases</em> are government expenditures on newly produced goods and services.
+These goods and services are valued at their cost to the government.  Examples of government purchases
+include the provision of public education and national defense and the building of roads.</p>
 <p><em>Transfer payments</em> on the other hand is spending in which the government redistributes income.
-the government does not provide a good or a service.  It simply writes check to a particular group.
-Example include crop subsidies, Social Security, and unemployment insurance.</p>
+These are payments for which government does not receive a good or a service in return.
+It simply writes check to a particular group.
+Examples of transfer payments include Medicare, Social Security, and unemployment insurance.</p>
+<p><em>Net interest payments</em> are the interest paid to government creditors less the interest paid to the government by
+its debtors (e.g. government loans to small businesses or farmers).  As we will see below, there is more than one
+way to measure the costs the government pays to borrow.</p>
 </div>
-<div class="section" id="fiscal-data-federal-government">
-<h3>Fiscal Data: Federal Government<a class="headerlink" href="#fiscal-data-federal-government" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="federal-government-fiscal-accounts">
+<h3>Federal Government Fiscal Accounts<a class="headerlink" href="#federal-government-fiscal-accounts" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="omb">
+<h3>OMB<a class="headerlink" href="#omb" title="Permalink to this headline">¶</a></h3>
 <p>Federal government spending and revenue are determined by its annual budgets
 passed by Congress and signed by the President.  Since 1934, these budget numbers
 are reported by the <a class="reference external" href="http://www.whitehouse.gov/omb/budget">Office of Management and Budget (OMB)</a>.</p>
@@ -129,18 +137,24 @@ are reported by the <a class="reference external" href="http://www.whitehouse.go
 <p>The federal government operates on a fiscal year which begins on October 1 and ends on
 September 30 of the next calendar year.
 Prior to 1976, the federal fiscal year began on July 1 and ended on June 30.</p>
-<p>The federal budget divides government spending by its function</p>
-<blockquote>
-<div><p>since 1934, the</p>
+<p>The federal budget divides government spending into five categories known as <em>superfunctions</em>.  These
+categories include all spending for a given topic, regardless of the federal agency that oversees the
+individual federal program.</p>
+<p>The five superfunctions are:</p>
 <blockquote>
 <div><ol class="arabic simple">
 <li>national defense</li>
 <li>human resources</li>
 <li>physical resources</li>
 <li>net interest</li>
+<li>other</li>
 </ol>
 </div></blockquote>
-</div></blockquote>
+<p>Spending within these superfunctions are broken down further into twenty functions.</p>
+<p>Revenues</p>
+</div>
+<div class="section" id="u-s-treasury">
+<h3>U.S. Treasury<a class="headerlink" href="#u-s-treasury" title="Permalink to this headline">¶</a></h3>
 <p>Between 1790 and 1940, the U.S. Treasury reported the budget numbers.  These numbers are available
 from the <a class="reference external" href="http://fraser.stlouisfed.org/publication/?pid=194">Annual Report of the Secretary of the Treasury on the State of the Finances</a>.</p>
 <p>Prior to 1940 there were five primary (or top level) categories</p>
@@ -170,44 +184,32 @@ from the <a class="reference external" href="http://fraser.stlouisfed.org/public
 <li>Net interest payments, <span class="math">\(INT_t\)</span></li>
 </ol>
 </div></blockquote>
-<p>Prior to the establishment of the Department of Treasury in 1790,</p>
-<blockquote>
-<div><ul class="simple">
-<li>constructed accounts from various reports</li>
-</ul>
-</div></blockquote>
+</div>
+<div class="section" id="the-revolutionary-and-continental-accounts">
+<h3>The Revolutionary and Continental Accounts<a class="headerlink" href="#the-revolutionary-and-continental-accounts" title="Permalink to this headline">¶</a></h3>
+<p>Prior to the establishment of the Department of Treasury in 1790, we will construct our own accounts
+from various reports and ledgers.</p>
+<p>With these accounts in mind, let&#8217;s take a stroll through the data.</p>
 </div>
 <div class="section" id="comparison-between-federal-and-state-local">
 <h3>Comparison Between Federal and State &amp; Local<a class="headerlink" href="#comparison-between-federal-and-state-local" title="Permalink to this headline">¶</a></h3>
-<ul>
-<li><p class="first">Combined U.S. federal, state, and local government together.</p>
-<blockquote>
-<div><ul class="simple">
-<li>spending well over 1/3 of GDP.</li>
-</ul>
-</div></blockquote>
-</li>
-</ul>
+<p>If we combine U.S. federal, state, and local government together, total spending
+is well over 1/3 of GDP.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/all_gov_rec_exp.png"><img alt="_images/all_gov_rec_exp.png" src="_images/all_gov_rec_exp.png" style="width: 720.0px; height: 540.0px;" /></a>
 <p class="caption"><strong>NIPA: Total Government Receipts and Expenditures as a Percent of GDP</strong></p>
 </div>
+<p>In the following graph shows the expenditures trends in the primary categories</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/all_gov_exp_decomp.png"><img alt="_images/all_gov_exp_decomp.png" src="_images/all_gov_exp_decomp.png" style="width: 720.0px; height: 540.0px;" /></a>
 <p class="caption"><strong>NIPA: Total Government Expenditures Decomposed By Type</strong></p>
 </div>
-<ul>
-<li><p class="first">Current composition of the federal government budget is quite different from state and local budgets.</p>
-<ul>
-<li><p class="first">One often hears</p>
-<p><em>The federal government is a gigantic insurance company
-with a side business in defense.</em></p>
-</li>
-</ul>
-</li>
-<li><p class="first">State and local governments more directly involved in government purchases</p>
-</li>
-</ul>
+<p>Current composition of the federal government budget is quite different from state and local budgets.</p>
+<p>Federal spending is more heavily weighted toward transfer payments.</p>
+<blockquote>
+<div><em>The federal government is a gigantic insurance company
+with a side business in defense.</em></div></blockquote>
+<p>State and local governments more directly involved in government purchases</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/fed_gov_exp_decomp.png"><img alt="_images/fed_gov_exp_decomp.png" src="_images/fed_gov_exp_decomp.png" style="width: 720.0px; height: 540.0px;" /></a>
 <p class="caption"><strong>NIPA: Federal Expenditures Decomposed By Type</strong></p>
@@ -233,7 +235,8 @@ with a side business in defense.</em></p>
 </div>
 <div class="section" id="revenue-side">
 <h3>Revenue Side<a class="headerlink" href="#revenue-side" title="Permalink to this headline">¶</a></h3>
-<p>NIPA: Six principal categories</p>
+<p>On the
+NIPA: Six principal categories</p>
 <ol class="arabic simple">
 <li>Personal taxes:</li>
 </ol>
@@ -637,7 +640,8 @@ rises more or less than the decline in money holdings.</p>
 <li class="toctree-l1"><a class="reference internal" href="debt_ceiling.html">The Debt Ceiling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bond_pricing_primer.html">A Primer on Bond Pricing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="american_revolution.html">The American Revolution</a></li>
-<li class="toctree-l1"><a class="reference internal" href="act1790.html">The Articles of Confederation, the Constitution, and the Funding Act of August 4, 1790</a></li>
+<li class="toctree-l1"><a class="reference internal" href="articles_of_confederation.html">The Articles of Confederation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="act1790.html">The Constitution and the Funding Act of 1790</a></li>
 <li class="toctree-l1"><a class="reference internal" href="early_republic.html">The Early Republic: 1792 to 1812</a></li>
 </ul>
 

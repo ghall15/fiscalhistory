@@ -53,6 +53,33 @@ Important Dates
     | August 4, 1790     | Funding Act                                                    |
     +--------------------+----------------------------------------------------------------+
 
+
+British Prior to the Revolution
+===============================
+
+During the 18th century Britian fights a series of wars
+
+    * War of Spanish Succession (1701-1714)
+    
+    * Seven Years' War (1756-1763)
+
+       * in the US we refer to this as the French and Indian War
+       
+The UK debt-to-GDP soars to over 150 percent in the early 1760s        
+
+.. figure:: _static/figures/UK_debt_to_GDP.png
+    :scale: 60%
+    :align: center
+
+    **UK Debt to GDP Ratio**
+
+How is Britian going to pay off such an enormous debt?
+
+    * Is the purpose of the colonies to serve the mother country?
+    
+    * The colonists do not see why their tax dollars should go to pay for European wars. 
+
+
 How does one finance a revolution?
 ==================================
 
@@ -116,11 +143,55 @@ Attempts at "Taxation"
 Bills of Credit
 ---------------
 
-* Continental Dollars
-
 .. image:: _static/images/Continental.jpg
     :scale: 70%
     :align: center
+
+**A Continental Three Dollar Bill**
+
+Digression --  A puzzling phrase  
+---------------------------------
+
+We were puzzled by the Latin phrase *Exitus in Dubio Est* which appears 
+alongside a picture of an eagle and a heron or crane fighting in the sky
+on the three dollar continental. The phrase means "The Outcome is in Doubt."
+
+Our good friend, `Francois Velde`_, provided the following answer.
+
+    Other denominations bore similar pairings of Latin mottoes
+    and images; such pairings are called "`imprese`_", in which the picture is the body and the motto
+    (in Italian: "word") is the soul, illuminating the moral or explaining the allegory:
+
+
+    The source seems to be `Johann Camerarius's Symbola et Emblemata`_, a work first printed in 1590:
+    although the figure of a crane and an eagle (or falcon) fighting appears in `paintings of Carpaccio and
+    Veneziano, and an engraving of Durer`_:
+
+.. _imprese: http://www.heraldica.org/topics/imprese.htm
+
+.. _Johann Camerarius's Symbola et Emblemata: http://books.google.com/books?id=1PlDAAAAcAAJ&pg=RA1-PA64
+
+.. _paintings of Carpaccio and Veneziano, and an engraving of Durer: http://books.google.com/books?id=FOZVPjSTznwC&pg=PA62
+
+.. _Francois Velde: http://www.chicagofed.org/webpages/people/velde_francois.cfm
+
+    The phrase itself appears twice in Ovid, in the Metamorphoses and in the Fasti.  In the latter case, it
+    is used by Tarquin as he hesitates to go back and rape Lucretia; he continues by saying that he will
+    go to any extremity, and that gods and fortune smile on the daring.
+
+    Camerarius explains that "the battles of Mars are dubious and uncertain events; he often loses who
+    was near victory".  The story is that, although you might think the falcon would be the obvious winner,
+    the heron's excrements could so soil the falcon's plumage as to make him unable to fly, if only he could
+    remain on top.
+
+    All of the other figures on the continental issues are taken straight from Camerarius, so it seems clear that
+    this book was the source.  The `1775 article in the Pennsylvania Gazette`_ is attributed to Ben Franklin.
+    The idea of putting an allegory with a Latin motto on coinage or near-coinage is of course an old tradition.
+    It still lives in the US great seal, with the rising constellation of 13 stars and the motto "e pluribus unum",
+    out of many one.
+
+.. _1775 article in the Pennsylvania Gazette: http://www.historycarper.com/1775/09/20/account-of-the-devices-on-the-continental-bills-of-credit/
+
 
 * The first authorization of *bills of credit* was made in Philadelphia in May 1775.
 
