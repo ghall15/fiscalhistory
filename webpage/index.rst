@@ -25,6 +25,8 @@ Table of Contents:
    articles_of_confederation
    act1790
    early_republic
+   war_of_1812
+   internal_improve
 
 
 Indices and tables

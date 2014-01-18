@@ -1,0 +1,1461 @@
+\documentclass[professionalfonts,small]{beamer}
+\setbeamercovered{transparent}
+\usepackage{psfig}
+%\usetheme{boxes}
+%\usecolortheme{beaver}
+\usepackage{epstopdf}
+\usepackage{lipsum}% http://ctan.org/pkg/lipsum
+\usepackage{setspace}% http://ctan.org/pkg/setspace
+\let\oldframetitle\frametitle% Store old \frametitle in \oldframetitle
+\renewcommand{\frametitle}[1]{% Redefine \frametitle
+  \oldframetitle{#1}\setstretch{1.25}}
+%\setstretch{2} <--- uncomment to see the global effect of \setstretch{2}
+
+
+\newcommand{\Lower}[1]{\smash{\lower 1.5ex \hbox{#1}}}
+\newcommand{\STRUT}{\rule{0in}{3ex}}
+
+\begin{document}
+
+\begin{frame}{The War of 1812}
+
+\begin{enumerate}
+
+\item Background
+
+\smallskip
+
+\item A Theory of War Finance
+\begin{itemize}
+\item taxes versus debt
+\item Ricardian equivalence
+\item Gallatin-Barro tax smoothing
+\end{itemize}
+
+\smallskip
+
+\item Financing the War: Theory and Reality
+
+\smallskip
+
+\item How Much Did the Federal Government Pay to Borrow?
+
+\smallskip
+
+\item Legacy of the War
+
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Background}
+
+\begin{itemize}
+
+\item Gordon Wood: ``The War of 1812 is the strangest war in American history."
+
+\medskip
+
+\item Articulation by Gallatin of Principles for War Finance
+
+\medskip
+
+\item Leads to
+\begin{itemize}
+\item a fiscal crisis,
+\item the burning of Washington D.C.,
+\item a reversal of Republican fiscal goals, and
+\item the end the Federalist party
+\end{itemize}
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Reasons for War}
+
+\begin{itemize}
+
+\item Stated Reasons
+\begin{itemize}
+\item British impressment of American sailors
+\item British violation of maritime rights
+\end{itemize}
+
+\medskip
+
+\item Gordon Woods:  ``the war became the logical consequence of the Republicans' diplomacy since 1805."
+
+\medskip
+
+\item Declaration of War in June 1812
+\begin{itemize}
+\item House: 79 to 49 for war
+\item Senate: 19 to 13
+\item Support from South and West, Republicans
+\item New England and Federalists were opposed
+\end{itemize}
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Background: Key Dates}
+
+\scriptsize
+
+\begin{tabular}{p{3cm}p{6cm}}
+June 18, 1812  & Declaration of war by the United States \STRUT \\
+Summer/Fall 1812 & U.S. invades Canada, fails \STRUT \\
+August 19, 1812 & USS {\it Constitution} defeats the HMS {\it Guerriere} \STRUT \\
+September 1813 & Commodore Perry defeats the British fleet in Lake Erie \STRUT \\
+August 14, 1814 & Burning of Washington D.C. \STRUT \\
+September 13-14, 1814 & Attack on Fort McHenry \STRUT \\
+December 1814 & Hartford Convention \STRUT \\
+December 14, 1814 & Treaty of Ghent signed \STRUT\\
+January 8, 1815 & The Battle of New Orleans \STRUT\\
+February 15, 1815 & U.S. ratifies Treaty of Ghent \STRUT \\
+\end{tabular}
+\end{frame}
+
+
+\begin{frame}{How Should a Country Finance a War?}
+
+The government's budget constraint
+\begin{eqnarray*}
+{B_t} = \sum_{s=0}^{\infty} \left(\frac{1}{1+r}\right)^s ( T_{t+s} - G_{t+s} ).
+\end{eqnarray*}
+
+\medskip
+
+If an unexpected increase in spending occurs, the government can do three things:
+\begin{enumerate}
+\item cut spending somewhere else,
+\item raise taxes now or later
+\item impose a capital loss on the bond holders
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Debt or taxes?}
+
+\begin{itemize}
+
+\item Consider a one-period example
+
+\item Assume no foreign borrowing or lending
+
+\item The private sector (i.e. households) budget constraint:
+\begin{eqnarray*}
+Y-T =  C + S_{pvt}
+\end{eqnarray*}
+where
+\begin{eqnarray*}
+Y  &=& \mbox{income}\\
+T  &=& \mbox{lump-sum taxes}\\
+C  &=& \mbox{consumption}\\
+S_{pvt}  &=& \mbox{private saving}
+\end{eqnarray*}
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{itemize}
+
+\item Government saving, $S_{gvt}$, is just the opposite of the deficit
+\begin{eqnarray*}
+S_{gvt} = T - G
+\end{eqnarray*}
+
+\item National saving
+\begin{eqnarray*}
+S &=& S_{pvt} + S_{gvt} \\
+  &=& Y-T - C + T - G  \\
+  &=&  Y - C - G
+\end{eqnarray*}
+
+\item Since national saving must be zero: $ Y = C + G$
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Consider a Two-Period Example}
+
+\begin{itemize}
+
+\item Assumptions
+\begin{enumerate}
+\item lump-sum taxes
+\item no money, so no inflation
+\item no uncertainty
+\end{enumerate}
+
+\medskip
+
+\item Consider an environment in which households live for two periods:
+\begin{itemize}
+\item period 1: now
+\item period 2: the future
+\end{itemize}
+
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+
+\begin{itemize}
+
+\item Assume an individual gets happiness from consumption ($C_t$) in
+each period. So happiness is a function of $C_1$ and $C_2$.
+
+
+\item In period 1, the individual has some after-tax income $Y_1 - T_1$ so her budget constraint is:
+\begin{eqnarray*}
+C_1 + S_{pvt} = Y_1 - T_1
+\end{eqnarray*}
+\item In period 2, the individual has after-tax income $Y_2 - T_2$ plus her savings from the previous period
+\begin{eqnarray*}
+C_2 = Y_2-T_2 + (1+r)S_{pvt}
+\end{eqnarray*}
+Note $S_{pvt}$ can be positive or negative.
+
+\item We can substitute out for $S_{pvt}$.
+\begin{eqnarray*}
+C_2 = Y_2 - T_2 + (1+r)(Y_1 - T_1 - C_1)
+\end{eqnarray*}
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+
+
+\item Rearranging we get
+$$C_1 + \frac{C_2}{1+r} = Y_1 - T_1 + \frac{Y_2 - T_2}{1+r}$$
+
+\medskip
+
+\item Everything in this equation is units of ``goods in period
+1''.  The term $\frac{1}{1+r}$ is relative price of goods between the
+two periods and converts the units from the second period into the
+first.
+
+\medskip
+
+\item This budget line equates the present value of lifetime
+consumption (PVLC) to the present value of lifetime resources (PVLR).
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{The household's budget constraint}
+
+Let's think about the problem graphically.
+\begin{itemize}
+\item The budget constraint can be written in $y = b + mx$ form.
+\begin{eqnarray*}
+C_2  = (1+r) (Y_1 - T_1) + (Y_2 -T_2) - (1+r)C_1
+\end{eqnarray*}
+
+\item What is the opportunity cost of additional consumption in period 1?  of additional consumption in period
+    2?
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Household Preferences for Consumption Over Time}
+
+\begin{itemize}
+
+\item Households prefer a little bit of consumption each period rather than a lot one period and a little the
+    other.
+
+\item Consider your eating patterns ...
+
+\item For now, let's take this assumption to the extreme.
+
+\item Assume households always choose
+\begin{eqnarray*}
+C_1 = C_2
+\end{eqnarray*}
+
+\item Measured private saving is
+$$ S_{pvt} = (Y_1 - T_1) - C_1 $$
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Now Add a Government}
+
+\begin{itemize}
+
+\item The government spends G in period 1 and nothing in period 2.
+
+\medskip
+
+\item The government can pay for it across two periods. So the
+present
+value government budget constraint is
+
+$$ G  = T_1 + \frac{T_2}{1+r}.$$
+
+\medskip
+
+\item The government has to raise the revenue to cover this
+expenditures.  Consider two policy options:
+\begin{enumerate}
+\item tax finance: set $T_1 = G$, $T_2 = 0$
+\item debt finance: set $T_1 = 0$, $T_2 = (1+r)G$
+\end{enumerate}
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+Will these two financing arrangements have different effects on
+the household's consumption patterns?  Let's think
+through the intuition
+\begin{itemize}
+\item Taxes just reduce the household's after-tax income $Y_1 - T_1$ and/or $Y_2 - T_2$.
+
+\smallskip
+
+\item Both policies are going to reduce the PVLR
+by the same amount.
+
+\smallskip
+
+\item So the household doesn't care which one of these policies the government implements.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Ricardian Equivalence}
+
+\begin{itemize}
+
+\item Robert Barro
+
+\medskip
+
+\item Ricardian equivalence implies that the timing of taxes is irrelevant on household consumption choices.
+
+\medskip
+
+\item A change in current taxes, exactly offset in present-value terms by an equal and opposite change in future
+    taxes will have no effect on the optimal choices of $C_1$ and $C_2$.
+
+\medskip
+
+\item A tax cut this period, leaving government spending unchanged, will decrease government saving this
+    period.
+But this decrease in government saving will be exactly offset by an increase in private saving, leaving national
+saving unchanged.
+
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{When will Ricardian Equivalence not hold?}
+
+\begin{itemize}
+
+\item Taxes are not lump-sum
+
+\medskip
+
+\item Borrowing and lending constraints
+
+\medskip
+
+\item Short-sightedness
+
+\medskip
+
+\item Are taxpayers and bondholders the same people?  Who pays?
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Gallatin's Principles of War Finance}
+
+\begin{itemize}
+\item In peacetime, the government should not borrow to finance current expenditures.
+
+\medskip
+
+\item November 6, 1807:  Tax rates should be set to ...
+
+\smallskip
+
+\begin{quote}
+provide a revenue at least equal to the annual expenses on a peace establishment,
+the interest on the existing debt, and the interest on the loans which may be raised.
+\end{quote}
+
+\smallskip
+
+\begin{quote}
+losses and privations caused by war should not be aggravated by taxes beyond what is strictly necessary
+\end{quote}
+
+\medskip
+
+\item Why doesn't Gallatin believe in Ricardian equivalence?
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Robert Barro's Model of Tax Smoothing}
+
+\begin{itemize}
+
+\item  Robert J. Barro  ``On the Determination of the Public Debt", {\em Journal of Political Economy},
+Vol. 87, No. 5, Part 1 (Oct., 1979), pp. 940-971
+
+\medskip
+
+\item Infinite horizon
+
+\medskip
+
+\item Tax create distortions (i.e. inefficiencies) which increase at an increasing rate with the tax rate.
+
+\medskip
+
+\item Government would like to minimize these inefficiencies.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Tax Smoothing}
+
+\begin{itemize}
+
+\item First, consider a deterministic setting.
+\begin{itemize}
+\item That is, the path of government purchases ($G_t$) is given
+\end{itemize}
+
+\medskip
+
+\item Assume the real interest rate  ($r$) is fixed.
+
+\medskip
+
+\item The initial outstanding stock of debt $B_0$ is some number (perhaps zero).
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{itemize}
+
+\item The government budget constraint is:
+\begin{eqnarray*}
+B_t = (1+r) B_{t-1} + G_t - T_t
+\end{eqnarray*}
+
+\item In present value form
+\begin{eqnarray*}
+\sum_{t=1}^{\infty} \frac{G_t}{(1+r)^t} + B_0 = \sum_{t=1}^{\infty} \frac{T_t}{(1+r)^t}
+\end{eqnarray*}
+
+\item The government want to choose the path of taxes $T_t$ and debt $B_t$
+to satisfy its budget constraint
+while minimizing the present value of the costs of distortions that the taxes create.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{itemize}
+\item Consider government choose pathes of taxes and debt to minimize
+$$ \sum_{t=0}^{\infty} \left(\frac{1}{1+r}\right)^t \left( \phi_1 T_t + \frac{1}{2} \phi_2 T_t^2 \right).$$
+\item The government budget constraint is
+$$ B_t = (1+r) B_{t-1} + G_t - T_t.$$
+
+\item Assume $G_t$ is a deterministic process.
+
+\item Assume $B_0$ = 0.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{itemize}
+\item Set up the Lagrangian
+{\footnotesize
+\begin{eqnarray*}
+{\cal L} = \min_{T_t, B_t} \sum_{t=0}^{\infty} \left(\frac{1}{1+r}\right)^t \left( \phi_1 T_t + \frac{1}{2}
+\phi_2 T_t^2  + \lambda_t( B_t - (1+r) B_{t-1} - G_t + T_t)\right)
+\end{eqnarray*}}
+
+\item Take first order conditions
+\begin{eqnarray*}
+\frac{\partial \cal L}{\partial T_t} &=& \phi_1 + \phi_2 T_t - \lambda_t = 0  \; \; \forall t \\
+\frac{\partial \cal L}{\partial B_t} &=& \lambda_t  - \frac{1}{1+r} (1+r) \lambda_{t+1} = 0  \; \; \forall t \\
+\frac{\partial \cal L}{\partial \lambda_t} &=& B_t - (1+r) B_{t-1} - G_t + T_t = 0  \; \; \forall t \\
+\end{eqnarray*}
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{itemize}
+
+\item The first two FOCs imply
+\begin{eqnarray*}
+T_t = T_{t+1} \; \; \forall t
+\end{eqnarray*}
+
+\item Taxes  must be constant.  A smooth tax rate minimizes distortions over time.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Tax Smoothing in a stochastic setting}
+
+\begin{itemize}
+
+\item Now consider an environment in which $G_t$ follows a stochastic process.
+
+\item The government's problem becomes
+\begin{eqnarray*}
+\min_{T_t} E \sum_{t=1}^{\infty}  \left(\frac{1}{1+r}\right)^t  \left( \phi_1 T_t + \frac{1}{2} \phi_2 T_t^2
+\right)
+\end{eqnarray*}
+subject to
+\begin{eqnarray*}
+\sum_{t=1}^{\infty} \frac{G_t}{(1+r)^t} + B_0 = \sum_{t=1}^{\infty} \frac{T_t}{(1+r)^t}
+\end{eqnarray*}
+
+\item The $E$ stands for expectation.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+
+{\footnotesize
+Again we can set up a Lagrangian
+\begin{eqnarray*}
+{\cal L} = \min_{T_t, B_t} E_0 \sum_{t=0}^{\infty} \left(\frac{1}{1+r}\right)^t \left( \phi_1 T_t + \frac{1}{2}
+\phi_2 T_t^2  + \lambda_t( B_t - (1+r) B_{t-1} - G_t + T_t)\right)
+\end{eqnarray*}
+
+Take first order conditions
+\begin{eqnarray*}
+\frac{\partial \cal L}{\partial T_t} &=& \phi_1 + \phi_2 T_t - \lambda_t = 0  \; \; \forall t \\
+\frac{\partial \cal L}{\partial B_t} &=& \lambda_t  - E_t \frac{1}{1+r} (1+r) \lambda_{t+1} = 0  \; \; \forall t
+\\
+\frac{\partial \cal L}{\partial \lambda_t} &=& B_t - (1+r) B_{t-1} - G_t + T_t = 0  \; \; \forall t \\
+\end{eqnarray*}
+
+\medskip
+
+The first two FOCs imply
+\begin{eqnarray*}
+T_t = E_t T_{t+1} \; \; \forall t
+\end{eqnarray*}
+{\em Tax rates follow a random walk.  There cannot be predictable changes in the tax rate.}}
+
+\end{frame}
+
+\begin{frame}{Implications}
+
+\begin{itemize}
+
+\item This implies $E_t T_{t+s} = T_t$ for any $s > 0$.
+
+\medskip
+
+\item Consider again the government budget constraint.
+\begin{eqnarray*}
+\sum_{t=1}^{\infty} \frac{G_t}{(1+r)^t} + B_0 = \sum_{t=1}^{\infty} \frac{T_t}{(1+r)^t}
+\end{eqnarray*}
+or
+\begin{eqnarray*}
+B_0 = E_t \sum_{t=1}^{\infty} \frac{T_t - G_t}{(1+r)^t}
+\end{eqnarray*}
+
+\medskip
+
+\item So we can write the GBC as
+\begin{eqnarray*}
+B_t = \frac{T}{r} - E_t \sum_{s=0}^{\infty} \frac{G_{t+s}}{(1+r)^{s+1}}
+\end{eqnarray*}
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{A Temporary Increase in Government Expenditures}
+
+
+Suppose government spending follows the stochastic process
+\begin{eqnarray*}
+G_t &=& \bar{G} + \epsilon_t \\
+E_t \epsilon_{t+1} &=& 0.
+\end{eqnarray*}
+So shocks are purely transitory.
+
+\end{frame}
+
+\begin{frame}{A Temporary Increase in Government Expenditures (con't)}
+
+Then
+\begin{eqnarray*}
+B_t &=& \frac{T_t}{r} - E_t \sum_{s=0}^{\infty} \frac{G_{t+s}}{(1+r)^{s+1}} \\
+ &=& \frac{T_t}{r} - \frac{\bar{G}}{r} - \frac{\epsilon_t}{1+r}
+\end{eqnarray*}
+so
+\begin{eqnarray*}
+T_t = \bar{G} + rB_t + \frac{r}{1+r} \epsilon_t
+\end{eqnarray*}
+and
+\begin{eqnarray*}
+B_{t+1} = \frac{T_{t+1}}{r} - \frac{\bar{G}}{r} - \frac{\epsilon_{t+1}}{1+r}
+\end{eqnarray*}
+
+\end{frame}
+
+\begin{frame}{A Temporary Increase in Government Expenditures (con't)}
+
+so
+\begin{eqnarray*}
+E_t B_{t+1} &=& \frac{E_t T_{t+1}}{r} - \frac{\bar{G}}{r} \\
+            &=& \frac{T_t}{r} - \frac{\bar{G}}{r} \\
+            &=& B_t + \frac{\epsilon_{t+1}}{1+r}
+\end{eqnarray*}
+
+\medskip
+
+This holds for all subsequent periods
+\begin{eqnarray*}
+E_t B_{t+n} &=& B_t + \frac{\epsilon_{t+1}}{1+r}
+\end{eqnarray*}
+
+\end{frame}
+
+\begin{frame}
+
+
+$\frac{1}{1+r}$ of the increase is absorbed through an increase in debt.
+
+\bigskip
+
+$\frac{r}{1+r}$ of the increase is absorbed through an increase in taxes.
+
+\bigskip
+
+\bigskip
+
+Recall Gallatin's quote:  Tax rates should be set to ...
+
+\medskip
+
+\begin{quote}
+provide a revenue at least equal to the annual expenses on a peace establishment,
+the interest on the existing debt, and the interest on the loans which may be raised.
+\end{quote}
+
+\end{frame}
+
+\begin{frame}{Deficits Under Tax Smoothing}
+\centerline{\psfig{file=barro_tax_smooth.ps,width=3.5in}}
+\end{frame}
+
+
+\begin{frame}{A Permanent Increase in Government Expenditures}
+
+\begin{itemize}
+
+\item Suppose government spending increases by $\Delta G$ permanently.
+
+\item The government budget constraint is
+\begin{eqnarray*}
+(1+r) B_{t+s} = T_{t+s} - (\bar{G} + \Delta G) + B_{t+s+1}  \; \; \forall s \ge 0
+\end{eqnarray*}
+
+\item If we want to smooth taxes $T_{t+s} = T_t$, then:
+\begin{eqnarray*}
+(1+r) B_{t+s} = T_{t} - (\bar{G} + \Delta G) + B_{t+s+1}  \; \; \forall s \ge 0
+\end{eqnarray*}
+So $B_{t+s} = B_{t+s+1} $ for all $s$, so debt must stay constant.
+
+\item Entire shock is absorbed by the tax rate.  Taxes rise by $\Delta G$.
+
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{From Theory to Reality:  Gallatin's Estimates}
+
+\small
+\begin{itemize}
+
+\item Woods, page 670,
+\begin{quote}
+\small
+Albert Gallatin pointed out at the outset [ March 1812], the Republicans needed to conduct a war without
+promoting ``the evils inseparable from it ...
+debt, perpetual taxation, military establishments, and other corrupting or anti-republican habits or
+institutions."
+\end{quote}
+
+\medskip
+
+\item Gallatin estimated peacetime expenditures at \$7 million and peacetime revenue at \$14 million.
+
+
+\medskip
+
+\item Estimated 50\% loss of revenue from the war
+
+
+\medskip
+
+\item Need internal tax increases to cover the interest cost of the war loans.
+
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Reality: Financing of the War of 1812}
+
+\begin{itemize}
+
+\item Prior to declaration of war, the Madison and Gallatin anticipate war with Britain, but
+\begin{itemize}
+\item from 1807 to 1812, lots of talk and planning, little in action
+\item in 1810 rather than raise taxes, spending on the military is cut (what the \%\#\@\&?)
+\item talk about moth-balling the navy
+\item 1811 killed the BUS
+\end{itemize}
+
+\medskip
+
+\item Six Per Cent Loan of 1812
+\begin{itemize}
+\item March 14, 1812
+\item \$11 million
+\end{itemize}
+
+\medskip
+
+\item War declared on June 18, 1812.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Taxes}
+\footnotesize
+\begin{itemize}
+
+\item In the early 1800s Gallatin eliminated most sources of internal revenue
+\begin{itemize}
+\footnotesize
+\item there is no machinery for collecting internal taxes
+\end{itemize}
+
+\smallskip
+
+\item On July 1, 1812, U.S. doubles customs duties
+\begin{itemize}
+\tiny
+\item Remind me who the U.S. is at war with ... as yes, their primary trading partner ...
+\end{itemize}
+
+\smallskip
+
+\item Gallatin proposes raising taxes and is labelled a ``A Rat" by House Republicans.
+
+\medskip
+
+\item March 1813 Treasury is almost out of money
+
+\smallskip
+
+\item In June 1813 Congress passes a comprehensive tax bill
+\begin{itemize}
+\footnotesize
+\item stills, retailers, land, sugar, carriages
+\item won't go in effect until 1814
+\end{itemize}
+
+\smallskip
+
+\item Another tax increase in 1814
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Difficulty Borrowing}
+
+\begin{itemize}
+
+\item Sixteen Million Loan of 1813
+\begin{itemize}
+\item February 8, 1813
+\item 6 per cent interest
+\item no taxes created to ``fund" the loan
+\item sold for 88 cents on the dollar
+\end{itemize}
+
+\item Geographical subscription of the loan
+\end{itemize}
+
+{\scriptsize
+\begin{center}
+\begin{tabular}{lr}
+States East of New York & \$486,700 \\
+State of New York       &  5,720,000\\
+Philadelphia            &  6,858,400\\
+Baltimore and D.C.      &  2,393,900\\
+Virginia                &    187,000\\
+Charleston, S.C.        &    354,000\\
+\hline
+                        &  \$16,000,000 \STRUT \\
+\end{tabular}
+\end{center}}
+\end{frame}
+
+\begin{frame}{The Financial Humiliation of 1814}
+
+\begin{itemize}
+
+\item In 1814 Congress authorizes a \$25 million loan, paying a 6\% coupon.
+
+\medskip
+
+\item Treasury partitioned into three installments.
+
+\medskip
+
+\item Under the Treasury's invitation for subscriptions, buyers of the first installment were promised
+    retroactively more favorable terms if subsequent installments garnered lower prices.
+
+\medskip
+
+\item This was indeed the case, and the Treasury was forced to issue additional shares to buyers of the first
+    installment.
+
+\medskip
+
+\item End up selling the loan at 80 cents on the dollar.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Deficits and Loans}
+
+\scriptsize
+
+\begin{center}
+\begin{tabular}{lrrr}
+        &  Expenditures  &  Receipts  & Deficits \\
+\hline
+1812    &  \$20.3        &  \$9.8     &  \$10.5\STRUT \\
+1813    &   31.7         &   14.3     &    17.4\\
+1814    &   34.7         &   11.2     &    23.5\\
+1815    &   32.9         &   15.7     &    17.2\\
+\hline
+        &                &            &    68.6
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{lrrcr}
+Act             & Authorized   & Face Value Sold   &  Discount   &  Amount Raised\\
+\hline
+March 14, 1812    &  \$11       &  \$10.3  &  1.00       &   \$10.3\STRUT \\
+February 8, 1813  &   16        &  18.1    &  0.88       &   16.0\\
+August 2, 1813    &  7.5        &   8.5    &  0.88       &    7.5\\
+March 24, 1814    & 25          &  16.0    &  0.80       &   12.9\\
+November 15, 1814 & 3           &   1.5    &  1.00       &    1.5\\
+February 24, 1815 & 25          &   9.1    &  1.00       &    9.1\\
+\hline
+                  &             &  \$63.5  &             &  \$57.3\STRUT\\
+\end{tabular}
+\end{center}
+
+Were these loans sufficient to cover the deficits? No.
+\end{frame}
+
+\begin{frame}{Federal Debt by Types of Loans}
+ \centerline{\psfig{file=debt_decomp_1792_to_1825.ps,width=3.5in}}
+\end{frame}
+
+
+\begin{frame}{Prices of 6\% Bonds and Treasury Notes}
+\centerline{\psfig{file=bonds_notes_prices_1812.ps,width=3.5in}}
+\end{frame}
+
+\begin{frame}{Quantity of the Federal Debt: Principal Outstanding and Market Value}
+\centerline{\psfig{file=par_and_market_value_debt.ps,width=3.5in}}
+\end{frame}
+
+\begin{frame}{Ratio of Market Value to Par Value of the Debt}
+\centerline{\psfig{file=ratio_market_to_par.ps,width=3.5in}}
+\end{frame}
+
+\begin{frame}{Issuance of Treasury Notes}
+
+What are Treasury Notes?
+\begin{itemize}
+\item one-year loans
+\item paid $5\frac{2}{5}$ per cent interest
+\begin{itemize}
+\item 1.5 cents a day per \$100
+\end{itemize}
+\item Minimum denomination was originally \$100
+\item large in size
+\item could pay taxes or purchase government bonds or public lands
+\item later in the war smaller denominations issued
+\end{itemize}
+
+\medskip
+
+They were kind-of-sort-of  money-ish.
+
+\end{frame}
+
+\begin{frame}{Were Treasury Notes money?}
+
+\begin{itemize}
+\item The ghost of the Continental Dollar?
+
+\smallskip
+
+\item Gallatin recognized the currency-aspect of Treasury notes
+
+\smallskip
+
+\item In a letter to Congress in January 1812, Gallatin states
+
+\smallskip
+{\footnotesize
+\begin{quote}
+Treasury notes, bearing interest, might to a certain extent be issued, and to that extent
+diminish the amount to be directly borrowed. The advantage they would have would
+result from their becoming a part of the circulating medium, and taking, to a certain
+degree, the place of bank-notes.
+\end{quote}}
+
+
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Treasury Notes}
+
+\begin{itemize}
+
+\item Shortage of currency
+\begin{itemize}
+\item Bank of United State dissolved
+\end{itemize}
+
+\item Were never made legal tender
+
+\item Could pay taxes with them, support value
+
+\item Five Issues
+
+\item Generally trade near par
+
+\item 1817: Issuing Treasury Notes considered an ``embarrassment"
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Treasury Notes Outstanding}
+\centerline{\psfig{file=treasury_notes_outstanding_1812.ps,width=3.5in}}
+\end{frame}
+
+
+\begin{frame}{Was Gallatin Able to Carry Out His Policy?}
+
+Let's do a rough calculation ...
+
+\begin{itemize}
+
+\item What was peacetime $G$?
+\begin{itemize}
+\item average annual expenditures from 1801 to 1811: \$8.7 million
+\end{itemize}
+
+\medskip
+
+\item What was the cost of the war?
+\begin{itemize}
+\item average annual expenditures from 1812 to 1816: \$30.1 million
+\item So the war cost $ 5 \times (30.1 - 8.7) \; = \;$  \$110 million
+\end{itemize}
+
+\medskip
+
+\item Assume a 6\% interest rate, so Gallatin should have
+\begin{itemize}
+\item raised taxes by $\frac{.06}{1+.06} \times 110 \; = \;$ \$6.2 million
+\item and borrowed $ 110 - 6.2 \; = \;$ \$103.8 million
+\end{itemize}
+
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{Federal Expenditure by Type}
+\centering
+\setlength{\tabcolsep}{0.05in}
+\scriptsize
+\begin{tabular}{crrrrrr}
+Year &	 \multicolumn{1}{c}{Indians} &	 \multicolumn{1}{c}{War+Navy} &	 \multicolumn{1}{c}{Interest} &	
+\multicolumn{1}{c}{Pensions} & 	 \multicolumn{1}{c}{Miscellaneous} 	 & \multicolumn{1}{c}{Total} \\
+\hline
+1809&	 337,504 &	 5,773,531  & 	 2,866,075& 	 87,834& 	 1,215,804& 	 10,280,747 \STRUT \\
+1810&	 117,625 &	 3,948,568  &	 3,163,671& 	 83,744& 	 1,101,145& 	 8,414,753  \STRUT \\
+1811&	 151,875 &	 3,998,395 	&    2,585,436& 	 75,044& 	 1,367,291& 	 8,178,040  \STRUT \\
+1812&	 277,845 &	 15,777,163 &	 2,451,273& 	 91,402& 	 1,683,088& 	 20,280,771 \STRUT \\
+1813&	 167,358 &	 26,098,613 &	 3,599,455& 	 86,990& 	 1,729,436& 	 31,681,852 \STRUT \\
+1814&	 167,395 &	 27,662,097 &	 4,593,239& 	 90,164& 	 2,208,030& 	 34,720,925 \STRUT \\
+1815&	 530,750 &	 23,454,294 &	 5,990,090& 	 69,656& 	 2,898,870& 	 32,943,661 \STRUT \\
+1816&	 274,512 &	 19,920,375 &	 7,822,923& 	 188,804& 	 2,989,741& 	 31,196,356 \STRUT \\
+1817&	 319,464 &	 11,318,835 &	 4,536,283& 	 297,374& 	 3,518,937& 	 19,990,892 \STRUT \\
+1818&	 505,704 &	 8,576,410 	&    6,209,954& 	 890,720& 	 3,835,840& 	 20,018,628 \STRUT \\
+1819&	 463,181 &	 10,353,941 &	 5,211,731& 	 2,415,940&  3,067,211& 	 21,512,004 \STRUT \\
+1820&	 315,750 &	 7,018,382 	&    5,151,004& 	 3,208,376&  2,592,022& 	 18,285,535 \STRUT \\
+\end{tabular}
+\end{frame}
+
+
+\begin{frame}{Federal Government Expenditures by Type as a Share of GDP}
+\centerline{\psfig{file=expenditures_1791_1825.ps,width=3.5in}}
+\end{frame}
+
+
+\begin{frame}
+\centering
+\frametitle{Federal Revenue by Source}
+\setlength{\tabcolsep}{0.05in}
+\scriptsize
+\begin{tabular}{crrrrr}
+\Lower{Year}& \multicolumn{1}{c}{\Lower{Customs}} & \multicolumn{1}{c}{{Internal Revenue}} &
+\multicolumn{1}{c}{Sale of} & \multicolumn{1}{c}{\Lower{Miscellaneous}}  & \multicolumn{1}{c}{\Lower{Total}}   \\
+            &               &  \multicolumn{1}{c}{+ Direct Taxes} & \multicolumn{1}{c}{Public Lands}    &
+            &                 \\
+\hline
+1809&	 \$7,257,507& 	 \$11,552& 	    \$442,252 &	 \$62,163 &	 \$7,773,473  \STRUT \\
+1810&	 8,583,309& 	 19,879 &	      696,549 &	 84,477 &	 9,384,214  \STRUT \\
+1811&	 13,313,223& 	 9,963 	&        1,040,238 &	 59,211 &	 14,422,634  \STRUT \\
+1812&	 8,958,778& 	 5,762 	&          710,428 	& 126,165 	& 9,801,133  \STRUT \\
+1813&	 13,224,623& 	 8,561 	&          835,655 &	 271,571 &	 14,340,410  \STRUT \\
+1814&	 5,998,772& 	 3,882,482 &	 1,135,971 &	 164,400 &	 11,181,625  \STRUT \\
+1815&	 7,282,942& 	 6,840,732 &	 1,287,959 &	 285,283 &	 15,696,917  \STRUT \\
+1816&	 36,306,875& 	 9,378,343 &	 1,717,985 &	 273,782 &	 47,676,986  \STRUT \\
+1817&	 26,283,348& 	 4,512,288 &	 1,991,226 &	 312,187 &	 33,099,050  \STRUT \\
+1818&	 17,176,385& 	 1,219,604 &	 2,606,565 &	 582,618 &	 21,585,171 \STRUT \\
+1819&	 20,283,609& 	 313,244 &	 3,274,423 &	 732,098 &	 24,603,374 \STRUT \\
+1820&	 15,005,612& 	 137,847 &	 1,635,872 &	 1,061,338 &	 17,840,670 \STRUT \\
+\end{tabular}
+\end{frame}
+
+\begin{frame}{Government Revenue by Type as a Share of GDP}
+\centerline{\psfig{file=revenue_1791_1825.ps,width=3.5in}}
+\end{frame}
+
+\begin{frame}{Federal Government Revenue and Expenditure as a Share of GDP}
+\centerline{\psfig{file=revenue_expend_1790_1835.ps,width=3.5in}}
+\end{frame}
+
+\begin{frame}{Was Gallatin Able to Carry Out His Policy? (con't)}
+
+ \begin{itemize}
+
+\item Assuming a 6\% interest rate, Gallatin should have
+\begin{itemize}
+\item raised taxes by $\frac{.06}{1+.06} \times 110 \; = \; 6.2$
+\item and borrowed $ 110 - 6.2 = 103.8$
+\end{itemize}
+
+\item average tax revenue
+\begin{itemize}
+\item from 1801 to 1811: \$13.1 million
+\item from 1812 to 1816: \$19.7 million
+\item difference: \$ 6.6 million
+\end{itemize}
+
+\item debt outstanding
+\begin{itemize}
+\item March 1812: \$45.4 million
+\item September 1816: \$136.5 million
+\item difference: \$91.1 million
+\end{itemize}
+
+\end{itemize}
+
+What is this calculation missing?
+
+\end{frame}
+
+\begin{frame}{Federal Gross and Primary Deficits as a Share of GDP}
+\centerline{\psfig{file=primary_deficit_to_gdp_1791_1835.ps,width=3.5in}}
+\end{frame}
+
+\begin{frame}{Deficits Under Tax Smoothing}
+\centerline{\psfig{file=barro_tax_smooth.ps,width=3.5in}}
+\end{frame}
+
+\begin{frame}{Theory and Reality}
+
+\begin{itemize}
+
+\item theory assumes
+\begin{itemize}
+\item any tax rate between 0 and 1 is feasible
+\item can borrow as much money as needed at the fixed interest rate
+\end{itemize}
+
+\item reality: taxes
+\begin{itemize}
+\item What was the primary source of revenue?
+\item Who was the U.S. main trading partner?
+\item Who did the U.S. declare war on?
+\end{itemize}
+
+\item reality: borrowing
+\begin{itemize}
+\item What happened to the Bank of the United States?
+\item Where are the banks in the U.S.?  Where are they located?
+\item Do the bankers support the Republicans and the war?
+\end{itemize}
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{How much did the government really pay to borrow money?}
+\scriptsize
+In a 1830 U.S. House Committee on Ways and Means Report, Mr. M'Duffie reckoned that during the War of 1812,
+the Government paid \$46 million to borrow \$80 million.  On page 12 of the report he states:
+\begin{quote}
+The government borrowed, during the short period of the war, eighty
+millions of dollars, at an average discount of fifteen per cent. giving certificates
+of stock, amounting to eighty millions of dollars, in exchange for sixty-eight
+millions of dollars, in such bank paper as could be obtained. In this statement,
+treasury notes are considered as stock, at twenty per cent. discount. Upon the
+very face of the transaction, therefore, there was a loss of twelve millions of
+dollars, ...  But the sum
+of sixty-eight millions of dollars, received by the government, was in a depreciated
+currency, not more than half as valuable as that in which the stock given
+in exchange for it, has been and will be redeemed. Here, then, is another loss
+of thirty-four millions, resulting, incontestibly and exclusively, from the depreciation
+of the currency, and making, with the sum lost by the discount, forty-six millions of dollars.
+\end{quote}
+\end{frame}
+
+
+\begin{frame}{Prices of 6 Per Cent Bonds and Treasury Notes}
+ \centerline{\psfig{file=bonds_notes_prices_1812.ps,width=3.5in}}
+\end{frame}
+
+\begin{frame}{Ratio of the Market Value to the Par Value of the Outstanding Debt}
+\centerline{\psfig{file=ratio_market_to_par.ps,width=3.5in}}
+\end{frame}
+
+\begin{frame}{Coupon Payments and Official Interest Payments as a Percent of the Market Value of the Debt}
+\centerline{\psfig{file=coupons_return.ps,width=3.5in}}
+\end{frame}
+
+
+\setlength{\tabcolsep}{0.045in}
+
+\begin{frame}{Back-of the-Envelop Calculation of War of 1812 Borrowing Cost}
+\begin{center}
+{\tiny
+\begin{tabular}{cccccccccccc}
+      &  \multicolumn{3}{c}{Beginning of Year} &&   &\multicolumn{3}{c}{End of Year} &  \\ \cline{2-4}
+      \cline{7-9}
+      & Par value & Balance in & Net     &&  & Par value & Balance in & Net     &  Change in  & primary & \\
+ Year & of debt   &  Treasury  & Debt &&   Year & of debt  &  Treasury  &  Debt&  Net Debt    &  deficit &
+ difference  \\ \hline
+1812  &  46.6  &  3.5 &  43.1 &&  1815  & 131.8  &  13.1 & 118.7 & 75.6  &  51.9 & 23.7\STRUT \\
+1816  & 131.8  & 13.1 & 118.7 &&  1816  & 131.1  &  22.0 & 109.1 & -9.6  & -24.3 & 14.7 \STRUT \\
+\hline
+Total &    &   &   &&    &   &   &  & 66.0  & 27.6 & 38.4 \STRUT
+\end{tabular}}
+\end{center}
+\end{frame}
+
+\begin{frame}{Debt-to-GDP Accounting}
+
+\begin{itemize}
+
+\item Debt-to-GDP ratio
+\begin{itemize}
+\item 1812:  4.8 \%
+\item 1816:  11.6 \%
+\item 1812:  9.4 \%
+\end{itemize}
+
+\medskip
+
+\item Recall
+\begin{eqnarray*}
+\frac{B_t}{Y_t} - \frac{B_{t-1}}{Y_{t-1}}  &=&  i_t \frac{B_{t-1}}{Y_{t-1}} -\pi_t \frac{B_{t-1}}{Y_{t-1}} -g_t
+\frac{B_{t-1}}{Y_{t-1}}  +  \frac{G_t  - T_t}{Y_t}
+\end{eqnarray*}
+
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Debt-to-GDP Ratio}
+\centerline{\psfig{file=par_and_market_value_debt_gdp.ps,width=3.5in}}
+\end{frame}
+
+\begin{frame}{Inflation and GDP Growth}
+ \centerline{\psfig{file=inflation_gdpgrowth_1810_1825.ps,width=3.5in}}
+\end{frame}
+
+\begin{frame}{Holding Period Returns to Bondholders}
+\centerline{\psfig{file=holding_period_return_1792_1825.ps,width=3.5in}}
+\end{frame}
+
+\begin{frame}{Federal Gross and Primary Deficits as a Share of GDP}
+\centerline{\psfig{file=primary_deficit_to_gdp_1791_1835.ps,width=3.5in}}
+\end{frame}
+
+\begin{frame}{Contributions to Changes in the Debt-to-GDP Ratio}
+\begin{center}
+{\footnotesize
+\begin{tabular}{ccccccccccc}
+ & &   & \multicolumn{3}{c}{Debt to GDP} & \hspace{.05in}  & Bond   & & GDP  &  deficit \\
+\multicolumn{2}{c}{Year} & \hspace{.05in} & start  &  end  & change  & & Returns & Inflation &  Growth  & to GDP
+\\ \hline
+ 1812 & 1816 &&   4.8 &  11.6 &   6.2 &&   4.0 &   1.4 &  -0.7 &   1.4  \STRUT \\
+ 1816 & 1825 &&  11.6 &   9.4 &  -2.8 &&   7.6 &   4.1 &  -4.2 & -10.3  \STRUT \\
+ \hline
+ 1812 & 1825 &&   4.8 &   9.4 &   3.5 &&  11.6 &   5.6 &  -4.9 &  -8.8  \STRUT \\
+
+\end{tabular}}
+\end{center}
+\end{frame}
+
+\begin{frame}{Means and Standard Deviations of Components to Debt-to-GDP Dynamics: 1810-1825}
+\begin{center}
+\begin{tabular}{lcc}
+Variable                          &  Mean    & Std Dev \\
+\hline
+Nominal Rate of Return             &  7.65   &   10.97 \STRUT \\
+GDP defl inflation                 & -2.86   &    8.15 \STRUT \\
+Real Rate of Return                & 10.51   &   18.05 \STRUT \\
+Real GDP growth                    &  3.74   &    1.71 \STRUT \\
+$100 \times$ primary Deficit-to-GDP & -0.60  &     1.34 \STRUT \\
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Post-War Surge in Revenue}
+
+\begin{itemize}
+
+\item Internal tax increases finally kick in
+
+\medskip
+
+\item Customs revenues surge in 1816
+\begin{itemize}
+\item imports surge from \$13 million in 1814 to \$147 million in 1816
+\item war in Europe ends
+\item tariff rates still high from 1812
+\end{itemize}
+
+\medskip
+
+\item Tariff of 1816
+\begin{itemize}
+\item move from revenue-focused to protectionism-focused
+\end{itemize}
+
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Establishment of the Second Bank of the United States}
+
+\begin{itemize}
+
+\item War made clear the need for short-term loans
+
+\medskip
+
+\item First attempt in January 1815 vetoed by Madison
+
+\medskip
+
+\item Second attempt in March 1816 passed and signed by Madison
+\begin{itemize}
+\item 20 year charter
+\item Philadelphia
+\end{itemize}
+
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}{The War and Republican Goals}
+
+\begin{itemize}
+
+\item Elimination of the debt
+
+\medskip
+
+\item Elimination of internal taxes
+
+\medskip
+
+\item No standing army and no involvement in European Wars
+
+\medskip
+
+\item Elimination of the Bank of the United States
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{War and the Federalists}
+
+\begin{itemize}
+
+\item Hartford Convention
+\begin{itemize}
+\item December 1814
+
+\smallskip
+
+\item  26 delegates met in secret
+
+\smallskip
+
+\item Create list of Federalist grievances
+\begin{itemize}
+\item end of 3/5 rule of slaves
+\item no new states
+\item clumsy proposals to limit Virginia's power
+\end{itemize}
+
+\smallskip
+
+\item Report comes out at same time as news of the Treaty of Ghent
+\end{itemize}
+
+\medskip
+
+\item End of the Federalist Party
+
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Legacy of the War of 1812}
+
+\begin{itemize}
+
+\item Bondholders who stuck with the U.S. earned fantastic rates of return
+\begin{itemize}
+\item 1815: 45.1\% returns
+\item 1816: 20.7\%
+\item 1817: 20.9\%
+\item no defaults, even to British creditors
+\end{itemize}
+
+\medskip
+
+\item U.S. government refrained from using the inflation tax.
+\begin{itemize}
+\item Treasury notes held their value and paid off in full
+\end{itemize}
+
+\medskip
+
+\item Soon after the war, U.S. Treasury securities consistently traded at par for the first time in U.S.
+    history.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{War Patterns}
+
+In almost every war, you see the following
+
+\begin{enumerate}
+
+\item Early on, the war promises to be short and inexpensive.
+
+\item Early on, rely on short-term financing
+
+\item Wars are rarely short and cheap, need for more revenue requires tax increases and long-term lending
+
+\item After the war expenditures rarely fall to pre-war levels
+\begin{itemize}
+\item interest payments
+\item pension
+\item other stuff
+\end{itemize}
+
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Federal Government Revenue and Expenditure as a Share of GDP}
+\centerline{\psfig{file=revenue_expend_1790_1835.ps,width=3.5in}}
+\end{frame}
+
+\end{document}
+
+

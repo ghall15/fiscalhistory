@@ -155,25 +155,28 @@ Prior to 1940 there were five primary (or top level) categories
           4. Indians 
           5. interest
 
-Government spending is also recorded in a second set of accounts: `the National Income and Product Accounts (NIPA)`_
+Government spending is also recorded by the Bureau of Economic Analysis in 
+a second set of accounts: `the National Income and Product Accounts (NIPA)`_
 
 .. _the National Income and Product Accounts (NIPA): http://www.bea.gov/iTable/index_nipa.cfm
 
-Unlike the budget number reported by the OMB, the numbers reported by the NIPA are  
+These accounts begin in 1929.
 
-  * from 1929 to the present
+Unlike the budget number reported by the OMB, the numbers reported by the NIPA are quarter and based on the 
+calendar year. The NIPA also provides a consistent accounting with state and local government accounts as 
+well as GDP
   
-  * based on the calendar year/quarter, 
-
-  * consistent accounting with state and local government accounts as well as GDP
-  
-The three primary or top level categories are
+Government expenditures within the NIPA are decomposed into four primary or top level categories
 
      1. Government consumption, :math:`G_t`
 
      2. Transfer payments, :math:`TR_t`
 
      3. Net interest payments, :math:`INT_t`
+     
+     4. Other
+     
+Othere includes ..., and is small.      
 
 The Revolutionary and Continental Accounts
 -------------------------------------------
@@ -202,8 +205,6 @@ In the following graph shows the expenditures trends in the primary categories
     :align: center
     
     **NIPA: Total Government Expenditures Decomposed By Type**
-
-
 
 Current composition of the federal government budget is quite different from state and local budgets.
 

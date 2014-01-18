@@ -4,6 +4,20 @@
 The Debt Ceiling
 ****************
 
+The U.S. Constitution grants Congress the sole power to direct spending and
+borrow money. 
+
+In Article 1, Section 8, states
+
+.. epigraph::
+
+     The Congress shall have Power To lay and collect Taxes, Duties, Imposts and Excises, to pay the Debts and provide for the common Defence and general Welfare of the United States; but all Duties, Imposts and Excises shall be uniform throughout the United States;
+
+     To borrow money on the credit of the United States;
+
+Prior to the funding of the Panama Canal, every time the government w
+
+a failure to raise the debt ceiling puts the Treasury in the untenable position of not have the authority to send out all the checks Congress had previously directed it to write. 
 * Debt Limit evolved from the funding of the Panama Canal and World War I.
 
 * Congress sets :math:`G_t`, :math:`TR_t` and :math:`T_t`, but also says :math:`B_t` must be less than some number.
@@ -20,15 +34,6 @@ The Debt Ceiling
 
 The Debt Limit and the U.S. Constitution
 ----------------------------------------
-
-
-Article 1 - The Legislative Branch, Section 8 - Powers of Congress
-
-.. epigraph::
-
-     The Congress shall have Power To lay and collect Taxes, Duties, Imposts and Excises, to pay the Debts and provide for the common Defence and general Welfare of the United States; but all Duties, Imposts and Excises shall be uniform throughout the United States;
-
-     To borrow money on the credit of the United States;
 
 14th Amendment, Section 4.
 

@@ -88,13 +88,17 @@ bench, or twirling a distaff ... Let our workshops remain in Europe.*
 
 * U.S. future is to the west, not back to Europe. (Gallatin)
 
-* Government Revenue by Type as a Share of GDP
+.. figure:: _static/figures/revenue_1791_1812.png
+    :scale: 60%
+    :align: center
 
-*  put here revenue_1791_1812.ps
+    **Government Revenue by Type as a Share of GDP**
 
-* Federal Government Expenditures by Type as a Share of GDP
+.. figure:: _static/figures/expenditures_1791_1812.png
+    :scale: 60%
+    :align: center
 
-* put here expenditures_1791_1812.ps
+    **Federal Government Expenditures by Type as a Share of GDP**
 
 Federal Receipts and Expenditures
 ---------------------------------
@@ -129,6 +133,7 @@ Expenditures: Federalists, 1790-1801
 
 * Federal Expenditure by Type
 
+
 +------+----------+-----------+-------------+----------+---------------+--------------+
 | Year |  Indians | War+Navy  | Interest    | Pensions | Miscellaneous | Total        |
 +======+==========+===========+=============+==========+===============+==============+
@@ -143,11 +148,16 @@ Expenditures: Federalists, 1790-1801
 | 1800 |       31 | 6,009,595 |   3,402,601 |   64,131 |     1,337,613 | 10,813,970   |
 +------+----------+-----------+-------------+----------+---------------+--------------+
 
-* Per Capita Federal Expenditure by Type
 
-* put here per_cap_pre1790_expenditures.ps
- 
-* put here per_cap_expenditures_1791_1805.ps
+.. figure:: _static/figures/per_cap_pre1790_expenditures.png
+    :scale: 40%
+    :align: center
+
+.. figure:: _static/figures/per_cap_expenditures_1791_1805.png
+    :scale: 40%
+    :align: center
+
+    **Per Capita Federal Expenditure by Type**
 
 Revenue: Federalists, 1792-1800
 -------------------------------
@@ -197,28 +207,38 @@ Revenue: Federalists, 1792-1800
 |  1800 | 9,080,932   | 1,543,621        | \$444         | 223,752       | 10,848,749  |
 +-------+-------------+------------------+---------------+---------------+-------------+
 
-* Per Capita Federal Revenue by Type
 
-* put here per_cap_pre1790_receipts.ps
+.. figure:: _static/figures/per_cap_pre1790_receipts.png
+    :scale: 40%
+    :align: center
 
-* put here per_cap_revenue_1791_1805.ps
+.. figure:: _static/figures/per_cap_revenue_1791_1805.png
+    :scale: 40%
+    :align: center
+
+    **Per Capita Federal Revenue by Type**
 
 Tariff Policy:  Tariff of July 4, 1789
 --------------------------------------
 
-* Preamble
+Preamble
 
-*Whereas it is necessary for the support of the government for the discharge
-of the debts of the United States, and the encouragement and protection of
-manufactures that duties by laid ...*
+.. epigraph::
+
+     *Whereas it is necessary for the support of the government for the discharge
+     of the debts of the United States, and the encouragement and protection of
+     manufactures that duties by laid...*
 
 * Manufacturers in the northeast wanted protection.  Farmers and settlers in South and West wanted low tariffs.
 
 * Rates higher for items brought in on foreign ships than on U.S. ships.
 
-* Federal Gross and Primary Deficits as a Share of GDP
 
-* put here primary_deficit_to_gdp_1791_1810.ps
+.. figure:: _static/figures/primary_deficit_to_gdp_1791_1810.png
+    :scale: 60%
+    :align: center
+
+    **Federal Gross and Primary Deficits as a Share of GDP**
 
 Tariffs for revenue or foreign policy?
 --------------------------------------
@@ -387,19 +407,24 @@ Debt Policy Under the Federalists
       * 1795  21\%
       * 1801  16\%
 
-* Federal Debt by Type: 1790-1812
+.. figure:: _static/figures/debt_decomp_1792_to_1812.png
+    :scale: 60%
+    :align: center
 
-* put here debt_decomp_1792_to_1812.ps
+    **Federal Debt by Type: 1790-1812**
 
-* Debt-to-GDP Ratio: 1791-1820
 
-* put here debt_to_gdp_1791_1820.ps
+.. figure:: _static/figures/debt_to_gdp_1791_1820.png
+    :scale: 60%
+    :align: center
 
-* Inflation and GDP Growth
+    **Debt-to-GDP Ratio: 1791-1820**
 
-* put here inflation_gdpgrowth_1790_1810.ps
+.. figure:: _static/figures/inflation_gdpgrowth_1790_1810.png
+    :scale: 60%
+    :align: center
 
-* George: eventually, let's get at least the inflation numbers for the UK and link to Napoleonic wars.
+    **Inflation and GDP Growth**
 
 * During the 1790 short-term borrowing from the Bank of the United States
 
@@ -515,9 +540,12 @@ Expenditures: Republicans, 1801-1812
       | 1811 |  151,875 | 3,998,395 |  2,585,436  | 75,044   |  1,367,291    | 8,178,040    | 
       +------+----------+-----------+-------------+----------+---------------+--------------+
 
-* Federal Government Expenditures by Type as a Share of GDP
 
-* put here expenditures_1791_1812.ps
+.. figure:: _static/figures/expenditures_1791_1812.png
+    :scale: 60%
+    :align: center
+
+    **Federal Government Expenditures by Type as a Share of GDP**
 
 Louisiana Purchase
 ==================
@@ -560,7 +588,7 @@ Financing the Louisiana Purchase
 
 * Vote to authorize expenditure passed the House 59 to 57.
 
-* George: it would be great to have a party and regional breakdown if not too difficult to find.
+#George: it would be great to have a party and regional breakdown if not too difficult to find.
 
 Revenue: Republicans, 1801-1812
 -------------------------------
@@ -577,8 +605,8 @@ Revenue: Republicans, 1801-1812
 
       +-------+-------------+------------------+---------------+---------------+-------------+
       | Year  | Customs     | Internal Revenue | Sale of       | Miscellaneous | Total       |
-      +-------+-------------+------------------+---------------+---------------+-------------+
-      |       |             | + Direct Taxes   | Public Lands  |               |             |
+      +       +             +                  +               +               +             +
+      |       |             | & Direct Taxes   | Public Lands  |               |             |
       +=======+=============+==================+===============+===============+=============+
       |  1795 |   5,588,461 | 337,755          | ---           | 188,318       |   6,114,535 | 
       +-------+-------------+------------------+---------------+---------------+-------------+
@@ -607,9 +635,12 @@ Revenue: Republicans, 1801-1812
       |  1811 |  13,313,223 |     9,963        | 1,040,238     |  59,211       |  14,422,634 | 
       +-------+-------------+------------------+---------------+---------------+-------------+
 
-* Government Revenue by Type as a Share of GDP
+.. figure:: _static/figures/revenue_1791_1812.png
+    :scale: 60%
+    :align: center
 
-* put here revenue_1791_1812.ps
+    **Government Revenue by Type as a Share of GDP**
+
 
 Jefferson Trade Policy
 ----------------------
@@ -672,18 +703,24 @@ Jefferson's Trade Embargo
      * Non-intercourse Act of 1809
      * Opened up trade with all nations except Britain and France
 
-* Value of Imports, Tariff Rates, and Tariff Revenue
+.. figure:: _static/figures/tariff_three_scale_1790_1810.png
+    :scale: 60%
+    :align: center
 
-* put here tariff_three_scale_1790_1810.ps
+    **Value of Imports, Tariff Rates, and Tariff Revenue**
+
 
 Gallatin: Public Lands and Internal Improvement
 ===============================================
 
 * Gallatin's 1808 *Report on the Subject of Public Roads and Canals*
 
-* Share of Federal Revenue Derived from Land Sales}
+.. figure:: _static/figures/land_sales_share_of_receipts_1790_1810.png
+    :scale: 60%
+    :align: center
 
-* put here land_sales_share_of_receipts_1790_1810.ps
+    **Share of Federal Revenue Derived from Land Sales**
+
 
 Debt Policy Under the Republicans
 ----------------------------------
@@ -696,21 +733,30 @@ Debt Policy Under the Republicans
 
 * Foreign debt was paid off in 1808  See page 114 and 115 of schultz
 
-* Federal Debt by Type: 1790-1812
+.. figure:: _static/figures/debt_decomp_1792_to_1812.png
+    :scale: 60%
+    :align: center
 
-* put here debt_decomp_1792_to_1812.ps
+    **Federal Debt by Type: 1790-1812**
 
-* Debt-to-GDP Ratio: 1791-1820
+.. figure:: _static/figures/debt_to_gdp_1791_1820.png
+    :scale: 60%
+    :align: center
 
-* put here debt_to_gdp_1791_1820.ps
+    **Debt-to-GDP Ratio: 1791-1820**
 
-* End-of Year Balance Held at the Treasury as a Percentage of GDP
+.. figure:: _static/figures/balance_in_treas_1791_1810.png
+    :scale: 60%
+    :align: center
 
-* put here balance_in_treas_1791_1810.ps
+    **End-of Year Balance Held at the Treasury as a Percentage of GDP**
 
-* Prices of Various Federal Bonds
 
-* put here three_bond_prices.ps
+.. figure:: _static/figures/three_bond_prices.png
+    :scale: 60%
+    :align: center
+
+    **Prices of Various Federal Bonds**
 
 End of the Bank of the United States
 ------------------------------------
@@ -807,17 +853,22 @@ Debt-to-GDP Ratio
 .. math::
       \frac{B_t}{Y_t}  = (1+i_t-\pi_t-g_t) \frac{B_{t-1}}{Y_{t-1}} +  \frac{G_t  - T_t}{Y_t}
 
-* Quantity of the Federal Debt: Principal Outstanding and Market Value
+.. figure:: _static/figures/par_and_market_value_debt.png
+    :scale: 60%
+    :align: center
 
-* put here par_and_market_value_debt.ps
+    **Quantity of the Federal Debt: Principal Outstanding and Market Value**
 
 * So is :math:`B` the market value or the par value?
 
     * It is the market value of the debt.
 
-* Ratio of the Market Value to the Par Value of the Outstanding Debt
 
-* put here ratio_market_to_par.ps
+.. figure:: _static/figures/ratio_market_to_par.png
+    :scale: 60%
+    :align: center
+
+    **Ratio of the Market Value to the Par Value of the Outstanding Debt**
 
 * Why does the market value differ so much from the par value?
 
@@ -838,9 +889,11 @@ Debt-to-GDP Ratio
 
     * If this claimant then wanted to sell this \$100 in face value of 3 percent stock on the open market, he would receive  less than \$100.
 
-* Prices of Bonds Issued Under the Act of August 4, 1790
+.. figure:: _static/figures/three_bond_prices.png
+    :scale: 60%
+    :align: center
 
-* put here three_bond_prices.ps
+    **Prices of Bonds Issued Under the Act of August 4, 1790**
 
 * Since the 6 percent stock traded around \$100, its face value, interest rates during this period appear to average about 6 percent.
 
@@ -887,9 +940,11 @@ where
      q_t^i  & = &  \mbox{quantity of bond $i$ outstanding at time $t$}  | 
      c^i  & = &  \mbox{coupon rate of bond $i$}
 
-* Coupon Payments and Official Interest Payments
+.. figure:: _static/figures/coupons_level.png
+    :scale: 60%
+    :align: center
 
-* put here coupons_level.ps
+    **Coupon Payments and Official Interest Payments**
 
 * The two series track each other quite closely.
 
@@ -904,9 +959,12 @@ where
 * To translate these coupon payments into a "rate of return" we divide both series by the
     market value of the outstanding debt.
 
-* Coupon Payments and Official Interest Payments as a Percent of the Market Value of the Debt
+.. figure:: _static/figures/coupons_return.png
+    :scale: 60%
+    :align: center
 
-* put here coupons_return.ps
+    **Coupon Payments and Official Interest Payments as a Percent of the Market Value of the Debt**
+
 
 * However this "rate of return" fails to capture the capital gains and losses.  If ask which value of
 
@@ -915,11 +973,13 @@ where
 .. math::
      \frac{B_t}{Y_t} = (1+i_t-\pi_t-g_t) \frac{B_{t-1}}{Y_{t-1}} +  \frac{G_t  - T_t}{Y_t}
 
-* The appropriate concept of a nominal return $i_t$ is the one that satisfies this equation.
+* The appropriate concept of a nominal return :math:`i_t` is the one that satisfies this equation.
 
-* Real and Nominal Returns to Bondholders
+.. figure:: _static/figures/rate_of_return_1792_1825.png
+    :scale: 60%
+    :align: center
 
-* put here rate_of_return_1792_1825.ps
+    **Real and Nominal Returns to Bondholders**
 
 * Decomposing the Evolution of the Debt/GDP Ratio
 
@@ -927,7 +987,7 @@ where
      \frac{B_t}{Y_t} - \frac{B_{t-1}}{Y_{t-1}} =  i_t \frac{B_{t-1}}{Y_{t-1}} -\pi_t \frac{B_{t-1}}{Y_{t-1}} -g_t \frac{B_{t-1}}{Y_{t-1}}  +  \frac{G_t  - T_t}{Y_t}
 
 * The left hand side (LHS)  of equation is the change in the (market value of the) debt/GDP ratio from period
-    $t-1$ to period $t$.
+    :math:`t-1` to period :math:`t`.
 
 * The terms on the right hand side (RHS) how this ratio changes due to
 
@@ -936,21 +996,24 @@ where
      * GDP growth
      * ratio of the primary deficit to GDP
  
-* Contributions to Changes in the Debt-to-GDP Ratio
+     +-------+--------+-------+------+--------++---------+------------+---------+----------+ 
+     |                | Debt to GDP           || Bond    |            |  GDP    | Deficit  |
+     +                +-------+------+--------++         +            +         +          +
+     |     Year       | start | end  | change || Returns |  Inflation | Growth  |  to GDP  | 
+     +=======+========+=======+======+========++=========+============+=========+==========+  
+     | 1792  |  1796  | 33.8  | 14.6 | -19.2  ||    0.6  |    -7.3    |    -9.8 |    -2.6  |
+     +-------+--------+-------+------+--------++---------+------------+---------+----------+
+     | 1797  |  1800  | 14.6  | 14.4 | -0.2   ||    5.1  |        0.7 |    -2.7 |    -3.2  | 
+     +-------+--------+-------+------+--------++---------+------------+---------+----------+
+     | 1801  |  1808  | 14.4  |  7.4 | -7.0   ||    7.4  |       -0.2 |    -3.1 |   -11.1  | 
+     +-------+--------+-------+------+--------++---------+------------+---------+----------+
+     | 1809  |  1812  |  7.4  |  5.9 | -1.5   ||    0.6  |        0.1 |    -1.4 |    -0.8  | 
+     +-------+--------+-------+------+--------++---------+------------+---------+----------+
+     | 1792  |  1812  | 33.8  |  5.9 | -27.9  ||    13.7 |       -6.7 |   -17.1 |   -17.7  | 
+     +-------+--------+-------+------+--------++---------+------------+---------+----------+
+ 
+     **Contributions to Changes in the Debt-to-GDP Ratio**
 
-     +-------+--------+-------+------+--------+------+------+--------+---------+
-     | Year1 | Year 2 | start | end  | change |      |      |        |         | 
-     +=======+========+=======+======+========+======+======+========+=========+  
-     | 1792  |  1796  | 33.8  | 14.6 | -19.2  | 0.6  | -7.3 |   -9.8 |   -2.6  |
-     +-------+--------+-------+------+--------+------+------+--------+---------+
-     | 1797  |  1800  | 14.6  | 14.4 | -0.2   | 5.1  |  0.7 |   -2.7 |   -3.2  | 
-     +-------+--------+-------+------+--------+------+------+--------+---------+
-     | 1801  |  1808  | 14.4  |  7.4 | -7.0   | 7.4  | -0.2 |   -3.1 |  -11.1  | 
-     +-------+--------+-------+------+--------+------+------+--------+---------+
-     | 1809  |  1812  |  7.4  |  5.9 | -1.5   | 0.6  |  0.1 |   -1.4 |   -0.8  | 
-     +-------+--------+-------+------+--------+------+------+--------+---------+
-     | 1792  |  1812  | 33.8  |  5.9 | -27.9  | 13.7 | -6.7 |  -17.1 |  -17.7  | 
-     +-------+--------+-------+------+--------+------+------+--------+---------+
 
 * The debt/GDP ratio ...
 
@@ -966,20 +1029,20 @@ where
             * primary surpluses
             * high returns to bond holders
 
-* Means and Standard Deviations of Components to Debt-to-GDP Dynamics: 1792-1812}
 
-+-------------------------------------------+-------+----------+
-|  Variable                                 | Mean  | Std Dev  | 
-+===========================================+=======+==========+
-| Nominal Rate of Return                    | 5.24  | 6.27     | 
-+-------------------------------------------+-------+----------+
-| Inflation                                 | 1.44  | 6.37     | 
-+-------------------------------------------+-------+----------+
-| Real Rate of Return                       | 3.80  | 8.98     | 
-+-------------------------------------------+-------+----------+
-| Real GDP growth                           | 4.89  | 2.93     | 
-+-------------------------------------------+-------+----------+
-| :math:`100 \times` primary Deficit-to-GDP | -0.81 | 1.04     | 
-+-------------------------------------------+-------+----------+
+     +-------------------------------------------+-------+----------+
+     |  Variable                                 | Mean  | Std Dev  | 
+     +===========================================+=======+==========+
+     | Nominal Rate of Return                    | 5.24  | 6.27     | 
+     +-------------------------------------------+-------+----------+
+     | Inflation                                 | 1.44  | 6.37     | 
+     +-------------------------------------------+-------+----------+
+     | Real Rate of Return                       | 3.80  | 8.98     | 
+     +-------------------------------------------+-------+----------+
+     | Real GDP growth                           | 4.89  | 2.93     | 
+     +-------------------------------------------+-------+----------+
+     | :math:`100 \times` primary Deficit-to-GDP | -0.81 | 1.04     | 
+     +-------------------------------------------+-------+----------+
 
+     **Means and Standard Deviations of Components to Debt-to-GDP Dynamics: 1792-1812**
 

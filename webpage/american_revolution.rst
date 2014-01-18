@@ -4,12 +4,29 @@
 The American Revolution
 ***********************
 
-*A revolution, a war, the dissolution of government, the creating of it anew, cruelty, rapine, 
-and devastation in the midst of our very bowels.  These sir are circumstances by no means 
-favorable to finance.*
+.. epigraph:: 
 
-Robert Morris in a letter to Ben Franklin, November 27, 1781.
+        *A revolution, a war, the dissolution of government, the creating of it anew, cruelty, rapine, 
+        and devastation in the midst of our very bowels.  These sir are circumstances by no means 
+        favorable to finance.*
 
+        -- Robert Morris in a letter to Ben Franklin, November 27, 1781.
+
+Dissatisfaction with fiscal arrangements ignited two North American political revolutions
+in the last quarter of the 18th century, the first against Britain, the second against the Articles of Confederation.
+
+In this lecture we discuss the first of these revolutions.
+
+In 1775, thirteen separate colonies revolted against taxes and trade restrictions imposed by remote 
+authorities in London.
+
+The thirteen states and the Continental Congress financed the 
+American revolution by issuing interest bearing debts and paper monies, known
+as  *bills of credit*.
+
+The continental congress and the states both printed money because as Keynes (1924, p 427) said 
+"A government can live by this means when it can live by no other."
+ 
 Important Dates
 ===============
 
@@ -54,10 +71,10 @@ Important Dates
     +--------------------+----------------------------------------------------------------+
 
 
-British Prior to the Revolution
-===============================
+The British Fiscal Situtation Prior to the Revolution
+=====================================================
 
-During the 18th century Britian fights a series of wars
+During the 18th century Britian fought a series of wars
 
     * War of Spanish Succession (1701-1714)
     
@@ -65,7 +82,7 @@ During the 18th century Britian fights a series of wars
 
        * in the US we refer to this as the French and Indian War
        
-The UK debt-to-GDP soars to over 150 percent in the early 1760s        
+The UK debt-to-GDP soared to over 150 percent in the early 1760s        
 
 .. figure:: _static/figures/UK_debt_to_GDP.png
     :scale: 60%
@@ -75,9 +92,11 @@ The UK debt-to-GDP soars to over 150 percent in the early 1760s
 
 How is Britian going to pay off such an enormous debt?
 
-    * Is the purpose of the colonies to serve the mother country?
+    * Is not the purpose of the colonies to serve the mother country?
     
     * The colonists do not see why their tax dollars should go to pay for European wars. 
+
+Thus, thirteen colonies formed a confederation in rebellion.
 
 
 How does one finance a revolution?
@@ -143,67 +162,66 @@ Attempts at "Taxation"
 Bills of Credit
 ---------------
 
-.. image:: _static/images/Continental.jpg
-    :scale: 70%
-    :align: center
+The first authorization of bills of credit was made in Philadelphia in May 1775.
 
-**A Continental Three Dollar Bill**
-
-Digression --  A puzzling phrase  
----------------------------------
-
-We were puzzled by the Latin phrase *Exitus in Dubio Est* which appears 
-alongside a picture of an eagle and a heron or crane fighting in the sky
-on the three dollar continental. The phrase means "The Outcome is in Doubt."
-
-Our good friend, `Francois Velde`_, provided the following answer.
-
-    Other denominations bore similar pairings of Latin mottoes
-    and images; such pairings are called "`imprese`_", in which the picture is the body and the motto
-    (in Italian: "word") is the soul, illuminating the moral or explaining the allegory:
-
-
-    The source seems to be `Johann Camerarius's Symbola et Emblemata`_, a work first printed in 1590:
-    although the figure of a crane and an eagle (or falcon) fighting appears in `paintings of Carpaccio and
-    Veneziano, and an engraving of Durer`_:
-
-.. _imprese: http://www.heraldica.org/topics/imprese.htm
-
-.. _Johann Camerarius's Symbola et Emblemata: http://books.google.com/books?id=1PlDAAAAcAAJ&pg=RA1-PA64
-
-.. _paintings of Carpaccio and Veneziano, and an engraving of Durer: http://books.google.com/books?id=FOZVPjSTznwC&pg=PA62
-
-.. _Francois Velde: http://www.chicagofed.org/webpages/people/velde_francois.cfm
-
-    The phrase itself appears twice in Ovid, in the Metamorphoses and in the Fasti.  In the latter case, it
-    is used by Tarquin as he hesitates to go back and rape Lucretia; he continues by saying that he will
-    go to any extremity, and that gods and fortune smile on the daring.
-
-    Camerarius explains that "the battles of Mars are dubious and uncertain events; he often loses who
-    was near victory".  The story is that, although you might think the falcon would be the obvious winner,
-    the heron's excrements could so soil the falcon's plumage as to make him unable to fly, if only he could
-    remain on top.
-
-    All of the other figures on the continental issues are taken straight from Camerarius, so it seems clear that
-    this book was the source.  The `1775 article in the Pennsylvania Gazette`_ is attributed to Ben Franklin.
-    The idea of putting an allegory with a Latin motto on coinage or near-coinage is of course an old tradition.
-    It still lives in the US great seal, with the rising constellation of 13 stars and the motto "e pluribus unum",
-    out of many one.
-
-.. _1775 article in the Pennsylvania Gazette: http://www.historycarper.com/1775/09/20/account-of-the-devices-on-the-continental-bills-of-credit/
-
-
-* The first authorization of *bills of credit* was made in Philadelphia in May 1775.
-
-* The colonists had prior experience with bills of credit
+The colonists had prior experience with bills of credit
 
    - A colony would issue perhaps \$20,000 bills of credit, and then
 
    - over the next four years, require \$5,000 in taxes payable in these bills.
 
-* Prior to the war, many colonies had issued bills of credit with success
+Prior to the war, many colonies had issued bills of credit with success
 
    - developed a good reputation
+
+.. figure:: _static/images/Continental.jpg
+    :scale: 70%
+    :align: center
+
+    **A Continental Three Dollar Bill**
+
+Digression --  A puzzling phrase  
+--------------------------------
+
+       We were puzzled by the Latin phrase *Exitus in Dubio Est* which appears 
+       alongside a picture of an eagle and a heron or crane fighting in the sky
+       on the three dollar continental. The phrase means "The Outcome is in Doubt."
+
+       Our good friend, `Francois Velde`_, provided the following answer.
+
+           Other denominations bore similar pairings of Latin mottoes
+           and images; such pairings are called "`imprese`_", in which the picture is the body and the motto
+           (in Italian: "word") is the soul, illuminating the moral or explaining the allegory:
+
+           The source seems to be `Johann Camerarius's Symbola et Emblemata`_, a work first printed in 1590:
+           although the figure of a crane and an eagle (or falcon) fighting appears in `paintings of Carpaccio and
+           Veneziano, and an engraving of Durer`_:
+
+           .. _imprese: http://www.heraldica.org/topics/imprese.htm
+
+           .. _Johann Camerarius's Symbola et Emblemata: http://books.google.com/books?id=1PlDAAAAcAAJ&pg=RA1-PA64
+
+           .. _paintings of Carpaccio and Veneziano, and an engraving of Durer: http://books.google.com/books?id=FOZVPjSTznwC&pg=PA62
+
+           .. _Francois Velde: http://www.chicagofed.org/webpages/people/velde_francois.cfm
+
+           The phrase itself appears twice in Ovid, in the Metamorphoses and in the Fasti.  In the latter case, it
+           is used by Tarquin as he hesitates to go back and rape Lucretia; he continues by saying that he will
+           go to any extremity, and that gods and fortune smile on the daring.
+
+           Camerarius explains that "the battles of Mars are dubious and uncertain events; he often loses who
+           was near victory".  The story is that, although you might think the falcon would be the obvious winner,
+           the heron's excrements could so soil the falcon's plumage as to make him unable to fly, if only he could
+           remain on top.
+
+           All of the other figures on the continental issues are taken straight from Camerarius, so it seems clear that
+           this book was the source.  The `1775 article in the Pennsylvania Gazette`_ is attributed to Ben Franklin.
+           The idea of putting an allegory with a Latin motto on coinage or near-coinage is of course an old tradition.
+           It still lives in the US great seal, with the rising constellation of 13 stars and the motto "e pluribus unum",
+           out of many one.
+
+           .. _1775 article in the Pennsylvania Gazette: http://www.historycarper.com/1775/09/20/account-of-the-devices-on-the-continental-bills-of-credit/
+
 
 * The Federal Reserve Bank of San Francisco has a nice `gallery of Colonial and Revolutionary money`_. 
 
