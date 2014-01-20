@@ -563,7 +563,7 @@ The way the quantity theory of money is usually written is:
 
 .. math::
    Money \times Velocity &=& Price \times Output \\
-   M     \times  V       &=& P     \times   Y    \\
+   M     \times  V       &=& P     \times   Y    
 
 
 Real money demand is proportional to real income.  So

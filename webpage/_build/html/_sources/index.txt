@@ -27,6 +27,9 @@ Table of Contents:
    early_republic
    war_of_1812
    internal_improve
+   state_finance
+   civil_war
+   confederacy
 
 
 Indices and tables
