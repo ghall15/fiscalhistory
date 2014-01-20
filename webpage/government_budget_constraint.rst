@@ -104,8 +104,26 @@ Examples of transfer payments include Medicare, Social Security, and unemploymen
 its debtors (e.g. government loans to small businesses or farmers).  As we will see below, there is more than one
 way to measure the costs the government pays to borrow.
 
-Federal Government Fiscal Accounts
-----------------------------------
+Fiscal Accounts
+---------------
+
+Up to this point we have just referred to "the government."  Of course in the United States, 
+at any point in time most people fall under the jurisdiction of three governments simultaneously: 
+the federal government, the state government and the local government.
+
+The composition of spending and revenue differ considerably across these three levels.  
+At times, it will be useful to lump all three together; but at other times, it be will be 
+important to consider the each level separately.
+
+Making comparisons across levels of government can be tricky. Spending and revenue choices 
+are the outcome of the budget process which differ across governments. Different governments can operate 
+on different fiscal years and employ different budget practices.  For example, some government 
+count the sale of bonds and or public assets as "revenue" while other do not [#]_.
+
+Fortunately for us, the Bureau of Economic Analysis (BEA) creates a set of accounts that is consistent 
+across all three levels of government.  
+
+We first focus on describing the fiscal accounts of the federal government. 
 
 OMB
 ---
@@ -137,7 +155,6 @@ The five superfunctions are:
 Spending within these superfunctions are broken down further into twenty functions.
 
 Revenues
-
 
 U.S. Treasury
 -------------
@@ -176,7 +193,7 @@ Government expenditures within the NIPA are decomposed into four primary or top 
      
      4. Other
      
-Othere includes ..., and is small.      
+Other includes ..., and is small.      
 
 The Revolutionary and Continental Accounts
 -------------------------------------------
@@ -208,13 +225,12 @@ In the following graph shows the expenditures trends in the primary categories
 
 Current composition of the federal government budget is quite different from state and local budgets.
 
-Federal spending is more heavily weighted toward transfer payments.  
+Federal spending is more heavily weighted toward transfer payments. 
 
      *The federal government is a gigantic insurance company 
      with a side business in defense.*
 
 State and local governments more directly involved in government purchases
-
 
 .. figure:: _static/figures/fed_gov_exp_decomp.png
     :scale: 60%
@@ -225,7 +241,6 @@ State and local governments more directly involved in government purchases
 During World War II, government consumption spending spikes
 
 Since World War II transfer payments have steadily grown as larger share 
-
 
 .. figure:: _static/figures/sl_gov_exp_decomp.png
     :scale: 60%
@@ -296,28 +311,22 @@ NIPA: Six principal categories
 Revenue: Federal vs. State/Local
 --------------------------------
 
-* Federal government
+The federal government receives a much large share of its revenues from income taxes
+and contributions for social insurance (e.g. Social Security and Medicare).
 
-  * Income taxes
+Revenue to fund state and local governments tend to derive large from 
+property and sales taxes and transfers from the federal government.
 
-  * Contributions for social insurance
-
-* State/Local
-
-  * property and sales taxes
-
-  * transfers from the federal government
-
-* Compositional changes for federal government over time
-
-  * customs to internal revenue (income taxes)
+When we look over the entire history of the U.S., prior to the Civil War, the 
+federal government primary source of revenue was customs duties.  After the Civil War, 
+internal revenues (e.g. the income tax) become the primary source of revenue.
 
 .. figure:: _static/figures/fed_receipts_decomp_1776_1940.png
     :scale: 60%
     :align: center
     
     **1790-1940: Federal Revenues Decomposed by Type**
-     
+
 
 Deficits and Surpluses
 ----------------------
@@ -531,13 +540,31 @@ In other words, which paths of :math:`B/Y` are stable? which are explosive?
 .. math::
    \frac{B_{t}}{Y_t} =  (1+r-g) \frac{B_{t-1}}{Y_{t-1}} + \frac{G - T}{Y_t}
 
+It is relatively simple to study this relationship in EXCEL.
+
+Consider the following case.  Set
+
+  * :math:`g`, the growth rate of :math:`Y`, to 3 percent
+  * :math:`r`, the interest rate, to 2 percent
+  * :math:`\frac{G - T}{Y}`, the ratio of the primary deficit to GDP, to 5 percent, and 
+  * the initial value of the debt to GDP ratio :math:`\frac{B_0}{Y_0}` to 10 percent.
+
+We can then simulate the path of the debt-to-GDP.
+
+.. figure:: _static/images/excel_screenshot_BY_lom1.jpg
+    :scale: 90%
+    :align: center
+
+We see that the debt-to-GDP ratio is growing each period.  Does this mean it will grow forever?
+
 Consider two cases
 
 1. :math:`g>r` (i.e. the growth rate of GDP exceeds the interest rate)
 
 2. :math:`g \le r` (i.e. the growth rate of GDP is less than the interest rate)
-
-If :math`g > r`, the debt-to-GDP ratio will not blow up.
+ 
+ 
+If :math:`g > r`, the debt-to-GDP ratio will not blow up.
 
 So a government can sustain persistent deficits as long as growth
 in output is greater than the real interest rate.
@@ -551,43 +578,87 @@ Seignorage
 
 But first, a few basics about money ...
 
-Velocity and the Quantity Theory of Money
-------------------------------------------
+The Quantity Theory of Money
+----------------------------
 
-Velocity, :math:`V`, measures how much money turns over each period.
+The *quantity theory of money* describes a simple 
+relationship between the money supply, the price level, and output.
+
+It is based on the simple idea that money is just a means of carrying out transactions and
+has no effect of the productive capacity of a country.
+
+Think of nominal GDP as the volume of transactions executed in a country, 
+
+If we define velocity, :math:`V`, as the number of transactions each dollar can execute, then
+
+.. math::
+   Money \times Velocity &=& Price Level \times Real Output \\
+   M     \times  V       &=& P           \times   Y    
+
+where we define
 
 .. math::
    V \equiv \frac{\mbox{Nominal GDP}}{\mbox{nominal money stock}} = \frac{PY}{M}. 
 
-The way the quantity theory of money is usually written is:
+Thus for any values of :math:`M`, :math:`P`, and :math:`Y`, we can compute a value of :math:`V` such that the 
+quantity theory holds. The give this theory any bite, we assume that velocity is roughly constant.
+
+If we make this assumption of constant velocity, then this theory implies that
+real money demand is proportional to real income.  So
+:math:`\frac{M^d}{P} = kY` .
+
+It is often useful to express the quantity theory in terms of growth rates.  IF we take natural logs of both sides of the 
+equation, we get
 
 .. math::
-   Money \times Velocity &=& Price \times Output \\
-   M     \times  V       &=& P     \times   Y    
+   \ln M_t   +  \ln V_t       =  \ln P_t +   \ln Y_t
+       
+If we step back one period, we get 
 
+.. math::
+   \ln M_{t-1}   +  \ln V_{t-1}       =  \ln P_{t-1} +   \ln Y_{t-1}
+   
+Subtracting this second equation from the first yields,
 
-Real money demand is proportional to real income.  So
-:math:`\frac{M^d}{P} = kY` Assumes constant velocity.
+.. math::
+   (\ln M_{t}-\ln M_{t-1})   +  (\ln V_t - \ln V_{t-1})       =  (\ln P_t - \ln P_{t-1}) +   (\ln Y_t - \ln Y_{t-1})
+   
+or
+   
+.. math::
+    \frac{\Delta M}{M} + \frac{\Delta V}{V} = \frac{\Delta P}{P} + \frac{\Delta Y}{Y}   
 
+Again if we assume velocity is constant over time, then
+
+.. math::
+    \frac{\Delta M}{M}  = \frac{\Delta P}{P} + \frac{\Delta Y}{Y}   
+
+For more on the quantity theory of money, see chapter 12 of `The Global Economy`_.
+
+.. _The Global Economy: http://pages.stern.nyu.edu/~dbackus/2303/Global_Economy_web.pdf
 
 Money and Inflation
 ====================
 
-Inflation is an increase in the price level. That is, define
-inflation as: :math:`\pi = \frac{\Delta P}{P}`
+Inflation is the growth rate of the price level, which typically we measure by a price index such 
+as the consumer price index (CPI) or the GDP deflator.  
 
+If we denote inflation by :math:`\pi`, we can write :math:`\pi = \frac{\Delta P}{P}`
 
-A famous quote from Milton Friedman:
+There is a famous quote from `Milton Friedman`_, the winner of the 1976 Nobel Prize in economics:
 
   *Inflation is always and everywhere a monetary phenomenon.*
 
-In a world without frictions, doubling the money supply has
-no effect on output, it just doubles the price level.  So
+.. _Milton Friedman: http://en.wikipedia.org/wiki/Milton_Friedman
+
+This claim follows from the quantity theory. In a world without frictions, 
+output is determined by a country's capital, labor and land.  Thus changes in the money 
+supply have not effect on the growth rate of the output.
+
+If we assume velocity is fixed, the quantity theory of money implies that
+changes in the money supply translate one-for-one into changes in the price level.  So
 :math:`\pi = \frac{P_{t+1} - P_{t}}{P_t} = \frac{\Delta P}{P} =
 \frac{\Delta M}{M}`
-
-Output does not change, velocity does not change.  Quantity theory
-of money.
 
 Money had no effect on anything anybody cared about.  In other
 words money is *neutral.*
@@ -746,3 +817,8 @@ Sum of future surpluses
 
    *just like your credit card balance ...*
 
+.. [#] For a discussion of different state budgets and their varying accounting rules, see Ratvich, Richard and Paul Volker (2014) 
+       "Report of the State Budget Crisis Task Force" available from
+       `www.statebudgetcrisis.org`_.
+
+.. _www.statebudgetcrisis.org : http://www.statebudgetcrisis.org/wpcms/

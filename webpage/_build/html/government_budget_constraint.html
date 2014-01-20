@@ -125,8 +125,21 @@ Examples of transfer payments include Medicare, Social Security, and unemploymen
 its debtors (e.g. government loans to small businesses or farmers).  As we will see below, there is more than one
 way to measure the costs the government pays to borrow.</p>
 </div>
-<div class="section" id="federal-government-fiscal-accounts">
-<h3>Federal Government Fiscal Accounts<a class="headerlink" href="#federal-government-fiscal-accounts" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="fiscal-accounts">
+<h3>Fiscal Accounts<a class="headerlink" href="#fiscal-accounts" title="Permalink to this headline">¶</a></h3>
+<p>Up to this point we have just referred to &#8220;the government.&#8221;  Of course in the United States,
+at any point in time most people fall under the jurisdiction of three governments simultaneously:
+the federal government, the state government and the local government.</p>
+<p>The composition of spending and revenue differ considerably across these three levels.
+At times, it will be useful to lump all three together; but at other times, it be will be
+important to consider the each level separately.</p>
+<p>Making comparisons across levels of government can be tricky. Spending and revenue choices
+are the outcome of the budget process which differ across governments. Different governments can operate
+on different fiscal years and employ different budget practices.  For example, some government
+count the sale of bonds and or public assets as &#8220;revenue&#8221; while other do not <a class="footnote-reference" href="#id3" id="id2">[1]</a>.</p>
+<p>Fortunately for us, the Bureau of Economic Analysis (BEA) creates a set of accounts that is consistent
+across all three levels of government.</p>
+<p>We first focus on describing the fiscal accounts of the federal government.</p>
 </div>
 <div class="section" id="omb">
 <h3>OMB<a class="headerlink" href="#omb" title="Permalink to this headline">¶</a></h3>
@@ -182,7 +195,7 @@ well as GDP</p>
 <li>Other</li>
 </ol>
 </div></blockquote>
-<p>Othere includes ..., and is small.</p>
+<p>Other includes ..., and is small.</p>
 </div>
 <div class="section" id="the-revolutionary-and-continental-accounts">
 <h3>The Revolutionary and Continental Accounts<a class="headerlink" href="#the-revolutionary-and-continental-accounts" title="Permalink to this headline">¶</a></h3>
@@ -283,22 +296,13 @@ NIPA: Six principal categories</p>
 </div>
 <div class="section" id="revenue-federal-vs-state-local">
 <h3>Revenue: Federal vs. State/Local<a class="headerlink" href="#revenue-federal-vs-state-local" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>Federal government<ul>
-<li>Income taxes</li>
-<li>Contributions for social insurance</li>
-</ul>
-</li>
-<li>State/Local<ul>
-<li>property and sales taxes</li>
-<li>transfers from the federal government</li>
-</ul>
-</li>
-<li>Compositional changes for federal government over time<ul>
-<li>customs to internal revenue (income taxes)</li>
-</ul>
-</li>
-</ul>
+<p>The federal government receives a much large share of its revenues from income taxes
+and contributions for social insurance (e.g. Social Security and Medicare).</p>
+<p>Revenue to fund state and local governments tend to derive large from
+property and sales taxes and transfers from the federal government.</p>
+<p>When we look over the entire history of the U.S., prior to the Civil War, the
+federal government primary source of revenue was customs duties.  After the Civil War,
+internal revenues (e.g. the income tax) become the primary source of revenue.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/fed_receipts_decomp_1776_1940.png"><img alt="_images/fed_receipts_decomp_1776_1940.png" src="_images/fed_receipts_decomp_1776_1940.png" style="width: 720.0px; height: 540.0px;" /></a>
 <p class="caption"><strong>1790-1940: Federal Revenues Decomposed by Type</strong></p>
@@ -463,12 +467,27 @@ on the debt held by the public.</p>
 <p>In other words, which paths of <span class="math">\(B/Y\)</span> are stable? which are explosive?</p>
 <div class="math">
 \[\frac{B_{t}}{Y_t} =  (1+r-g) \frac{B_{t-1}}{Y_{t-1}} + \frac{G - T}{Y_t}\]</div>
+<p>It is relatively simple to study this relationship in EXCEL.</p>
+<p>Consider the following case.  Set</p>
+<blockquote>
+<div><ul class="simple">
+<li><span class="math">\(g\)</span>, the growth rate of <span class="math">\(Y\)</span>, to 3 percent</li>
+<li><span class="math">\(r\)</span>, the interest rate, to 2 percent</li>
+<li><span class="math">\(\frac{G - T}{Y}\)</span>, the ratio of the primary deficit to GDP, to 5 percent, and</li>
+<li>the initial value of the debt to GDP ratio <span class="math">\(\frac{B_0}{Y_0}\)</span> to 10 percent.</li>
+</ul>
+</div></blockquote>
+<p>We can then simulate the path of the debt-to-GDP.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/excel_screenshot_BY_lom1.jpg"><img alt="_images/excel_screenshot_BY_lom1.jpg" src="_images/excel_screenshot_BY_lom1.jpg" style="width: 665.1px; height: 576.9px;" /></a>
+</div>
+<p>We see that the debt-to-GDP ratio is growing each period.  Does this mean it will grow forever?</p>
 <p>Consider two cases</p>
 <ol class="arabic simple">
 <li><span class="math">\(g&gt;r\)</span> (i.e. the growth rate of GDP exceeds the interest rate)</li>
 <li><span class="math">\(g \le r\)</span> (i.e. the growth rate of GDP is less than the interest rate)</li>
 </ol>
-<p>If :math`g &gt; r`, the debt-to-GDP ratio will not blow up.</p>
+<p>If <span class="math">\(g &gt; r\)</span>, the debt-to-GDP ratio will not blow up.</p>
 <p>So a government can sustain persistent deficits as long as growth
 in output is greater than the real interest rate.</p>
 <p>In the U.S. <span class="math">\(r = 0.016\)</span>  and <span class="math">\(g = 0.033\)</span>.</p>
@@ -478,32 +497,59 @@ in output is greater than the real interest rate.</p>
 <h3>Seignorage<a class="headerlink" href="#seignorage" title="Permalink to this headline">¶</a></h3>
 <p>But first, a few basics about money ...</p>
 </div>
-<div class="section" id="velocity-and-the-quantity-theory-of-money">
-<h3>Velocity and the Quantity Theory of Money<a class="headerlink" href="#velocity-and-the-quantity-theory-of-money" title="Permalink to this headline">¶</a></h3>
-<p>Velocity, <span class="math">\(V\)</span>, measures how much money turns over each period.</p>
+<div class="section" id="the-quantity-theory-of-money">
+<h3>The Quantity Theory of Money<a class="headerlink" href="#the-quantity-theory-of-money" title="Permalink to this headline">¶</a></h3>
+<p>The <em>quantity theory of money</em> describes a simple
+relationship between the money supply, the price level, and output.</p>
+<p>It is based on the simple idea that money is just a means of carrying out transactions and
+has no effect of the productive capacity of a country.</p>
+<p>Think of nominal GDP as the volume of transactions executed in a country,</p>
+<p>If we define velocity, <span class="math">\(V\)</span>, as the number of transactions each dollar can execute, then</p>
+<div class="math">
+\[\begin{split}Money \times Velocity &amp;=&amp; Price Level \times Real Output \\
+M     \times  V       &amp;=&amp; P           \times   Y\end{split}\]</div>
+<p>where we define</p>
 <div class="math">
 \[V \equiv \frac{\mbox{Nominal GDP}}{\mbox{nominal money stock}} = \frac{PY}{M}.\]</div>
-<p>The way the quantity theory of money is usually written is:</p>
+<p>Thus for any values of <span class="math">\(M\)</span>, <span class="math">\(P\)</span>, and <span class="math">\(Y\)</span>, we can compute a value of <span class="math">\(V\)</span> such that the
+quantity theory holds. The give this theory any bite, we assume that velocity is roughly constant.</p>
+<p>If we make this assumption of constant velocity, then this theory implies that
+real money demand is proportional to real income.  So
+<span class="math">\(\frac{M^d}{P} = kY\)</span> .</p>
+<p>It is often useful to express the quantity theory in terms of growth rates.  IF we take natural logs of both sides of the
+equation, we get</p>
 <div class="math">
-\[\begin{split}Money \times Velocity &amp;=&amp; Price \times Output \\
-M     \times  V       &amp;=&amp; P     \times   Y\end{split}\]</div>
-<p>Real money demand is proportional to real income.  So
-<span class="math">\(\frac{M^d}{P} = kY\)</span> Assumes constant velocity.</p>
+\[\ln M_t   +  \ln V_t       =  \ln P_t +   \ln Y_t\]</div>
+<p>If we step back one period, we get</p>
+<div class="math">
+\[\ln M_{t-1}   +  \ln V_{t-1}       =  \ln P_{t-1} +   \ln Y_{t-1}\]</div>
+<p>Subtracting this second equation from the first yields,</p>
+<div class="math">
+\[(\ln M_{t}-\ln M_{t-1})   +  (\ln V_t - \ln V_{t-1})       =  (\ln P_t - \ln P_{t-1}) +   (\ln Y_t - \ln Y_{t-1})\]</div>
+<p>or</p>
+<div class="math">
+\[\frac{\Delta M}{M} + \frac{\Delta V}{V} = \frac{\Delta P}{P} + \frac{\Delta Y}{Y}\]</div>
+<p>Again if we assume velocity is constant over time, then</p>
+<div class="math">
+\[\frac{\Delta M}{M}  = \frac{\Delta P}{P} + \frac{\Delta Y}{Y}\]</div>
+<p>For more on the quantity theory of money, see chapter 12 of <a class="reference external" href="http://pages.stern.nyu.edu/~dbackus/2303/Global_Economy_web.pdf">The Global Economy</a>.</p>
 </div>
 </div>
 <div class="section" id="money-and-inflation">
 <h2>Money and Inflation<a class="headerlink" href="#money-and-inflation" title="Permalink to this headline">¶</a></h2>
-<p>Inflation is an increase in the price level. That is, define
-inflation as: <span class="math">\(\pi = \frac{\Delta P}{P}\)</span></p>
-<p>A famous quote from Milton Friedman:</p>
+<p>Inflation is the growth rate of the price level, which typically we measure by a price index such
+as the consumer price index (CPI) or the GDP deflator.</p>
+<p>If we denote inflation by <span class="math">\(\pi\)</span>, we can write <span class="math">\(\pi = \frac{\Delta P}{P}\)</span></p>
+<p>There is a famous quote from <a class="reference external" href="http://en.wikipedia.org/wiki/Milton_Friedman">Milton Friedman</a>, the winner of the 1976 Nobel Prize in economics:</p>
 <blockquote>
 <div><em>Inflation is always and everywhere a monetary phenomenon.</em></div></blockquote>
-<p>In a world without frictions, doubling the money supply has
-no effect on output, it just doubles the price level.  So
+<p>This claim follows from the quantity theory. In a world without frictions,
+output is determined by a country&#8217;s capital, labor and land.  Thus changes in the money
+supply have not effect on the growth rate of the output.</p>
+<p>If we assume velocity is fixed, the quantity theory of money implies that
+changes in the money supply translate one-for-one into changes in the price level.  So
 <span class="math">\(\pi = \frac{P_{t+1} - P_{t}}{P_t} = \frac{\Delta P}{P} =
 \frac{\Delta M}{M}\)</span></p>
-<p>Output does not change, velocity does not change.  Quantity theory
-of money.</p>
 <p>Money had no effect on anything anybody cared about.  In other
 words money is <em>neutral.</em></p>
 <p>The classic dichotomy: money only changes the price level.</p>
@@ -616,6 +662,14 @@ rises more or less than the decline in money holdings.</p>
 <p>Sum of future surpluses</p>
 <blockquote>
 <div><em>just like your credit card balance ...</em></div></blockquote>
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>For a discussion of different state budgets and their varying accounting rules, see Ratvich, Richard and Paul Volker (2014)
+&#8220;Report of the State Budget Crisis Task Force&#8221; available from
+<a class="reference external" href="http://www.statebudgetcrisis.org/wpcms/">www.statebudgetcrisis.org</a>.</td></tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>

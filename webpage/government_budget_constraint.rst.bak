@@ -107,6 +107,34 @@ way to measure the costs the government pays to borrow.
 Federal Government Fiscal Accounts
 ----------------------------------
 
+Up to this point we have just referred to "the government."  Of course in the United States, 
+at any point in time most people fall under the jurisdiction of three govenrments simulataneously: 
+the federal government, the state government and the local government.
+
+The composition of spending and revenue difer considerably across these three levels.  
+At times, it will be useful to lump all three together; but at other times, it be will be 
+important to consider the each level seperately.
+
+Making comparisons across levels of government can be tricky. Spending and revenue choices 
+are the outcome of the budget process which difer across governments. Diferent governments can operate 
+on different fiscal years and can employ different budget practices.  For example, some government count the sale of bonds and
+or public assets as "revenue" while other do not.[#]
+
+.. [#] For a discssion of different state budgets, see Ratvich, Richard and Paul Volker (2014) "Report of the State Budget Crisis Task Force" available from
+`http://www.statebudgetcrisis.org/wpcms/<http://www.statebudgetcrisis.org/wpcms/>'_.
+
+_`
+
+Fortunately for us, the Bureau of Economic Analysis (BEA) creates a set of accounts that is consistent 
+across all three levels of government.  We will describe this account in a moment.
+
+We first focus on describing the fiscal accounts of the federal government. 
+
+
+
+OMB
+---
+
 Federal government spending and revenue are determined by its annual budgets 
 passed by Congress and signed by the President.  Since 1934, these budget numbers 
 are reported by the `Office of Management and Budget (OMB)`_.
@@ -119,7 +147,7 @@ The federal government operates on a fiscal year which begins on October 1 and e
 September 30 of the next calendar year. 
 Prior to 1976, the federal fiscal year began on July 1 and ended on June 30.  
 
-The federal budget divides government spending into five categories known as*superfunctions*.  These
+The federal budget divides government spending into five categories known as *superfunctions*.  These
 categories include all spending for a given topic, regardless of the federal agency that oversees the 
 individual federal program. 
 
@@ -131,8 +159,12 @@ The five superfunctions are:
           4. net interest
           5. other
 
-Spending within these suprefcuntions are further broken down into twenty functions.
+Spending within these superfunctions are broken down further into twenty functions.
 
+Revenues
+
+U.S. Treasury
+-------------
 
 Between 1790 and 1940, the U.S. Treasury reported the budget numbers.  These numbers are available
 from the `Annual Report of the Secretary of the Treasury on the State of the Finances`_.
@@ -147,41 +179,44 @@ Prior to 1940 there were five primary (or top level) categories
           4. Indians 
           5. interest
 
-
-Government spending is also recorded in a second set of accounts: `the National Income and Product Accounts (NIPA)`_
+Government spending is also recorded by the Bureau of Economic Analysis in 
+a second set of accounts: `the National Income and Product Accounts (NIPA)`_
 
 .. _the National Income and Product Accounts (NIPA): http://www.bea.gov/iTable/index_nipa.cfm
 
-Unlike the budget number reported by the OMB, the numbers reported by the NIPA are  
+These accounts begin in 1929.
 
-  * from 1929 to the present
+Unlike the budget number reported by the OMB, the numbers reported by the NIPA are quarter and based on the 
+calendar year. The NIPA also provides a consistent accounting with state and local government accounts as 
+well as GDP
   
-  * based on the calendar year/quarter, 
-
-  * consistent accounting with state and local government accounts as well as GDP
-  
-The three primary or top level categories are
+Government expenditures within the NIPA are decomposed into four primary or top level categories
 
      1. Government consumption, :math:`G_t`
 
      2. Transfer payments, :math:`TR_t`
 
      3. Net interest payments, :math:`INT_t`
+     
+     4. Other
+     
+Othere includes ..., and is small.      
 
-Prior to the establishment of the Department of Treasury in 1790, 
+The Revolutionary and Continental Accounts
+-------------------------------------------
 
-  * constructed accounts from various reports
-
-
+Prior to the establishment of the Department of Treasury in 1790, we will construct our own accounts 
+from various reports and ledgers.
 
 With these accounts in mind, let's take a stroll through the data.
 
 Comparison Between Federal and State \& Local
 ---------------------------------------------
 
+
+
 If we combine U.S. federal, state, and local government together, total spending 
 is well over 1/3 of GDP.
-
 
 .. figure:: _static/figures/all_gov_rec_exp.png
     :scale: 60%
@@ -189,7 +224,7 @@ is well over 1/3 of GDP.
 
     **NIPA: Total Government Receipts and Expenditures as a Percent of GDP**
 
-In the following graph shos the trends in the primary categories
+In the following graph shows the expenditures trends in the primary categories
     
 .. figure:: _static/figures/all_gov_exp_decomp.png
     :scale: 60%
@@ -197,15 +232,14 @@ In the following graph shos the trends in the primary categories
     
     **NIPA: Total Government Expenditures Decomposed By Type**
 
-
 Current composition of the federal government budget is quite different from state and local budgets.
 
-Federal spending is more heavily weighted toward transfer payments.
+Federal spending is more heavily weighted toward transfer payments.  
 
      *The federal government is a gigantic insurance company 
      with a side business in defense.*
 
-* State and local governments more directly involved in government purchases
+State and local governments more directly involved in government purchases
 
 
 .. figure:: _static/figures/fed_gov_exp_decomp.png
@@ -246,6 +280,7 @@ Since World War II transfer payments have steadily grown as larger share
 Revenue Side
 ------------
 
+On the 
 NIPA: Six principal categories
 
 #. Personal taxes:
@@ -554,7 +589,7 @@ The way the quantity theory of money is usually written is:
 
 .. math::
    Money \times Velocity &=& Price \times Output \\
-   M     \times  V       &=& P     \times   Y    \\
+   M     \times  V       &=& P     \times   Y    
 
 
 Real money demand is proportional to real income.  So
