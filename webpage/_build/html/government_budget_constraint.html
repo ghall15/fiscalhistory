@@ -466,7 +466,7 @@ on the debt held by the public.</p>
 </div></blockquote>
 <p>In other words, which paths of <span class="math">\(B/Y\)</span> are stable? which are explosive?</p>
 <div class="math">
-\[\frac{B_{t}}{Y_t} =  (1+r-g) \frac{B_{t-1}}{Y_{t-1}} + \frac{G - T}{Y_t}\]</div>
+\[\frac{B_{t}}{Y_t} =  (1+r-g) \frac{B_{t-1}}{Y_{t-1}} + \frac{G - T}{Y}\]</div>
 <p>It is relatively simple to study this relationship in EXCEL.</p>
 <p>Consider the following case.  Set</p>
 <blockquote>
@@ -482,16 +482,63 @@ on the debt held by the public.</p>
 <a class="reference internal image-reference" href="_images/excel_screenshot_BY_lom1.jpg"><img alt="_images/excel_screenshot_BY_lom1.jpg" src="_images/excel_screenshot_BY_lom1.jpg" style="width: 665.1px; height: 576.9px;" /></a>
 </div>
 <p>We see that the debt-to-GDP ratio is growing each period.  Does this mean it will grow forever?</p>
+<p>Let&#8217;s extend the simulation for 500 periods.  Then we plot the 500 simulations of <span class="math">\(\frac{B}{Y}\)</span> computed in column B.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/b_y_simulation1.jpg"><img alt="_images/b_y_simulation1.jpg" src="_images/b_y_simulation1.jpg" style="width: 432.0px; height: 261.9px;" /></a>
+</div>
+<p>We see that the debt-to-GDP ratio grows, but that this growth diminishes as the series approaches 5.</p>
+<p>Now let&#8217;s change this exercise by raising the interest rate from 2 percent to 4 percent holding everything else fixed.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/excel_screenshot_BY_lom2.jpg"><img alt="_images/excel_screenshot_BY_lom2.jpg" src="_images/excel_screenshot_BY_lom2.jpg" style="width: 1042.4px; height: 576.0px;" /></a>
+</div>
+<p>In this case, the debt-to-GDP explodes.</p>
+<p>To download this EXCEL file, click <a class="reference external" href="http://people.brandeis.edu/~ghall/_build/programs/law_of_motion_for_BY.xlsx">here</a>.</p>
+<p>So what is going on?  Let&#8217;s go back to the algebra.</p>
 <p>Consider two cases</p>
 <ol class="arabic simple">
 <li><span class="math">\(g&gt;r\)</span> (i.e. the growth rate of GDP exceeds the interest rate)</li>
 <li><span class="math">\(g \le r\)</span> (i.e. the growth rate of GDP is less than the interest rate)</li>
 </ol>
-<p>If <span class="math">\(g &gt; r\)</span>, the debt-to-GDP ratio will not blow up.</p>
+<p>Let&#8217;s plot the law of motion for the debt-to-GDP ratio for case 1.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/debt_gdp_dyn_r_le_g.png"><img alt="_images/debt_gdp_dyn_r_le_g.png" src="_images/debt_gdp_dyn_r_le_g.png" style="width: 720.0px; height: 540.0px;" /></a>
+</div>
+<p>In this figure, the thick black curve represents the right hand side of
+the law of motion and the thin red line corresponds to the 45 degree line.  At every point
+on the 45 degree line, <span class="math">\(\frac{B_t}{Y_t} =\frac{B_t}{Y_t}\)</span>.</p>
+<p>These two line intersect once with the black line crossing the 45 degree line only once from above.</p>
+<p>This occurs because</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>the y-intercept of the law of motion, the primary deficit to GDP ratio, is positive, and</li>
+<li>the slope of the equation <span class="math">\((1-g+r)\)</span> is less than one (i.e. the slope of the 45 degree line)</li>
+</ol>
+</div></blockquote>
+<p>The intersection of these two lines gives the <em>steady-state</em> value of <span class="math">\(\frac{B}{Y}\)</span>.
+At this steady state, <span class="math">\(\frac{B}{Y}\)</span> remains constant.</p>
+<p>The steady state corresponds to:</p>
+<div class="math">
+\[\begin{split}\frac{B}{Y} &amp;=&amp;  (1+r-g) \frac{B}{Y} + \frac{G - T}{Y} \\
+(g-r) \frac{B}{Y} &amp;=&amp; \frac{G - T}{Y} \\
+\frac{B}{Y} &amp;=&amp; \frac{1}{g-r} \frac{G - T}{Y}\end{split}\]</div>
+<p>Now let&#8217;s plot the law of motion for debt-to-GDP ratio for case 2.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/debt_gdp_dyn_r_ge_g.png"><img alt="_images/debt_gdp_dyn_r_ge_g.png" src="_images/debt_gdp_dyn_r_ge_g.png" style="width: 720.0px; height: 540.0px;" /></a>
+</div>
+<p>As in the previous figure, the thick black curve represents the right hand side of
+the law of motion and the thin red line corresponded to the 45 degree line.</p>
+<p>In this case, the slope of the law of motion is greater than one, so the two curve do not intersect.
+Thus no steady state exists.</p>
+<p>The take-away from this exercise is</p>
+<blockquote>
+<div><em>If a country grows faster than its interest rate (i.e if g &gt; r), its debt-to-GDP ratio will not blow up.</em></div></blockquote>
 <p>So a government can sustain persistent deficits as long as growth
-in output is greater than the real interest rate.</p>
-<p>In the U.S. <span class="math">\(r = 0.016\)</span>  and <span class="math">\(g = 0.033\)</span>.</p>
-<p>Don&#8217;t necessarily need a balanced budget.</p>
+in output is greater than the real interest rate.
+A country does not necessarily need a balanced budget in order to insure its debt-to-GDP rate is sustainable.
+This is not to say that the debt-to-GDP will not be quite high.  In our Excel example, the steady-state debt-to-GDP
+was 500 percent.  But as long as <span class="math">\(g &gt; r\)</span>, the debt-to-GDP will remain finite.</p>
+<p>Since World War II, the U.S. has generally grown faster than the interest rate the government has faced. On average the U.S. has
+grown about 3.3 percent per year.  The average interest rate on government debt has been about 1.6 percent.</p>
 </div>
 <div class="section" id="seignorage">
 <h3>Seignorage<a class="headerlink" href="#seignorage" title="Permalink to this headline">¶</a></h3>
