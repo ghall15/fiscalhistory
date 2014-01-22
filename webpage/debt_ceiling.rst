@@ -7,7 +7,7 @@ The Debt Ceiling
 The U.S. Constitution grants Congress the sole power to direct spending and
 borrow money. 
 
-In Article 1, Section 8, states
+Article 1, Section 8, states
 
 .. epigraph::
 
@@ -15,7 +15,10 @@ In Article 1, Section 8, states
 
      To borrow money on the credit of the United States;
 
-Prior to the funding of the Panama Canal, every time the government w
+Prior to the funding of the Panama Canal, every time the government wished to borrow money, Congress drated specific legislation to authorize 
+the borrowing.  This eventually lead to inefficent debt management  More here ...
+
+
 
 a failure to raise the debt ceiling puts the Treasury in the untenable position of not have the authority to send out all the checks Congress had previously directed it to write. 
 * Debt Limit evolved from the funding of the Panama Canal and World War I.

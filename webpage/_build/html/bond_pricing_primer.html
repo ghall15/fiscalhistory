@@ -58,12 +58,13 @@
 <span id="bond-pricing-primer"></span><h1>A Primer on Bond Pricing<a class="headerlink" href="#a-primer-on-bond-pricing" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="what-s-a-bond">
 <h2>What&#8217;s a Bond?<a class="headerlink" href="#what-s-a-bond" title="Permalink to this headline">¶</a></h2>
-<p>A bond is an I.O.U.  It is a piece of paper that states</p>
+<p>A bond is an I.O.U.  It is a piece of paper that promises</p>
 <blockquote>
 <div><em>on date</em> <span class="math">\(t\)</span>, <em>I will pay you</em> <span class="math">\(y\)</span> <em>dollars.</em></div></blockquote>
 <p>Of course things can be a little more complicated than this.</p>
 <div class="section" id="non-coupon-and-coupon-bonds">
 <h3>Non-Coupon and Coupon Bonds<a class="headerlink" href="#non-coupon-and-coupon-bonds" title="Permalink to this headline">¶</a></h3>
+<p>Most bonds fall into one of two types:</p>
 <ol class="arabic">
 <li><p class="first"><em>Non-coupon</em> or <em>pure discount</em> bonds state</p>
 <blockquote>
@@ -139,18 +140,15 @@ today?</p>
 </div>
 <div class="section" id="relationship-between-bond-prices-and-yields-for-zero-coupon-bonds">
 <h2>Relationship between bond prices and yields for zero-coupon bonds<a class="headerlink" href="#relationship-between-bond-prices-and-yields-for-zero-coupon-bonds" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Real, not nominal, variables</li>
-</ul>
+<p>First, let define some terms.</p>
+<p>Real, not nominal, variables</p>
 <div class="math">
 \[\begin{split}q_{t,t+j} &amp;=&amp; \mbox{real price of one unit of time $t+j$ consumption}\\
       &amp;&amp;  \mbox{at time t}\\
 r_{t,t+j} &amp;=&amp; \mbox{yield of a $j$-period $t+j$ pure discount}\\
        &amp;&amp; \mbox{(zero coupon) bond at time t} \\
 q_{t,t+j} &amp;=&amp; \exp(-j r_{t,t+j}) \approx \frac{1}{(1+r_{t,t+j})^j}\end{split}\]</div>
-<ul class="simple">
-<li>Take logs of both sides</li>
-</ul>
+<p>Take logs of both sides</p>
 <div class="math">
 \[\begin{split}\log q_{t,t+j} &amp;=&amp; -j r_{t,t+j} \\
 r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
@@ -171,12 +169,35 @@ r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
 \[\begin{split}\log(1+x) &amp;\approx&amp; 0 + x\left(\frac{1}{1+x}\right) |_{x=x_0} \\
       &amp;\approx&amp; x\end{split}\]</div>
 </div>
-<div class="section" id="happy-meal-theorem-of-bond-pricing">
-<h3>Happy Meal Theorem of Bond Pricing<a class="headerlink" href="#happy-meal-theorem-of-bond-pricing" title="Permalink to this headline">¶</a></h3>
-<ul>
-<li><p class="first">Happy meal: burger, fries, drink, toy</p>
-</li>
-<li><p class="first">Consider a bond that at time <span class="math">\(t\)</span> promises to pay</p>
+<div class="section" id="the-law-of-one-price-or-happy-meal-theorem-of-bond-pricing">
+<h3>The Law of One Price or Happy Meal Theorem <a class="footnote-reference" href="#id3" id="id1">[1]</a> of Bond Pricing<a class="headerlink" href="#the-law-of-one-price-or-happy-meal-theorem-of-bond-pricing" title="Permalink to this headline">¶</a></h3>
+<p>Consider a McDonald&#8217;s &#8220;Happy Meal.&#8221;  It consists of</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>a burger,</li>
+<li>fries,</li>
+<li>a drink, and</li>
+<li>a toy.</li>
+</ol>
+</div></blockquote>
+<p>The price of the Happy Meal should be excaly equal to the sum of the</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>price of the burger,</li>
+<li>price of the fries,</li>
+<li>price of the drink, and</li>
+<li>price of the toy.</li>
+</ol>
+</div></blockquote>
+<p>Why?</p>
+<p>If the price of the happy meal is greater than the sum of the prices of the individual individual components,
+an enterprising soul could buy the four components, bundle them up and sell them at a slightly lower price
+than McDonald&#8217;s.  This would be a profitable enterprise.</p>
+<p>If the price of the happy meal is less than the sum of the prices of the individual individual components,
+an enterprising soul could buy the happy meal, strip out the four components, sell the four components and make a tidy profit.</p>
+<p>Of course this silly example assumes unrealistically that transaction costs are miniscule. But the point is that we can
+price a bundle of goods by pricing each component individually and taking the sum.  This is our strategy for pricing bonds.</p>
+<p>Consider a bond that at time <span class="math">\(t\)</span> promises to pay</p>
 <blockquote>
 <div><table border="1" class="docutils">
 <colgroup>
@@ -207,72 +228,61 @@ r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
 </tbody>
 </table>
 </div></blockquote>
-</li>
-<li><p class="first">The value of the bond at time <span class="math">\(t\)</span> is then</p>
-</li>
-</ul>
+<p>The value (or price) of the bond at time <span class="math">\(t\)</span> is then sum of the</p>
+<div class="line-block">
+<div class="line">1.  the coupon at date <span class="math">\(t+1\)</span></div>
+<div class="line">2.  the coupon at date <span class="math">\(t+2\)</span></div>
+<div class="line">3.  the coupon at date <span class="math">\(t+3\)</span></div>
+</div>
+<p><span class="math">\(\vdots\)</span></p>
+<div class="line-block">
+<div class="line">T. the coupon at date <span class="math">\(t+T\)</span></div>
+<div class="line">T+1. the principal payment at date <span class="math">\(t+T\)</span></div>
+</div>
+<p>We write this summation as</p>
 <div class="math">
 \[\begin{split}V_t &amp;=&amp; c q_{t,t+1} + c q_{t,t+2} +  ... + c q_{t,t+T} + P q_{t,t+T} \\
     &amp;=&amp; c (q_{t,t+1} + q_{t,t+2} +  ... + q_{t,t+T}) + P q_{t,t+T}\end{split}\]</div>
-<ul class="simple">
-<li>The value of this same bond at <span class="math">\(t+1\)</span>, after <span class="math">\(c\)</span> has been paid, is</li>
-</ul>
+<p>The value of this same bond at <span class="math">\(t+1\)</span>, after <span class="math">\(c\)</span> has been paid, is</p>
 <div class="math">
 \[V_{t+1}  = c (q_{t+1,t+2} + q_{t+1,t+3} +  ... + q_{t+1,t+T}) + P q_{t+1,t+T}\]</div>
-<ul class="simple">
-<li>Evidently</li>
-</ul>
+<p>Evidently</p>
 <div class="math">
 \[V_t = q_{t,t+1} \left( c + V_{t+1} \right)\]</div>
 </div>
 </div>
 <div class="section" id="forward-rates">
 <h2>Forward Rates<a class="headerlink" href="#forward-rates" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>With no uncertainty, the law of one price asserts that</li>
-</ul>
+<p>With no uncertainty, the law of one price asserts that</p>
 <div class="math">
 \[q_{t,t+j} = q_{t,t+1} q_{t+1,t+j}\]</div>
-<ul>
-<li><p class="first">Two ways at time <span class="math">\(t\)</span> to buy one unit of consumption at <span class="math">\(t+j\)</span></p>
+<p>There are two ways at time <span class="math">\(t\)</span> to buy one unit of consumption at <span class="math">\(t+j\)</span></p>
 <blockquote>
-<div><ul class="simple">
+<div><ol class="arabic simple">
 <li>either pay <span class="math">\(q_{t,t+j}\)</span> at time <span class="math">\(t\)</span>, or</li>
 <li>pay <span class="math">\(q_{t,t+1}\)</span> at time <span class="math">\(t\)</span> and <span class="math">\(q_{t+1,t+j}\)</span> at time <span class="math">\(t+1\)</span></li>
-</ul>
+</ol>
 </div></blockquote>
-</li>
-<li><p class="first">Define</p>
-</li>
-</ul>
+<p>Define</p>
 <div class="math">
 \[\tilde{q}^t_{t+1,t+j} \equiv \frac{q_{t,t+j}}{q_{t,t+1}}\]</div>
 <p>as the <em>forward price</em> at <span class="math">\(t\)</span>.</p>
-<ul class="simple">
-<li>With no uncertainty about future interest rates</li>
-</ul>
+<p>With no uncertainty about future interest rates</p>
 <div class="math">
 \[\tilde{q}^t_{t+1,t+j} = q_{t+1,t+j}\]</div>
-<ul class="simple">
-<li>When there is uncertainty, these two won&#8217;t necessarily be equal.</li>
-</ul>
+<p>When there is uncertainty, these two terms in this equation won&#8217;t necessarily be equal.</p>
 <div class="section" id="yield-to-maturity">
 <h3>Yield to Maturity<a class="headerlink" href="#yield-to-maturity" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>The yield to maturity is the unique <span class="math">\(r\)</span> that satisfies</li>
-</ul>
+<p>The yield to maturity (ytm) is the unique <span class="math">\(r\)</span> that satisfies</p>
 <div class="math">
 \[V = \frac{c}{1+r}  + \frac{c}{(1+r)^2} + \frac{c}{(1+r)^3} + ... + \frac{c+P}{(1+r)^T}\]</div>
 <p>given <span class="math">\(V\)</span>, <span class="math">\(c\)</span>, <span class="math">\(P\)</span>, and <span class="math">\(T\)</span>.</p>
-<ul class="simple">
-<li>Usually can not be solved for by hand.</li>
-<li>It is sometimes just called the yield.</li>
-</ul>
+<p>The ytm usually can not be solved for by hand.  But we can solve for it using Excel.</p>
+<p>It is sometimes just called the yield.</p>
 </div>
 <div class="section" id="a-three-period-coupon-bond-example">
 <h3>A Three Period Coupon Bond Example<a class="headerlink" href="#a-three-period-coupon-bond-example" title="Permalink to this headline">¶</a></h3>
-<ul>
-<li><p class="first">Bond issued at <span class="math">\(t=0\)</span> and is a riskless claim on stream</p>
+<p>Consider a bond issued at <span class="math">\(t=0\)</span>.  It is a riskless claim on the stream of payments</p>
 <blockquote>
 <div><table border="1" class="docutils">
 <colgroup>
@@ -294,17 +304,10 @@ r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
 </tbody>
 </table>
 </div></blockquote>
-</li>
-<li><p class="first">Again, <span class="math">\(c\)</span> is the coupon and <span class="math">\(P\)</span> is the principal or par value</p>
-</li>
-<li><p class="first">The time <span class="math">\(t=0\)</span> price of the bond is</p>
-</li>
-</ul>
+<p>The time <span class="math">\(t=0\)</span> price of the bond is</p>
 <div class="math">
 \[V_0 = q_{0,1} c + q_{0,2}(c+P)\]</div>
-<ul class="simple">
-<li>After payment of the coupon, the price of the bond at time <span class="math">\(t=1\)</span> is</li>
-</ul>
+<p>After payment of the coupon, the price of the bond at time <span class="math">\(t=1\)</span> is</p>
 <div class="math">
 \[V_1 = q_{1,2}(c+P)\]</div>
 </div>
@@ -378,8 +381,8 @@ r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
 \[\tilde{r}^0_{1,2} = \pi_0 r_{1,2}(L) + (1-\pi_0) r_{1,2}(H)\]</div>
 <p>flip the <span class="math">\(H\)</span> and <span class="math">\(L\)</span> because high bond prices mean low interest rates</p>
 </div>
-<div class="section" id="id1">
-<h3>Value of a Call Option<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id2">
+<h3>Value of a Call Option<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>At <span class="math">\(t=0\)</span>, you purchase the right to buy the bond at <span class="math">\(t=1\)</span> at a price <span class="math">\(P\)</span>.</li>
 <li>Assume that</li>
@@ -769,6 +772,12 @@ the nominal stock of treasury bills?</em></p>
 <li><p class="first">Talk these days about using inflation to erode the debt. To frame the tradeoff, need to properly account for interest the government actually pays.</p>
 </li>
 </ul>
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>John Cochrane introduced us to the term &#8220;The Happy Meal Theorem.&#8221;</td></tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -783,6 +792,7 @@ the nominal stock of treasury bills?</em></p>
           <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="government_budget_constraint.html">The Government Budget Constraint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debt_to_GDP.html">The Debt to GDP Ratio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debt_ceiling.html">The Debt Ceiling</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">A Primer on Bond Pricing</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#what-s-a-bond">What&#8217;s a Bond?</a></li>

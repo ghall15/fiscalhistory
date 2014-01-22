@@ -124,7 +124,7 @@ where
    C        &=& \mbox{consumption}
    S_{pvt}  &=& \mbox{private saving}
 
-* Government saving, $S_{gvt}$, is just the opposite of the deficit
+* Government saving, :math:`S_{gvt}`, is just the opposite of the deficit
 
 .. math::
 

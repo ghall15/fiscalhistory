@@ -7,15 +7,16 @@ A Primer on Bond Pricing
 What's a Bond?
 ==============
 
-A bond is an I.O.U.  It is a piece of paper that states
+A bond is an I.O.U.  It is a piece of paper that promises
 
      *on date* :math:`t`, *I will pay you* :math:`y` *dollars.*
-
 
 Of course things can be a little more complicated than this.
 
 Non-Coupon and Coupon Bonds
 ---------------------------
+
+Most bonds fall into one of two types:
 
 1. *Non-coupon* or *pure discount* bonds state
 
@@ -34,7 +35,6 @@ Non-Coupon and Coupon Bonds
    +---------------+-----------------+
    | :math:`T`     |  :math:`c+P`    |
    +---------------+-----------------+
-
 
 :math:`c` stands for *coupon*.
 
@@ -86,16 +86,18 @@ today?
 Relationship between bond prices and yields for zero-coupon bonds
 ==================================================================
 
-* Real, not nominal, variables
+First, let define some terms.
+
+Real, not nominal, variables
 
 .. math::
     q_{t,t+j} &=& \mbox{real price of one unit of time $t+j$ consumption}\\
           &&  \mbox{at time t}\\
     r_{t,t+j} &=& \mbox{yield of a $j$-period $t+j$ pure discount}\\
-           && \mbox{(zero coupon) bond at time t} \\
+           && \mbox{(zero coupon) bond at time t} \\     
     q_{t,t+j} &=& \exp(-j r_{t,t+j}) \approx \frac{1}{(1+r_{t,t+j})^j} 
 
-* Take logs of both sides
+Take logs of both sides
 
 .. math::
     \log q_{t,t+j} &=& -j r_{t,t+j} \\
@@ -121,12 +123,36 @@ A Handy Math Fact
           &\approx& x
 
 
-Happy Meal Theorem of Bond Pricing
-----------------------------------
+The Law of One Price or Happy Meal Theorem [#]_ of Bond Pricing 
+---------------------------------------------------------------
 
-* Happy meal: burger, fries, drink, toy
+Consider a McDonald's "Happy Meal."  It consists of
 
-* Consider a bond that at time :math:`t` promises to pay
+   1. a burger, 
+   2. fries, 
+   3. a drink, and 
+   4. a toy.  
+   
+The price of the Happy Meal should be excaly equal to the sum of the 
+
+   1. price of the burger, 
+   2. price of the fries, 
+   3. price of the drink, and 
+   4. price of the toy.  
+
+Why?  
+
+If the price of the happy meal is greater than the sum of the prices of the individual individual components, 
+an enterprising soul could buy the four components, bundle them up and sell them at a slightly lower price 
+than McDonald's.  This would be a profitable enterprise.
+
+If the price of the happy meal is less than the sum of the prices of the individual individual components, 
+an enterprising soul could buy the happy meal, strip out the four components, sell the four components and make a tidy profit.
+
+Of course this silly example assumes unrealistically that transaction costs are miniscule. But the point is that we can 
+price a bundle of goods by pricing each component individually and taking the sum.  This is our strategy for pricing bonds.
+
+Consider a bond that at time :math:`t` promises to pay
 
       +---------+-----------+----------+---------+---------+---------+
       |  t      |    t+1    |   t+2    |   t+3   | ...     |  t+T    |
@@ -134,18 +160,29 @@ Happy Meal Theorem of Bond Pricing
       |   0     |     c     |    c     |    c    |  ...    |  P+c    |
       +---------+-----------+----------+---------+---------+---------+
 
-* The value of the bond at time :math:`t` is then
+The value (or price) of the bond at time :math:`t` is then sum of the 
+
+|   1.  the coupon at date :math:`t+1`
+|   2.  the coupon at date :math:`t+2`
+|   3.  the coupon at date :math:`t+3`
+
+:math:`\vdots`
+
+|   T. the coupon at date :math:`t+T`
+|   T+1. the principal payment at date :math:`t+T`
+
+We write this summation as
 
 .. math::
     V_t &=& c q_{t,t+1} + c q_{t,t+2} +  ... + c q_{t,t+T} + P q_{t,t+T} \\
         &=& c (q_{t,t+1} + q_{t,t+2} +  ... + q_{t,t+T}) + P q_{t,t+T}
 
-* The value of this same bond at :math:`t+1`, after :math:`c` has been paid, is
+The value of this same bond at :math:`t+1`, after :math:`c` has been paid, is
 
 .. math::
     V_{t+1}  = c (q_{t+1,t+2} + q_{t+1,t+3} +  ... + q_{t+1,t+T}) + P q_{t+1,t+T}
 
-* Evidently
+Evidently
 
 .. math::
     V_t = q_{t,t+1} \left( c + V_{t+1} \right)
@@ -153,36 +190,35 @@ Happy Meal Theorem of Bond Pricing
 Forward Rates
 ==============
 
-* With no uncertainty, the law of one price asserts that
+With no uncertainty, the law of one price asserts that
 
 .. math::
     q_{t,t+j} = q_{t,t+1} q_{t+1,t+j}
 
+There are two ways at time :math:`t` to buy one unit of consumption at :math:`t+j`
 
-* Two ways at time :math:`t` to buy one unit of consumption at :math:`t+j`
+     1. either pay :math:`q_{t,t+j}` at time :math:`t`, or
 
-     * either pay :math:`q_{t,t+j}` at time :math:`t`, or
+     2. pay :math:`q_{t,t+1}` at time :math:`t` and :math:`q_{t+1,t+j}` at time :math:`t+1`
 
-     * pay :math:`q_{t,t+1}` at time :math:`t` and :math:`q_{t+1,t+j}` at time :math:`t+1`
-
-* Define
+Define
 
 .. math::
     \tilde{q}^t_{t+1,t+j} \equiv \frac{q_{t,t+j}}{q_{t,t+1}}
 
 as the *forward price* at :math:`t`.
 
-* With no uncertainty about future interest rates
+With no uncertainty about future interest rates
 
 .. math:: 
     \tilde{q}^t_{t+1,t+j} = q_{t+1,t+j}
 
-* When there is uncertainty, these two won't necessarily be equal.
+When there is uncertainty, these two terms in this equation won't necessarily be equal.
 
 Yield to Maturity
 -----------------
 
-* The yield to maturity is the unique :math:`r` that satisfies
+The yield to maturity (ytm) is the unique :math:`r` that satisfies
 
 .. math::
     V = \frac{c}{1+r}  + \frac{c}{(1+r)^2} + \frac{c}{(1+r)^3} + ... + \frac{c+P}{(1+r)^T}
@@ -190,14 +226,14 @@ Yield to Maturity
 
 given :math:`V`, :math:`c`, :math:`P`, and :math:`T`.
 
-* Usually can not be solved for by hand.
+The ytm usually can not be solved for by hand.  But we can solve for it using Excel.
 
-* It is sometimes just called the yield.
+It is sometimes just called the yield.
 
 A Three Period Coupon Bond Example
 ----------------------------------
 
-* Bond issued at :math:`t=0` and is a riskless claim on stream
+Consider a bond issued at :math:`t=0`.  It is a riskless claim on the stream of payments
 
       +--------+---------+---------+
       |   0    |   1     |    2    |
@@ -205,14 +241,12 @@ A Three Period Coupon Bond Example
       |   0    |   c     |   c+P   |
       +--------+---------+---------+
 
-* Again, :math:`c` is the coupon and :math:`P` is the principal or par value
-
-* The time :math:`t=0` price of the bond is
+The time :math:`t=0` price of the bond is
 
 .. math::
     V_0 = q_{0,1} c + q_{0,2}(c+P)
 
-* After payment of the coupon, the price of the bond at time :math:`t=1` is
+After payment of the coupon, the price of the bond at time :math:`t=1` is
 
 .. math::
     V_1 = q_{1,2}(c+P)
@@ -576,3 +610,4 @@ Does this Accounting Issue Matter?
 
 * Talk these days about using inflation to erode the debt. To frame the tradeoff, need to properly account for interest the government actually pays.
 
+.. [#]  John Cochrane introduced us to the term "The Happy Meal Theorem."

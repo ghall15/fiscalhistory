@@ -105,7 +105,7 @@ its debtors (e.g. government loans to small businesses or farmers).  As we will 
 way to measure the costs the government pays to borrow.
 
 Fiscal Accounts
----------------
+===============
 
 Up to this point we have just referred to "the government."  Of course in the United States, 
 at any point in time most people fall under the jurisdiction of three governments simultaneously: 
@@ -120,10 +120,14 @@ are the outcome of the budget process which differ across governments. Different
 on different fiscal years and employ different budget practices.  For example, some government 
 count the sale of bonds and or public assets as "revenue" while other do not [#]_.
 
-Fortunately for us, the Bureau of Economic Analysis (BEA) creates a set of accounts that is consistent 
+Fortunately the Bureau of Economic Analysis (BEA) creates a set of accounts that is consistent 
 across all three levels of government.  
 
 We first focus on describing the fiscal accounts of the federal government. 
+The federal government reports its receipts, expenditures, and
+interest payments in two places: the annual budget issued by the Treasury 
+and the Office of Managment and Budget (OMB) and National Income and Product Accounts (NIPA)
+computed by the Bureau of Economic Analysis .
 
 OMB
 ---
@@ -369,64 +373,6 @@ Recall the two graphs we saw in the previous lecture.
 
     **Federal Government Deficit as a Percentage of GDP**
 
-The Printing Press
--------------------
-
-Since the signing of the U.S. Constitution, 
-the federal government can raise revenue by issuing money.  As we will see in a few lectures,
-this power has been hotly contested.
-
-   The U.S. Constitution explicitly states that state and local governments can not issue their own money.
-
-Therefore the federal government's budget constraint becomes
-
-.. math::
-  B_{t}  =  B_{t-1} + r B_{t-1} + G_t + TR_t - T_t  - \frac{M_t - M_{t-1}}{P_t}
-
-where
-
-.. math::
-    M_{t}-M_{t-1} &=& \mbox{New money printed this period.} \\
-    P_t           &=& \mbox{Price level this period ($t$)} \\
-    & & \mbox{i.e. the relative price of money in terms of goods}
-
-This additional term is called *seignorage* or the inflation tax.
-
-Let's re-write the budget constraint as
-
-.. math::
-    B_{t}  -  B_{t-1} + \frac{M_t - M_{t-1}}{P_t}  =  r B_{t-1} + G_t + TR_t - T_t
-
-It is common parlance to state that:
-
-      Decisions about :math:`G_t`, :math:`TR_t` and :math:`T_t` are called *fiscal policy*
-
-      Decision about :math:`B_t` and :math:`M_t` are called *monetary policy*.
-      
-It is clear from the government budget constraint that these two policies are inherently intertwined.      
-
-Debt-to-GDP Ratio
-=================
-
-Suppose the credit card balance is $20,000.  Is this a big balance?
-
-* Well it depends
-
-  * If your annual income is $15,000, then yes.
-
-  * If your annual income is $1,500,000, then no.
-
-* It also depends on how fast your income is growing.
-
-So we might be interested in the ratio of debt-to-income.  Let's call income :math:`Y`, and the ratio of
-debt-to-income :math:`\frac{B}{Y}`.
-
-.. figure:: _static/figures/long_total_fed_debt_to_gdp.png
-    :scale: 60%
-    :align: center
-
-    **Federal Debt to GDP Ratio**
-
 A Digression on the U.S. Debt
 -----------------------------
 
@@ -465,7 +411,7 @@ is held  in the "Government Account Series", a collection of bonds
 mostly held by the Social Security trust fund.
 
 While  marketable securities today represent the lion's share of the
-debt held by the public, this has not always been the case.  I
+debt held by the public, this has not always been the case. 
 
 In the figure below, we plot the debt-GDP ratio for three
 different measures of the debt: 
@@ -491,158 +437,43 @@ borrowing during World War II and the Korean War than they do today.
 Our focus on the government budget constraint compels us to concentrate
 on the debt held by the public.  
 
-The Evolution of the Debt to GDP Ratio
----------------------------------------
+The Printing Press
+-------------------
 
-Ignore seignorage for now, set :math:`TR = 0`.
+Since the signing of the U.S. Constitution, 
+the federal government can raise revenue by issuing money.  As we will see in a few lectures,
+this power has been hotly contested.
 
-.. math::
-   B_{t}  &=&  B_{t-1} + r B_{t-1} + G_t - T_t \\
-   &=&  (1+r) B_{t-1} + G_t - T_t
+   The U.S. Constitution explicitly states that state and local governments can not issue their own money.
 
-Divide both sides of the equation by current income :math:`Y_t`
-
-.. math::
-    \frac{B_{t}}{Y_t}  &=&  (1+r) \frac{B_{t-1}}{Y_t} + \frac{G_t - T_t}{Y_t} \\
-    &=&  (1+r) \frac{B_{t-1}}{Y_t}\frac{Y_{t-1}}{Y_{t-1}} + \frac{G_t - T_t}{Y_t} \\
-    &=&  (1+r) \frac{B_{t-1}}{Y_{t-1}}\frac{Y_{t-1}}{Y_{t}} + \frac{G_t - T_t}{Y_t}
-
-Let :math:`g` denote the percentage change in :math:`Y`
+Therefore the federal government's budget constraint becomes
 
 .. math::
-   g = \frac{Y_t}{Y_{t-1}} - 1
+  B_{t}  =  B_{t-1} + r B_{t-1} + G_t + TR_t - T_t  - \frac{M_t - M_{t-1}}{P_t}
 
-so
-
-.. math::
-   \frac{Y_{t-1}}{Y_t} = \frac{1}{1+g}
-
-So we can write
+where
 
 .. math::
-    \frac{B_{t}}{Y_t} &=&  \frac{(1+r)}{(1+g)} \frac{B_{t-1}}{Y_{t-1}} + \frac{G_t - T_t}{Y_t} \\
-    &\approx&  (1+r-g) \frac{B_{t-1}}{Y_{t-1}} + \frac{G_t - T_t}{Y_t} \\
+    M_{t}-M_{t-1} &=& \mbox{New money printed this period.} \\
+    P_t           &=& \mbox{Price level this period ($t$)} \\
+    & & \mbox{i.e. the relative price of money in terms of goods}
 
-To keep the math simple, assume :math:`G` and :math:`T` grow at rate :math:`g`.
+This additional term is called *seignorage* or the inflation tax.
 
-Most countries have positive debt-to-GDP ratios.  In the short-term, it is often no big deal if this ratio rises.
-
-But can debt-to-GDP ratios rise forever?
-
-  * debt crisis
-  
-  * currency crisis
-
-  * hyperinflation
-
-In other words, which paths of :math:`B/Y` are stable? which are explosive?
+Let's re-write the budget constraint as
 
 .. math::
-   \frac{B_{t}}{Y_t} =  (1+r-g) \frac{B_{t-1}}{Y_{t-1}} + \frac{G - T}{Y}
+    B_{t}  -  B_{t-1} + \frac{M_t - M_{t-1}}{P_t}  =  r B_{t-1} + G_t + TR_t - T_t
 
-It is relatively simple to study this relationship in EXCEL.
+It is common parlance to state that:
 
-Consider the following case.  Set
+      Decisions about :math:`G_t`, :math:`TR_t` and :math:`T_t` are called *fiscal policy*
 
-  * :math:`g`, the growth rate of :math:`Y`, to 3 percent
-  * :math:`r`, the interest rate, to 2 percent
-  * :math:`\frac{G - T}{Y}`, the ratio of the primary deficit to GDP, to 5 percent, and 
-  * the initial value of the debt to GDP ratio :math:`\frac{B_0}{Y_0}` to 10 percent.
+      Decision about :math:`B_t` and :math:`M_t` are called *monetary policy*.
+      
+It is clear from the government budget constraint that these two policies are inherently intertwined.      
 
-We can then simulate the path of the debt-to-GDP.
-
-.. figure:: _static/images/excel_screenshot_BY_lom1.jpg
-    :scale: 90%
-    :align: center
-
-We see that the debt-to-GDP ratio is growing each period.  Does this mean it will grow forever?
-
-Let's extend the simulation for 500 periods.  Then we plot the 500 simulations of :math:`\frac{B}{Y}` computed in column B.
-
-.. figure:: _static/images/b_y_simulation1.jpg
-    :scale: 90%
-    :align: center
-
-We see that the debt-to-GDP ratio grows, but that this growth diminishes as the series approaches 5.
-
-Now let's change this exercise by raising the interest rate from 2 percent to 4 percent holding everything else fixed.
-
-.. figure:: _static/images/excel_screenshot_BY_lom2.jpg
-    :scale: 80%
-    :align: center
-
-In this case, the debt-to-GDP explodes.
-
-To download this EXCEL file, click here_.
-
-.. _here: http://people.brandeis.edu/~ghall/_build/programs/law_of_motion_for_BY.xlsx
-
-So what is going on?  Let's go back to the algebra. 
-
-Consider two cases
-
-1. :math:`g>r` (i.e. the growth rate of GDP exceeds the interest rate)
-
-2. :math:`g \le r` (i.e. the growth rate of GDP is less than the interest rate)
- 
-Let's plot the law of motion for the debt-to-GDP ratio for case 1.
-
-.. figure:: _static/figures/debt_gdp_dyn_r_le_g.png
-    :scale: 60%
-    :align: center
-
-In this figure, the thick black curve represents the right hand side of
-the law of motion and the thin red line corresponds to the 45 degree line.  At every point
-on the 45 degree line, :math:`\frac{B_t}{Y_t} =\frac{B_t}{Y_t}`.
-
-These two line intersect once with the black line crossing the 45 degree line only once from above.
-
-This occurs because 
-
-    1. the y-intercept of the law of motion, the primary deficit to GDP ratio, is positive, and
-    2. the slope of the equation :math:`(1-g+r)` is less than one (i.e. the slope of the 45 degree line) 
-
-The intersection of these two lines gives the *steady-state* value of :math:`\frac{B}{Y}`.  
-At this steady state, :math:`\frac{B}{Y}` remains constant.
-
-The steady state corresponds to:
-  
-.. math::
-   \frac{B}{Y} &=&  (1+r-g) \frac{B}{Y} + \frac{G - T}{Y} \\
-  (g-r) \frac{B}{Y} &=& \frac{G - T}{Y} \\
-  \frac{B}{Y} &=& \frac{1}{g-r} \frac{G - T}{Y}
-
-
-Now let's plot the law of motion for debt-to-GDP ratio for case 2.
-
-.. figure:: _static/figures/debt_gdp_dyn_r_ge_g.png
-    :scale: 60%
-    :align: center
-
-As in the previous figure, the thick black curve represents the right hand side of
-the law of motion and the thin red line corresponded to the 45 degree line. 
-
-In this case, the slope of the law of motion is greater than one, so the two curve do not intersect.  
-Thus no steady state exists.
- 
-The take-away from this exercise is 
-
-     *If a country grows faster than its interest rate (i.e if g > r), its debt-to-GDP ratio will not blow up.*
-
-So a government can sustain persistent deficits as long as growth
-in output is greater than the real interest rate.
-A country does not necessarily need a balanced budget in order to insure its debt-to-GDP rate is sustainable. 
-This is not to say that the debt-to-GDP will not be quite high.  In our Excel example, the steady-state debt-to-GDP 
-was 500 percent.  But as long as :math:`g > r`, the debt-to-GDP will remain finite.
-
-Since World War II, the U.S. has generally grown faster than the interest rate the government has faced. On average the U.S. has
-grown about 3.3 percent per year.  The average interest rate on government debt has been about 1.6 percent.
-
-
-Seignorage
----------------
-
-But first, a few basics about money ...
+Before discussing seignorage future, we need to cover a few basics about money.
 
 The Quantity Theory of Money
 ----------------------------
@@ -801,7 +632,7 @@ Government Debt is a Weighted Accumulation of Past Deficits
 
 To keep the analysis simple, ignore transfers and money creation for now.
 
-A time :math:`t` the G.B.C. is:
+A time :math:`t` the government budget constraint is:
 
 .. math::
     B_{t}  =  (1+r)B_{t-1} + G_t  - T_t
@@ -832,13 +663,13 @@ Keep going to the beginning of time (i.e. :math:`t=0`)
 .. math::
      B_{t} =  (1+r)^t B_{0} + \sum_{j=0}^{t} (1+r)^j \left( G_{t-j}  - T_{t-j} \right)
 
-The left hand side of this equation is the current stock of debt.  The right hand side of this equation 
-
+The left hand side of this equation is the current stock of debt.  The right hand side of this equation is the weighted sum
+of past deficits.
 
 Government Debt is a Weighted Sum of Future Surpluses
 ------------------------------------------------------
 
-A time :math:`t` the G.B.C. is:
+A time :math:`t` the government budget constraint is:
 
 .. math::
     B_{t}  =  (1+r)B_{t-1} + G_t  - T_t
@@ -873,15 +704,10 @@ Do this an infinite number of times
 .. math::
    B_{t}  =   \sum_{j=1}^{\infty} \left(\frac{1}{1+r}\right)^{j}(T_{t+j} -G_{t+j})
 
+This equation states that the current value of debt is the discounted summation of future primary surpluses.
 
-Debt is both a backward-looking and a forward-looking variable
----------------------------------------------------------------
-
-Sum of past spending
-
-Sum of future surpluses
-
-   *just like your credit card balance ...*
+Debt is both a backward-looking and a forward-looking variable  Thus it connects the past with the future. 
+It is the sum of past deficit spending.  It is also the sum of future surpluses.
 
 .. [#] For a discussion of different state budgets and their varying accounting rules, see Ratvich, Richard and Paul Volker (2014) 
        "Report of the State Budget Crisis Task Force" available from

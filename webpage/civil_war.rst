@@ -741,7 +741,7 @@ The 5-20 loans
 
 * First U.S. Treasury bonds ever called, and there were partial calls, based on the serial number
 
-* Wanting to raise large amounts, why would the Union sell a bond that involves simultaneously {\em purchasing} a call option?
+* Wanting to raise large amounts, why would the Union sell a bond that involves simultaneously *purchasing* a call option?
 
 .. figure:: _static/figures/debt_to_GDP_ratio.png
     :scale: 60%
