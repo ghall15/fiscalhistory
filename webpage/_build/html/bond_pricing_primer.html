@@ -101,76 +101,54 @@
 </ol>
 <p><span class="math">\(c\)</span> stands for <em>coupon</em>.</p>
 <p><span class="math">\(P\)</span> stands for <em>principal</em> or <em>par value</em> or <em>face value</em> of the bond.</p>
-<ul class="simple">
-<li>An example of a coupon bond</li>
-</ul>
+<p>Below is an example of coupon bond we will discuss later in the course.  This bond was issued to
+finance the Confederacy during the Civil War.</p>
+<p>The top half of the bond is the principal. The promised principal payment is $500.</p>
+<p>Below are twelve coupon payments each promising to pay $20.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/confederate_bond.jpg"><img alt="_images/confederate_bond.jpg" src="_images/confederate_bond.jpg" style="width: 540.0px; height: 480.0px;" /></a>
 <p class="caption"><strong>A Confederate Coupon Bond</strong></p>
 </div>
-<p>The top half of the bond is the principal. The promised principal payment is $500.</p>
-<p>Below are twelve coupon payments each promising to pay $20.</p>
+<p>So the question we need to answer is how much would an investor in the early 1860s be willing to pay for
+this promise?</p>
 </div>
 <div class="section" id="present-value">
 <h3>Present Value<a class="headerlink" href="#present-value" title="Permalink to this headline">¶</a></h3>
-<p>Is a dollar today and dollar one year (365 days) from now worth the same amount
-today?</p>
-<ul class="simple">
-<li>Time preference</li>
-<li>Could take a dollar today, invest it at an interest rate <span class="math">\(r\)</span> and have <span class="math">\($1 \times (1+r)\)</span> in a year.</li>
-<li>In other words</li>
-</ul>
+<p>A bond is a promise of a future payment by the bond&#8217;s issuer to the bond&#8217;s owner.
+In order to purchase this promise, an investor must give up something today.  How
+much should an investor be willing to give up today
+in exchange for a future payment (or series of future payments)?</p>
+<p>To answer this question we must first another. Is a dollar today and dollar one year
+(365 days) from now worth the same amount today?</p>
+<p>Another way to phrase this question is:
+how much do you need to be compensated to postpone for one year one dollar&#8217;s worth of consumption?</p>
+<p>This compensation for postponing consumption is called the interest rate.</p>
+<p>Note that you could take a dollar today, invest it at an interest rate <span class="math">\(r\)</span> and have <span class="math">\($1 \times (1+r)\)</span> in a year.</p>
+<p>In other words</p>
 <div class="math">
 \[\mbox{present value}  = \frac{\mbox{future value}}{1+r}\]</div>
-<ul class="simple">
-<li>In this equation <span class="math">\(r\)</span> is often referred to as the <em>discount rate</em>.</li>
-<li>If the discount rate is 6 percent, what is a dollar one year from now worth today?</li>
-</ul>
+<p>In this equation <span class="math">\(r\)</span> is often referred to as the <em>discount rate</em>.</p>
+<p>If the discount rate is 6 percent, what is a dollar one year from now worth today?</p>
 <div class="math">
 \[\begin{split}\mbox{present value}  &amp;=&amp; \frac{\$1}{1+.06}  \\
                   &amp;=&amp;  \$0.943\end{split}\]</div>
-<ul class="simple">
-<li>What is a dollar two years from now worth today?</li>
-</ul>
+<p>What is a dollar two years from now worth today?</p>
 <div class="math">
 \[\begin{split}\mbox{present value}  &amp;=&amp; \frac{1}{1+.06} \times \frac{\$1}{1+.06}  \\
                   &amp;=&amp;  \frac{1}{1+.06} \times \$0.943 \\
                   &amp;=&amp;  \$0.890\end{split}\]</div>
 </div>
 </div>
-<div class="section" id="relationship-between-bond-prices-and-yields-for-zero-coupon-bonds">
-<h2>Relationship between bond prices and yields for zero-coupon bonds<a class="headerlink" href="#relationship-between-bond-prices-and-yields-for-zero-coupon-bonds" title="Permalink to this headline">¶</a></h2>
-<p>First, let define some terms.</p>
-<p>Real, not nominal, variables</p>
-<div class="math">
-\[\begin{split}q_{t,t+j} &amp;=&amp; \mbox{real price of one unit of time $t+j$ consumption}\\
-      &amp;&amp;  \mbox{at time t}\\
-r_{t,t+j} &amp;=&amp; \mbox{yield of a $j$-period $t+j$ pure discount}\\
-       &amp;&amp; \mbox{(zero coupon) bond at time t} \\
-q_{t,t+j} &amp;=&amp; \exp(-j r_{t,t+j}) \approx \frac{1}{(1+r_{t,t+j})^j}\end{split}\]</div>
-<p>Take logs of both sides</p>
-<div class="math">
-\[\begin{split}\log q_{t,t+j} &amp;=&amp; -j r_{t,t+j} \\
-r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
-<div class="section" id="a-handy-math-fact">
-<h3>A Handy Math Fact<a class="headerlink" href="#a-handy-math-fact" title="Permalink to this headline">¶</a></h3>
-<div class="math">
-\[\log (1+ r_{t,t+j}) \approx r_{t,t+j} \mbox{for ``small''} r_{t,t+j}'s\]</div>
-<ul class="simple">
-<li>Why?  Taylor Series (Newton)</li>
-</ul>
-<div class="math">
-\[\begin{split}f(x) &amp;=&amp; \log(1+x)\\
-     &amp;\approx&amp; f(x_0) + (x-x_0)f'(x_0) |_{x=x_0}\end{split}\]</div>
-<ul class="simple">
-<li>Apply with <span class="math">\(f(x) = \log(1+x)\)</span> and <span class="math">\(x_0 = 0\)</span>, then</li>
-</ul>
-<div class="math">
-\[\begin{split}\log(1+x) &amp;\approx&amp; 0 + x\left(\frac{1}{1+x}\right) |_{x=x_0} \\
-      &amp;\approx&amp; x\end{split}\]</div>
-</div>
-<div class="section" id="the-law-of-one-price-or-happy-meal-theorem-of-bond-pricing">
-<h3>The Law of One Price or Happy Meal Theorem <a class="footnote-reference" href="#id3" id="id1">[1]</a> of Bond Pricing<a class="headerlink" href="#the-law-of-one-price-or-happy-meal-theorem-of-bond-pricing" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="the-law-of-one-price-or-the-happy-meal-theorem-of-bond-pricing">
+<h2>The Law of One Price or the Happy Meal Theorem <a class="footnote-reference" href="#id3" id="id1">[1]</a> of Bond Pricing<a class="headerlink" href="#the-law-of-one-price-or-the-happy-meal-theorem-of-bond-pricing" title="Permalink to this headline">¶</a></h2>
+<p>The theory of bond pricing we present is based on the assumption
+that any difference between the price of a bundle of payoffs and the
+sum of the prices of the individual payoffs within that bundle
+will be eliminated by market
+participants taking advantage of arbitrage opportunities.</p>
+<p>Hence we can price a bundle of payoffs by stripping out each
+component, pricing each component separately, and
+adding the individual components back up.</p>
 <p>Consider a McDonald&#8217;s &#8220;Happy Meal.&#8221;  It consists of</p>
 <blockquote>
 <div><ol class="arabic simple">
@@ -180,7 +158,7 @@ r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
 <li>a toy.</li>
 </ol>
 </div></blockquote>
-<p>The price of the Happy Meal should be excaly equal to the sum of the</p>
+<p>The price of the Happy Meal should be exactly equal to the sum of the</p>
 <blockquote>
 <div><ol class="arabic simple">
 <li>price of the burger,</li>
@@ -190,13 +168,39 @@ r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
 </ol>
 </div></blockquote>
 <p>Why?</p>
-<p>If the price of the happy meal is greater than the sum of the prices of the individual individual components,
+<p>If the price of the happy meal is greater than the sum of the prices of the individual components,
 an enterprising soul could buy the four components, bundle them up and sell them at a slightly lower price
 than McDonald&#8217;s.  This would be a profitable enterprise.</p>
-<p>If the price of the happy meal is less than the sum of the prices of the individual individual components,
+<p>If the price of the happy meal is less than the sum of the prices of the individual components,
 an enterprising soul could buy the happy meal, strip out the four components, sell the four components and make a tidy profit.</p>
-<p>Of course this silly example assumes unrealistically that transaction costs are miniscule. But the point is that we can
+<p>Of course this silly example assumes unrealistically that transaction costs in the market for children&#8217;s meals are minuscule.
+But the point is that we can
 price a bundle of goods by pricing each component individually and taking the sum.  This is our strategy for pricing bonds.</p>
+</div>
+<div class="section" id="relationship-between-bond-prices-and-yields-for-zero-coupon-bonds">
+<h2>Relationship between bond prices and yields for zero-coupon bonds<a class="headerlink" href="#relationship-between-bond-prices-and-yields-for-zero-coupon-bonds" title="Permalink to this headline">¶</a></h2>
+<p>In these &#8220;Fiscal History&#8221; lectures, we will want to compute the prices of coupon bonds
+such as the Confederate bond shown at the top of this lecture.  To do so, we are going to think
+of a coupon bonds as a bundle of pure discount or zero coupon bonds.</p>
+<p>To do this, we need to define some notation.  To keep things simple, assume that we live
+in world without money (so we don&#8217;t have to think about inflation) and just a single good.
+We can call this single good beans.  In this world people eat beans, save beans, trade
+beans, and plant beans to produce beans.</p>
+<p>Define</p>
+<div class="math">
+\[q_{t,t+j} \equiv \mbox{price of one unit of time $t+j$ consumption at time t}\]</div>
+<p>So <span class="math">\(q_{t,t+j}\)</span> is the number of beans (or fraction of beans) you would have to pay at time <span class="math">\(t\)</span> to purchase
+a promise to receive one bean at time <span class="math">\(t+j\)</span>.  This is known as the zero-coupon price.</p>
+<p>Then define</p>
+<div class="math">
+\[r_{t,t+j} \equiv \mbox{yield of a $j$-period $t+j$ pure discount (zero coupon) bond at time t}.\]</div>
+<p>The zero-coupon yield is related to the zero-coupon price by:</p>
+<div class="math">
+\[\begin{split}q_{t,t+j} &amp;=&amp; \exp(-j r_{t,t+j}) \approx \frac{1}{(1+r_{t,t+j})^j}\end{split}\]</div>
+<p>Take logs of both sides</p>
+<div class="math">
+\[\begin{split}\log q_{t,t+j} &amp;=&amp; -j r_{t,t+j} \\
+r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
 <p>Consider a bond that at time <span class="math">\(t\)</span> promises to pay</p>
 <blockquote>
 <div><table border="1" class="docutils">
@@ -243,13 +247,15 @@ price a bundle of goods by pricing each component individually and taking the su
 <div class="math">
 \[\begin{split}V_t &amp;=&amp; c q_{t,t+1} + c q_{t,t+2} +  ... + c q_{t,t+T} + P q_{t,t+T} \\
     &amp;=&amp; c (q_{t,t+1} + q_{t,t+2} +  ... + q_{t,t+T}) + P q_{t,t+T}\end{split}\]</div>
+<p>Equivalently, we could write this summation as</p>
+<div class="math">
+\[V_t = \frac{c}{1+r_{t,t+1}} + \frac{c}{(1+ r_{t,t+2})^2} +  ... + \frac{c}{(1+ r_{t,t+T})^T} + \frac{P}{(1+r_{t,t+T})^T}.\]</div>
 <p>The value of this same bond at <span class="math">\(t+1\)</span>, after <span class="math">\(c\)</span> has been paid, is</p>
 <div class="math">
 \[V_{t+1}  = c (q_{t+1,t+2} + q_{t+1,t+3} +  ... + q_{t+1,t+T}) + P q_{t+1,t+T}\]</div>
 <p>Evidently</p>
 <div class="math">
 \[V_t = q_{t,t+1} \left( c + V_{t+1} \right)\]</div>
-</div>
 </div>
 <div class="section" id="forward-rates">
 <h2>Forward Rates<a class="headerlink" href="#forward-rates" title="Permalink to this headline">¶</a></h2>
@@ -270,7 +276,7 @@ price a bundle of goods by pricing each component individually and taking the su
 <p>With no uncertainty about future interest rates</p>
 <div class="math">
 \[\tilde{q}^t_{t+1,t+j} = q_{t+1,t+j}\]</div>
-<p>When there is uncertainty, these two terms in this equation won&#8217;t necessarily be equal.</p>
+<p>When there is uncertainty, the two terms in this equation won&#8217;t necessarily be equal.</p>
 <div class="section" id="yield-to-maturity">
 <h3>Yield to Maturity<a class="headerlink" href="#yield-to-maturity" title="Permalink to this headline">¶</a></h3>
 <p>The yield to maturity (ytm) is the unique <span class="math">\(r\)</span> that satisfies</p>
@@ -314,24 +320,19 @@ price a bundle of goods by pricing each component individually and taking the su
 </div>
 <div class="section" id="value-of-a-call-option">
 <h2>Value of a Call Option<a class="headerlink" href="#value-of-a-call-option" title="Permalink to this headline">¶</a></h2>
-<ul>
-<li><p class="first">At <span class="math">\(t=0\)</span>, you purchase the right to buy the bond at <span class="math">\(t=1\)</span> at a price <span class="math">\(P\)</span>.</p>
+<p>During critical period in the United States history, the federal government issued <em>callable bonds</em>.</p>
+<p>A callable bond gives the government (or really the owner of the option) the right to purchase
+the bond at <span class="math">\(t=1\)</span> at a price <span class="math">\(P\)</span>.</p>
 <blockquote>
 <div><ul class="simple">
 <li>thus, <span class="math">\(P\)</span> serves as both the <em>par value</em> and the <em>strike price</em>.</li>
 </ul>
 </div></blockquote>
-</li>
-<li><p class="first">The value of this option at time 1 is <span class="math">\(\max(0,V_1 - P)\)</span>.</p>
-</li>
-<li><p class="first">You will want to exercise the call option is</p>
-</li>
-</ul>
+<p>The value of this option at time 1 is <span class="math">\(\max(0,V_1 - P)\)</span>.</p>
+<p>The government will want to exercise the call option if</p>
 <div class="math">
 \[\begin{split}P &lt;  V_1 = q_{1,2}(c+P)\end{split}\]</div>
-<ul class="simple">
-<li>An interesting benchmark case: when is <span class="math">\(V_1 = P\)</span>?</li>
-</ul>
+<p>An interesting benchmark case is when <span class="math">\(V_1 = P\)</span>?</p>
 <p>Solve equation</p>
 <div class="math">
 \[V_1 = P = q_{1,2}(c+P)\]</div>
@@ -342,15 +343,12 @@ price a bundle of goods by pricing each component individually and taking the su
 <p>or</p>
 <div class="math">
 \[1+r_{1,2} \approx \frac{c+P}{P}\]</div>
-<ul class="simple">
-<li>Question:  when is <span class="math">\(V_0 = V_1 = P\)</span>?</li>
-<li>Often see that Congress is reluctant to issue bonds selling at less than <span class="math">\(P\)</span>.</li>
-</ul>
+<p>Question:  when is <span class="math">\(V_0 = V_1 = P\)</span>?</p>
+<p>Throughout U.S. history we often see that Congress is reluctant to issue bonds selling at less than <span class="math">\(P\)</span>.</p>
 <div class="section" id="extend-the-example-interest-rate-risk">
 <h3>Extend the Example: Interest rate risk<a class="headerlink" href="#extend-the-example-interest-rate-risk" title="Permalink to this headline">¶</a></h3>
+<p>In this example, assume that the future payouts are known for certain; however, future interest rates are uncertain.</p>
 <ul class="simple">
-<li>payouts known for certain</li>
-<li>uncertain future interest rates</li>
 <li>three time periods: <span class="math">\(0\)</span>, <span class="math">\(1\)</span>, and <span class="math">\(2\)</span>.</li>
 </ul>
 <div class="math">
@@ -428,20 +426,14 @@ price a bundle of goods by pricing each component individually and taking the su
 </div>
 <div class="section" id="pricing-a-callable-bond">
 <h2>Pricing a Callable Bond<a class="headerlink" href="#pricing-a-callable-bond" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Consider</li>
-</ul>
+<p>Consider</p>
 <div class="math">
 \[\begin{split}q_{1,2}(H)  &gt; \frac{P}{P+c} &gt; q_{1,2}(L)\end{split}\]</div>
-<ul class="simple">
-<li>Value of a non-callable bond</li>
-</ul>
+<p>Value of a non-callable bond</p>
 <div class="math">
 \[V_0 = q_{0,1} c + q_{0,2}(c+P)\]</div>
-<ul>
-<li><p class="first">Suppose the government issues a two period bond that is callable in period 1 at par.</p>
-</li>
-<li><dl class="first docutils">
+<p>Suppose the government issues a two period bond that is callable in period 1 at par.</p>
+<dl class="docutils">
 <dt>A callable bond can be decomposed into two parts</dt>
 <dd><ol class="first last arabic simple">
 <li>non-callable bond</li>
@@ -449,18 +441,14 @@ price a bundle of goods by pricing each component individually and taking the su
 </ol>
 </dd>
 </dl>
-</li>
-<li><p class="first">When the government issues a callable bond, it sells part 1 and buys part 2.</p>
-</li>
-<li><p class="first">Happy Meal Theorem:  Value of a callable bond</p>
-</li>
-</ul>
+<p>When the government issues a callable bond, it sells part 1 and buys part 2.</p>
+<p>By the Happy Meal Theorem, the value of a callable bond of the callable bond is the value of a noncallable bond
+minus the value of the call option.</p>
 <div class="math">
 \[V_0 - V_0^{call}\]</div>
 <div class="section" id="example-20-year-coupon-bond">
 <h3>Example: 20 Year Coupon Bond<a class="headerlink" href="#example-20-year-coupon-bond" title="Permalink to this headline">¶</a></h3>
-<ul>
-<li><p class="first">Suppose that this year (January 1, 2014) you purchase a 6% percent 2034 U.S. Treasury bond with a face value of $100.</p>
+<p>Suppose that this year (January 1, 2014) you purchase a 6% percent 2034 U.S. Treasury bond with a face value of $100.</p>
 <blockquote>
 <div><table border="1" class="docutils">
 <colgroup>
@@ -494,38 +482,29 @@ price a bundle of goods by pricing each component individually and taking the su
 </tbody>
 </table>
 </div></blockquote>
-</li>
-<li><p class="first">No uncertainty</p>
-</li>
-<li><p class="first">Apply the Happy Meal Theorem</p>
-</li>
+<ul class="simple">
+<li>No uncertainty</li>
+<li>Apply the Happy Meal Theorem</li>
 </ul>
 <div class="math">
-\[\begin{split}V_{2013} &amp;=&amp; q_{2013,2014} C + q_{2013,2015} C + q_{2013,2016} C + q_{2013,2033} ( C + P)\end{split}\]</div>
-<ul class="simple">
-<li>Assume a constant interest rate</li>
-<li>a flat term structure</li>
-</ul>
+\[\begin{split}V_{2014} &amp;=&amp; q_{2014,2015} C + q_{2014,2016} C + q_{2014,2017} C + q_{2014,2034} ( C + P)\end{split}\]</div>
+<p>Assume a constant interest rate</p>
+<p>A flat term structure</p>
 <div class="math">
-\[r_{2013,2014} = r_{2014,2015} = r_{2015,2016} = r_{2016,2017} ... = \bar{r}\]</div>
-<ul class="simple">
-<li>So <span class="math">\(\bar{r}\)</span> is the yield-to-maturity or YTM.</li>
-</ul>
+\[r_{2014,2015} = r_{2015,2016} = r_{2016,2017} = r_{2017,2018} ... = \bar{r}\]</div>
+<p>So <span class="math">\(\bar{r}\)</span> is the yield-to-maturity or YTM.</p>
 </div>
 <div class="section" id="use-excel-to-do-the-valuations">
 <h3>Use Excel to do the valuations<a class="headerlink" href="#use-excel-to-do-the-valuations" title="Permalink to this headline">¶</a></h3>
-<ul>
-<li><p class="first">Let EXCEL do the calculations for us</p>
+<p>Let EXCEL do the calculations for us</p>
 <blockquote>
 <div><ul class="simple">
 <li>Set <span class="math">\(\bar{r}=.06\)</span></li>
 <li>Set <span class="math">\(\bar{r}=.03\)</span></li>
 </ul>
 </div></blockquote>
-</li>
-<li><p class="first">Set <span class="math">\(\bar{r} =.09\)</span></p>
-</li>
-<li><dl class="first docutils">
+<p>Set <span class="math">\(\bar{r} =.09\)</span></p>
+<dl class="docutils">
 <dt>If a bond&#8217;s coupon rate is</dt>
 <dd><ul class="first last simple">
 <li>less than its YTM, then the bond is selling at a <em>discount</em>.</li>
@@ -534,15 +513,11 @@ price a bundle of goods by pricing each component individually and taking the su
 </ul>
 </dd>
 </dl>
-</li>
-</ul>
 </div>
 <div class="section" id="one-type-of-risk-interest-rate-risk">
 <h3>One Type of Risk:  Interest Rate Risk<a class="headerlink" href="#one-type-of-risk-interest-rate-risk" title="Permalink to this headline">¶</a></h3>
-<ul>
-<li><p class="first">Suppose that the (constant) interest rate is 6 percent</p>
-</li>
-<li><dl class="first docutils">
+<p>Suppose that the (constant) interest rate is 6 percent</p>
+<dl class="docutils">
 <dt>Five years from now, in 2019, (after we receive the 2019 coupon payment), there is</dt>
 <dd><ul class="first last simple">
 <li><span class="math">\(\pi\)</span> chance the interest rate will fall to 3% from 2019 on</li>
@@ -550,18 +525,15 @@ price a bundle of goods by pricing each component individually and taking the su
 </ul>
 </dd>
 </dl>
-</li>
-<li><p class="first">How does this risk affect our bond pricing?</p>
+<p>How does this risk affect our bond pricing?</p>
 <blockquote>
 <div><ul class="simple">
 <li>Assumption:  we are risk-neutral.</li>
 <li>We need to price both possibilities.</li>
 </ul>
 </div></blockquote>
-</li>
-<li><p class="first">Work Backwards</p>
-</li>
-<li><p class="first">What is our 20 year, $100 face value, 6% coupon, bond worth in 2019?</p>
+<p>Work Backwards</p>
+<p>What is our 20 year, $100 face value, 6% coupon, bond worth in 2019?</p>
 <blockquote>
 <div><ul class="simple">
 <li>CASE I:  Interest rate falls to 3 percent</li>
@@ -576,77 +548,53 @@ price a bundle of goods by pricing each component individually and taking the su
 \[V_{2019}^{.09} = \sum_{t=1}^{15}\frac{C}{(1+0.09)^t} + \frac{P}{(1+.09)^{15}}\]</div>
 </div></blockquote>
 </div></blockquote>
-</li>
-<li><p class="first">So what is our bond worth today in 2014?</p>
-</li>
-</ul>
+<p>So what is our bond worth today in 2014?</p>
 <div class="math">
 \[V_{2014} =  \sum_{t=1}^{5}\frac{C}{(1+0.06)^t} + \pi \frac{V_{2019}^{.03}}{(1+.06)^5} + (1-\pi) \frac{V_{2019}^{.09}}{(1+.06)^5}\]</div>
 </div>
 <div class="section" id="a-call-option">
 <h3>A Call Option<a class="headerlink" href="#a-call-option" title="Permalink to this headline">¶</a></h3>
-<ul>
-<li><p class="first">Consider the following contract: Today (in 2014) I sell you the right to purchase this bond in year 2019 for $100.</p>
+<p>Consider the following contract: Today (in 2014) I sell you the right to purchase this bond in year 2019 for $100.</p>
 <blockquote>
-<div><p>-You don&#8217;t have to purchase the bond.  It is an option.</p>
-</div></blockquote>
-</li>
-<li><p class="first">How much is this option worth?</p>
+<div>-You don&#8217;t have to purchase the bond.  It is an option.</div></blockquote>
+<p>How much is this option worth?</p>
 <blockquote>
 <div><ul>
 <li><p class="first">Again, work backwards.  In 2019, consider both cases</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li>CASE I:  $ max(0, V_{2018}^{.03} - 100) $</li>
-<li>CASE II: $ max(0, V_{2018}^{.09} - 100) $</li>
+<li>CASE I:  <span class="math">\(\max(0, V_{2019}^{.03} - 100)\)</span></li>
+<li>CASE II: <span class="math">\(\max(0, V_{2019}^{.09} - 100)\)</span></li>
 </ol>
 </div></blockquote>
 </li>
 </ul>
 </div></blockquote>
-</li>
-<li><p class="first">In 2019</p>
-</li>
-</ul>
+<p>In 2019</p>
 <div class="math">
 \[V_{2019}^{call} = \pi \max(0, V_{2019}^{.03} - 100) + (1-\pi) \max(0, V_{2019}^{.09}- 100)\]</div>
-<ul class="simple">
-<li>In 2014</li>
-</ul>
+<p>In 2014</p>
 <div class="math">
 \[V_{2014}^{call}  = \frac{V_{2019}^{call}}{(1+.06)^5}\]</div>
 </div>
 <div class="section" id="what-s-the-price-of-a-5-20-bond">
 <h3>What&#8217;s the price of a 5-20 bond?<a class="headerlink" href="#what-s-the-price-of-a-5-20-bond" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>Consider a 20 year coupon bond that callable at par by the Treasury after five years.</li>
-<li>Happy Meal Theorem</li>
-</ul>
+<p>Consider a 20 year coupon bond that callable at par by the Treasury after five years.</p>
+<p>Happy Meal Theorem</p>
 <div class="math">
 \[V_{2014} - V_{2014}^{call}\]</div>
-<ul class="simple">
-<li>If a callable bond always sells for less than a non-callable bond, why would a government ever issue a callable bond?</li>
-</ul>
+<p>If a callable bond always sells for less than a non-callable bond, why would a government ever issue a callable bond?</p>
 </div>
 </div>
-<div class="section" id="using-the-g-b-c-to-price-government-debt">
-<h2>Using the G. B. C. to Price Government Debt<a class="headerlink" href="#using-the-g-b-c-to-price-government-debt" title="Permalink to this headline">¶</a></h2>
-<ul>
-<li><dl class="first docutils">
-<dt>The price of a bond is the discounted present value of the stream of promised</dt>
-<dd><p class="first last">payments</p>
-</dd>
-</dl>
-</li>
-<li><p class="first">We could think of the government budget constraint much the same way.  Recall we can rewrite the g.b.c. as:</p>
-</li>
-</ul>
+<div class="section" id="using-the-government-budget-constraint-to-price-government-debt">
+<h2>Using the Government Budget Constraint to Price Government Debt<a class="headerlink" href="#using-the-government-budget-constraint-to-price-government-debt" title="Permalink to this headline">¶</a></h2>
+<p>The price of a bond is the discounted present value of the stream of promised payments</p>
+<p>We could think of the government budget constraint much the same way.  Recall we can rewrite the government budget constraint as:</p>
 <div class="math">
 \[B_{t}  =   \sum_{j=1}^{\infty} \left(\frac{1}{1+r}\right)^{j}(T_{t+j} - G_{t+j})\]</div>
-<ul>
-<li><p class="first">Last lecture, we assumed the future paths of <span class="math">\(T\)</span> and <span class="math">\(G\)</span> will have to adjust to satisfy the current value of <span class="math">\(B_t\)</span>.</p>
-</li>
-<li><p class="first">But what if the expected value of</p>
+<p>Up until now, we have assumed the future paths of <span class="math">\(T\)</span> and <span class="math">\(G\)</span> will have to adjust to satisfy the
+current value of <span class="math">\(B_t\)</span>.</p>
+<p>But what if the expected value of</p>
 <blockquote>
 <div><div class="math">
 \[\sum_{j=1}^{\infty} \left(\frac{1}{1+r}\right)^{j}(T_{t+j} - G_{t+j})\]</div>
@@ -657,55 +605,58 @@ price a bundle of goods by pricing each component individually and taking the su
 <li>If future <span class="math">\(T\)</span> s and <span class="math">\(G\)</span> s are constrained, bond prices will adjust.</li>
 </ul>
 </div></blockquote>
-</li>
-<li><p class="first">So is the government budget constraint a constraint?  Or is it a pricing formula?</p>
-</li>
-</ul>
+<p>So is the government budget constraint a constraint?  Or is it a bond pricing formula?</p>
 <div class="section" id="bond-returns">
 <h3>Bond Returns<a class="headerlink" href="#bond-returns" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>Suppose you buy a bond at period <span class="math">\(t\)</span> a price <span class="math">\(V_t\)</span>, hold it one period, and sell it at price <span class="math">\(V_{t+1}\)</span>.  What is your return?</li>
+<p>Suppose you buy a bond at period <span class="math">\(t\)</span> a price <span class="math">\(V_t\)</span>, hold it one period, and sell it at
+price <span class="math">\(V_{t+1}\)</span>.  What is your return?</p>
+<blockquote>
+<div><ul class="simple">
 <li>In period <span class="math">\(t+1\)</span> you receive the coupon payment and the sales price.</li>
-<li>So the one-period ex-post holding return for a bond is</li>
+<li>So the one-period ex-post <em>holding period return</em> for a bond is</li>
 </ul>
 <div class="math">
 \[1+r_{t,t+1} = \frac{C + V_{t+1}}{V_t}\]</div>
+</div></blockquote>
 </div>
 </div>
 <div class="section" id="recorded-government-interest-payments">
 <h2>Recorded Government Interest Payments<a class="headerlink" href="#recorded-government-interest-payments" title="Permalink to this headline">¶</a></h2>
-<ul>
-<li><dl class="first docutils">
+<dl class="docutils">
 <dt>What the Bureau of the Public Debt reports as its nominal interest payments</dt>
 <dd><ul class="first last simple">
-<li>discount the bills</li>
+<li>discounts Treasury bills</li>
 <li>add up the coupons on notes and bonds</li>
 </ul>
 </dd>
 </dl>
-</li>
-<li><p class="first">Answers the question</p>
+<p>This number answers the question</p>
 <blockquote>
-<div><p><em>how many dollars must the Treasury devote to paying coupons on
-this period&#8217;s outstanding government bonds while rolling over
-the nominal stock of treasury bills?</em></p>
-</div></blockquote>
-</li>
-<li><p class="first">Leaves out capital gains and losses on Treasury notes and bonds obligations.</p>
-</li>
-<li><p class="first">Does not answer the question</p>
+<div><em>how many dollars must the Treasury devote to paying coupons on this period&#8217;s outstanding government bonds while rolling over the nominal stock of treasury bills?</em></div></blockquote>
+<p>But note that this number leaves out capital gains and losses
+on Treasury notes and bonds.  This number does not answer the question</p>
 <blockquote>
-<div><p><em>what return did government bond holders receive?</em></p>
-</div></blockquote>
-</li>
-</ul>
+<div><em>what return did government bond holders receive?</em></div></blockquote>
 <div class="section" id="comparison-between-official-interest-payments-and-returns-to-bondholders">
 <h3>Comparison Between Official Interest Payments and Returns to Bondholders<a class="headerlink" href="#comparison-between-official-interest-payments-and-returns-to-bondholders" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div>put cof_returns_gdpdef.png here</div></blockquote>
+<p>Suppose we take the government budget constraint</p>
+<div class="math">
+\[B_{t} =  B_{t-1} + r B_{t-1} + G_t + TR_t - T_t\]</div>
+<p>and impute the return on the debt via</p>
+<div class="math">
+\[r =  \frac{B_t - B_{t-1} - G_t - TR_t + T_t}{B_{t-1}}.\]</div>
+<p>If <span class="math">\(B\)</span> is measured by the market price of the debt, this value of <span class="math">\(r\)</span> will be
+the one-period holding period
+return on the debt.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/cof_returns_gdpdef.png"><img alt="_images/cof_returns_gdpdef.png" src="_images/cof_returns_gdpdef.png" style="width: 720.0px; height: 540.0px;" /></a>
 </div>
-<div class="section" id="means-and-standard-deviations-of-returns">
-<h3>Means and Standard Deviations of Returns<a class="headerlink" href="#means-and-standard-deviations-of-returns" title="Permalink to this headline">¶</a></h3>
+<p>The blue line is the computed interest payments on the debt
+implied by the government budget constraint.
+The red line is the officially reported interest
+payments. Both series are reported as percentages of the
+total market value of publicly-held Treasury debt.
+The black line is the red line minus the inflation rate.</p>
 <blockquote>
 <div><table border="1" class="docutils">
 <colgroup>
@@ -738,40 +689,41 @@ the nominal stock of treasury bills?</em></p>
 </tr>
 </tbody>
 </table>
+<p><strong>Means and Standard Deviations of Returns</strong></p>
+</div></blockquote>
+<p>Computed from the government budget constraint, the return on US Treasury debt is lower on average and considerably more volatile
+than the official reported interest costs. The official interest payments average 5.2% of the debt while
+our measure of the real return on the debt averages 1.6%. If we subtract the inflation rate from the
+officially reported interest payments (the black line), the two series have roughly the same mean (1.5 versus 1.6).</p>
+<p>In contrast to the officially reported net interest payment series, our measure of the return on government debt
+from the government budget constraint demonstrates some striking outcomes.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>There were large negative returns immediately after World War II as inflation surged with the lifting of price controls.</li>
+<li>During the early 1980s, when, perhaps unexpectedly, Paul Volcker brought down inflation,
+bondholders – particularly long-term bond holders – received large positive returns. Many
+who point to the 1970s as a time during which the US was able to pay low returns to its
+creditors through inflation often fail to acknowledge the large returns many of those same
+creditors received when inflation fell in the early 1980s.</li>
+<li>Annual real returns became considerably more volatile in the two and half decades after
+1980 – a period of low volatility in GDP growth often described as the Great Moderation.</li>
+</ol>
 </div></blockquote>
 </div>
 <div class="section" id="does-this-accounting-issue-matter">
 <h3>Does this Accounting Issue Matter?<a class="headerlink" href="#does-this-accounting-issue-matter" title="Permalink to this headline">¶</a></h3>
-<ul>
-<li><dl class="first docutils">
-<dt>Reported interest payments on the debt are not the <span class="math">\(R_t B^G_{t}\)</span> in the government budget constraint.</dt>
-<dd><ul class="first last simple">
-<li>Is this a big deal?</li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>The Treasury</dt>
-<dd><ol class="first last arabic simple">
+<p>Reported interest payments on the debt are not the <span class="math">\(r B_{t}\)</span> in the government budget constraint.  But is this a big deal?</p>
+<p>The Treasury</p>
+<blockquote>
+<div><ol class="arabic simple">
 <li>reports the par value rather than the market value of its debt, and</li>
 <li>typically sets the coupon rate so that at auction, bonds sell near par.</li>
 </ol>
-</dd>
-</dl>
-</li>
-<li><p class="first">In this case the ytm equals the coupon rate, and the par value and the market value will not be that different.</p>
-</li>
-<li><p class="first">Will get big differences between the par value and market value when there are large capital gains and losses (perhaps due to changes in inflation)</p>
-<blockquote>
-<div><ul class="simple">
-<li>War of 1812</li>
-</ul>
 </div></blockquote>
-</li>
-<li><p class="first">Talk these days about using inflation to erode the debt. To frame the tradeoff, need to properly account for interest the government actually pays.</p>
-</li>
-</ul>
+<p>In this case the yield to maturity equals the coupon rate, and any difference between the par value and the market value
+of the debt will be small.</p>
+<p>Big differences between the par value and market value will emerge when there are large capital gains and losses
+(perhaps due to changes in inflation).  As we will see this occured during the War of 1812</p>
 <table class="docutils footnote" frame="void" id="id3" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
@@ -796,11 +748,12 @@ the nominal stock of treasury bills?</em></p>
 <li class="toctree-l1"><a class="reference internal" href="debt_ceiling.html">The Debt Ceiling</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">A Primer on Bond Pricing</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#what-s-a-bond">What&#8217;s a Bond?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-law-of-one-price-or-the-happy-meal-theorem-of-bond-pricing">The Law of One Price or the Happy Meal Theorem  of Bond Pricing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#relationship-between-bond-prices-and-yields-for-zero-coupon-bonds">Relationship between bond prices and yields for zero-coupon bonds</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#forward-rates">Forward Rates</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#value-of-a-call-option">Value of a Call Option</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#pricing-a-callable-bond">Pricing a Callable Bond</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#using-the-g-b-c-to-price-government-debt">Using the G. B. C. to Price Government Debt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-government-budget-constraint-to-price-government-debt">Using the Government Budget Constraint to Price Government Debt</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#recorded-government-interest-payments">Recorded Government Interest Payments</a></li>
 </ul>
 </li>

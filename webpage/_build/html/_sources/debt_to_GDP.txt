@@ -55,8 +55,12 @@ so
 So we can write
 
 .. math::
-    \frac{B_{t}}{Y_t} &=&  \frac{(1+r)}{(1+g)} \frac{B_{t-1}}{Y_{t-1}} + \frac{G_t - T_t}{Y_t} \\
-                      &\approx&  (1+r-g) \frac{B_{t-1}}{Y_{t-1}} + \frac{G_t - T_t}{Y_t} 
+    \frac{B_{t}}{Y_t} &=&  \frac{(1+r)}{(1+g)} \frac{B_{t-1}}{Y_{t-1}} + \frac{G_t - T_t}{Y_t}.
+    
+Then by a handy math fact [#]_
+    
+.. math::
+    \frac{B_{t}}{Y_t} &\approx&  (1+r-g) \frac{B_{t-1}}{Y_{t-1}} + \frac{G_t - T_t}{Y_t} 
 
 This equation characterizes the evolution of the debt-to-GDP ratio.  The evolution depends on the interest rate, :math:`r`,
 the growth rate of GDP, :math:`g`, and the primary deficit :math:`G-T`.  The higher the interest rate,
@@ -132,7 +136,7 @@ Let's plot the law of motion for the debt-to-GDP ratio for case 1.
 
 In this figure, the thick black curve represents the right hand side of
 the law of motion and the thin red line corresponds to the 45 degree line.  At every point
-on the 45 degree line, :math:`\frac{B_t}{Y_t} =\frac{B_t}{Y_t}`.
+on the 45 degree line, :math:`\frac{B_{t-1}}{Y_{t-1}} =\frac{B_t}{Y_t}`.
 
 These two line intersect once with the black line crossing the 45 degree line only once from above.
 
@@ -179,4 +183,22 @@ Debt crises occur when a country switches from having :math:`g > r` to having :m
 
 Since World War II, the U.S. has generally grown faster than the interest rate the government has faced. On average the U.S. has
 grown about 3.3 percent per year.  The average interest rate on government debt has been about 1.6 percent.
+
+.. [#]  Here is a handy math fact ...
+
+.. math::
+    \log (1 + x) \approx x \; \mbox{  for ``small''} \; x's
+
+* Why?  Taylor Series (Newton)
+
+.. math::
+     f(x) &=& \log(1+x)\\
+          &\approx& f(x_0) + (x-x_0)f'(x_0) |_{x=x_0}
+
+
+* Apply with :math:`f(x) = \log(1+x)` and :math:`x_0 = 0`, then
+
+.. math::
+    \log(1+x) &\approx& 0 + x\left(\frac{1}{1+x}\right) |_{x=x_0} \\
+          &\approx& x
 

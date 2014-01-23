@@ -91,8 +91,10 @@ debt-to-income by <span class="math">\(\frac{B}{Y}\)</span>.</p>
 \[\frac{Y_{t-1}}{Y_t} = \frac{1}{1+g}\]</div>
 <p>So we can write</p>
 <div class="math">
-\[\begin{split}\frac{B_{t}}{Y_t} &amp;=&amp;  \frac{(1+r)}{(1+g)} \frac{B_{t-1}}{Y_{t-1}} + \frac{G_t - T_t}{Y_t} \\
-                  &amp;\approx&amp;  (1+r-g) \frac{B_{t-1}}{Y_{t-1}} + \frac{G_t - T_t}{Y_t}\end{split}\]</div>
+\[\begin{split}\frac{B_{t}}{Y_t} &amp;=&amp;  \frac{(1+r)}{(1+g)} \frac{B_{t-1}}{Y_{t-1}} + \frac{G_t - T_t}{Y_t}.\end{split}\]</div>
+<p>Then by a handy math fact <a class="footnote-reference" href="#id2" id="id1">[1]</a></p>
+<div class="math">
+\[\begin{split}\frac{B_{t}}{Y_t} &amp;\approx&amp;  (1+r-g) \frac{B_{t-1}}{Y_{t-1}} + \frac{G_t - T_t}{Y_t}\end{split}\]</div>
 <p>This equation characterizes the evolution of the debt-to-GDP ratio.  The evolution depends on the interest rate, <span class="math">\(r\)</span>,
 the growth rate of GDP, <span class="math">\(g\)</span>, and the primary deficit <span class="math">\(G-T\)</span>.  The higher the interest rate,
 the more resources the government must devote toward compensating its creditors, hence the larger will be
@@ -147,7 +149,7 @@ so that <span class="math">\(\frac{G_t - T_t}{Y_t}\)</span> is a constant.</p>
 </div>
 <p>In this figure, the thick black curve represents the right hand side of
 the law of motion and the thin red line corresponds to the 45 degree line.  At every point
-on the 45 degree line, <span class="math">\(\frac{B_t}{Y_t} =\frac{B_t}{Y_t}\)</span>.</p>
+on the 45 degree line, <span class="math">\(\frac{B_{t-1}}{Y_{t-1}} =\frac{B_t}{Y_t}\)</span>.</p>
 <p>These two line intersect once with the black line crossing the 45 degree line only once from above.</p>
 <p>This occurs because</p>
 <blockquote>
@@ -186,6 +188,26 @@ was 500 percent.  But as long as <span class="math">\(g &gt; r\)</span>, the deb
 <p>Debt crises occur when a country switches from having <span class="math">\(g &gt; r\)</span> to having <span class="math">\(g &lt; r\)</span>.</p>
 <p>Since World War II, the U.S. has generally grown faster than the interest rate the government has faced. On average the U.S. has
 grown about 3.3 percent per year.  The average interest rate on government debt has been about 1.6 percent.</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Here is a handy math fact ...</td></tr>
+</tbody>
+</table>
+<div class="math">
+\[\log (1 + x) \approx x \; \mbox{  for ``small''} \; x's\]</div>
+<ul class="simple">
+<li>Why?  Taylor Series (Newton)</li>
+</ul>
+<div class="math">
+\[\begin{split}f(x) &amp;=&amp; \log(1+x)\\
+     &amp;\approx&amp; f(x_0) + (x-x_0)f'(x_0) |_{x=x_0}\end{split}\]</div>
+<ul class="simple">
+<li>Apply with <span class="math">\(f(x) = \log(1+x)\)</span> and <span class="math">\(x_0 = 0\)</span>, then</li>
+</ul>
+<div class="math">
+\[\begin{split}\log(1+x) &amp;\approx&amp; 0 + x\left(\frac{1}{1+x}\right) |_{x=x_0} \\
+      &amp;\approx&amp; x\end{split}\]</div>
 </div>
 </div>
 
