@@ -183,9 +183,9 @@ price a bundle of goods by pricing each component individually and taking the su
 such as the Confederate bond shown at the top of this lecture.  To do so, we are going to think
 of a coupon bonds as a bundle of pure discount or zero coupon bonds.</p>
 <p>To do this, we need to define some notation.  To keep things simple, assume that we live
-in world without money (so we don&#8217;t have to think about inflation) and just a single good.
-We can call this single good beans.  In this world people eat beans, save beans, trade
-beans, and plant beans to produce beans.</p>
+in world without money (so we don&#8217;t have to think about inflation). In this world there is just
+a single good. Call this single good &#8220;beans.&#8221;  In this world people eat beans, save beans, trade
+beans, and plant beans to produce more beans.</p>
 <p>Define</p>
 <div class="math">
 \[q_{t,t+j} \equiv \mbox{price of one unit of time $t+j$ consumption at time t}\]</div>
@@ -249,7 +249,7 @@ r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
     &amp;=&amp; c (q_{t,t+1} + q_{t,t+2} +  ... + q_{t,t+T}) + P q_{t,t+T}\end{split}\]</div>
 <p>Equivalently, we could write this summation as</p>
 <div class="math">
-\[V_t = \frac{c}{1+r_{t,t+1}} + \frac{c}{(1+ r_{t,t+2})^2} +  ... + \frac{c}{(1+ r_{t,t+T})^T} + \frac{P}{(1+r_{t,t+T})^T}.\]</div>
+\[V_t = \frac{c}{(1+r_{t,t+1})^1} + \frac{c}{(1+ r_{t,t+2})^2} +  ... + \frac{c}{(1+ r_{t,t+T})^T} + \frac{P}{(1+r_{t,t+T})^T}.\]</div>
 <p>The value of this same bond at <span class="math">\(t+1\)</span>, after <span class="math">\(c\)</span> has been paid, is</p>
 <div class="math">
 \[V_{t+1}  = c (q_{t+1,t+2} + q_{t+1,t+3} +  ... + q_{t+1,t+T}) + P q_{t+1,t+T}\]</div>
@@ -281,7 +281,7 @@ r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
 <h3>Yield to Maturity<a class="headerlink" href="#yield-to-maturity" title="Permalink to this headline">¶</a></h3>
 <p>The yield to maturity (ytm) is the unique <span class="math">\(r\)</span> that satisfies</p>
 <div class="math">
-\[V = \frac{c}{1+r}  + \frac{c}{(1+r)^2} + \frac{c}{(1+r)^3} + ... + \frac{c+P}{(1+r)^T}\]</div>
+\[V = \frac{c}{(1+r)^1}  + \frac{c}{(1+r)^2} + \frac{c}{(1+r)^3} + ... + \frac{c+P}{(1+r)^T}\]</div>
 <p>given <span class="math">\(V\)</span>, <span class="math">\(c\)</span>, <span class="math">\(P\)</span>, and <span class="math">\(T\)</span>.</p>
 <p>The ytm usually can not be solved for by hand.  But we can solve for it using Excel.</p>
 <p>It is sometimes just called the yield.</p>
@@ -724,10 +724,13 @@ creditors received when inflation fell in the early 1980s.</li>
 of the debt will be small.</p>
 <p>Big differences between the par value and market value will emerge when there are large capital gains and losses
 (perhaps due to changes in inflation).  As we will see this occured during the War of 1812</p>
+</div>
+<div class="section" id="footnote">
+<h3>Footnote<a class="headerlink" href="#footnote" title="Permalink to this headline">¶</a></h3>
 <table class="docutils footnote" frame="void" id="id3" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>John Cochrane introduced us to the term &#8220;The Happy Meal Theorem.&#8221;</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><a class="reference external" href="http://faculty.chicagobooth.edu/john.cochrane/">John Cochrane</a> introduced us to the term &#8220;The Happy Meal Theorem.&#8221;</td></tr>
 </tbody>
 </table>
 </div>

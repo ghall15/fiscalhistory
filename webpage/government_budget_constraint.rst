@@ -709,6 +709,59 @@ This equation states that the current value of debt is the discounted summation 
 Debt is both a backward-looking and a forward-looking variable  Thus it connects the past with the future. 
 It is the sum of past deficit spending.  It is also the sum of future surpluses.
 
+Exercises
+=========
+
+1. **The Power of Compound Interest**
+
+    The following problem may be done on EXCEL.
+
+    Consider a government that initially has no debt.  The Minister of Finance proposes the following twenty-year plan.  
+    For each year for the first ten years, the government will collect \$75 billion in tax revenue (:math:`T`) and spend 
+    \$77 billion on government services (:math:`G`) (excluding interest payments); thus the country will run an primary 
+    deficit of \$2 billion per year for first ten years.
+
+    The government will finance its deficits by continually rolling over one-year loans at an annual interest rate of 6 percent.
+
+    The government has the following budget constraint
+
+    .. math::
+          B_{t+1} = B_t + r_t B_t + G_t - T_t
+
+    Starting in year 11, the government will begin to pay back its debt.  For years 11-20, it will continue collect \$75 billion 
+    in revenue each year, but will set annual expenditures such that at the end of year 20, the debt is zero.  If the government 
+    wants to keep spending from year 11 to year 20 constant (i.e. :math:`G_{11} = G_{12} = G_{13} = ... = G_{20} = \bar{G}`).  
+    What is the maximum value of :math:`\bar{G}` that will allow the government to pay back its debt in ten years?
+
+    You can deduce :math:`\bar{G}` by trial and error or you can use `an amortization formula`_.
+
+
+..  _an amortization formula: http://en.wikipedia.org/wiki/Amortization\_calculator
+
+
+2. **Credit Card Debt**
+
+    To see why some families get into trouble with their credit cards, consider the following variation on the above problem.
+
+    For ten years, a household has \$75,000 in annual income and spends \$77,000 per year on stuff they need and really want; 
+    thus they are "only" spending \$2,000 more then their income each year.  They finance their deficit spending by borrowing 
+    off their credit card at an 18\% annual interest rate. They make no payments on their debt.
+
+    The annual law of motion for their credit card balance is
+
+    .. math::
+             Balance_{t+1} = Balance_t + r_t \times Balance_t + Spending_t - Income_t
+
+    For each of these ten years, compute their annual interest charge and their end-of-year credit card balance.  In year 10, 
+    what is their stock of debt as a percentage of their income?
+
+    At the beginning of year 11, the household commits to paying off their debt over the next ten years.  Their annual income 
+    remains at \$75,000, and the interest rate remains at 18\%. They want to keep their non-debt payment spending constant, 
+    at say :math:`\bar{S}`, over years 11-20.   What is the highest amount they can spend while extinguishing their debt by year 20?
+
+Footnote
+--------
+
 .. [#] For a discussion of different state budgets and their varying accounting rules, see Ratvich, Richard and Paul Volker (2014) 
        "Report of the State Budget Crisis Task Force" available from
        `www.statebudgetcrisis.org`_.

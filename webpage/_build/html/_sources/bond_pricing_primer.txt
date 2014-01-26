@@ -143,9 +143,9 @@ such as the Confederate bond shown at the top of this lecture.  To do so, we are
 of a coupon bonds as a bundle of pure discount or zero coupon bonds.
 
 To do this, we need to define some notation.  To keep things simple, assume that we live 
-in world without money (so we don't have to think about inflation) and just a single good.  
-We can call this single good beans.  In this world people eat beans, save beans, trade 
-beans, and plant beans to produce beans.
+in world without money (so we don't have to think about inflation). In this world there is just 
+a single good. Call this single good "beans."  In this world people eat beans, save beans, trade 
+beans, and plant beans to produce more beans.
 
 Define
 
@@ -199,7 +199,7 @@ We write this summation as
 Equivalently, we could write this summation as
 
 .. math::
-    V_t = \frac{c}{1+r_{t,t+1}} + \frac{c}{(1+ r_{t,t+2})^2} +  ... + \frac{c}{(1+ r_{t,t+T})^T} + \frac{P}{(1+r_{t,t+T})^T}.
+    V_t = \frac{c}{(1+r_{t,t+1})^1} + \frac{c}{(1+ r_{t,t+2})^2} +  ... + \frac{c}{(1+ r_{t,t+T})^T} + \frac{P}{(1+r_{t,t+T})^T}.
 
 The value of this same bond at :math:`t+1`, after :math:`c` has been paid, is
 
@@ -245,7 +245,7 @@ Yield to Maturity
 The yield to maturity (ytm) is the unique :math:`r` that satisfies
 
 .. math::
-    V = \frac{c}{1+r}  + \frac{c}{(1+r)^2} + \frac{c}{(1+r)^3} + ... + \frac{c+P}{(1+r)^T}
+    V = \frac{c}{(1+r)^1}  + \frac{c}{(1+r)^2} + \frac{c}{(1+r)^3} + ... + \frac{c+P}{(1+r)^T}
 
 given :math:`V`, :math:`c`, :math:`P`, and :math:`T`.
 
@@ -674,4 +674,9 @@ of the debt will be small.
 Big differences between the par value and market value will emerge when there are large capital gains and losses 
 (perhaps due to changes in inflation).  As we will see this occured during the War of 1812
 
-.. [#]  John Cochrane introduced us to the term "The Happy Meal Theorem."
+Footnote
+--------
+
+.. [#]  `John Cochrane`_ introduced us to the term "The Happy Meal Theorem."
+
+.. _John Cochrane: http://faculty.chicagobooth.edu/john.cochrane/

@@ -92,10 +92,11 @@ debt-to-income by <span class="math">\(\frac{B}{Y}\)</span>.</p>
 <p>So we can write</p>
 <div class="math">
 \[\begin{split}\frac{B_{t}}{Y_t} &amp;=&amp;  \frac{(1+r)}{(1+g)} \frac{B_{t-1}}{Y_{t-1}} + \frac{G_t - T_t}{Y_t}.\end{split}\]</div>
-<p>Then by a handy math fact <a class="footnote-reference" href="#id2" id="id1">[1]</a></p>
+<p>Then by a handy math fact <a class="footnote-reference" href="#id2" id="id1">[1]</a> we attain the <em>law of motion of the debt-to-GDP ratio</em>.</p>
 <div class="math">
 \[\begin{split}\frac{B_{t}}{Y_t} &amp;\approx&amp;  (1+r-g) \frac{B_{t-1}}{Y_{t-1}} + \frac{G_t - T_t}{Y_t}\end{split}\]</div>
-<p>This equation characterizes the evolution of the debt-to-GDP ratio.  The evolution depends on the interest rate, <span class="math">\(r\)</span>,
+<p>This equation characterizes the evolution
+of the debt-to-GDP ratio.  The evolution depends on the interest rate, <span class="math">\(r\)</span>,
 the growth rate of GDP, <span class="math">\(g\)</span>, and the primary deficit <span class="math">\(G-T\)</span>.  The higher the interest rate,
 the more resources the government must devote toward compensating its creditors, hence the larger will be
 next period&#8217;s value of <span class="math">\(\frac{B}{Y}\)</span>.  In contract a larger value of <span class="math">\(g\)</span> implies that the denominator
@@ -112,6 +113,8 @@ so that <span class="math">\(\frac{G_t - T_t}{Y_t}\)</span> is a constant.</p>
 <div class="math">
 \[\frac{B_{t}}{Y_t} =  (1+r-g) \frac{B_{t-1}}{Y_{t-1}} + \frac{G - T}{Y}\]</div>
 <p>It is relatively simple to study this relationship in EXCEL.</p>
+<div class="section" id="an-example-in-excel">
+<h3>An Example in EXCEL<a class="headerlink" href="#an-example-in-excel" title="Permalink to this headline">¶</a></h3>
 <p>Consider the following case.  Set</p>
 <blockquote>
 <div><ul class="simple">
@@ -138,6 +141,9 @@ so that <span class="math">\(\frac{G_t - T_t}{Y_t}\)</span> is a constant.</p>
 <p>In this case, the debt-to-GDP explodes toward infinity.</p>
 <p>To download this EXCEL file, click <a class="reference external" href="http://people.brandeis.edu/~ghall/_build/programs/law_of_motion_for_BY.xlsx">here</a>.</p>
 <p>So what is going on?  Let&#8217;s go back to the algebra.</p>
+</div>
+<div class="section" id="back-to-the-algebra">
+<h3>Back to the Algebra<a class="headerlink" href="#back-to-the-algebra" title="Permalink to this headline">¶</a></h3>
 <p>Consider two cases</p>
 <ol class="arabic simple">
 <li><span class="math">\(g&gt;r\)</span> (i.e. the growth rate of GDP exceeds the interest rate)</li>
@@ -145,39 +151,82 @@ so that <span class="math">\(\frac{G_t - T_t}{Y_t}\)</span> is a constant.</p>
 </ol>
 <p>Let&#8217;s plot the law of motion for the debt-to-GDP ratio for case 1.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="_images/debt_gdp_dyn_r_le_g.png"><img alt="_images/debt_gdp_dyn_r_le_g.png" src="_images/debt_gdp_dyn_r_le_g.png" style="width: 720.0px; height: 540.0px;" /></a>
+<a class="reference internal image-reference" href="_images/debt_gdp_dyn_r_le_g_first.png"><img alt="_images/debt_gdp_dyn_r_le_g_first.png" src="_images/debt_gdp_dyn_r_le_g_first.png" style="width: 720.0px; height: 540.0px;" /></a>
+<p class="caption"><strong>Determining the Steady-State Debt-to-GDP Ratio when g &gt; r</strong></p>
 </div>
-<p>In this figure, the thick black curve represents the right hand side of
+<p>In this figure, the thick black line represents the right hand side of
 the law of motion and the thin red line corresponds to the 45 degree line.  At every point
 on the 45 degree line, <span class="math">\(\frac{B_{t-1}}{Y_{t-1}} =\frac{B_t}{Y_t}\)</span>.</p>
-<p>These two line intersect once with the black line crossing the 45 degree line only once from above.</p>
-<p>This occurs because</p>
+<p>These two lines intersect once with the black line crossing the 45 degree line only once from above.
+This single crossing occurs because</p>
 <blockquote>
 <div><ol class="arabic simple">
 <li>the y-intercept of the law of motion, the primary deficit to GDP ratio, is positive, and</li>
-<li>the slope of the equation <span class="math">\((1-g+r)\)</span> is less than one (i.e. the slope of the 45 degree line)</li>
+<li>the slope of the law of motion <span class="math">\((1-g+r)\)</span> is less than one (i.e. the slope of the 45 degree line)</li>
 </ol>
 </div></blockquote>
-<p>The intersection of these two lines gives the <em>steady-state</em> value of <span class="math">\(\frac{B}{Y}\)</span>.
-At this steady state, <span class="math">\(\frac{B}{Y}\)</span> remains constant.</p>
+<p>The intersection of these two lines determines the <em>steady-state</em> value of <span class="math">\(\frac{B}{Y}\)</span>.
+At the steady state, <span class="math">\(\frac{B^*}{Y^*}\)</span>, the debt-to-GDP ratio remains constant.</p>
 <p>The steady state corresponds to:</p>
 <div class="math">
-\[\begin{split}\frac{B}{Y} &amp;=&amp;  (1+r-g) \frac{B}{Y} + \frac{G - T}{Y} \\
-(g-r) \frac{B}{Y} &amp;=&amp; \frac{G - T}{Y} \\
-\frac{B}{Y} &amp;=&amp; \frac{1}{g-r} \frac{G - T}{Y}\end{split}\]</div>
+\[\begin{split}\frac{B^*}{Y^*} &amp;=&amp;  (1+r-g) \frac{B^*}{Y^*} + \frac{G - T}{Y} \\
+(g-r) \frac{B^*}{Y^*} &amp;=&amp; \frac{G - T}{Y} \\
+\frac{B^*}{Y^*} &amp;=&amp; \frac{1}{g-r} \frac{G - T}{Y}\end{split}\]</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/debt_gdp_dyn_r_le_g_second.png"><img alt="_images/debt_gdp_dyn_r_le_g_second.png" src="_images/debt_gdp_dyn_r_le_g_second.png" style="width: 720.0px; height: 540.0px;" /></a>
+<p class="caption"><strong>Transitioning to the Steady-State Debt-to-GDP Ratio when g &gt; r</strong></p>
+</div>
+<p>Consider an economy that starts with a debt-to-GDP ratio of <span class="math">\(B_0/Y_0.\)</span>  In the next period,
+the debt-to-GDP ratio becomes</p>
+<div class="math">
+\[\frac{B_{1}}{Y_1} =  (1+r-g) \frac{B_{0}}{Y_{0}} + \frac{G - T}{Y}\]</div>
+<p>This one step is represented in the figure above by the vertical solid blue line from point <span class="math">\((B_0/Y_0,0)\)</span> on the axis
+to the point  <span class="math">\((B_0/Y_0,B_1/Y_1)\)</span> on the black line.</p>
+<p>We can represent the evolution of the debt-to-GDP ratio from <span class="math">\(B_1/Y_1\)</span> to <span class="math">\(B_2/Y_2\)</span> in a similar fashion.
+To find the point <span class="math">\((B_1/Y_1,0)\)</span> on the x-axis, we move from the point
+<span class="math">\((B_0/Y_0,B_1/Y_1)\)</span> on the black line to point <span class="math">\((B_1/Y_1,B_1/Y_1)\)</span> on the red 45 degree line.</p>
+<p>Once again we apply the equation</p>
+<div class="math">
+\[\frac{B_{2}}{Y_2} =  (1+r-g) \frac{B_{1}}{Y_{1}} + \frac{G - T}{Y}\]</div>
+<p>to find point <span class="math">\((B_1/Y_1,B_2/Y_2)\)</span> on the black line.</p>
+<p>This process repeats itself for an infinite number of periods as the debt-to-GDP approach the steady-state debt-to-GDP
+ratio <span class="math">\(\frac{B^*}{Y^*}\)</span> from below.</p>
+<p>In a similar fashion, if the country starts with a debt-to-GDP ratio greater than <span class="math">\(\frac{B^*}{Y^*}\)</span> (for example
+at <span class="math">\(\frac{b_0}{y_0}\)</span> as shown in the figure above) the debt-to-GDP ratio
+will converge to the steady-state from above.</p>
 <p>Now let&#8217;s plot the law of motion for debt-to-GDP ratio for case 2.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/debt_gdp_dyn_r_ge_g.png"><img alt="_images/debt_gdp_dyn_r_ge_g.png" src="_images/debt_gdp_dyn_r_ge_g.png" style="width: 720.0px; height: 540.0px;" /></a>
+<p class="caption"><strong>No Steady-State Debt-to-GDP Ratio Exists when g &lt; r</strong></p>
 </div>
-<p>As in the previous figure, the thick black curve represents the right hand side of
+<p>As in the prior figure, the thick black curve represents the right hand side of
 the law of motion and the thin red line corresponded to the 45 degree line.</p>
-<p>In this case, the slope of the law of motion is greater than one, so the two curve do not intersect.
+<p>In this case, the slope of the law of motion is greater than one, so the two curves do not intersect.
 Thus no steady state exists.</p>
+<p>Again, consider an economy that starts with a debt-to-GDP ratio of <span class="math">\(B_0/Y_0.\)</span>  In the next period,
+the debt-to-GDP ratio becomes</p>
+<div class="math">
+\[\frac{B_{1}}{Y_1} =  (1+r-g) \frac{B_{0}}{Y_{0}} + \frac{G - T}{Y}\]</div>
+<p>This one step is represented in the figure above by the vertical solid blue line from point <span class="math">\((B_0/Y_0,0)\)</span> on the axis
+to the point  <span class="math">\((B_0/Y_0,B_1/Y_1)\)</span> on the black line.</p>
+<p>As in the prior example, we represent the evolution of the debt-to-GDP ratio
+from <span class="math">\(B_1/Y_1\)</span> to <span class="math">\(B_2/Y_2\)</span> by first finding the point <span class="math">\((B_1/Y_1,0)\)</span> on the x-axis by moving from the point
+<span class="math">\((B_0/Y_0,B_1/Y_1)\)</span> on the black line to point <span class="math">\((B_1/Y_1,B_1/Y_1)\)</span> on the red 45 degree line
+and then applying the equation</p>
+<div class="math">
+\[\frac{B_{2}}{Y_2} =  (1+r-g) \frac{B_{1}}{Y_{1}} + \frac{G - T}{Y}\]</div>
+<p>to find point <span class="math">\((B_1/Y_1,B_2/Y_2)\)</span> on the black line.</p>
+<p>But unlike the previous case, when <span class="math">\(g &lt; r\)</span> the increase in debt-to-GDP ratio from <span class="math">\(\frac{B_{1}}{Y_{1}}\)</span> to
+<span class="math">\(\frac{B_{2}}{Y_{2}}\)</span>  is greater than the increase from <span class="math">\(\frac{B_{0}}{Y_{0}}\)</span> to <span class="math">\(\frac{B_{1}}{Y_{1}}\)</span>.</p>
+<p>Instead of converging to a steady state, the debt-to-GDP ratio will sail off to infinity.</p>
+</div>
+<div class="section" id="take-away-points">
+<h3>Take-Away Points<a class="headerlink" href="#take-away-points" title="Permalink to this headline">¶</a></h3>
 <p>The two take-aways from this exercise are</p>
 <blockquote>
 <div><ol class="arabic simple">
 <li>If a country grows faster than its interest rate (i.e if g &gt; r), its debt-to-GDP ratio will not blow up.</li>
-<li>Small changes in the interest rate and/or growth rate of GDP can have a dramtic impact on the path of the debt-to-GDP ratio.</li>
+<li>Small changes in the interest rate and/or growth rate of GDP can have a dramatic impact on the path of the debt-to-GDP ratio.</li>
 </ol>
 </div></blockquote>
 <p>A government can sustain persistent deficits as long as growth
@@ -188,6 +237,26 @@ was 500 percent.  But as long as <span class="math">\(g &gt; r\)</span>, the deb
 <p>Debt crises occur when a country switches from having <span class="math">\(g &gt; r\)</span> to having <span class="math">\(g &lt; r\)</span>.</p>
 <p>Since World War II, the U.S. has generally grown faster than the interest rate the government has faced. On average the U.S. has
 grown about 3.3 percent per year.  The average interest rate on government debt has been about 1.6 percent.</p>
+</div>
+</div>
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">A government initially has a debt-to-gdp ratio of 0.3. Starting now, the government runs a primary budget deficit of 3 percent of GDP every year forever.  It borrows at a real interest rate of 3 percent.  Real GDP of the economy grows at an annual rate of 5 percent.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li>In the long run, to what value will the debt-to-gdp ratio converge?</li>
+<li>In the long run, what will be the growth rate of <span class="math">\(B\)</span>?</li>
+<li>Will the size of the year-to-year changes in the debt-to-gdp ratio increase or decrease over time? Explain briefly.</li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+<p>2. Suppose a country has a debt-to-GDP ratio of 100%.  The growth rate of real GDP is 3%.
+Assume that the real interest rate is 2%.  If the government is committed to not letting the debt-to-GDP ratio rise,
+what is the largest primary deficit as a percent of GDP it can run?</p>
+<div class="section" id="footnote">
+<h3>Footnote<a class="headerlink" href="#footnote" title="Permalink to this headline">¶</a></h3>
 <table class="docutils footnote" frame="void" id="id2" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
@@ -210,6 +279,7 @@ grown about 3.3 percent per year.  The average interest rate on government debt 
       &amp;\approx&amp; x\end{split}\]</div>
 </div>
 </div>
+</div>
 
 
           </div>
@@ -224,6 +294,7 @@ grown about 3.3 percent per year.  The average interest rate on government debt 
 <li class="toctree-l1 current"><a class="current reference internal" href="">The Debt to GDP Ratio</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#the-evolution-of-the-debt-to-gdp-ratio">The Evolution of the Debt to GDP Ratio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#sustainability">Sustainability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercises">Exercises</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="debt_ceiling.html">The Debt Ceiling</a></li>
