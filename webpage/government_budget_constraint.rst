@@ -504,16 +504,16 @@ If we make this assumption of constant velocity, then this theory implies that
 real money demand is proportional to real income.  So
 :math:`\frac{M^d}{P} = kY` .
 
-It is often useful to express the quantity theory in terms of growth rates.  IF we take natural logs of both sides of the 
+It is often useful to express the quantity theory in terms of growth rates.  If we take natural logs of both sides of the 
 equation, we get
 
 .. math::
-   \ln M_t   +  \ln V_t       =  \ln P_t +   \ln Y_t
+   \ln M_t   +  \ln V_t       =  \ln P_t +   \ln Y_t.
        
 If we step back one period, we get 
 
 .. math::
-   \ln M_{t-1}   +  \ln V_{t-1}       =  \ln P_{t-1} +   \ln Y_{t-1}
+   \ln M_{t-1}   +  \ln V_{t-1}       =  \ln P_{t-1} +   \ln Y_{t-1}.
    
 Subtracting this second equation from the first yields,
 
@@ -523,12 +523,12 @@ Subtracting this second equation from the first yields,
 or
    
 .. math::
-    \frac{\Delta M}{M} + \frac{\Delta V}{V} = \frac{\Delta P}{P} + \frac{\Delta Y}{Y}   
+    \frac{\Delta M}{M} + \frac{\Delta V}{V} = \frac{\Delta P}{P} + \frac{\Delta Y}{Y}.   
 
 Again if we assume velocity is constant over time, then
 
 .. math::
-    \frac{\Delta M}{M}  = \frac{\Delta P}{P} + \frac{\Delta Y}{Y}   
+    \frac{\Delta M}{M}  = \frac{\Delta P}{P} + \frac{\Delta Y}{Y}.   
 
 For more on the quantity theory of money, see chapter 12 of `The Global Economy`_.
 

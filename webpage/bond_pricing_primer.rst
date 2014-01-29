@@ -138,7 +138,7 @@ price a bundle of goods by pricing each component individually and taking the su
 Relationship between bond prices and yields for zero-coupon bonds
 ==================================================================
 
-In these "Fiscal History" lectures, we will want to compute the prices of coupon bonds
+In these Fiscal History lectures, we will want to compute the prices of coupon bonds
 such as the Confederate bond shown at the top of this lecture.  To do so, we are going to think 
 of a coupon bonds as a bundle of pure discount or zero coupon bonds.
 
@@ -217,13 +217,28 @@ Forward Rates
 With no uncertainty, the law of one price asserts that
 
 .. math::
-    q_{t,t+j} = q_{t,t+1} q_{t+1,t+j}
+    q_{t,t+j} = q_{t,t+1} q_{t+1,t+j}.
 
-There are two ways at time :math:`t` to buy one unit of consumption at :math:`t+j`
+This equation states that there are two ways at time :math:`t` to buy one unit 
+of consumption at :math:`t+j`. Either
 
-     1. either pay :math:`q_{t,t+j}` at time :math:`t`, or
+     1. pay :math:`q_{t,t+j}` at time :math:`t`, or
 
      2. pay :math:`q_{t,t+1}` at time :math:`t` and :math:`q_{t+1,t+j}` at time :math:`t+1`
+
+Consider a three period example. At time 0, suppose the investor wishes to purchase one unit of period 2 consumption. 
+She has the option of 
+
+     1. purchasing a two-period pure discount bond at the price :math:`q_{0,2}`
+     
+     2. purchasing a one-period pure discount bond at the price :math:`q_{0,1}`.  In period 1, the investor take 
+     the proceeds and then purchases a second one-period pure discount bond for price :math:`q_{1,2}`.
+     
+Neither strategy should dominate the other.  In other words :math:`q_{0,2} = q_{0,1} q_{1,2}`.
+
+.. figure:: _static/images/forward_rate.jpg
+    :scale: 100%
+    :align: center
 
 Define
 
@@ -232,26 +247,17 @@ Define
 
 as the *forward price* at :math:`t`.
 
+In our three period example, 
+
+.. math::
+    \tilde{q}^0_{1,2} \equiv \frac{q_{0,2}}{q_{0,1}}.
+
 With no uncertainty about future interest rates
 
 .. math:: 
     \tilde{q}^t_{t+1,t+j} = q_{t+1,t+j}
 
 When there is uncertainty, the two terms in this equation won't necessarily be equal.
-
-Yield to Maturity
------------------
-
-The yield to maturity (ytm) is the unique :math:`r` that satisfies
-
-.. math::
-    V = \frac{c}{(1+r)^1}  + \frac{c}{(1+r)^2} + \frac{c}{(1+r)^3} + ... + \frac{c+P}{(1+r)^T}
-
-given :math:`V`, :math:`c`, :math:`P`, and :math:`T`.
-
-The ytm usually can not be solved for by hand.  But we can solve for it using Excel.
-
-It is sometimes just called the yield.
 
 A Three Period Coupon Bond Example
 ----------------------------------
@@ -272,19 +278,42 @@ The time :math:`t=0` price of the bond is
 After payment of the coupon, the price of the bond at time :math:`t=1` is
 
 .. math::
-    V_1 = q_{1,2}(c+P)
+    V_1 = q_{1,2}(c+P).
+    
+Therefore
+
+.. math::
+    V_0 &=&  q_{0,1} c + q_{0,1} V_1  \\
+        &=&  q_{0,1} c + q_{0,1} q_{1,2}(c+P)
+
+
+Yield to Maturity
+=================
+
+The yield to maturity (ytm) is the unique :math:`r` that satisfies
+
+.. math::
+    V = \frac{c}{(1+r)^1}  + \frac{c}{(1+r)^2} + \frac{c}{(1+r)^3} + ... + \frac{c+P}{(1+r)^T}
+
+given :math:`V`, :math:`c`, :math:`P`, and :math:`T`.
+
+The ytm usually can not be solved for by hand.  But we can solve for it using Excel.
+
+It is sometimes just called the yield.
 
 Value of a Call Option
 =======================
 
-During critical period in the United States history, the federal government issued *callable bonds*.
+During critical periods in the United States history, the federal government issued *callable bonds*.
 
-A callable bond gives the government (or really the owner of the option) the right to purchase 
-the bond at :math:`t=1` at a price :math:`P`.
+A callable bond gives the government (or really the issuer of the bond) the right to purchase 
+the bond at :math:`t=1` at a preset *strike price*. [#]_
 
-    * thus, :math:`P` serves as both the *par value* and the *strike price*.
+For all the callable bonds we will study in these lectures, the strike price is 
+the *par value* or *face value* of the bond, :math:`P`. 
 
-The value of this option at time 1 is :math:`\max(0,V_1 - P)`.
+Since the government does not have to repurchase the bond, the call feature of these bonds is an option.
+The value of this call option at time 1 is :math:`\max(0,V_1 - P)`.
 
 The government will want to exercise the call option if
 
@@ -319,45 +348,43 @@ Extend the Example: Interest rate risk
 
 In this example, assume that the future payouts are known for certain; however, future interest rates are uncertain.
 
-
-* three time periods: :math:`0`, :math:`1`, and :math:`2`.
+Assume three time periods: :math:`0`, :math:`1`, and :math:`2`.
 
 .. math::
     q_{0,1}, \; \; q_{1,2}(H), \; \; q_{1,2}(L) \; \; \mbox{ where $q_{1,2}(H) > q_{1,2}(L)$}
 
-* Assume :math:`q_{1,2}(H)` occurs with probability :math:`\pi_0`.
+Assume 
 
-* And :math:`q_{1,2}(L)` occurs with probability :math:`1-\pi_0`.
+    * :math:`q_{1,2}(H)` occurs with probability :math:`\pi_0`, and
 
-* Simple "expectations theory" of the term structure
+    * :math:`q_{1,2}(L)` occurs with probability :math:`1-\pi_0`.
+
+We are assuming a simple "expectations theory" of the term structure
 
 .. math::
     q_{0,2} &=& q_{0,1}(\pi_0 q_{1,2}(H) + (1-\pi_0) q_{1,2}(L)) \\
     \frac{q_{0,2}}{q_{0,1}} &\equiv& \tilde{q}^0_{1,2} = \pi_0 q_{1,2}(H) + (1-\pi_0) q_{1,2}(L)
 
-* :math:`\tilde{q}^0_{1,2}` is the *forward price*.
+:math:`\tilde{q}^0_{1,2}` is the *forward price*.  It is an average of the two possible prices next period
 
-   - is an average of the two possible prices next period
-
-   - no adjustment for risk
-
-   - fancier theories adjust for risk
+In this example, we are making no adjutment for risk.  Fancier theories that you will learn in a financial economics
+course will adjust for risk the right hand side of this equation.
 
    - whose :math:`\pi_0`? (rational expectations)
 
-* Similarly
+Similarly
 
 .. math::
      \tilde{r}^0_{1,2} = \pi_0 r_{1,2}(L) + (1-\pi_0) r_{1,2}(H)
 
-flip the :math:`H` and :math:`L` because high bond prices mean low interest rates
+Note that in this equation we flip :math:`H` and :math:`L` because high bond prices mean low interest rates.
 
 Value of a Call Option
 ----------------------
 
-* At :math:`t=0`, you purchase the right to buy the bond at :math:`t=1` at a price :math:`P`.
+At :math:`t=0`, you purchase the right to buy the bond at :math:`t=1` at a price :math:`P`.
 
-* Assume that
+Assume that
 
 .. math::
      q_{1,2}(H) > q_{1,2}(L)
@@ -365,19 +392,19 @@ Value of a Call Option
 and
 
 .. math::
-     q_{1,2}(H)(c+P) > P > q_{1,2}(L)(c+P)
+     q_{1,2}(H)(c+P) > P > q_{1,2}(L)(c+P).
 
-* If state :math:`H` occurs the time :math:`1` value of the call is
-
-.. math::
-     V_1^{call} = \max(0,q_{1,2}(H)(c+P) -P) > 0
-
-* If state :math:`L` occurs the time :math:`1` value of the call is
+If state :math:`H` occurs the time :math:`1` value of the call is
 
 .. math::
-     V_1^{call} = \max(0, q_{1,2}(L)(c+P) -P) = 0
+     V_1^{call} = \max(0,q_{1,2}(H)(c+P) -P) > 0.
 
-* Therefore, the time :math:`0` value of the call is
+But if state :math:`L` occurs the time :math:`1` value of the call is
+
+.. math::
+     V_1^{call} = \max(0, q_{1,2}(L)(c+P) -P) = 0.
+
+Therefore, the time :math:`0` value of the call is
 
 .. math::
      V_0^{call} = q_{0,1} \left[ \pi_0(q_{1,2}(H)(c+P) -P) \right]
@@ -385,7 +412,7 @@ and
 Example
 -------
 
-*  Example: With constant interest rates satisfying the "Congress wishful thinking condition"
+Example: With constant interest rates satisfying the "Congress wishful thinking condition"
 
 .. math::
      P = q_{t,t+1}(c+P)
@@ -397,13 +424,13 @@ or
 
 then the value of the call is zero.
 
-* Hence
+Hence
 
 .. math::
      q_{1,2}(H) = q_{1,2}(L) = \frac{P}{P+c}
 
 Pricing a Callable Bond
-=======================
+-----------------------
 
 Consider
 
@@ -430,7 +457,7 @@ minus the value of the call option.
     V_0 - V_0^{call}
 
 Example: 20 Year Coupon Bond
-----------------------------
+============================
 
 Suppose that this year (January 1, 2014) you purchase a 6\% percent 2034 U.S. Treasury bond with a face value of \$100.
 
@@ -440,9 +467,9 @@ Suppose that this year (January 1, 2014) you purchase a 6\% percent 2034 U.S. Tr
      |   0    |    6     |   6    |   6     |  ... | 6     | 106  |
      +--------+----------+--------+---------+------+-------+------+
 
-* No uncertainty
+No uncertainty
 
-* Apply the Happy Meal Theorem
+Apply the Happy Meal Theorem
 
 .. math::
     V_{2014} &=& q_{2014,2015} C + q_{2014,2016} C + q_{2014,2017} C + q_{2014,2034} ( C + P)
@@ -461,11 +488,24 @@ Use Excel to do the valuations
 
 Let EXCEL do the calculations for us
 
-   - Set :math:`\bar{r}=.06`
+ First set :math:`\bar{r}=.06`
 
-   - Set :math:`\bar{r}=.03`
+.. figure:: _static/images/20_yr_bond_example_6.jpg
+    :scale: 100%
+    :align: center
 
-Set :math:`\bar{r} =.09`
+
+Second set :math:`\bar{r}=.03`
+
+.. figure:: _static/images/20_yr_bond_example_3.jpg
+    :scale: 100%
+    :align: center
+
+Finally set :math:`\bar{r} =.09`
+
+.. figure:: _static/images/20_yr_bond_example_9.jpg
+    :scale: 100%
+    :align: center
 
 If a bond's coupon rate is
     - less than its YTM, then the bond is selling at a *discount*.
@@ -500,6 +540,10 @@ What is our 20 year, \$100 face value, 6\% coupon, bond worth in 2019?
 
      .. math::
             V_{2019}^{.09} = \sum_{t=1}^{15}\frac{C}{(1+0.09)^t} + \frac{P}{(1+.09)^{15}}
+
+.. figure:: _static/images/20_yr_bond_example_var_int.jpg
+    :scale: 100%
+    :align: center
 
 So what is our bond worth today in 2014?
 
@@ -567,8 +611,8 @@ is less than the face value of the current stock of debt?
 
 So is the government budget constraint a constraint?  Or is it a bond pricing formula?
 
-Bond Returns
-------------
+Holding Period Returns
+----------------------
 
 Suppose you buy a bond at period :math:`t` a price :math:`V_t`, hold it one period, and sell it at 
 price :math:`V_{t+1}`.  What is your return?
@@ -585,7 +629,7 @@ Recorded Government Interest Payments
 
 What the Bureau of the Public Debt reports as its nominal interest payments
     - discounts Treasury bills
-    - add up the coupons on notes and bonds
+    - add up the coupons on notes and bonds.
 
 This number answers the question 
 
@@ -599,7 +643,7 @@ on Treasury notes and bonds.  This number does not answer the question
 Comparison Between Official Interest Payments and Returns to Bondholders
 ------------------------------------------------------------------------
 
-Suppose we take the government budget constraint 
+Following [Eisner1986]_ and [Bohn1992]_ we take the government budget constraint 
 
 .. math::
         B_{t} =  B_{t-1} + r B_{t-1} + G_t + TR_t - T_t
@@ -613,12 +657,16 @@ If :math:`B` is measured by the market price of the debt, this value of :math:`r
 the one-period holding period
 return on the debt. 
 
-
 .. figure:: _static/figures/cof_returns_gdpdef.png
     :scale: 60%
     :align: center
 
-The blue line is the computed interest payments on the debt 
+    **Reported Interest Payments and Holding Period Returns** 
+
+In the figure above, we compare the federal government's reported interest payments
+with the holding period return on the debt imputed by the government budget constraint for the post-World War II period.
+
+The blue line is the computed holding period return on the debt 
 implied by the government budget constraint. 
 The red line is the officially reported interest 
 payments. Both series are reported as percentages of the 
@@ -639,7 +687,8 @@ The black line is the red line minus the inflation rate.
 
      **Means and Standard Deviations of Returns**
 
-Computed from the government budget constraint, the return on US Treasury debt is lower on average and considerably more volatile 
+Imputed from the government budget constraint, the holding period return on US Treasury debt is lower on average 
+and considerably more volatile 
 than the official reported interest costs. The official interest payments average 5.2% of the debt while 
 our measure of the real return on the debt averages 1.6%. If we subtract the inflation rate from the 
 officially reported interest payments (the black line), the two series have roughly the same mean (1.5 versus 1.6).
@@ -649,7 +698,7 @@ from the government budget constraint demonstrates some striking outcomes.
 
     1. There were large negative returns immediately after World War II as inflation surged with the lifting of price controls.
     
-    2. During the early 1980s, when, perhaps unexpectedly, Paul Volcker brought down inflation, 
+    2. During the early 1980s, when, perhaps unexpectedly, Federal Reserve Chairman Paul Volcker brought down inflation, 
        bondholders – particularly long-term bond holders – received large positive returns. Many 
        who point to the 1970s as a time during which the US was able to pay low returns to its 
        creditors through inflation often fail to acknowledge the large returns many of those same 
@@ -674,9 +723,28 @@ of the debt will be small.
 Big differences between the par value and market value will emerge when there are large capital gains and losses 
 (perhaps due to changes in inflation).  As we will see this occured during the War of 1812
 
-Footnote
---------
+For further reading on the official interest payments and the returns to government bondholders see [Hall-Sargent2011]_.
+
+Footnotes
+---------
 
 .. [#]  `John Cochrane`_ introduced us to the term "The Happy Meal Theorem."
 
 .. _John Cochrane: http://faculty.chicagobooth.edu/john.cochrane/
+
+.. [#] A typical home mortgage is an example of a callable bond.  For most mortgages, the issuer (i.e. the homeowner) 
+       has the right to prepay or call the mortgage at any time.
+
+References
+----------
+
+.. [Bohn1992] Bohn, Henning. 1992. "Budget Deficits and
+              Government Accounting." *Carnegie-Rochester Conference Series on Public Policy*,
+              37: 1-83.
+
+.. [Eisner1986] Eisner, Robert. 1986. *How Real is the Federal Deficit?*
+                New York: The Free Press.
+
+.. [Hall-Sargent2011] Hall, George J. and Thomas J. Sargent 2011. "Interest Rate Risk and Other 
+                      Determinants of Post WW-II U.S. Government Debt/GDP Dynamics." 
+                      *American Economic Journal: Macroeconomics*, 3: 192-214.

@@ -140,7 +140,7 @@ how much do you need to be compensated to postpone for one year one dollar&#8217
 </div>
 </div>
 <div class="section" id="the-law-of-one-price-or-the-happy-meal-theorem-of-bond-pricing">
-<h2>The Law of One Price or the Happy Meal Theorem <a class="footnote-reference" href="#id3" id="id1">[1]</a> of Bond Pricing<a class="headerlink" href="#the-law-of-one-price-or-the-happy-meal-theorem-of-bond-pricing" title="Permalink to this headline">¶</a></h2>
+<h2>The Law of One Price or the Happy Meal Theorem <a class="footnote-reference" href="#id7" id="id1">[1]</a> of Bond Pricing<a class="headerlink" href="#the-law-of-one-price-or-the-happy-meal-theorem-of-bond-pricing" title="Permalink to this headline">¶</a></h2>
 <p>The theory of bond pricing we present is based on the assumption
 that any difference between the price of a bundle of payoffs and the
 sum of the prices of the individual payoffs within that bundle
@@ -179,7 +179,7 @@ price a bundle of goods by pricing each component individually and taking the su
 </div>
 <div class="section" id="relationship-between-bond-prices-and-yields-for-zero-coupon-bonds">
 <h2>Relationship between bond prices and yields for zero-coupon bonds<a class="headerlink" href="#relationship-between-bond-prices-and-yields-for-zero-coupon-bonds" title="Permalink to this headline">¶</a></h2>
-<p>In these &#8220;Fiscal History&#8221; lectures, we will want to compute the prices of coupon bonds
+<p>In these Fiscal History lectures, we will want to compute the prices of coupon bonds
 such as the Confederate bond shown at the top of this lecture.  To do so, we are going to think
 of a coupon bonds as a bundle of pure discount or zero coupon bonds.</p>
 <p>To do this, we need to define some notation.  To keep things simple, assume that we live
@@ -261,31 +261,39 @@ r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
 <h2>Forward Rates<a class="headerlink" href="#forward-rates" title="Permalink to this headline">¶</a></h2>
 <p>With no uncertainty, the law of one price asserts that</p>
 <div class="math">
-\[q_{t,t+j} = q_{t,t+1} q_{t+1,t+j}\]</div>
-<p>There are two ways at time <span class="math">\(t\)</span> to buy one unit of consumption at <span class="math">\(t+j\)</span></p>
+\[q_{t,t+j} = q_{t,t+1} q_{t+1,t+j}.\]</div>
+<p>This equation states that there are two ways at time <span class="math">\(t\)</span> to buy one unit
+of consumption at <span class="math">\(t+j\)</span>. Either</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li>either pay <span class="math">\(q_{t,t+j}\)</span> at time <span class="math">\(t\)</span>, or</li>
+<li>pay <span class="math">\(q_{t,t+j}\)</span> at time <span class="math">\(t\)</span>, or</li>
 <li>pay <span class="math">\(q_{t,t+1}\)</span> at time <span class="math">\(t\)</span> and <span class="math">\(q_{t+1,t+j}\)</span> at time <span class="math">\(t+1\)</span></li>
 </ol>
 </div></blockquote>
+<p>Consider a three period example. At time 0, suppose the investor wishes to purchase one unit of period 2 consumption.
+She has the option of</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>purchasing a two-period pure discount bond at the price <span class="math">\(q_{0,2}\)</span></li>
+</ol>
+<p>2. purchasing a one-period pure discount bond at the price <span class="math">\(q_{0,1}\)</span>.  In period 1, the investor take
+the proceeds and then purchases a second one-period pure discount bond for price <span class="math">\(q_{1,2}\)</span>.</p>
+</div></blockquote>
+<p>Neither strategy should dominate the other.  In other words <span class="math">\(q_{0,2} = q_{0,1} q_{1,2}\)</span>.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/forward_rate.jpg"><img alt="_images/forward_rate.jpg" src="_images/forward_rate.jpg" style="width: 609.0px; height: 229.0px;" /></a>
+</div>
 <p>Define</p>
 <div class="math">
 \[\tilde{q}^t_{t+1,t+j} \equiv \frac{q_{t,t+j}}{q_{t,t+1}}\]</div>
 <p>as the <em>forward price</em> at <span class="math">\(t\)</span>.</p>
+<p>In our three period example,</p>
+<div class="math">
+\[\tilde{q}^0_{1,2} \equiv \frac{q_{0,2}}{q_{0,1}}.\]</div>
 <p>With no uncertainty about future interest rates</p>
 <div class="math">
 \[\tilde{q}^t_{t+1,t+j} = q_{t+1,t+j}\]</div>
 <p>When there is uncertainty, the two terms in this equation won&#8217;t necessarily be equal.</p>
-<div class="section" id="yield-to-maturity">
-<h3>Yield to Maturity<a class="headerlink" href="#yield-to-maturity" title="Permalink to this headline">¶</a></h3>
-<p>The yield to maturity (ytm) is the unique <span class="math">\(r\)</span> that satisfies</p>
-<div class="math">
-\[V = \frac{c}{(1+r)^1}  + \frac{c}{(1+r)^2} + \frac{c}{(1+r)^3} + ... + \frac{c+P}{(1+r)^T}\]</div>
-<p>given <span class="math">\(V\)</span>, <span class="math">\(c\)</span>, <span class="math">\(P\)</span>, and <span class="math">\(T\)</span>.</p>
-<p>The ytm usually can not be solved for by hand.  But we can solve for it using Excel.</p>
-<p>It is sometimes just called the yield.</p>
-</div>
 <div class="section" id="a-three-period-coupon-bond-example">
 <h3>A Three Period Coupon Bond Example<a class="headerlink" href="#a-three-period-coupon-bond-example" title="Permalink to this headline">¶</a></h3>
 <p>Consider a bond issued at <span class="math">\(t=0\)</span>.  It is a riskless claim on the stream of payments</p>
@@ -315,20 +323,31 @@ r_{t,t+j} &amp;=&amp; - \frac{\log q_{t,t+j}}{j}\end{split}\]</div>
 \[V_0 = q_{0,1} c + q_{0,2}(c+P)\]</div>
 <p>After payment of the coupon, the price of the bond at time <span class="math">\(t=1\)</span> is</p>
 <div class="math">
-\[V_1 = q_{1,2}(c+P)\]</div>
+\[V_1 = q_{1,2}(c+P).\]</div>
+<p>Therefore</p>
+<div class="math">
+\[\begin{split}V_0 &amp;=&amp;  q_{0,1} c + q_{0,1} V_1  \\
+    &amp;=&amp;  q_{0,1} c + q_{0,1} q_{1,2}(c+P)\end{split}\]</div>
 </div>
+</div>
+<div class="section" id="yield-to-maturity">
+<h2>Yield to Maturity<a class="headerlink" href="#yield-to-maturity" title="Permalink to this headline">¶</a></h2>
+<p>The yield to maturity (ytm) is the unique <span class="math">\(r\)</span> that satisfies</p>
+<div class="math">
+\[V = \frac{c}{(1+r)^1}  + \frac{c}{(1+r)^2} + \frac{c}{(1+r)^3} + ... + \frac{c+P}{(1+r)^T}\]</div>
+<p>given <span class="math">\(V\)</span>, <span class="math">\(c\)</span>, <span class="math">\(P\)</span>, and <span class="math">\(T\)</span>.</p>
+<p>The ytm usually can not be solved for by hand.  But we can solve for it using Excel.</p>
+<p>It is sometimes just called the yield.</p>
 </div>
 <div class="section" id="value-of-a-call-option">
 <h2>Value of a Call Option<a class="headerlink" href="#value-of-a-call-option" title="Permalink to this headline">¶</a></h2>
-<p>During critical period in the United States history, the federal government issued <em>callable bonds</em>.</p>
-<p>A callable bond gives the government (or really the owner of the option) the right to purchase
-the bond at <span class="math">\(t=1\)</span> at a price <span class="math">\(P\)</span>.</p>
-<blockquote>
-<div><ul class="simple">
-<li>thus, <span class="math">\(P\)</span> serves as both the <em>par value</em> and the <em>strike price</em>.</li>
-</ul>
-</div></blockquote>
-<p>The value of this option at time 1 is <span class="math">\(\max(0,V_1 - P)\)</span>.</p>
+<p>During critical periods in the United States history, the federal government issued <em>callable bonds</em>.</p>
+<p>A callable bond gives the government (or really the issuer of the bond) the right to purchase
+the bond at <span class="math">\(t=1\)</span> at a preset <em>strike price</em>. <a class="footnote-reference" href="#id8" id="id2">[2]</a></p>
+<p>For all the callable bonds we will study in these lectures, the strike price is
+the <em>par value</em> or <em>face value</em> of the bond, <span class="math">\(P\)</span>.</p>
+<p>Since the government does not have to repurchase the bond, the call feature of these bonds is an option.
+The value of this call option at time 1 is <span class="math">\(\max(0,V_1 - P)\)</span>.</p>
 <p>The government will want to exercise the call option if</p>
 <div class="math">
 \[\begin{split}P &lt;  V_1 = q_{1,2}(c+P)\end{split}\]</div>
@@ -348,84 +367,67 @@ the bond at <span class="math">\(t=1\)</span> at a price <span class="math">\(P\
 <div class="section" id="extend-the-example-interest-rate-risk">
 <h3>Extend the Example: Interest rate risk<a class="headerlink" href="#extend-the-example-interest-rate-risk" title="Permalink to this headline">¶</a></h3>
 <p>In this example, assume that the future payouts are known for certain; however, future interest rates are uncertain.</p>
-<ul class="simple">
-<li>three time periods: <span class="math">\(0\)</span>, <span class="math">\(1\)</span>, and <span class="math">\(2\)</span>.</li>
-</ul>
+<p>Assume three time periods: <span class="math">\(0\)</span>, <span class="math">\(1\)</span>, and <span class="math">\(2\)</span>.</p>
 <div class="math">
 \[\begin{split}q_{0,1}, \; \; q_{1,2}(H), \; \; q_{1,2}(L) \; \; \mbox{ where $q_{1,2}(H) &gt; q_{1,2}(L)$}\end{split}\]</div>
-<ul class="simple">
-<li>Assume <span class="math">\(q_{1,2}(H)\)</span> occurs with probability <span class="math">\(\pi_0\)</span>.</li>
-<li>And <span class="math">\(q_{1,2}(L)\)</span> occurs with probability <span class="math">\(1-\pi_0\)</span>.</li>
-<li>Simple &#8220;expectations theory&#8221; of the term structure</li>
+<p>Assume</p>
+<blockquote>
+<div><ul class="simple">
+<li><span class="math">\(q_{1,2}(H)\)</span> occurs with probability <span class="math">\(\pi_0\)</span>, and</li>
+<li><span class="math">\(q_{1,2}(L)\)</span> occurs with probability <span class="math">\(1-\pi_0\)</span>.</li>
 </ul>
+</div></blockquote>
+<p>We are assuming a simple &#8220;expectations theory&#8221; of the term structure</p>
 <div class="math">
 \[\begin{split}q_{0,2} &amp;=&amp; q_{0,1}(\pi_0 q_{1,2}(H) + (1-\pi_0) q_{1,2}(L)) \\
 \frac{q_{0,2}}{q_{0,1}} &amp;\equiv&amp; \tilde{q}^0_{1,2} = \pi_0 q_{1,2}(H) + (1-\pi_0) q_{1,2}(L)\end{split}\]</div>
-<ul>
-<li><p class="first"><span class="math">\(\tilde{q}^0_{1,2}\)</span> is the <em>forward price</em>.</p>
+<p><span class="math">\(\tilde{q}^0_{1,2}\)</span> is the <em>forward price</em>.  It is an average of the two possible prices next period</p>
+<p>In this example, we are making no adjutment for risk.  Fancier theories that you will learn in a financial economics
+course will adjust for risk the right hand side of this equation.</p>
 <blockquote>
 <div><ul class="simple">
-<li>is an average of the two possible prices next period</li>
-<li>no adjustment for risk</li>
-<li>fancier theories adjust for risk</li>
 <li>whose <span class="math">\(\pi_0\)</span>? (rational expectations)</li>
 </ul>
 </div></blockquote>
-</li>
-<li><p class="first">Similarly</p>
-</li>
-</ul>
+<p>Similarly</p>
 <div class="math">
 \[\tilde{r}^0_{1,2} = \pi_0 r_{1,2}(L) + (1-\pi_0) r_{1,2}(H)\]</div>
-<p>flip the <span class="math">\(H\)</span> and <span class="math">\(L\)</span> because high bond prices mean low interest rates</p>
+<p>Note that in this equation we flip <span class="math">\(H\)</span> and <span class="math">\(L\)</span> because high bond prices mean low interest rates.</p>
 </div>
-<div class="section" id="id2">
-<h3>Value of a Call Option<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>At <span class="math">\(t=0\)</span>, you purchase the right to buy the bond at <span class="math">\(t=1\)</span> at a price <span class="math">\(P\)</span>.</li>
-<li>Assume that</li>
-</ul>
+<div class="section" id="id3">
+<h3>Value of a Call Option<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>At <span class="math">\(t=0\)</span>, you purchase the right to buy the bond at <span class="math">\(t=1\)</span> at a price <span class="math">\(P\)</span>.</p>
+<p>Assume that</p>
 <div class="math">
 \[\begin{split}q_{1,2}(H) &gt; q_{1,2}(L)\end{split}\]</div>
 <p>and</p>
 <div class="math">
-\[\begin{split}q_{1,2}(H)(c+P) &gt; P &gt; q_{1,2}(L)(c+P)\end{split}\]</div>
-<ul class="simple">
-<li>If state <span class="math">\(H\)</span> occurs the time <span class="math">\(1\)</span> value of the call is</li>
-</ul>
+\[\begin{split}q_{1,2}(H)(c+P) &gt; P &gt; q_{1,2}(L)(c+P).\end{split}\]</div>
+<p>If state <span class="math">\(H\)</span> occurs the time <span class="math">\(1\)</span> value of the call is</p>
 <div class="math">
-\[\begin{split}V_1^{call} = \max(0,q_{1,2}(H)(c+P) -P) &gt; 0\end{split}\]</div>
-<ul class="simple">
-<li>If state <span class="math">\(L\)</span> occurs the time <span class="math">\(1\)</span> value of the call is</li>
-</ul>
+\[\begin{split}V_1^{call} = \max(0,q_{1,2}(H)(c+P) -P) &gt; 0.\end{split}\]</div>
+<p>But if state <span class="math">\(L\)</span> occurs the time <span class="math">\(1\)</span> value of the call is</p>
 <div class="math">
-\[V_1^{call} = \max(0, q_{1,2}(L)(c+P) -P) = 0\]</div>
-<ul class="simple">
-<li>Therefore, the time <span class="math">\(0\)</span> value of the call is</li>
-</ul>
+\[V_1^{call} = \max(0, q_{1,2}(L)(c+P) -P) = 0.\]</div>
+<p>Therefore, the time <span class="math">\(0\)</span> value of the call is</p>
 <div class="math">
 \[V_0^{call} = q_{0,1} \left[ \pi_0(q_{1,2}(H)(c+P) -P) \right]\]</div>
 </div>
 <div class="section" id="example">
 <h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>Example: With constant interest rates satisfying the &#8220;Congress wishful thinking condition&#8221;</li>
-</ul>
+<p>Example: With constant interest rates satisfying the &#8220;Congress wishful thinking condition&#8221;</p>
 <div class="math">
 \[P = q_{t,t+1}(c+P)\]</div>
 <p>or</p>
 <div class="math">
 \[q_{t,t+1} = \frac{P}{c+P} \; \mbox{ for all $t$}\]</div>
 <p>then the value of the call is zero.</p>
-<ul class="simple">
-<li>Hence</li>
-</ul>
+<p>Hence</p>
 <div class="math">
 \[q_{1,2}(H) = q_{1,2}(L) = \frac{P}{P+c}\]</div>
 </div>
-</div>
 <div class="section" id="pricing-a-callable-bond">
-<h2>Pricing a Callable Bond<a class="headerlink" href="#pricing-a-callable-bond" title="Permalink to this headline">¶</a></h2>
+<h3>Pricing a Callable Bond<a class="headerlink" href="#pricing-a-callable-bond" title="Permalink to this headline">¶</a></h3>
 <p>Consider</p>
 <div class="math">
 \[\begin{split}q_{1,2}(H)  &gt; \frac{P}{P+c} &gt; q_{1,2}(L)\end{split}\]</div>
@@ -446,8 +448,10 @@ the bond at <span class="math">\(t=1\)</span> at a price <span class="math">\(P\
 minus the value of the call option.</p>
 <div class="math">
 \[V_0 - V_0^{call}\]</div>
+</div>
+</div>
 <div class="section" id="example-20-year-coupon-bond">
-<h3>Example: 20 Year Coupon Bond<a class="headerlink" href="#example-20-year-coupon-bond" title="Permalink to this headline">¶</a></h3>
+<h2>Example: 20 Year Coupon Bond<a class="headerlink" href="#example-20-year-coupon-bond" title="Permalink to this headline">¶</a></h2>
 <p>Suppose that this year (January 1, 2014) you purchase a 6% percent 2034 U.S. Treasury bond with a face value of $100.</p>
 <blockquote>
 <div><table border="1" class="docutils">
@@ -482,10 +486,8 @@ minus the value of the call option.</p>
 </tbody>
 </table>
 </div></blockquote>
-<ul class="simple">
-<li>No uncertainty</li>
-<li>Apply the Happy Meal Theorem</li>
-</ul>
+<p>No uncertainty</p>
+<p>Apply the Happy Meal Theorem</p>
 <div class="math">
 \[\begin{split}V_{2014} &amp;=&amp; q_{2014,2015} C + q_{2014,2016} C + q_{2014,2017} C + q_{2014,2034} ( C + P)\end{split}\]</div>
 <p>Assume a constant interest rate</p>
@@ -493,17 +495,22 @@ minus the value of the call option.</p>
 <div class="math">
 \[r_{2014,2015} = r_{2015,2016} = r_{2016,2017} = r_{2017,2018} ... = \bar{r}\]</div>
 <p>So <span class="math">\(\bar{r}\)</span> is the yield-to-maturity or YTM.</p>
-</div>
 <div class="section" id="use-excel-to-do-the-valuations">
 <h3>Use Excel to do the valuations<a class="headerlink" href="#use-excel-to-do-the-valuations" title="Permalink to this headline">¶</a></h3>
 <p>Let EXCEL do the calculations for us</p>
 <blockquote>
-<div><ul class="simple">
-<li>Set <span class="math">\(\bar{r}=.06\)</span></li>
-<li>Set <span class="math">\(\bar{r}=.03\)</span></li>
-</ul>
-</div></blockquote>
-<p>Set <span class="math">\(\bar{r} =.09\)</span></p>
+<div>First set <span class="math">\(\bar{r}=.06\)</span></div></blockquote>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/20_yr_bond_example_6.jpg"><img alt="_images/20_yr_bond_example_6.jpg" src="_images/20_yr_bond_example_6.jpg" style="width: 439.0px; height: 638.0px;" /></a>
+</div>
+<p>Second set <span class="math">\(\bar{r}=.03\)</span></p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/20_yr_bond_example_3.jpg"><img alt="_images/20_yr_bond_example_3.jpg" src="_images/20_yr_bond_example_3.jpg" style="width: 446.0px; height: 628.0px;" /></a>
+</div>
+<p>Finally set <span class="math">\(\bar{r} =.09\)</span></p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/20_yr_bond_example_9.jpg"><img alt="_images/20_yr_bond_example_9.jpg" src="_images/20_yr_bond_example_9.jpg" style="width: 441.0px; height: 631.0px;" /></a>
+</div>
 <dl class="docutils">
 <dt>If a bond&#8217;s coupon rate is</dt>
 <dd><ul class="first last simple">
@@ -548,6 +555,9 @@ minus the value of the call option.</p>
 \[V_{2019}^{.09} = \sum_{t=1}^{15}\frac{C}{(1+0.09)^t} + \frac{P}{(1+.09)^{15}}\]</div>
 </div></blockquote>
 </div></blockquote>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/20_yr_bond_example_var_int.jpg"><img alt="_images/20_yr_bond_example_var_int.jpg" src="_images/20_yr_bond_example_var_int.jpg" style="width: 1033.0px; height: 660.0px;" /></a>
+</div>
 <p>So what is our bond worth today in 2014?</p>
 <div class="math">
 \[V_{2014} =  \sum_{t=1}^{5}\frac{C}{(1+0.06)^t} + \pi \frac{V_{2019}^{.03}}{(1+.06)^5} + (1-\pi) \frac{V_{2019}^{.09}}{(1+.06)^5}\]</div>
@@ -606,8 +616,8 @@ current value of <span class="math">\(B_t\)</span>.</p>
 </ul>
 </div></blockquote>
 <p>So is the government budget constraint a constraint?  Or is it a bond pricing formula?</p>
-<div class="section" id="bond-returns">
-<h3>Bond Returns<a class="headerlink" href="#bond-returns" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="holding-period-returns">
+<h3>Holding Period Returns<a class="headerlink" href="#holding-period-returns" title="Permalink to this headline">¶</a></h3>
 <p>Suppose you buy a bond at period <span class="math">\(t\)</span> a price <span class="math">\(V_t\)</span>, hold it one period, and sell it at
 price <span class="math">\(V_{t+1}\)</span>.  What is your return?</p>
 <blockquote>
@@ -626,7 +636,7 @@ price <span class="math">\(V_{t+1}\)</span>.  What is your return?</p>
 <dt>What the Bureau of the Public Debt reports as its nominal interest payments</dt>
 <dd><ul class="first last simple">
 <li>discounts Treasury bills</li>
-<li>add up the coupons on notes and bonds</li>
+<li>add up the coupons on notes and bonds.</li>
 </ul>
 </dd>
 </dl>
@@ -639,7 +649,7 @@ on Treasury notes and bonds.  This number does not answer the question</p>
 <div><em>what return did government bond holders receive?</em></div></blockquote>
 <div class="section" id="comparison-between-official-interest-payments-and-returns-to-bondholders">
 <h3>Comparison Between Official Interest Payments and Returns to Bondholders<a class="headerlink" href="#comparison-between-official-interest-payments-and-returns-to-bondholders" title="Permalink to this headline">¶</a></h3>
-<p>Suppose we take the government budget constraint</p>
+<p>Following <a class="reference internal" href="#eisner1986">[Eisner1986]</a> and <a class="reference internal" href="#bohn1992">[Bohn1992]</a> we take the government budget constraint</p>
 <div class="math">
 \[B_{t} =  B_{t-1} + r B_{t-1} + G_t + TR_t - T_t\]</div>
 <p>and impute the return on the debt via</p>
@@ -650,8 +660,11 @@ the one-period holding period
 return on the debt.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/cof_returns_gdpdef.png"><img alt="_images/cof_returns_gdpdef.png" src="_images/cof_returns_gdpdef.png" style="width: 720.0px; height: 540.0px;" /></a>
+<p class="caption"><strong>Reported Interest Payments and Holding Period Returns</strong></p>
 </div>
-<p>The blue line is the computed interest payments on the debt
+<p>In the figure above, we compare the federal government&#8217;s reported interest payments
+with the holding period return on the debt imputed by the government budget constraint for the post-World War II period.</p>
+<p>The blue line is the computed holding period return on the debt
 implied by the government budget constraint.
 The red line is the officially reported interest
 payments. Both series are reported as percentages of the
@@ -691,7 +704,8 @@ The black line is the red line minus the inflation rate.</p>
 </table>
 <p><strong>Means and Standard Deviations of Returns</strong></p>
 </div></blockquote>
-<p>Computed from the government budget constraint, the return on US Treasury debt is lower on average and considerably more volatile
+<p>Imputed from the government budget constraint, the holding period return on US Treasury debt is lower on average
+and considerably more volatile
 than the official reported interest costs. The official interest payments average 5.2% of the debt while
 our measure of the real return on the debt averages 1.6%. If we subtract the inflation rate from the
 officially reported interest payments (the black line), the two series have roughly the same mean (1.5 versus 1.6).</p>
@@ -700,7 +714,7 @@ from the government budget constraint demonstrates some striking outcomes.</p>
 <blockquote>
 <div><ol class="arabic simple">
 <li>There were large negative returns immediately after World War II as inflation surged with the lifting of price controls.</li>
-<li>During the early 1980s, when, perhaps unexpectedly, Paul Volcker brought down inflation,
+<li>During the early 1980s, when, perhaps unexpectedly, Federal Reserve Chairman Paul Volcker brought down inflation,
 bondholders – particularly long-term bond holders – received large positive returns. Many
 who point to the 1970s as a time during which the US was able to pay low returns to its
 creditors through inflation often fail to acknowledge the large returns many of those same
@@ -724,13 +738,47 @@ creditors received when inflation fell in the early 1980s.</li>
 of the debt will be small.</p>
 <p>Big differences between the par value and market value will emerge when there are large capital gains and losses
 (perhaps due to changes in inflation).  As we will see this occured during the War of 1812</p>
+<p>For further reading on the official interest payments and the returns to government bondholders see <a class="reference internal" href="#hall-sargent2011">[Hall-Sargent2011]</a>.</p>
 </div>
-<div class="section" id="footnote">
-<h3>Footnote<a class="headerlink" href="#footnote" title="Permalink to this headline">¶</a></h3>
-<table class="docutils footnote" frame="void" id="id3" rules="none">
+<div class="section" id="footnotes">
+<h3>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h3>
+<table class="docutils footnote" frame="void" id="id7" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><a class="reference external" href="http://faculty.chicagobooth.edu/john.cochrane/">John Cochrane</a> introduced us to the term &#8220;The Happy Meal Theorem.&#8221;</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id8" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>A typical home mortgage is an example of a callable bond.  For most mortgages, the issuer (i.e. the homeowner)
+has the right to prepay or call the mortgage at any time.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="references">
+<h3>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h3>
+<table class="docutils citation" frame="void" id="bohn1992" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[Bohn1992]</a></td><td>Bohn, Henning. 1992. &#8220;Budget Deficits and
+Government Accounting.&#8221; <em>Carnegie-Rochester Conference Series on Public Policy</em>,
+37: 1-83.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="eisner1986" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[Eisner1986]</a></td><td>Eisner, Robert. 1986. <em>How Real is the Federal Deficit?</em>
+New York: The Free Press.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="hall-sargent2011" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id6">[Hall-Sargent2011]</a></td><td>Hall, George J. and Thomas J. Sargent 2011. &#8220;Interest Rate Risk and Other
+Determinants of Post WW-II U.S. Government Debt/GDP Dynamics.&#8221;
+<em>American Economic Journal: Macroeconomics</em>, 3: 192-214.</td></tr>
 </tbody>
 </table>
 </div>
@@ -754,8 +802,9 @@ of the debt will be small.</p>
 <li class="toctree-l2"><a class="reference internal" href="#the-law-of-one-price-or-the-happy-meal-theorem-of-bond-pricing">The Law of One Price or the Happy Meal Theorem  of Bond Pricing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#relationship-between-bond-prices-and-yields-for-zero-coupon-bonds">Relationship between bond prices and yields for zero-coupon bonds</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#forward-rates">Forward Rates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#yield-to-maturity">Yield to Maturity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#value-of-a-call-option">Value of a Call Option</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#pricing-a-callable-bond">Pricing a Callable Bond</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-20-year-coupon-bond">Example: 20 Year Coupon Bond</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#using-the-government-budget-constraint-to-price-government-debt">Using the Government Budget Constraint to Price Government Debt</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#recorded-government-interest-payments">Recorded Government Interest Payments</a></li>
 </ul>
