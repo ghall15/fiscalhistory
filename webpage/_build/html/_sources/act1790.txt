@@ -642,3 +642,10 @@ Wrapping Up
 * See *Wall Street Journal* op-ed by Tom Sargent, `An American History Lesson for Europe`_.
 
 .. _An American History Lesson for Europe: http://online.wsj.com/news/articles/SB10001424052970204740904577193032770537826
+
+References
+----------
+
+.. [Bancroft1888]  Bancroft, George 1886. *A Plea for the Consitution of the U.S. of America: Wounded
+                   in the House of its Guardians.*  New York: Harper and Brothers
+

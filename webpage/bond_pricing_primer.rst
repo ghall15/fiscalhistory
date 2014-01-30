@@ -152,14 +152,19 @@ Define
 .. math::
     q_{t,t+j} \equiv \mbox{price of one unit of time $t+j$ consumption at time t}
 
-So :math:`q_{t,t+j}` is the number of beans (or fraction of beans) you would have to pay at time :math:`t` to purchase 
+The convention of the subscripts is that the first subscript (:math:`t` in this case) 
+is the date the loan is purchased;
+the second subscript is the date the loan is to be paid (:math:`t+j` in this case).  
+
+So :math:`q_{t,t+j}` is the number of beans (or fraction of beans) 
+you would have to pay at time :math:`t` to purchase 
 a promise to receive one bean at time :math:`t+j`.  This is known as the zero-coupon price.
 
 Then define
 
 .. math::          
     r_{t,t+j} \equiv \mbox{yield of a $j$-period $t+j$ pure discount (zero coupon) bond at time t}.
-    
+
 The zero-coupon yield is related to the zero-coupon price by:
          
 .. math::          
@@ -245,14 +250,27 @@ Define
 .. math::
     \tilde{q}^t_{t+1,t+j} \equiv \frac{q_{t,t+j}}{q_{t,t+1}}
 
-as the *forward price* at :math:`t`.
+as the *forward price* at :math:`t`.  The forward price, :math:`\tilde{q}^t_{t+1,t+j}` is the time :math:`t` price 
+of a loan made at time :math:`t+1` to be repaid
+at time :math:`t+j`.  
+
+In contrast to the forward price, the *spot price* is the 
+price of a contract that takes place in current period.
 
 In our three period example, 
 
 .. math::
     \tilde{q}^0_{1,2} \equiv \frac{q_{0,2}}{q_{0,1}}.
 
-With no uncertainty about future interest rates
+In this case 
+:math:`\tilde{q}^0_{1,2}` is the time :math:`0` forward price 
+of an one-period loan made at time :math:`1` to be repaid
+at time :math:`2`.  
+
+:math:`q_{0,1}` and :math:`q_{0,2}` are the time 0 spot prices 
+of a one period pure discount bond and two-period pure discount bond respectively.
+
+With no uncertainty about future interest rates, the forward price should equal to future spot price 
 
 .. math:: 
     \tilde{q}^t_{t+1,t+j} = q_{t+1,t+j}
@@ -300,6 +318,11 @@ given :math:`V`, :math:`c`, :math:`P`, and :math:`T`.
 The ytm usually can not be solved for by hand.  But we can solve for it using Excel.
 
 It is sometimes just called the yield.
+
+The yield-to-maturity is a common measure of a bond's return.  Since it simplifies returns to a single number,
+it facilitates comparisons across bonds that differ in coupon rates and maturity dates.  However this simplification
+has the potential to be misleading; it is seldom the 
+case that yields (i.e. the :math:`r_{t,t+j}` s) are constant across time (i.e. :math:`t`) and maturities (i.e. :math:`j`s). 
 
 Value of a Call Option
 =======================
@@ -367,7 +390,7 @@ We are assuming a simple "expectations theory" of the term structure
 
 :math:`\tilde{q}^0_{1,2}` is the *forward price*.  It is an average of the two possible prices next period
 
-In this example, we are making no adjutment for risk.  Fancier theories that you will learn in a financial economics
+In this example, we are making no adjustment for risk.  Fancier theories that you will learn in a financial economics
 course will adjust for risk the right hand side of this equation.
 
    - whose :math:`\pi_0`? (rational expectations)
@@ -721,9 +744,9 @@ In this case the yield to maturity equals the coupon rate, and any difference be
 of the debt will be small.
 
 Big differences between the par value and market value will emerge when there are large capital gains and losses 
-(perhaps due to changes in inflation).  As we will see this occured during the War of 1812
+(perhaps due to changes in inflation).  As we will see this occurred during the War of 1812
 
-For further reading on the official interest payments and the returns to government bondholders see [Hall-Sargent2011]_.
+For further reading on the comparison between official interest payments and the returns to government bondholders see [Hall-Sargent2011]_.
 
 Footnotes
 ---------
