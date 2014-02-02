@@ -4,15 +4,36 @@
 The American Revolution
 ***********************
 
-*A revolution, a war, the dissolution of government, the creating of it anew, cruelty, rapine, 
-and devastation in the midst of our very bowels.  These sir are circumstances by no means 
-favorable to finance.*
+.. epigraph:: 
 
-Robert Morris in a letter to Ben Franklin, November 27, 1781.
+        *A revolution, a war, the dissolution of government, the creating of it anew, cruelty, rapine, 
+        and devastation in the midst of our very bowels.  These sir are circumstances by no means 
+        favorable to finance.*
 
+        -- Robert Morris in a letter to Ben Franklin, November 27, 1781.
+
+Dissatisfaction with fiscal arrangements ignited two North American political revolutions
+in the last quarter of the 18th century, the first against Britain, the second against the Articles of Confederation.
+
+In this lecture we discuss the first of these revolutions.
+
+In 1775, thirteen separate colonies revolted against taxes and trade restrictions imposed by remote 
+authorities in London.
+
+The thirteen states and the Continental Congress financed the 
+American revolution by issuing interest bearing debts and paper monies, known
+as  *bills of credit*.
+
+The continental congress and the states both printed money because as Keynes ([Keynes1924]_, p 427) said 
+"A government can live by this means when it can live by no other."
+ 
 Important Dates
 ===============
 
+    +--------------------+----------------------------------------------------------------+
+    | 1754-1763          |  French and Indian War (Seven Years War)                       |
+    +--------------------+----------------------------------------------------------------+
+    | 1764               |  Sugar Act                                                     |
     +--------------------+----------------------------------------------------------------+
     | 1765               | Stamp Act                                                      |
     +--------------------+----------------------------------------------------------------+
@@ -54,8 +75,59 @@ Important Dates
     +--------------------+----------------------------------------------------------------+
 
 
-British Prior to the Revolution
-===============================
+
+American Colonies: 1750-1774
+============================
+
+Thirteen colonies along the Eastern seaboard of North America
+
+  * relatively prosperous
+
+  * per capita incomes rival if not exceed Britain and Europe
+
+Colonies do not see them selves as a single group
+
+  * different religions, from different countries, different economies
+  
+  * travel north-south over land difficult
+
+  * travel by water much easier
+
+Until 1765 Britain collected very little revenue from the 13 colonies
+
+  * Molasses Act of 1733
+
+       * tax on foreign molasses
+  
+       * lightly enforced
+
+
+  * Navigation Acts
+
+     * restrictions on who could produce what
+  
+     * who could buy from whom
+  
+     * manufactures goods had to bought from England
+  
+     * Many American products had to be shipped exclusively to England
+
+During the 18th century Britain fought a series of wars
+
+    * War of Spanish Succession (1701-1714)
+
+    * War of Jenkins' Ear (1739-1742)
+
+    * Seven Years' War (1754-1763)
+
+      * in the US we refer to this as the French and Indian War
+
+      * Britain gains considerable territory ...
+
+      * ... but at great cost
+
+* The UK debt-to-GDP soared to over 150 percent in the early 1760s
+
 
 .. figure:: _static/figures/UK_debt_to_GDP.png
     :scale: 60%
@@ -63,13 +135,87 @@ British Prior to the Revolution
 
     **UK Debt to GDP Ratio**
 
+What Are the Colonies Financial Obligations to Britain?
+--------------------------------------------------------
+
+* Beginning in 1763, Britain decides to keep a standing army in America.
+
+    * cost \pounds 300,000 per year
+
+    * decides the colonies should pay 1/3 of costs
+
+    * when does protection become occupation?
+
+* Britain also restricts Western settlement
+
+* The Sugar Act of 1764
+
+    * a reduction in the tax rate ...
+
+    * ... tighter enforcement
+
+* The Currency Act of 1764
+
+    * prohibited colonies from issuing paper money
+ 
+The Stamp Act of 1765
+---------------------
+
+* Britain claimed that colonists had enjoyed the benefits of government on the cheap.
+
+* American colonists argued that they should be able to tax themselves to pay for the troops
+
+    * each colony would raise a quota
+
+    * challenged Parliament's right to tax the colonies
+
+    * idea rejected by the British government
+
+* The Stamp Act of 1765
+
+    * tax on paper transactions
+
+    * marriage certificates, ships' papers, legal documents, ...
+
+* Huge uproar, repealed in 1766
+
+The Boston Tea Party
+--------------------
+
+* East India Company was near bankrupt despite monopoly status within the Empire to sell tea.
+
+* All tea shipped to America was suppose to go through England.
+
+  * taxed in England
+
+  * considerable smuggling never the less
+
+
+* The Tea Act in 1773
+
+  * cut taxes on tea, but not to zero
+
+  * undercut the price of tea smuggled into American colonies.
+
+  * bailout East India Company
+
+  * Get colonist to accept Parliament's right of taxation
+
+* Boston Harbor, December 1773
+
+   * Sam Adams and the Sons of Liberty dumped 342 chest of tea overboard
 
 
 How does one finance a revolution?
 ==================================
 
 * Continental Congress first met in 1774
+ 
    - Not clear whether the goal was independence or to change Britain's policies
+   
+   - political solution still seemed possible
+
+   - positions hardened instead
 
 * Consider the government budget constraint
 
@@ -77,9 +223,12 @@ How does one finance a revolution?
      B_{t}  =  (1+r)B_{t-1} + G_t - T_t  - \frac{M_t - M_{t-1}}{P_t}
 
 * The Congress's options were
-  - tax
-  - borrow
-  - print money
+
+    - tax
+
+    - borrow
+
+    - print money
 
 * Problems become obvious immediately 
 
@@ -128,39 +277,66 @@ Attempts at "Taxation"
 Bills of Credit
 ---------------
 
+The first authorization of bills of credit was made in Philadelphia in May 1775.
 
-.. image:: _static/images/Continental.jpg
-    :scale: 70%
-    :align: center
-
-    **A Continental Three Dollar Bill**
-
-
-* Side Note: *Exitus in Dubio Est*
-
-     * "The Outcome is in Doubt"
-     
-     * Ovid
-
-     * The Continental Congress's source: Johann Camerarius's *Symbola et Emblemata*,  1590
-
-     * Camerarius explains that ``the battles of Mars are dubious and uncertain events; he often loses who
-       was near victory.''
-
-     * Although  the odds heavily favor the  falcon,
-       the heron's excrements could render falcon unable to fly by soiling its plumage.
-
-* The first authorization of *bills of credit* was made in Philadelphia in May 1775.
-
-* The colonists had prior experience with bills of credit
+The colonists had prior experience with bills of credit
 
    - A colony would issue perhaps \$20,000 bills of credit, and then
 
    - over the next four years, require \$5,000 in taxes payable in these bills.
 
-* Prior to the war, many colonies had issued bills of credit with success
+Prior to the war, many colonies had issued bills of credit with success
 
    - developed a good reputation
+
+.. figure:: _static/images/Continental.jpg
+    :scale: 70%
+    :align: center
+
+    **A Continental Three Dollar Bill**
+
+Digression --  A puzzling phrase  
+--------------------------------
+
+       We were puzzled by the Latin phrase *Exitus in Dubio Est* which appears 
+       alongside a picture of an eagle and a heron or crane fighting in the sky
+       on the three dollar continental. The phrase means "The Outcome is in Doubt."
+
+       Our good friend, `Francois Velde`_, provided the following answer.
+
+           Other denominations bore similar pairings of Latin mottoes
+           and images; such pairings are called "`imprese`_", in which the picture is the body and the motto
+           (in Italian: "word") is the soul, illuminating the moral or explaining the allegory:
+
+           The source seems to be `Johann Camerarius's Symbola et Emblemata`_, a work first printed in 1590:
+           although the figure of a crane and an eagle (or falcon) fighting appears in `paintings of Carpaccio and
+           Veneziano, and an engraving of Durer`_:
+
+           .. _imprese: http://www.heraldica.org/topics/imprese.htm
+
+           .. _Johann Camerarius's Symbola et Emblemata: http://books.google.com/books?id=1PlDAAAAcAAJ&pg=RA1-PA64
+
+           .. _paintings of Carpaccio and Veneziano, and an engraving of Durer: http://books.google.com/books?id=FOZVPjSTznwC&pg=PA62
+
+           .. _Francois Velde: http://www.chicagofed.org/webpages/people/velde_francois.cfm
+
+           The phrase itself appears twice in Ovid, in the Metamorphoses and in the Fasti.  In the latter case, it
+           is used by Tarquin as he hesitates to go back and rape Lucretia; he continues by saying that he will
+           go to any extremity, and that gods and fortune smile on the daring.
+
+           Camerarius explains that "the battles of Mars are dubious and uncertain events; he often loses who
+           was near victory".  The story is that, although you might think the falcon would be the obvious winner,
+           the heron's excrements could so soil the falcon's plumage as to make him unable to fly, if only he could
+           remain on top.
+
+           All of the other figures on the continental issues are taken straight from Camerarius, so it seems clear that
+           this book was the source.  The `1775 article in the Pennsylvania Gazette`_ is attributed to Ben Franklin.
+           The idea of putting an allegory with a Latin motto on coinage or near-coinage is of course an old tradition.
+           It still lives in the US great seal, with the rising constellation of 13 stars and the motto "e pluribus unum",
+           out of many one.
+
+           .. _1775 article in the Pennsylvania Gazette: http://www.historycarper.com/1775/09/20/account-of-the-devices-on-the-continental-bills-of-credit/
+
 
 * The Federal Reserve Bank of San Francisco has a nice `gallery of Colonial and Revolutionary money`_. 
 
@@ -641,3 +817,26 @@ A Big Caveat
       * I don't know the details
       * I would like to learn these details
 
+Questions
+---------
+
+[#] According to Pelatiah Webster, in June 1775 a delegate to the Continental Congress stated: ``Do you think, gentlemen, that I will consent to load my constituents with taxes, when we can send to the printer, and get a whole wagon-load of money, one quire of which will pay for the whole?"
+
+    Do you agree with the logic put forward to this delegate?  Explain briefly.
+
+
+[#] In a letter to Samuel Cooper in 1779 Benjamin Franklin wrote: "This Currency, as we manage it, is a wonderful Machine.  It performs its Office when we issue it; it pays and clothes Troops, and provides Victuals and Ammunition; and when we obliged to issue a Quantity excessive, it pays itself office by Depreciation."
+
+    Is Mr. Franklin's assessment correct or incorrect? What do you think he meant by his choice of the word `wonderful'?  Explain briefly.
+
+
+
+References
+----------
+
+  
+.. [Keynes1924] Keynes, John M. 1924 *Monetary Reform* New York: Harcourt, Brace \& Co.
+
+.. [WGR1996]  Willard, Kristen, Timothy Guinnane and Harvey Rosen, 1996.  
+              "Turning Points in the Civil War: Views from the Greenback Market"
+              *The American Economic Review*, 86:4, pp. 1001-1018.

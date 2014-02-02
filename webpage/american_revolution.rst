@@ -817,8 +817,35 @@ A Big Caveat
       * I don't know the details
       * I would like to learn these details
 
+Questions
+---------
+
+  1.  According to Pelatiah Webster, in June 1775 a delegate to the Continental Congress stated: 
+      "Do you think, gentlemen, that I will consent to load my constituents with taxes, when we 
+      can send to the printer, and get a whole wagon-load of money, one quire of which will pay for the whole?"
+
+      Do you agree with the logic put forward to this delegate?  Explain briefly.
+
+  2.  In a letter to Samuel Cooper in 1779 Benjamin Franklin wrote: 
+  
+      .. epigraph::
+      
+          This Currency, as we manage it, 
+          is a wonderful Machine.  It performs its Office when we issue it; it pays and clothes Troops, 
+          and provides Victuals and Ammunition; and when we obliged to issue a Quantity excessive, it pays 
+          itself office by Depreciation.
+
+      Is Mr. Franklin's assessment correct or incorrect? What do you think he meant by his choice 
+      of the word *wonderful*?  Explain briefly.
+
+
+
 References
 ----------
 
   
-.. [Keynes1924] Keynes, John M. 1924 *Monetary Reform* New York: Harcourt, Brace \& Co.
+.. [Keynes1924] Keynes, John 2M. 1924 *Monetary Reform* New York: Harcourt, Brace \& Co.
+
+.. [WGR1996]  Willard, Kristen, Timothy Guinnane and Harvey Rosen, 1996.  
+              "Turning Points in the Civil War: Views from the Greenback Market"
+              *The American Economic Review*, 86:4, pp. 1001-1018.
