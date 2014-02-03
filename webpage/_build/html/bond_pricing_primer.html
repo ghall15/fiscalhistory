@@ -140,7 +140,7 @@ how much do you need to be compensated to postpone for one year one dollar&#8217
 </div>
 </div>
 <div class="section" id="the-law-of-one-price-or-the-happy-meal-theorem-of-bond-pricing">
-<h2>The Law of One Price or the Happy Meal Theorem <a class="footnote-reference" href="#id9" id="id1">[1]</a> of Bond Pricing<a class="headerlink" href="#the-law-of-one-price-or-the-happy-meal-theorem-of-bond-pricing" title="Permalink to this headline">¶</a></h2>
+<h2>The Law of One Price or the Happy Meal Theorem <a class="footnote-reference" href="#id7" id="id1">[1]</a> of Bond Pricing<a class="headerlink" href="#the-law-of-one-price-or-the-happy-meal-theorem-of-bond-pricing" title="Permalink to this headline">¶</a></h2>
 <p>The theory of bond pricing we present is based on the assumption
 that any difference between the price of a bundle of payoffs and the
 sum of the prices of the individual payoffs within that bundle
@@ -286,6 +286,7 @@ the proceeds and then purchases a second one-period pure discount bond for price
 <p>Neither strategy should dominate the other.  In other words <span class="math">\(q_{0,2} = q_{0,1} q_{1,2}\)</span>.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/forward_rate.jpg"><img alt="_images/forward_rate.jpg" src="_images/forward_rate.jpg" style="width: 609.0px; height: 229.0px;" /></a>
+<p class="caption">time</p>
 </div>
 <p>Define</p>
 <div class="math">
@@ -355,13 +356,13 @@ of a one period pure discount bond and two-period pure discount bond respectivel
 <p>The yield-to-maturity is a common measure of a bond&#8217;s return.  Since it simplifies returns to a single number,
 it facilitates comparisons across bonds that differ in coupon rates and maturity dates.  However this simplification
 has the potential to be misleading; it is seldom the
-case that yields (i.e. the <span class="math">\(r_{t,t+j}\)</span> s) are constant across time (i.e. <span class="math">\(t\)</span>) and maturities (i.e. :math:<a href="#id2"><span class="problematic" id="id3">`</span></a>j`s).</p>
+case that yields (i.e. the <span class="math">\(r_{t,t+j}\)</span> s) are constant across time (i.e. <span class="math">\(t\)</span>) and maturities (i.e. <span class="math">\(j\)</span> s).</p>
 </div>
 <div class="section" id="value-of-a-call-option">
 <h2>Value of a Call Option<a class="headerlink" href="#value-of-a-call-option" title="Permalink to this headline">¶</a></h2>
 <p>During critical periods in the United States history, the federal government issued <em>callable bonds</em>.</p>
 <p>A callable bond gives the government (or really the issuer of the bond) the right to purchase
-the bond at <span class="math">\(t=1\)</span> at a preset <em>strike price</em>. <a class="footnote-reference" href="#id10" id="id4">[2]</a></p>
+the bond at <span class="math">\(t=1\)</span> at a preset <em>strike price</em>. <a class="footnote-reference" href="#id8" id="id2">[2]</a></p>
 <p>For all the callable bonds we will study in these lectures, the strike price is
 the <em>par value</em> or <em>face value</em> of the bond, <span class="math">\(P\)</span>.</p>
 <p>Since the government does not have to repurchase the bond, the call feature of these bonds is an option.
@@ -412,8 +413,8 @@ course will adjust for risk the right hand side of this equation.</p>
 \[\tilde{r}^0_{1,2} = \pi_0 r_{1,2}(L) + (1-\pi_0) r_{1,2}(H)\]</div>
 <p>Note that in this equation we flip <span class="math">\(H\)</span> and <span class="math">\(L\)</span> because high bond prices mean low interest rates.</p>
 </div>
-<div class="section" id="id5">
-<h3>Value of a Call Option<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id3">
+<h3>Value of a Call Option<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>At <span class="math">\(t=0\)</span>, you purchase the right to buy the bond at <span class="math">\(t=1\)</span> at a price <span class="math">\(P\)</span>.</p>
 <p>Assume that</p>
 <div class="math">
@@ -516,28 +517,47 @@ minus the value of the call option.</p>
 <div class="section" id="use-excel-to-do-the-valuations">
 <h3>Use Excel to do the valuations<a class="headerlink" href="#use-excel-to-do-the-valuations" title="Permalink to this headline">¶</a></h3>
 <p>Let EXCEL do the calculations for us</p>
+<p>To download the EXCEL file 20_year_bond_pricing_example.xls, click <a class="reference external" href="http://people.brandeis.edu/~ghall/_build/programs/20_year_bond_pricing_example.xlsx">here</a>.</p>
+<p>This file takes the discount rate as an input and computes the present value of the
+20 year bond with a $100 face value and pays a 6 per cent coupon each year.</p>
+<p>There are five columns in this file.</p>
 <blockquote>
-<div>First set <span class="math">\(\bar{r}=.06\)</span></div></blockquote>
+<div><ol class="arabic simple">
+<li>column A &#8211; the year</li>
+<li>column B &#8211; the <span class="math">\(j\)</span></li>
+<li>column C &#8211; the payout</li>
+<li>column D &#8211; <span class="math">\(q_{t,t+j} = \frac{1}{(1+r_t,t+j)^j}\)</span></li>
+<li>column E &#8211; column C $times$ column D</li>
+</ol>
+</div></blockquote>
+<p>Cell <strong>E25</strong> reports the sum of cells <strong>E4</strong> to <strong>E23</strong></p>
+<p>In cell <strong>C2</strong> set the discount rate <span class="math">\(\bar{r}=.06\)</span></p>
+<p>We see that at a discount rate of 6% the price of the bond (i.e. the discounted
+present value of the promised stream of payments) is 100.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="_images/20_yr_bond_example_6.jpg"><img alt="_images/20_yr_bond_example_6.jpg" src="_images/20_yr_bond_example_6.jpg" style="width: 439.0px; height: 638.0px;" /></a>
+<a class="reference internal image-reference" href="_images/20_yr_bond_example_6.jpg"><img alt="_images/20_yr_bond_example_6.jpg" src="_images/20_yr_bond_example_6.jpg" style="width: 440.0px; height: 635.0px;" /></a>
 </div>
-<p>Second set <span class="math">\(\bar{r}=.03\)</span></p>
+<p>If we now set <span class="math">\(\bar{r}=.03\)</span></p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="_images/20_yr_bond_example_3.jpg"><img alt="_images/20_yr_bond_example_3.jpg" src="_images/20_yr_bond_example_3.jpg" style="width: 446.0px; height: 628.0px;" /></a>
+<a class="reference internal image-reference" href="_images/20_yr_bond_example_3.jpg"><img alt="_images/20_yr_bond_example_3.jpg" src="_images/20_yr_bond_example_3.jpg" style="width: 427.0px; height: 624.0px;" /></a>
 </div>
+<p>When the stream of payments is discounted at a 3% rate, the value of the <span class="math">\(q_{t,t+j}\)</span>
+rise.  Thus the price of the bond is now 144.63.</p>
 <p>Finally set <span class="math">\(\bar{r} =.09\)</span></p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="_images/20_yr_bond_example_9.jpg"><img alt="_images/20_yr_bond_example_9.jpg" src="_images/20_yr_bond_example_9.jpg" style="width: 441.0px; height: 631.0px;" /></a>
+<a class="reference internal image-reference" href="_images/20_yr_bond_example_9.jpg"><img alt="_images/20_yr_bond_example_9.jpg" src="_images/20_yr_bond_example_9.jpg" style="width: 428.0px; height: 626.0px;" /></a>
 </div>
-<dl class="docutils">
-<dt>If a bond&#8217;s coupon rate is</dt>
-<dd><ul class="first last simple">
-<li>less than its YTM, then the bond is selling at a <em>discount</em>.</li>
-<li>more than its YTM, then the bond is selling at a <em>premium</em>.</li>
-<li>equal to its YTM, then the bond is selling at <em>par</em>.</li>
+<p>Now the price of the bond is 72.61.</p>
+<p>These three example demonstrate that if a bond&#8217;s coupon rate is</p>
+<blockquote>
+<div><ul class="simple">
+<li>less than its YTM, then the bond is sells below its par value. In this
+case, we say the bond sells at a <em>discount</em>.</li>
+<li>more than its YTM, then the bond sells above its par value. In this case,
+we say the bond sells at a <em>premium</em>.</li>
+<li>equal to its YTM, then the bond sells at <em>par</em>.</li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
 </div>
 <div class="section" id="one-type-of-risk-interest-rate-risk">
 <h3>One Type of Risk:  Interest Rate Risk<a class="headerlink" href="#one-type-of-risk-interest-rate-risk" title="Permalink to this headline">¶</a></h3>
@@ -573,12 +593,25 @@ minus the value of the call option.</p>
 \[V_{2019}^{.09} = \sum_{t=1}^{15}\frac{C}{(1+0.09)^t} + \frac{P}{(1+.09)^{15}}\]</div>
 </div></blockquote>
 </div></blockquote>
-<div class="figure align-center">
-<a class="reference internal image-reference" href="_images/20_yr_bond_example_var_int.jpg"><img alt="_images/20_yr_bond_example_var_int.jpg" src="_images/20_yr_bond_example_var_int.jpg" style="width: 1033.0px; height: 660.0px;" /></a>
-</div>
 <p>So what is our bond worth today in 2014?</p>
 <div class="math">
 \[V_{2014} =  \sum_{t=1}^{5}\frac{C}{(1+0.06)^t} + \pi \frac{V_{2019}^{.03}}{(1+.06)^5} + (1-\pi) \frac{V_{2019}^{.09}}{(1+.06)^5}\]</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/20_yr_bond_example_var_int.jpg"><img alt="_images/20_yr_bond_example_var_int.jpg" src="_images/20_yr_bond_example_var_int.jpg" style="width: 996.0px; height: 622.0px;" /></a>
+</div>
+<p>In the spreadsheet above, we assume <span class="math">\(\pi = (1-\pi) = \frac{1}{2}\)</span>.</p>
+<p>To compute <span class="math">\(V_{2014}\)</span>, we compute each term on the right hand side separately and then take the sum.</p>
+<p>In cell <strong>J10</strong> we compute <span class="math">\(\sum_{t=1}^{5}\frac{C}{(1+0.06)^t}\)</span>.</p>
+<p>In cell <strong>O25</strong> we compute <span class="math">\(V_{2019}^{.03}\)</span></p>
+<p>In cell <strong>T25</strong> we compute <span class="math">\(V_{2019}^{.09}\)</span></p>
+<p>In cell <strong>J12</strong> we do perform three operations.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>We discount <span class="math">\(V_{2019}^{.03}\)</span> and <span class="math">\(V_{2019}^{.09}\)</span> by 5 periods.</li>
+<li>We multiply <span class="math">\(V_{2019}^{.03}\)</span> by <span class="math">\(\pi\)</span> and <span class="math">\(V_{2019}^{.09}\)</span> by <span class="math">\(1-\pi\)</span>.</li>
+<li>We add the three component in the above equation to compute <span class="math">\(V_{2014}\)</span>.</li>
+</ol>
+</div></blockquote>
 </div>
 <div class="section" id="a-call-option">
 <h3>A Call Option<a class="headerlink" href="#a-call-option" title="Permalink to this headline">¶</a></h3>
@@ -760,16 +793,16 @@ of the debt will be small.</p>
 </div>
 <div class="section" id="footnotes">
 <h3>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h3>
-<table class="docutils footnote" frame="void" id="id9" rules="none">
+<table class="docutils footnote" frame="void" id="id7" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><a class="reference external" href="http://faculty.chicagobooth.edu/john.cochrane/">John Cochrane</a> introduced us to the term &#8220;The Happy Meal Theorem.&#8221;</td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id10" rules="none">
+<table class="docutils footnote" frame="void" id="id8" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id4">[2]</a></td><td>A typical home mortgage is an example of a callable bond.  For most mortgages, the issuer (i.e. the homeowner)
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>A typical home mortgage is an example of a callable bond.  For most mortgages, the issuer (i.e. the homeowner)
 has the right to prepay or call the mortgage at any time.</td></tr>
 </tbody>
 </table>
@@ -779,7 +812,7 @@ has the right to prepay or call the mortgage at any time.</td></tr>
 <table class="docutils citation" frame="void" id="bohn1992" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id7">[Bohn1992]</a></td><td>Bohn, Henning. 1992. &#8220;Budget Deficits and
+<tr><td class="label"><a class="fn-backref" href="#id5">[Bohn1992]</a></td><td>Bohn, Henning. 1992. &#8220;Budget Deficits and
 Government Accounting.&#8221; <em>Carnegie-Rochester Conference Series on Public Policy</em>,
 37: 1-83.</td></tr>
 </tbody>
@@ -787,14 +820,14 @@ Government Accounting.&#8221; <em>Carnegie-Rochester Conference Series on Public
 <table class="docutils citation" frame="void" id="eisner1986" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id6">[Eisner1986]</a></td><td>Eisner, Robert. 1986. <em>How Real is the Federal Deficit?</em>
+<tr><td class="label"><a class="fn-backref" href="#id4">[Eisner1986]</a></td><td>Eisner, Robert. 1986. <em>How Real is the Federal Deficit?</em>
 New York: The Free Press.</td></tr>
 </tbody>
 </table>
 <table class="docutils citation" frame="void" id="hall-sargent2011" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id8">[Hall-Sargent2011]</a></td><td>Hall, George J. and Thomas J. Sargent 2011. &#8220;Interest Rate Risk and Other
+<tr><td class="label"><a class="fn-backref" href="#id6">[Hall-Sargent2011]</a></td><td>Hall, George J. and Thomas J. Sargent 2011. &#8220;Interest Rate Risk and Other
 Determinants of Post WW-II U.S. Government Debt/GDP Dynamics.&#8221;
 <em>American Economic Journal: Macroeconomics</em>, 3: 192-214.</td></tr>
 </tbody>

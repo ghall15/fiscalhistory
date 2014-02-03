@@ -244,6 +244,8 @@ Neither strategy should dominate the other.  In other words :math:`q_{0,2} = q_{
 .. figure:: _static/images/forward_rate.jpg
     :scale: 100%
     :align: center
+    
+    time
 
 Define
 
@@ -322,7 +324,7 @@ It is sometimes just called the yield.
 The yield-to-maturity is a common measure of a bond's return.  Since it simplifies returns to a single number,
 it facilitates comparisons across bonds that differ in coupon rates and maturity dates.  However this simplification
 has the potential to be misleading; it is seldom the 
-case that yields (i.e. the :math:`r_{t,t+j}` s) are constant across time (i.e. :math:`t`) and maturities (i.e. :math:`j`s). 
+case that yields (i.e. the :math:`r_{t,t+j}` s) are constant across time (i.e. :math:`t`) and maturities (i.e. :math:`j` s). 
 
 Value of a Call Option
 =======================
@@ -511,18 +513,45 @@ Use Excel to do the valuations
 
 Let EXCEL do the calculations for us
 
- First set :math:`\bar{r}=.06`
+To download the EXCEL file 20_year_bond_pricing_example.xls, click here_.
+
+.. _here: http://people.brandeis.edu/~ghall/_build/programs/20_year_bond_pricing_example.xlsx
+
+This file takes the discount rate as an input and computes the present value of the
+20 year bond with a \$100 face value and pays a 6 per cent coupon each year. 
+
+There are five columns in this file. 
+
+  1.  column A -- the year 
+  
+  2.  column B -- the :math:`j`
+  
+  3.  column C -- the payout 
+  
+  4.  column D -- :math:`q_{t,t+j} = \frac{1}{(1+r_t,t+j)^j}`
+  
+  5.  column E -- column C $\times$ column D
+  
+
+Cell **E25** reports the sum of cells **E4** to **E23**
+
+In cell **C2** set the discount rate :math:`\bar{r}=.06`
+
+We see that at a discount rate of 6\% the price of the bond (i.e. the discounted
+present value of the promised stream of payments) is 100.
 
 .. figure:: _static/images/20_yr_bond_example_6.jpg
     :scale: 100%
     :align: center
 
-
-Second set :math:`\bar{r}=.03`
+If we now set :math:`\bar{r}=.03`
 
 .. figure:: _static/images/20_yr_bond_example_3.jpg
     :scale: 100%
     :align: center
+
+When the stream of payments is discounted at a 3\% rate, the value of the :math:`q_{t,t+j}`
+rise.  Thus the price of the bond is now 144.63.
 
 Finally set :math:`\bar{r} =.09`
 
@@ -530,10 +559,17 @@ Finally set :math:`\bar{r} =.09`
     :scale: 100%
     :align: center
 
-If a bond's coupon rate is
-    - less than its YTM, then the bond is selling at a *discount*.
-    - more than its YTM, then the bond is selling at a *premium*.
-    - equal to its YTM, then the bond is selling at *par*.
+Now the price of the bond is 72.61.
+
+These three example demonstrate that if a bond's coupon rate is
+
+    - less than its YTM, then the bond is sells below its par value. In this
+      case, we say the bond sells at a *discount*. 
+      
+    - more than its YTM, then the bond sells above its par value. In this case, 
+      we say the bond sells at a *premium*.
+      
+    - equal to its YTM, then the bond sells at *par*.
 
 One Type of Risk:  Interest Rate Risk
 -------------------------------------
@@ -564,15 +600,33 @@ What is our 20 year, \$100 face value, 6\% coupon, bond worth in 2019?
      .. math::
             V_{2019}^{.09} = \sum_{t=1}^{15}\frac{C}{(1+0.09)^t} + \frac{P}{(1+.09)^{15}}
 
-.. figure:: _static/images/20_yr_bond_example_var_int.jpg
-    :scale: 100%
-    :align: center
-
 So what is our bond worth today in 2014?
 
 .. math::
       V_{2014} =  \sum_{t=1}^{5}\frac{C}{(1+0.06)^t} + \pi \frac{V_{2019}^{.03}}{(1+.06)^5} + (1-\pi) \frac{V_{2019}^{.09}}{(1+.06)^5}
 
+.. figure:: _static/images/20_yr_bond_example_var_int.jpg
+    :scale: 100%
+    :align: center
+       
+In the spreadsheet above, we assume :math:`\pi = (1-\pi) = \frac{1}{2}`.
+
+To compute :math:`V_{2014}`, we compute each term on the right hand side separately and then take the sum.
+
+In cell **J10** we compute :math:`\sum_{t=1}^{5}\frac{C}{(1+0.06)^t}`. 
+      
+In cell **O25** we compute :math:`V_{2019}^{.03}`
+
+In cell **T25** we compute :math:`V_{2019}^{.09}`
+
+In cell **J12** we do perform three operations.
+   
+   1.  We discount :math:`V_{2019}^{.03}` and :math:`V_{2019}^{.09}` by 5 periods. 
+                
+   2.  We multiply :math:`V_{2019}^{.03}` by :math:`\pi` and :math:`V_{2019}^{.09}` by :math:`1-\pi`.  
+   
+   3.  We add the three component in the above equation to compute :math:`V_{2014}`.
+      
 A Call Option
 -------------
 

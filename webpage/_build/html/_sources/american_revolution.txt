@@ -470,11 +470,11 @@ Why did anyone accept bills of credit?
 
     **Continental Dollar: Quantity Outstanding and 1/Price Level**
 
-.. figure:: _static/figures/cont_dollar_three_scale.png
+.. figure:: _static/figures/cont_dollar_two_scale.png
     :scale: 60%
     :align: center
 
-    **Face and Specie Value of the Continental Dollar along with Price Level**
+    **Face and Specie Value of the Continental Dollar**
 
 
 Loan Office Certificates
