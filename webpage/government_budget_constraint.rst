@@ -444,7 +444,7 @@ Since the signing of the U.S. Constitution,
 the federal government can raise revenue by issuing money.  As we will see in a few lectures,
 this power has been hotly contested.
 
-   The U.S. Constitution explicitly states that state and local governments can not issue their own money.
+The U.S. Constitution explicitly states that state and local governments can not issue their own money.
 
 Therefore the federal government's budget constraint becomes
 
@@ -604,15 +604,41 @@ If the velocity of money is fixed and output is fixed, so real money demand is c
 .. math::
    \pi = \frac{\Delta P}{P} = \frac{\Delta M}{M}
 
-Real seignorage revenue, :math:`R`, is
+To derive real seignorage revenue, assume the government increase the money supply
+by :math:`\mu` percent each period.  Thus
 
 .. math::
-    \frac{M_{t} - M_{t-1}}{P_t}  = \frac{\Delta M}{P}.
+    M_{t} = (1+\mu)M_{t-1}
+    
+and
 
-Since :math:`\pi = \frac{\Delta M}{M}`, real seignorage revenue is
-:math:`R = \pi \frac{M}{P}`.
+.. math::
+    \frac{M_{t}-M_{t-1}}{M_{t-1}} = \frac{\Delta M}{M}  = \mu.
+    
+Seignorage revenue is
 
-So seignorage is a tax at the rate of inflation on real money balances.
+.. math::
+    \frac{M_{t} - M_{t-1}}{P_t}  &=& \frac{\mu M_{t-1}}{P_t} \\
+                                 &=& \mu \frac{M_{t-1}}{P_t} \frac{P_{t-1}}{P_{t-1}} \\  
+                                 &=& \mu \frac{P_{t-1}}{P_t} \frac{M_{t-1}}{P_{t-1}} \\  
+                                 &=& \frac{\mu}{1+\pi} \frac{M_{t-1}}{P_{t-1}} 
+                                 
+If the inflation rate, :math:`\pi` equals the money growth rate, :math:`\mu` as implied by the quantity
+theory of money, then seignorage revenue is
+
+.. math::
+
+    \frac{M_{t} - M_{t-1}}{P_t}  = \frac{\mu}{1+\mu} \frac{M_{t-1}}{P_{t-1}} = \frac{\mu}{1+\mu} \Phi
+    
+where :math:`\Phi` denotes the demand for real money balances.    
+
+So seignorage is a tax on real money balances.  The tax rate can be expressed either in terms
+of the inflation rate or the money growth rate.
+
+.. math::
+ 
+     \frac{\mu}{1+\mu}  = \frac{\pi}{1+\pi}
+ 
 That's why it is called the inflation tax.
 
 The government collect revenue from the inflation tax when it
@@ -625,7 +651,8 @@ Since seignorage is a distortionary tax, as the government
 increases this tax, people will hold lower real balances.
 
 Whether seignorage rises or falls depends on whether inflation
-rises more or less than the decline in money holdings.
+rises more or less than the decline in money holdings.  We will discuss
+this in more detail in a couple of lectures.
 
 Government Debt is a Weighted Accumulation of Past Deficits
 ------------------------------------------------------------

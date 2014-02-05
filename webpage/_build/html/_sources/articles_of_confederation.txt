@@ -4,19 +4,35 @@
 The Articles of Confederation
 *****************************
 
+Important Dates
+===============
+
+    +--------------------+----------------------------------------------------------------+
+    | November 11, 1777  | Articles of Confederation proposed                             |
+    +--------------------+----------------------------------------------------------------+
+    | March 1, 1781      | Articles of Confederation ratified                             |
+    +--------------------+----------------------------------------------------------------+
+    | October 19, 1781   | Surrender of Yorktown                                          |
+    +--------------------+----------------------------------------------------------------+
+    | September 3, 1783  | Treaty of Paris signed                                         |
+    +--------------------+----------------------------------------------------------------+
+    | Summer 1787        | Constitutional Convention in Philadelphia                      |
+    +--------------------+----------------------------------------------------------------+
+    | June 1788          | Constitution Ratified                                          |
+    +--------------------+----------------------------------------------------------------+
+
 A Fiscal Crisis 230 Years Ago
 ==============================
 
-* In the 1780s after the Revolutionary War, the U.S. was a fiscal basket case.
+In the 1780s after the Revolutionary War, the U.S. was a fiscal basket case.
 
-* just come off a hyperinflation, no currency worth speaking of
+The country had just come off a hyperinflation.  The Continental government had no 
+currency worth speaking of.  The government had large debts traded well below par and 
+no stable revenue stream
 
-     * large debts traded well below par
-     * no stable revenue stream
+There was no army or navy worth speaking of.
 
-* No army or navy worth speaking of
-
-* No effective capital markets
+There were no effective capital markets.
 
 * Case study of a successful management of a fiscal crisis
 

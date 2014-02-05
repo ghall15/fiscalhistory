@@ -398,8 +398,7 @@ on the debt held by the public.</p>
 <p>Since the signing of the U.S. Constitution,
 the federal government can raise revenue by issuing money.  As we will see in a few lectures,
 this power has been hotly contested.</p>
-<blockquote>
-<div>The U.S. Constitution explicitly states that state and local governments can not issue their own money.</div></blockquote>
+<p>The U.S. Constitution explicitly states that state and local governments can not issue their own money.</p>
 <p>Therefore the federal government&#8217;s budget constraint becomes</p>
 <div class="math">
 \[B_{t}  =  B_{t-1} + r B_{t-1} + G_t + TR_t - T_t  - \frac{M_t - M_{t-1}}{P_t}\]</div>
@@ -513,13 +512,29 @@ while the process impoverishes many, it actually enriches some.</p>
 <p>If the velocity of money is fixed and output is fixed, so real money demand is constant. Then</p>
 <div class="math">
 \[\pi = \frac{\Delta P}{P} = \frac{\Delta M}{M}\]</div>
-<p>Real seignorage revenue, <span class="math">\(R\)</span>, is</p>
+<p>To derive real seignorage revenue, assume the government increase the money supply
+by <span class="math">\(\mu\)</span> percent each period.  Thus</p>
 <div class="math">
-\[\frac{M_{t} - M_{t-1}}{P_t}  = \frac{\Delta M}{P}.\]</div>
-<p>Since <span class="math">\(\pi = \frac{\Delta M}{M}\)</span>, real seignorage revenue is
-<span class="math">\(R = \pi \frac{M}{P}\)</span>.</p>
-<p>So seignorage is a tax at the rate of inflation on real money balances.
-That&#8217;s why it is called the inflation tax.</p>
+\[M_{t} = (1+\mu)M_{t-1}\]</div>
+<p>and</p>
+<div class="math">
+\[\frac{M_{t}-M_{t-1}}{M_{t-1}} = \frac{\Delta M}{M}  = \mu.\]</div>
+<p>Seignorage revenue is</p>
+<div class="math">
+\[\begin{split}\frac{M_{t} - M_{t-1}}{P_t}  &amp;=&amp; \frac{\mu M_{t-1}}{P_t} \\
+                             &amp;=&amp; \mu \frac{M_{t-1}}{P_t} \frac{P_{t-1}}{P_{t-1}} \\
+                             &amp;=&amp; \mu \frac{P_{t-1}}{P_t} \frac{M_{t-1}}{P_{t-1}} \\
+                             &amp;=&amp; \frac{\mu}{1+\pi} \frac{M_{t-1}}{P_{t-1}}\end{split}\]</div>
+<p>If the inflation rate, <span class="math">\(\pi\)</span> equals the money growth rate, <span class="math">\(\mu\)</span> as implied by the quantity
+theory of money, then seignorage revenue is</p>
+<div class="math">
+\[\frac{M_{t} - M_{t-1}}{P_t}  = \frac{\mu}{1+\mu} \frac{M_{t-1}}{P_{t-1}} = \frac{\mu}{1+\mu} \Phi\]</div>
+<p>where <span class="math">\(\Phi\)</span> denotes the demand for real money balances.</p>
+<p>So seignorage is a tax on real money balances.  The tax rate can be expressed either in terms
+of the inflation rate or the money growth rate.</p>
+<div class="math">
+\[\frac{\mu}{1+\mu}  = \frac{\pi}{1+\pi}\]</div>
+<p>That&#8217;s why it is called the inflation tax.</p>
 <p>The government collect revenue from the inflation tax when it
 buys goods with newly printed money.</p>
 <dl class="docutils">
@@ -529,7 +544,8 @@ buys goods with newly printed money.</p>
 <p>Since seignorage is a distortionary tax, as the government
 increases this tax, people will hold lower real balances.</p>
 <p>Whether seignorage rises or falls depends on whether inflation
-rises more or less than the decline in money holdings.</p>
+rises more or less than the decline in money holdings.  We will discuss
+this in more detail in a couple of lectures.</p>
 </div>
 <div class="section" id="government-debt-is-a-weighted-accumulation-of-past-deficits">
 <h3>Government Debt is a Weighted Accumulation of Past Deficits<a class="headerlink" href="#government-debt-is-a-weighted-accumulation-of-past-deficits" title="Permalink to this headline">¶</a></h3>
@@ -656,8 +672,10 @@ at say <span class="math">\(\bar{S}\)</span>, over years 11-20.   What is the hi
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="debt_to_GDP.html">The Debt to GDP Ratio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unpleasant_monetarist_arithmetic.html">Unpleasant Monetarist Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debt_ceiling.html">The Debt Ceiling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bond_pricing_primer.html">A Primer on Bond Pricing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="colonial_america.html">Colonial America: 1750-1774</a></li>
 <li class="toctree-l1"><a class="reference internal" href="american_revolution.html">The American Revolution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="articles_of_confederation.html">The Articles of Confederation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="act1790.html">The Constitution and the Funding Act of 1790</a></li>

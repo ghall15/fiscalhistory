@@ -20,8 +20,10 @@ Table of Contents:
    introduction
    government_budget_constraint
    debt_to_GDP
+   unpleasant_monetarist_arithmetic
    debt_ceiling
    bond_pricing_primer
+   colonial_america
    american_revolution
    articles_of_confederation
    act1790

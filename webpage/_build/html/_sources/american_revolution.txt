@@ -31,18 +31,6 @@ Important Dates
 ===============
 
     +--------------------+----------------------------------------------------------------+
-    | 1754-1763          |  French and Indian War (Seven Years War)                       |
-    +--------------------+----------------------------------------------------------------+
-    | 1764               |  Sugar Act                                                     |
-    +--------------------+----------------------------------------------------------------+
-    | 1765               | Stamp Act                                                      |
-    +--------------------+----------------------------------------------------------------+
-    | March 5, 1770      | Boston Massacre                                                |
-    +--------------------+----------------------------------------------------------------+
-    | December 16, 1773  | Boston Tea Party                                               |
-    +--------------------+----------------------------------------------------------------+
-    | September 5, 1774  | First Continental Congress convenes                            |
-    +--------------------+----------------------------------------------------------------+
     | April 19, 1775     | Battles of Lexington and Concord -- American Revolution begins |
     +--------------------+----------------------------------------------------------------+
     | May 10, 1775       | Second Continental Congress convenes                           |
@@ -59,151 +47,7 @@ Important Dates
     +--------------------+----------------------------------------------------------------+
     | September 3, 1783  | Treaty of Paris signed                                         |
     +--------------------+----------------------------------------------------------------+
-    | Summer 1787        | Constitutional Convention in Philadelphia                      |
-    +--------------------+----------------------------------------------------------------+
-    | June 1788          | Constitution Ratified                                          |
-    +--------------------+----------------------------------------------------------------+
-    | March 4, 1789      | The Constitution goes into effect                              |
-    +--------------------+----------------------------------------------------------------+
-    | April 30, 1789     | Inauguration of President George Washington                    |
-    +--------------------+----------------------------------------------------------------+
-    | July 14, 1789      | Storming of the Bastille -- French Revolution begins           | 
-    +--------------------+----------------------------------------------------------------+
-    | 1790               | Establishment of the Department of Treasury                    |
-    +--------------------+----------------------------------------------------------------+
-    | August 4, 1790     | Funding Act                                                    |
-    +--------------------+----------------------------------------------------------------+
 
-
-
-American Colonies: 1750-1774
-============================
-
-Thirteen colonies along the Eastern seaboard of North America
-
-  * relatively prosperous
-
-  * per capita incomes rival if not exceed Britain and Europe
-
-Colonies do not see them selves as a single group
-
-  * different religions, from different countries, different economies
-  
-  * travel north-south over land difficult
-
-  * travel by water much easier
-
-Until 1765 Britain collected very little revenue from the 13 colonies
-
-  * Molasses Act of 1733
-
-       * tax on foreign molasses
-  
-       * lightly enforced
-
-
-  * Navigation Acts
-
-     * restrictions on who could produce what
-  
-     * who could buy from whom
-  
-     * manufactures goods had to bought from England
-  
-     * Many American products had to be shipped exclusively to England
-
-During the 18th century Britain fought a series of wars
-
-    * War of Spanish Succession (1701-1714)
-
-    * War of Jenkins' Ear (1739-1742)
-
-    * Seven Years' War (1754-1763)
-
-      * in the US we refer to this as the French and Indian War
-
-      * Britain gains considerable territory ...
-
-      * ... but at great cost
-
-* The UK debt-to-GDP soared to over 150 percent in the early 1760s
-
-
-.. figure:: _static/figures/UK_debt_to_GDP.png
-    :scale: 60%
-    :align: center
-
-    **UK Debt to GDP Ratio**
-
-What Are the Colonies Financial Obligations to Britain?
---------------------------------------------------------
-
-* Beginning in 1763, Britain decides to keep a standing army in America.
-
-    * cost \pounds 300,000 per year
-
-    * decides the colonies should pay 1/3 of costs
-
-    * when does protection become occupation?
-
-* Britain also restricts Western settlement
-
-* The Sugar Act of 1764
-
-    * a reduction in the tax rate ...
-
-    * ... tighter enforcement
-
-* The Currency Act of 1764
-
-    * prohibited colonies from issuing paper money
- 
-The Stamp Act of 1765
----------------------
-
-* Britain claimed that colonists had enjoyed the benefits of government on the cheap.
-
-* American colonists argued that they should be able to tax themselves to pay for the troops
-
-    * each colony would raise a quota
-
-    * challenged Parliament's right to tax the colonies
-
-    * idea rejected by the British government
-
-* The Stamp Act of 1765
-
-    * tax on paper transactions
-
-    * marriage certificates, ships' papers, legal documents, ...
-
-* Huge uproar, repealed in 1766
-
-The Boston Tea Party
---------------------
-
-* East India Company was near bankrupt despite monopoly status within the Empire to sell tea.
-
-* All tea shipped to America was suppose to go through England.
-
-  * taxed in England
-
-  * considerable smuggling never the less
-
-
-* The Tea Act in 1773
-
-  * cut taxes on tea, but not to zero
-
-  * undercut the price of tea smuggled into American colonies.
-
-  * bailout East India Company
-
-  * Get colonist to accept Parliament's right of taxation
-
-* Boston Harbor, December 1773
-
-   * Sam Adams and the Sons of Liberty dumped 342 chest of tea overboard
 
 
 How does one finance a revolution?
@@ -416,11 +260,14 @@ Why did anyone accept bills of credit?
 
    - riding on the good reputations of the colonies
 
-* Congress had harsh words for those who did not accept these bills
+The `Committee on the bills of credit within the Continental Congress`_ had harsh words for those who did not 
+accept these bills
 
       *That if any person shall hereafter be so 
       lost to all virtue and regard for his country to refuse ..., 
       such person shall be deemed an enemy of his country*
+
+.. _Committee on the bills of credit within the Continental Congress: http://books.google.com/books?id=b8EPAAAAQAAJ&pg=PA101#v=onepage&q&f=false
 
 * Congress also recommended to states that the state legislatures pass laws making these bills of credit *legal tender*.
 
@@ -527,7 +374,8 @@ What the difference between bonds and money?
            
 * bonds pay interest, money does not
 
-* Loan Office Certificates vs. Bills of Credit
+[Anderson1983]_ , page 68, lists the first six distinguishing features betweem Loan Office Certificates 
+and Bills of Credit.  We added the seventh.
 
      +------------------------------------+-----------------------------------------------------------+
      |  loan office certificates          |   bills of credit                                         |
@@ -535,8 +383,6 @@ What the difference between bonds and money?
      |     bear interest                  |   bear no interest                                        |
      +------------------------------------+-----------------------------------------------------------+
      |  written denominations             | printed denominations                                     |
-     +------------------------------------+-----------------------------------------------------------+
-     | minimum denomination: \$300        | minimum denomination: \$0.17                              |
      +------------------------------------+-----------------------------------------------------------+
      | payable to a specific individual   | payable to bearer                                         |  
      +------------------------------------+-----------------------------------------------------------+
@@ -549,6 +395,8 @@ What the difference between bonds and money?
      | size paper                         |  convenient circulation                                   | 
      +------------------------------------+-----------------------------------------------------------+
      | written date of issue              | printed date of authorization                             |
+     +------------------------------------+-----------------------------------------------------------+
+     | minimum denomination: \$300        | minimum denomination: \$0.17                              |
      +------------------------------------+-----------------------------------------------------------+
 
 * If bonds pay interest, and money does not why doesn't every use bonds to carry out trade?
@@ -839,12 +687,30 @@ Questions
       of the word *wonderful*?  Explain briefly.
 
 
-
 References
 ----------
 
+.. [Anderson1983] Anderson, William G. 1983. *The price of Liberty: The Public Debt of
+                  the American Revolution* Charlottesville: University Press of Virginia.
+
+.. [Bullock1895] Bullock, Charles J. *The Finances of the united States From 1775 to 1789, With
+                 Especial Reference to the Budget* Madison, WI: University of Wisconsin.
+                 
+.. [Calomiris1988] Calomiris, Charles W. 1988. "Institutional Failure, Monetary Scarcity, and the
+                    Depreciation of the Continental" *The Journal of Economic History* 48:1 pp. 47-68.
+                     
+.. [Fischer2004] Fischer, David Hackett. 2004. *Washington's Crossing* New York: Oxford University Press.
+
+.. [Grubb2008] Grubb, Farley. 2008. "The Continental Dollar: How Much Was Really Issued?"
+               *The Journal of Economic History* 68:1, pp. 283-291.
   
-.. [Keynes1924] Keynes, John 2M. 1924 *Monetary Reform* New York: Harcourt, Brace \& Co.
+.. [Keynes1924] Keynes, John M. 1924 *Monetary Reform* New York: Harcourt, Brace \& Co.
+
+.. [Dewey1903] Dewey, Davis Rich. 1903. *Financial History of the United States* New York: 
+               Longmans Green \& Company.
+
+.. [LindertWilliamson2014] Lindert, Peter H., and Jeffrey G. Williamson. 2014. "American Colonial
+                           Incomes, 1650-1774" NBER Working Paper 19861. 
 
 .. [WGR1996]  Willard, Kristen, Timothy Guinnane and Harvey Rosen, 1996.  
               "Turning Points in the Civil War: Views from the Greenback Market"
