@@ -199,7 +199,7 @@ often around an inflation rate of about 30 percent.
 
 Robert Barro ([Barro2009]_, page 210) writes
 
-.. epigraph
+.. epigraph::
 
    In normal times for most countries, the government obtains only a small portion of
    its revenue from printing money.  In 2005, the Federal Reserve obtained \$24 billion 
