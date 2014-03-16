@@ -21,18 +21,21 @@ Table of Contents:
    government_budget_constraint
    debt_to_GDP
    unpleasant_monetarist_arithmetic
-   debt_ceiling
    bond_pricing_primer
    colonial_america
-   american_revolution
+   american_revolution_bills_of_credit
+   american_revolution_loans
    articles_of_confederation
    act1790
    early_republic
    war_of_1812
    internal_improve
    state_finance
+   debt_ceiling
    civil_war
    confederacy
+   data_appendix
+   references
 
 
 Indices and tables

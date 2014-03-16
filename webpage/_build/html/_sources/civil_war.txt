@@ -54,11 +54,17 @@ Timeline
 
 * But also the period in which the U.S doubled in size
 
-     * 1845 Texas Annexation
+     * 1845 `Texas Annexation`_    
 
-     * 1846 Oregon Country
+     * 1846 `Oregon Country`_
 
-     * 1848 Mexican Cession
+     * 1848 `Mexican Cession`_
+     
+.. _Oregon Country: http://en.wikipedia.org/wiki/Oregon_Country
+
+.. _Texas Annexation: http://en.wikipedia.org/wiki/Texas_annexation   
+
+.. _Mexican Cession: http://en.wikipedia.org/wiki/Mexican_Cession
 
 * Mexican War
 
@@ -119,7 +125,9 @@ America in the 1850s
 The Buchanan Presidency
 -----------------------
 
-President James Buchanan
+President `James Buchanan`_
+
+.. _James Buchanan: http://en.wikipedia.org/wiki/James_Buchanan
 
     * Pennsylvania "doughface"
 
@@ -163,7 +171,7 @@ President James Buchanan
 The Treasury Secretaries Under Buchanan
 ---------------------------------------
 
-* Howell Cobb
+* `Howell Cobb`_
 
     * served from March 7, 1857 to December 8, 1860
 
@@ -171,7 +179,7 @@ The Treasury Secretaries Under Buchanan
 
     * left the Treasury to help found the Confederacy
 
-* Philip Thomas
+* `Philip Thomas`_
 
     * served from December 12, 1860 to January 14, 1861
 
@@ -179,7 +187,7 @@ The Treasury Secretaries Under Buchanan
 
     * quits after a month
 
-* John Dix
+* `John Dix`_
 
     * served from January 15, 1861 to March 6, 1861
 
@@ -190,6 +198,13 @@ The Treasury Secretaries Under Buchanan
     .. epigraph::
 
          *If any one attempts to haul down the American flag, shoot him on the spot.*
+
+.. _Howell Cobb: http://en.wikipedia.org/wiki/Howell_Cobb
+
+.. _Philip Thomas: http://en.wikipedia.org/wiki/Philip_Francis_Thomas
+
+.. _John Dix: http://en.wikipedia.org/wiki/John_Adams_Dix
+
 
 Loan of 1860
 ------------
@@ -284,7 +299,9 @@ Fiscal Situation When Lincoln Takes Office
 
 * President Lincoln takes office on March 4, 1861
 
-* Samuel Chase appointed Secretary of the Treasury
+* `Salmon Chase`_ appointed Secretary of the Treasury
+
+.. _Salmon Chase: http://en.wikipedia.org/wiki/Salmon_P._Chase
 
     * little financial experience
 
@@ -380,7 +397,9 @@ Selling of the bonds
 
 * banks
 
-* Jay Cooke
+* `Jay Cooke`_
+
+.. _Jay Cooke: http://en.wikipedia.org/wiki/Jay_Cooke
 
      * friend of Chase
 
@@ -422,13 +441,15 @@ Fall of 1861
 December 1861
 -------------
 
-* Trent Affair
+* `Trent Affair`_
 
     * November 8, the U.S. Navy intercepted the British RMS Trent and removed two Confederate diplomats.
 
     * talk of U.S. going to war with Britain
 
     * in January, Lincoln released the envoys
+
+.. _Trent Affair: https://history.state.gov/milestones/1861-1865/trent-affair
 
 * Chase Report of December 10, 1861
 
@@ -760,10 +781,15 @@ The War Ends
 
 * November 8, 1864 President Lincoln re-elected.
 
-* April 9,  1865 General Lee surrenders to General Grant at the Appomattox Court House
+* April 9,  1865 General Lee surrenders to General Grant at the `Appomattox Court House`_
 
-* April 14, 1865 President Lincoln is assassinated, Andrew Johnson becomes president.
+* April 14, 1865 `President Lincoln is assassinated`_, `Andrew Johnson`_ becomes president.
 
+.. _Andrew Johnson: http://en.wikipedia.org/wiki/Andrew_Johnson
+
+.. _Appomattox Court House: http://www.nps.gov/apco/index.htm
+
+.. _President Lincoln is assassinated: http://memory.loc.gov/ammem/alhtml/alrintr.html
 
 Post War Fiscal Situation
 -------------------------

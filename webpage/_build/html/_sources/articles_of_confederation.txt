@@ -27,7 +27,7 @@ A Fiscal Crisis 230 Years Ago
 In the 1780s after the Revolutionary War, the U.S. was a fiscal basket case.
 
 The country had just come off a hyperinflation.  The Continental government had no 
-currency worth speaking of.  The government had large debts traded well below par and 
+currency worth speaking of.  The government had large debts which traded well below par and 
 no stable revenue stream
 
 There was no army or navy worth speaking of.
@@ -45,25 +45,21 @@ There were no effective capital markets.
 Articles of Confederation
 ==========================
 
-* The full text is available from the `Library of Congress`_.
+America's first consitution, the Articles of Confederation were
+agreed to by the Continental Congress on November 15, 1777 and
+went into effect after the ratification by Maryland on March 1, 1781.
+
+The full text of this document is available from the `Library of Congress`_.
 
 .. _Library of Congress: http://www.loc.gov/rr/program/bib/ourdocs/articles.html
 
-* Agreed to by Continental Congress on November 15, 1777.
+The Article established a fiscal union with strong states and a weak central government.
 
-* In force after ratification by Maryland on March 1, 1781.
+The federal government had no power to tax, but could only ask the states for resources.
 
-* A fiscal union with strong states, weak central government.
-
-* Federal government had no power to tax, can only ask the states for resources
-
-         * All taxation, both tariffs and internal revenue, belonged to the states
+         * All taxation, both tariffs and internal revenue, belonged to the states.
 
          * Continental government could borrow
-
-         * Grover Norquist's wildest dream?
-
-         * Europe today?
 
 Financial Provisions of the Articles of Confederation
 ------------------------------------------------------
@@ -84,6 +80,8 @@ Congress assembled.
 * In practice, expenses of Congress and expenditures of the states toward "the common
     defense and general welfare" lumped together into *common charges*.
 
+A state's contribution was based on the wealth of each state, not the population.
+ 
 * If one state contributed
 
     * more than its share, received a credit
@@ -118,7 +116,7 @@ whereof the said United States, and the public faith are hereby solemnly pledged
 A Curious Set Up
 -----------------
 
-* Dewey, page 49
+As Dewey [Dewey1903], page 49
 
 * omissions more important than the provisions
 
@@ -318,15 +316,15 @@ Composition of the Continental Revolutionary Debt
 The Fiscal Crisis
 ------------------
 
-* States refused to send enough revenue to the Federal government to
+States refused to send enough revenue to the Federal government to
 
      * pay the interest on the debt, much less principal
      * fund an army or navy
      * pay promised pension payments
 
-* Foreign shippers played one state off against another
+Foreign shippers played one state off against another
 
-* Domestic debt traded around 20 percent of par value
+Domestic debt traded around 20 percent of par value
 
 
 Par Value vs. Market Value of Debt

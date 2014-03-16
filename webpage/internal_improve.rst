@@ -64,11 +64,15 @@ Internal improvements as an impetus for a new constitution
        interstate commerce and improvements led them to convene the Annapolis 
        Convention in 1786 to which leaders from the 13 states were invited.
 
-* The Annapolis Convention then issued the call for a Constitutional Convention to meet in Philadelphia in 1787.
+* The `Annapolis Convention`_ then issued the call for a Constitutional Convention to meet in Philadelphia in 1787.
 
-* James Madison in his Federalist Paper \#14 specifically defended the new Constitution as forming a government that 
+.. _Annapolis Convention: http://en.wikipedia.org/wiki/Annapolis_Convention_%281786%29
+
+* James Madison in his `Federalist Paper 14`_ specifically defended the new Constitution as forming a government that 
   would unite the
   country through new roads and canals.
+  
+.. _Federalist Paper 14: http://www.constitution.org/fed/federa14.htm
 
 Thomas Jefferson's Vision
 -------------------------
@@ -93,7 +97,9 @@ Thomas Jefferson's Vision
 
        * quarter-sections (160 acres, thought to be the smallest unit that could support a family).
 
-* Example:  Seven Ranges in Southeast Ohio
+* Example:  `Seven Ranges in Southeast Ohio`_
+
+.. _Seven Ranges in Southeast Ohio: http://www.ohiohistorycentral.org/w/Seven_Ranges
 
 * Did not solve the problem Washington had foreseen: the lack of a transportation infrastructure to get crops to market.
 
@@ -113,7 +119,9 @@ Land Ordinances of 1784 and 1785
 
     * admitting states
 
-* Land Ordinance of 1784
+* `Land Ordinance of 1784`_
+
+.. _Land Ordinance of 1784: http://www.ohiohistorycentral.org/w/Ordinance_of_1784
 
     * Written by Jefferson, with Jefferson ideals
 
@@ -121,7 +129,9 @@ Land Ordinances of 1784 and 1785
 
     * strong on principles, light on mechanics
 
-* Land Ordinance of 1785
+* `Land Ordinance of 1785`_
+
+.. _Land Ordinance of 1785: http://www.ohiohistorycentral.org/w/Land_Ordinance_of_1785
 
     * divide up the land into grids
 
@@ -129,6 +139,10 @@ Land Ordinances of 1784 and 1785
 
 The Northwest Ordinance
 -----------------------
+
+* `Text of the Northwest Ordinance`_
+
+.. _Text of the Northwest Ordinance: http://avalon.law.yale.edu/18th_century/nworder.asp
 
 * More than just a law
 
@@ -186,7 +200,7 @@ Article 1, Section 8 of the Constitution states:
 Practical issues
 ----------------
 
-Larson (1991, page 71) cites five challenges for supporting internal improvements at the state-level
+John Larson [Larson1991]_, page 71 cites five challenges for supporting internal improvements at the state-level
 
 1. natural advantages are not evenly distributed
 
@@ -202,6 +216,10 @@ Larson (1991, page 71) cites five challenges for supporting internal improvement
 
 Gallatin's 1808 *Report on the Subject of Public Roads and Canals*
 ========================================================================
+
+The report is available here_.
+
+.. _here: http://oll.libertyfund.org/index.php?option=com_staticxt&staticfile=show.php%3Ftitle=2046&Itemid=28
 
 In 1807 the U.S. Senate resolution for Treasury report proposing ways that the federal
 government could address transportation problems.
@@ -275,7 +293,9 @@ The End of the War of 1812
 Henry Clay and *The American System*
 ------------------------------------
 
-* Henry Clay, Kentucky,
+* `Henry Clay`_, Kentucky,
+
+.. _Henry Clay: http://en.wikipedia.org/wiki/Henry_Clay
 
     * served in both the House and Senate
 
@@ -337,9 +357,15 @@ Bonus Bill of 1817
 New York: Erie Canal
 ====================
 
-* Most famous internal improvement
+* The `Transcontinental Railroad`_  and the `Erie Canal`_ are the most famous internal improvements.
 
-* New York Governor DeWitt Clinton saw the possibility of a canal far more ambitious than those proposed by Gallatin.
+.. _Transcontinental Railroad: http://en.wikipedia.org/wiki/First_Transcontinental_Railroad
+
+.. _Erie Canal: http://www.eriecanal.org/
+
+* `New York Governor DeWitt Clinton`_ saw the possibility of a canal far more ambitious than those proposed by Gallatin.
+
+.. _New York Governor DeWitt Clinton: http://en.wikipedia.org/wiki/DeWitt_Clinton
 
 * In December 1811, Clinton and Gouvenor Morris went to Washington to ask for Federal money
 

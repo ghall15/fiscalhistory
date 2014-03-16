@@ -195,6 +195,47 @@ All states may issue debt to finance a distinctly specified public works project
 Many state constitutions place limits on the borrowing of their municipalities and forbid the state from assuming 
 any municipal debt.
 
+A Potential Loophole
+====================
+
+As discussed in the Government Budget Constraint lecture, the Treasury measures the value of the debt
+at its par value.  Likewise the debt ceiling places an upper bound on par value outstanding -- but not the
+market value.
+
+This leaves open the possibility of the U.S. Treasury could keep the par value of the debt below
+the debt ceiling while raising the revenue it needs to cover the new deficits by issuing bonds with 
+large coupon payments.  
+
+Consider the following example.  Suppose the Treasury issued a twenty year bond with a 50\% percent 
+coupon rate.  If the present value of the  promised cash stream is discounted at a 6\% annual 
+rate (i.e. a flat yield curve), the bond would sell for over \$604.68.  
+
+.. figure:: _static/images/20_yr_bond_example_high_coupon.jpg
+    :scale: 100%
+    :align: center
+
+    **Pricing a 50 Percent Coupon Bond With a Par Value of \$100**
+
+Hence the government could raise over \$600 in new borrowing while the par value of the debt 
+would only increase by \$100.
+
+Of course interest payments as measured by the government would soar.  But assuming that yield curve remains 
+constant at 6\%, the holding period return on this bond would 6\% each year despite the high coupon rate. As the 
+bond's term to maturity decreased, so would the market price of the bond.  after one year, the price of the bond
+would fall to \$590.96.  The holding period return would be 
+
+.. math::
+     100 \times \frac{590.96 + 50 - 604.68}{604.68} - 1 = 6.0\%.
+     
+While the investor would be receiving
+capital losses each year, the govenment accounts would not record these losses.    
+Issuing large coupon bonds would not make bondholders any better or worse off.  They would receive 
+the same ex post holding period return as if the government has issued a 6\% coupon bond 
+that sold at face value. 
+ 
+This idea is not new to us.  See, for example, the `article by Matt Levine`_.  In it he discusses some 
+of the practical issues with selling high coupon Treasury bonds. 
+
 Footnotes
 ---------
 
@@ -211,16 +252,4 @@ Footnotes
 
 .. _Henry Morgenthau: http://en.wikipedia.org/wiki/Henry_Morgenthau,_Jr.
 
-References
-----------
-
-.. [Bayley1882] Bayley, Rafael. 1882. *The National Loans of the United States from July 4, 1776, to June 30, 1880* 
-                Government Printing Office, Washington DC.
-                
-.. [CookeKatzen1954] Cooke, H. and M. Katzen. 1954. "The Public Debt Limit" *Journal of Finance* 9:3 pp. 298-303.                
-               
-.. [Garbade2012] Garbade, Kenneth.  2012. *Birth of a Market: The U.S. Treasury Market from the Great War to the 
-                 Great Depression* Cambridge, MA, The MIT Press.   
-
-.. [Krishnakumar2005] Krishnakumar, Anita. 2005. "In Defense of the Debt Limit Statute" *Harvard Journal 
-                      on Legislation* 42:1 pp. 135-85. 
+.. _article by Matt Levine: http://dealbreaker.com/2013/01/instead-of-a-trillion-dollar-platinum-coin-treasury-should-mint-a-trillion-dollar-500bn-bond/

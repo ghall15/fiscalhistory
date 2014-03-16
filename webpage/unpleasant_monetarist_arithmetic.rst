@@ -5,7 +5,7 @@ Unpleasant Monetarist Arithmetic
 ================================
 
 Recall that in the Government Budget Constraint lecture, we derived an expression
-for real seignorage revenue.  In that lecture, we assumed real money demand was only 
+for real seignorage revenue.  In that lecture, we assumed that real money demand was only 
 a function of real income and that real income
 was constant.  But clearly, income is rarely constant, and the demand for money most likely depends 
 on other factors than just income.  
@@ -16,13 +16,15 @@ Second, we will discuss how the quantity of revenue the government can collect f
 or decrease as the inflation rate rises.
 
 Third, we will return to the government budget constraint to illustrate how if a fiscal
-authority runs persistent deficits, then low inflation today can mean high inflation in the future.
+authority runs persistent deficits, then low inflation today can mean high inflation in the future.  
+This "unpleasant" result was first brought to light in [SargentWallace1981]_ .
 
 A More Complete Description of Money Demand
 ===========================================
 
 One of money's three primary functions is to serve as a store of value. Of course, there 
-are many other assets that can serve as a store of value as well: stocks, bonds, houses, ... It is natural
+are many other assets that can serve as a store of value as well: stocks, bonds, houses, ...
+It is natural
 to assume that people will want spread their wealth across several types of assets rather than
 hold all their wealth in a single asset.
 
@@ -360,20 +362,13 @@ is sufficiently large.
 
 While theoretically possible, this result is a special case and we are not going 
 to appeal to this case in future lectures.  So we will not cover
-it here. If you would like to learn more about this case, see chapter X of [LjungqvistSargent2012]_. 
+it here. If you would like to learn more about this case, see section 26.3.4 on pages 1055-1056 
+of [LjungqvistSargent2012]_. 
 
-References
-----------
-
-.. [Barro2009] Barro, Robert J. 2009. *Intermediate Macroeconomics* Cengage Learning
-   
-.. [LjungqvistSargent2012] Ljungqvist, Lars and Thomas J. Sargent. 2012. *Recursive Macroeconomic Theory*,
-                           third edition, Cambridge, MA: MIT Press.  
- 
+                        
+                         
 Exercises
 ---------
-
-
 
 1. Assume the demand for real money balances is
 

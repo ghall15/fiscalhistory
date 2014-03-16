@@ -1,0 +1,161 @@
+.. _data_appendix:
+
+***************************************
+Appendix:  Fiscal Data for 1775 to 1940
+***************************************
+
+In this appendix, we describe the receipt, expenditure, and debt series from 
+1776 to 1918 that 
+we use in this website.
+
+The entire zipped subdirectory of excel and matlab files is available at
+http://people.brandeis.edu/~ghall/_build/data/Debt_and_fiscal_accounts_1775-1940.zip
+
+
+Federal Receipts and Expenditures
+=================================
+
+* From 1776 to 1789, 
+
+* From 1790 to 1921
+
+    * Receipts
+
+ The 1791-1921 data for these files are from FRASER annual reports year 1921. The receipt file begins on 
+ page 512 and expenditure(called disbursements) file begins on page 519. The excel spreadsheet is made to look 
+ similar to what one would see on the treasury report with corresponding column and rows. Additional 
+ information carried over from previous versions, such as interest and premium are inputs in the latter columns.
+
+The last column in the FRASER treasury report reports the surplus which is ``Total ordinary receipts - 
+Total ordinary disbursements exclusive of postal deficiencies"
+       --   
+
+    
+    * Expenditures
+
+
+
+
+* Revised from 1790 to 1940
+
+    From the 1940 Annual Report of the 
+
+
+I have this file because the data changed/were updated for reports after 1921. There are minor updates for the 
+receipts files. There are major changes for expenditure, i.e. ``Civil and miscellaneous". The changes happens 
+on year 1922, thus we have pre-1921 and post-1921 data.
+
+The 1791-1940 data for these files are from FRASER annual report year 1940. The receipt file begins on page 
+642 and expenditure file begins on page 646. On the actual treasury report, the numbers are rounded to the 
+nearest unit digit. On the excel sheet, there are decimals because these are number from an older treasury 
+report. I prefer these number because they are exact. The excel spreadsheet is made to look similar to what 
+one would see on the treasury report.
+
+.. _here: http://people.brandeis.edu/~ghall/_build/data/Expenditures (post 1921 revisions).xlsx
+
+.. _here: http://people.brandeis.edu/~ghall/_build/data/Expenditures (pre 1921 data).xlsx
+.. _here: http://people.brandeis.edu/~ghall/_build/data/Expenditures (post 1921 revisions).xlsx
+
+Federal Debt 
+============
+
+All data are of the end of the month.
+
+1776 - 1840
+-----------
+
+There are three excel files
+
+    * Bond_List_1776_1840.xls_  -- list and provides basic information (e.g. name, term, coupon rate, ...) for each
+      loan in the database
+      
+    * Gov_Bond_Quant_1776_1840.xls_  -- provides the principal value outstanding for each loan
+    
+    * Gov_Bond_Price_1776_1840.xls_ -- provides the market price for each loan   
+
+The matlab function bond_load_1776_1840.m_ reads in these data from these four excel files and
+organizes the data into structures.
+
+The sources for the data are:
+
+    * The description of each bond comes from Bayley (1882).
+
+    * For the quantity outstanding from 1776 to 1790.
+        - the foreign loans are Bayley
+        - the domestic loans are constructed by the authors.  A description 
+          of the sources and methods for
+          constructing the data are in [].
+          
+    * The price data are from [Sylla_Wilson_Wright]_ and [Razaghain]_ 
+     
+
+.. _Bond_List_1776_1840.xls: http://people.brandeis.edu/~ghall/_build/data/Bond_List_1776_1840.xls
+.. _Gov_Bond_Quant_1776_1840.xls: http://people.brandeis.edu/~ghall/_build/data/Gov_Bond_Quant_1776_1840.xls
+.. _Gov_Bond_Price_1776_1840.xls: http://people.brandeis.edu/~ghall/_build/data/Gov_Bond_Price_1776_1840.xls
+.. _bond_load_1776_1840.m: http://people.brandeis.edu/~ghall/_build/data/bond_load.m
+
+
+
+1840 to 1900
+------------
+
+There are four excel files
+
+    * Bond_List_1840_1900.xls_  -- list and provides basic information (e.g. name, term, coupon rate, ...) for each
+      loan in the database
+      
+    * Gov_Bond_Quant_1840_1900.xls_  -- provides the principal value outstanding for each loan
+    
+    * Gov_Bond_Price_1840_1900.xls_ -- provides the market price for each loan   
+
+    * Gov_Bond_Call_1840_1900.xls_ -- provides the market price for each loan   
+
+
+`U.S. Treasury Monthly Statement of the Public Debt
+<http://www.savingsbonds.gov/govt/reports/pd/mspd/mspd.htm>`_.
+
+.. _Bond_List_1840_1900.xls: http://people.brandeis.edu/~ghall/_build/data/Bond_List_1840_1900.xls
+.. _Gov_Bond_Quant_1840_1900.xls: http://people.brandeis.edu/~ghall/_build/data/Gov_Bond_Quant_1840_1900.xls
+.. _Gov_Bond_Price_1840_1900.xls: http://people.brandeis.edu/~ghall/_build/data/Gov_Bond_Price_1840_1900.xls
+
+
+
+1900 to 1918
+------------
+
+There are three excel files
+
+    * Bond_List_1900_1918.xls_  -- list and provides basic information (e.g. name, term, coupon rate, ...) for each
+      loan in the database
+      
+    * Gov_Bond_Quant_1900_1918.xls_  -- provides the principal value outstanding for each loan
+    
+    * Gov_Bond_Price_1900_1918.xls_ -- provides the market price for each loan   
+
+
+
+
+`U.S. Treasury Monthly Statement of the Public Debt
+<http://www.savingsbonds.gov/govt/reports/pd/mspd/mspd.htm>`_.
+
+
+Acknowledgements
+================
+
+These databases grew out of joint work with Rose Razaghian.  
+
+We thank the Becker-Friedman Institute of the University of Chicago and the
+National Science Foundation (SES-0417519) for financial support. 
+These databases are part of a project on fiscal imbalances sponsored 
+by the Becker-Friedman Institute. 
+
+We thank Andrew Young at the U.S. Department of Treasury Library locating and providing 
+us with electronic images of the Monthly Statements of the Public Debt.
+
+We thank Alex Bargar, James Myatt, and Ainie Tan 
+for outstanding research assistance.
+
+George Hall
+
+Alex Barger, James Myatt, Ainie Tan,  
+

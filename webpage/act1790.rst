@@ -329,12 +329,12 @@ Or could it have reflected a preference for leaving some ambiguity about their i
 as a concession to George Mason's argument about unforeseen contingencies.
 
 His extensive review of the documentary record convinced
-Bancroft (1886) that  the  framers intended that
+Bancroft [Bancroft1886]_ that  the  framers intended that
 Congress not be permitted to make a paper currency a legal tender:
 
      *The refusal of the convention to confer on the legislature of the United States the power to emit bills of credit or irredeemable paper money in any form is so complete that according to all rules by which public documents are interpreted, it should not be treated as questionable;*
      
-page 43 of Bancroft (1886).
+See page 43 of [Bancroft1886]_.
  
 To strengthen his point, Bancroft cited rousing statements from Washington, Madison, and 
 many others deploring the evils that flow when government makes
@@ -352,9 +352,8 @@ to represent the consensus of opinion before the civil war, Bancroft quoted Dani
      but to coin money and to regulate the value of foreign coins, it clearly has no power to substitute 
      paper, or anything else, for coin as a tender in payment of debts and in discharge of contracts.*
 
-Extract from a speech delivered by Daniel Webster in the Senate of the United States on the 21st of December 1836 on the subject of the Specie Circular, quoted by \citet[p.~93]{Bancroft1886}
-
-page 93 of Bancroft
+Extract from a speech delivered by Daniel Webster in the Senate of the United States on the 21st of December 
+1836 on the subject of the Specie Circular, quoted by [Bancroft1886], page 93.
 
 Bancroft's review of the historical evidence was prompted by his disapproval of the Supreme Court's 1884
 decision in  *Juilliard v Greenman*, which uphold the Union's making greenback a legal tender during the civil war.
@@ -365,7 +364,7 @@ constitutional convention because it was difficult to glean a consensus from the
 borrow money included the power to issue obligations in any appropriate form, including hand-to-hand
 currency; and that the authority to  issue  legal tender notes accompanied the right of coinage.  
 
-(see \citet[p.~366-67]{Dewey1912})}
+See p.366-67 of [Dewey1903].
 
 As we will see,  by 1884, outcomes of decisions of President Ulysses S. Grant and the post-Civil War Republican 
 Congresses had removed the stigma that Madison
@@ -661,9 +660,4 @@ Wrapping Up
 
 .. _An American History Lesson for Europe: http://online.wsj.com/news/articles/SB10001424052970204740904577193032770537826
 
-References
-----------
-
-.. [Bancroft1888]  Bancroft, George 1886. *A Plea for the Consitution of the U.S. of America: Wounded
-                   in the House of its Guardians.*  New York: Harper and Brothers
 

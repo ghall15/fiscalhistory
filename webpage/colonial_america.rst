@@ -4,6 +4,15 @@
 Colonial America: 1750-1774
 ===========================
 
+In the Government Budget Constraint lecture, we mentioned that in the U.S. today,
+most residents fall under the jurisdiction of three governments: federal, state, and local.
+
+In 1750 residents of the thirteen colonies on the Eastern seaboard of North America were government 
+at two levels: 1) the King and Parliment in London and 2) the local colonial government.
+
+Over the next 25 years the question of which of these two levels of government had the right to decide 
+how the colonists should be taxed would escalate into war and revolution.
+
 Important Dates
 ===============
 
@@ -23,27 +32,26 @@ Important Dates
     | April 19, 1775     | Battles of Lexington and Concord -- American Revolution begins |
     +--------------------+----------------------------------------------------------------+
 
-The thirteen colonies along the Eastern seaboard of North America
 
-The colonies relatively prosperous with per capita incomes rivally if not exceeding those in Britain and Continetial
+By 1750 the thirteen colonies along the Eastern seaboard of North America
+
+The colonies relatively prosperous with per capita incomes rivally if not exceeding those in 
+Britain and Continetial
 Europe [#]_.
 
-Colonies do not see them selves as a single group
+Of course the colonies did not see them selves as a single group.  The residents had immigrated from
+different countries; they believed different religons; and thier economies were ...
 
-  * different religions, from different countries, different economies
+In many ways, the individual colonies were more tied to England than with each other.  North-South travel 
+over land was difficult, while travel by water was easier and cheaper.
 
-  * travel north-south over land difficult
+Despite the colonies' prosperity, in 1750, Britain collected relatively little revenue from these 13 colonies.
 
-  * travel by water much easier
-
-Until 1765 Britain collected very little revenue from the 13 colonies
-
-  * Molasses Act of 1733
+In 1733, Parliment passed the Molasses Act, which 
 
        * tax on foreign molasses
 
        * lightly enforced
-
 
   * Navigation Acts
 
@@ -54,6 +62,9 @@ Until 1765 Britain collected very little revenue from the 13 colonies
      * manufactures goods had to bought from England
 
      * Many American products had to be shipped exclusively to England
+
+
+
 
 During the 18th century Britain fought a series of wars
 
@@ -172,6 +183,8 @@ The Boston Tea Party
 Footnotes
 ---------
 
-.. [#] First, is the careful data work of [LindertWilliamson2014] and others.  Second are letters and diaries.  For example  
-        [Fischer2004], page 62, reports "In American, Hessian diarists were amazed by the abundance of the New World 
-        and the affluence of even ordinary homes."  
+.. [#] First, is the careful data work of [LindertWilliamson2014]_ and others.  
+       Second are letters and diaries.  For example  
+       [Fischer2004]_, page 62, reports that in 1776 "Hessian diarists were amazed 
+       by the abundance of the New World 
+       and the affluence of even ordinary homes."  

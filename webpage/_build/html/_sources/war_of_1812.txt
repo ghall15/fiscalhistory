@@ -24,7 +24,7 @@ The War of 1812
 Background
 ==========
 
-* Gordon Wood: "The War of 1812 is the strangest war in American history."
+* Gordon S. [Wood]_: "The War of 1812 is the strangest war in American history."
 
 * Articulation by Gallatin of Principles for War Finance
 
@@ -47,7 +47,7 @@ Reasons for War
 
     * British violation of maritime rights
 
-* Gordon Woods: "the war became the logical consequence of the Republicans' diplomacy since 1805."
+* Gordon S. [Wood]_: "the war became the logical consequence of the Republicans' diplomacy since 1805."
 
 * Declaration of War in June 1812
 
@@ -286,7 +286,8 @@ Gallatin's Principles of War Finance
 
 * In peacetime, the government should not borrow to finance current expenditures.
 
-* November 6, 1807:  Tax rates should be set to ...
+
+* `On November 6, 1807, Gallatin wrote (see page 360)`_  Tax rates should be set to ...
 
 .. epigraph::
 
@@ -295,13 +296,15 @@ Gallatin's Principles of War Finance
 
      *losses and privations caused by war should not be aggravated by taxes beyond what is strictly necessary*
 
+.. _On November 6, 1807, Gallatin wrote (see page 360): http://fraser.stlouisfed.org/docs/publications/treasar/AR_TREASURY_1807.pdf
+
+
 **Why doesn't Gallatin believe in Ricardian equivalence?**
 
-Robert Barro's Model of Tax Smoothing
--------------------------------------
+Robert Barro's (Gallatin's?) Model of Tax Smoothing
+---------------------------------------------------
 
-*  Robert J. Barro  "On the Determination of the Public Debt", *Journal of Political Economy*,
-   Vol. 87, No. 5, Part 1 (Oct., 1979), pp. 940-971
+* See [Barro1979]_
 
 * Infinite horizon
 
@@ -311,7 +314,7 @@ Robert Barro's Model of Tax Smoothing
 
 * First, consider a deterministic setting.
 
-    * That is, the path of government purchases (:math`G_t`) is given
+    * That is, the path of government purchases (:math:`G_t`) is given
 
 * Assume the real interest rate  (:math:`r`) is fixed.
 
@@ -522,7 +525,7 @@ So :math:`B_{t+s} = B_{t+s+1}` for all :math:`s`, so debt must stay constant.
 From Theory to Reality:  Gallatin's Estimates
 ---------------------------------------------
 
-* Woods, page 670,
+* [Wood]_, page 670,
 
 .. epigraph::
 
