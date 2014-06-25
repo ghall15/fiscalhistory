@@ -1,0 +1,159 @@
+.. _post_world_war_II
+
+*****************
+Post World War II
+*****************
+
+*
+Evolution of the Post World War II Debt/GDP Ratio
+
+
+
+\item  Long-Run Fiscal Challenges
+
+
+
+\item Summer Reading
+
+\end{enumerate}
+ 
+
+
+
+
+\frametitle{The Ratio of Treasury Debt held by the Public to GDP}
+\centerline{\psfig{file=publicdebt_to_GDP.ps,width=3.5in}}
+
+
+
+
+
+\frametitle{Questions}
+
+\begin{itemize}
+\item To what extent has the U.S. economy grown its way out of debt? \bigskip
+
+\textcolor{white}{Quite a bit.} \bigskip
+
+\item To what extent has the Federal Government inflated its debt away? \bigskip
+
+\textcolor{white}{Some right after WWII, but not so much in the 1970s.} \bigskip
+
+\item How much has the Government shared inflation and interest-rate risk with its creditors? \bigskip
+
+\textcolor{white}{Quite a bit, particularly with long-term bond holders.}
+\end{itemize}
+
+
+
+
+\frametitle{\textcolor{blue}{Answers}}
+
+\begin{itemize}
+\item To what extent has the U.S. economy grown its way out of debt? \bigskip
+
+\textcolor{blue}{Quite a bit.} \bigskip
+
+\item To what extent has the Federal Government  inflated its debt away? \bigskip
+
+
+\textcolor{blue}{Some right after WWII, but not so much in the 1970s.} \bigskip
+
+\item How much  has the Government shared inflation and interest-rate risk with its creditors? \bigskip
+
+\textcolor{blue}{Quite a bit, particularly with long-term bond holders.}
+\end{itemize}
+
+
+
+
+{The Law of Motion for the Debt-to-GDP Ratio}
+
+\begin{eqnarray*}
+\frac{B_t}{Y_t} = \frac{B_{t-1}}{Y_{t-1}} + (r_{t-1,t} - \pi_{t-1,t} - g_{t-1,t}) \frac{B_{t-1}}{Y_{t-1}} + \frac{{\rm def}_t}{Y_t}.
+\end{eqnarray*}
+
+\bigskip
+
+Whether $\frac{B}{Y}$ grows by more or less than $\frac{{\rm def}}{Y}$ depends on the relative values of $r$, $\pi$, and $g$.
+
+\bigskip
+
+Generalize this equation to:
+\begin{enumerate}
+\item allow debt to be more than one period
+\item differentiate between real (TIPS) and nominal debt
+\item marketable and non-marketable debt
+\end{enumerate}
+
+
+
+
+{Marketable Debt held by the Public, Total Debt held by the Public, and Total Debt Outstanding}
+\centerline{\psfig{file=different_debt_definitions_talk.ps,width=3.5in}}
+
+
+
+
+{Payments Owed by Year and Maturity Divided by GDP}
+\centerline{\psfig{file=strippedIOUS_mesh.ps,width=3.5in}}
+
+
+
+{A Comparison of the Official Interest Costs and Holding Period Returns}
+
+\begin{figure}
+\centerline{\psfig{file=cof_returns_gdpdef.ps,width=3.5in}}
+\end{figure}
+
+
+
+   +--------------------------------------+----------+---------+
+   | Variable                             |  Mean    | Std Dev |
+   +======================================+==========+=========+
+   | Official Interest/Debt               |   5.20   |    2.54 |
+   +--------------------------------------+----------+---------+
+   | Inflation                            |   3.73   |    2.67 |
+   +--------------------------------------+----------+---------+
+   | Official Interest/Debt - inflation   |   1.47   |    3.31 |
+   +--------------------------------------+----------+---------+
+   | Real Return on Marketable Debt       |   1.63   |    4.86 |
+   +--------------------------------------+----------+---------+
+
+   **Means and Standard Deviations of Returns**
+
+
+     +-------+--------++------+-------+--------++--------+-----------+---------+-----------+
+     |                ||     Debt to GDP       ||  Bond  |           | GDP     |   Deficit |
+     +                ++------+-------+--------++        +           +         +           +
+     |    Period      || start|  end  | change || return | Inflation |  Growth |   to GDP  |
+     +=======+========++======+=======+========++========+===========+=========+===========+
+     | 1941  | 1945   || 37.0 | 97.2  | 60.2   ||  2.8   |  -9.7     |  -20.5  |  84.7     |
+     +-------+--------++------+-------+--------++--------+-----------+---------+-----------+
+     | 1945  | 1974   || 97.2 | 16.9  | -80.3  ||  32.8  | -50.2     |  -31.8  | -34.7     | 
+     +-------+--------++------+-------+--------++--------+-----------+---------+-----------+
+     | 1974  | 1981   || 16.9 | 19.9  | 3.0    ||  12.4  | -11.0     |   -4.4  |   5.8     | 
+     +-------+--------++------+-------+--------++--------+-----------+---------+-----------+
+     | 1981  | 1993   || 19.9 | 48.2  | 28.3   ||  37.6  | -13.5     |  -12.6  |  17.8     |
+     +-------+--------++------+-------+--------++--------+-----------+---------+-----------+
+     | 1993  | 2001   || 48.2 | 28.5  | -19.7  ||  14.6  |  -5.9     |  -12.2  |  -15.9    |
+     +-------+--------++------+-------+--------++--------+-----------+---------+-----------+
+     | 2001  | 2009   || 28.5 | 48.8  | 20.3   ||   9.3  |  -5.8     |   -3.9  |  20.8     |
+     +-------+--------++------+-------+--------++--------+-----------+---------+-----------+
+     | 1941  | 2009   || 37.0 | 48.8  | 11.8   ||  109.4 |  -96.3    |  -85.3  |  78.5     |
+     +-------+--------++------+-------+--------++--------+-----------+---------+-----------+
+     | 1945  | 2009   || 97.2 | 48.8  | -48.4  ||  106.6 |  -86.5    |  -64.8  |   -6.2    | 
+     +-------+--------++------+-------+--------++--------+-----------+---------+-----------+
+ 
+     **Contributions to Changes in the Debt-to-GDP Ratio
+
+
+* The U.S. paid off its WWII debt with a mixture of low returns (inflation), GDP growth, and primary surpluses.
+
+* The U.S. did not really inflate away its debt in the 1970s. 
+
+* Debt-holders received large positive real returns in the early 1980s as inflation came down. 
+
+* Since the 1990s the real return on debt has about equaled GDP growth so the change in $B/Y$ has about equaled the primary surpluses.
+
+

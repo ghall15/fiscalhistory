@@ -4,6 +4,8 @@
 References
 **********
 
+.. [Ahamed]       Ahamed, Liaquat *Lords of Finance: The Bankers Who Broke the World*
+
 .. [Anderson1983] Anderson, William G. 1983. *The Price of Liberty: The Public Debt of
                   the American Revolution* Charlottesville: University Press of Virginia.
 
@@ -62,10 +64,13 @@ References
 .. [WGR1996]  Willard, Kristen, Timothy Guinnane and Harvey Rosen, 1996.  
               "Turning Points in the Civil War: Views from the Greenback Market"
               *The American Economic Review*, 86:4, pp. 1001-1018.
-
    
 .. [LjungqvistSargent2012] Ljungqvist, Lars and Thomas J. Sargent. 2012. *Recursive Macroeconomic Theory*,
-                           third edition, Cambridge, MA: MIT Press.  
+                           third edition, Cambridge, MA: MIT Press. 
+                           
+.. [McAdoo] McAdoo, William G. 1931. *Crowded Years: The Reminiscences of William G. McAdoo*
+                            Houghton Mifflin Company.
+                            
 .. [Razaghain] Razaghian, Rose. Mimeo. "Financial Credibility in the United States: 
                The Impact of Institutions, 1789-1860." 
                `http://dev-icf.som.yale.edu/government-security-prices1789-1860-0
@@ -79,6 +84,12 @@ References
 .. [SargentWallace1981] Sargent, Thomas J. and Neil Wallace. 1981. "Some Unpleasant 
                         Monetarist Arithmetic"
                         *Quarterly Review* Federal Reserve Bank of Minneapolis, 5:3 pp. 1-17.
+
+.. [Schuker]             Schuker, Stephen *American "Reparations" to Germany, 1919-33: 
+                         Implications for the Third-World Debt Crisis*
+
+.. [Silber]             William Silber *When Washington Shut Down Wall Street: the Great 
+                        Financial Crisis of 1914 and the Origins of America's Monetary Supremacy*
 
 .. [Sylla_Wilson_Wright] Sylla, Richard E. and Jack Wilson and Robert E. Wright.  
                          *Early U.S. Security Prices*

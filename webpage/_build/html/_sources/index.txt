@@ -34,6 +34,9 @@ Table of Contents:
    debt_ceiling
    civil_war
    confederacy
+   world_war_I
+   inter_war_debt
+   post_world_war_II
    data_appendix
    references
 

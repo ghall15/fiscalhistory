@@ -1,11 +1,11 @@
 .. _data_appendix:
 
 ***************************************
-Appendix:  Fiscal Data for 1775 to 1940
+Appendix:  Fiscal Data for 1775 to 1941
 ***************************************
 
 In this appendix, we report the receipt, expenditure, and debt series from 
-1776 to 1918 that we use in this website.
+1775 to 1941 that we use in this website.
 
 The receipts and expenditure data are reported annually by fiscal year.
 The first fiscal year for the 
@@ -16,8 +16,9 @@ where it remains today.
 Much of the data on the federal debt is recorded quarterly prior until 1871 and monthly thereafter.
 
 The entire zipped subdirectory of excel and matlab files is available from
-`Debt_and_fiscal_accounts_1775-1940.zip
-<http://people.brandeis.edu/~ghall/_build/data/Debt_and_fiscal_accounts_1775-1940.zip>`_.  Below, we describe the content and
+`Debt_and_fiscal_accounts_1775-1941.zip
+<http://people.brandeis.edu/~ghall/_build/data/Debt_and_fiscal_accounts_1775-1941.zip>`_.  
+Below, we describe the content and
 sources of each file individually.
 
 Federal Receipts and Expenditures
@@ -65,7 +66,7 @@ Federal Debt
 
 Below we describe a security-level data set of U.S. Treasury loans. All data are of the end of the month.  
 
-The matlab script gross_debt_plot_1776_1918.m_ constructs a measure of gross debt from these individual securities.
+The matlab script gross_debt_plot_1776_1941.m_ constructs a measure of gross debt from these individual securities.
 It then compares the constructed series with the official Treasury series. 
 
 1776 - 1840
@@ -109,7 +110,7 @@ The sources for the data are:
 
 .. _bond_load_1776_1840.m: http://people.brandeis.edu/~ghall/_build/data/bond_load_1776_1840.m
 
-.. _gross_debt_plot_1776_1918.m: http://people.brandeis.edu/~ghall/_build/data/gross_debt_plot_1776_1918.m
+.. _gross_debt_plot_1776_1941.m: http://people.brandeis.edu/~ghall/_build/data/gross_debt_plot_1776_1941.m
 
 1840 to 1900
 ------------
@@ -136,7 +137,7 @@ The sources for the data are:
      
        -- from 1790 to 1871 are from [Bayley1882]_ and checked with [Registers_Office]_.
     
-       -- from 1871 to 1900 are from the `Monthly Statements of the Public Debt`_.
+       -- from 1871 to 1900 are from the `Monthly Statements of the Public Debt`_ (MSPD).
             
     * The price data are from [Razaghain]_ and the `Commercial and Financial Chronicle`_.
       Prices from newspapers may not be the complete set of all securities traded at the time 
@@ -149,6 +150,7 @@ The sources for the data are:
 .. _Commercial and Financial Chronicle: http://en.wikipedia.org/wiki/Commercial_%26_Financial_Chronicle
 
 .. _Monthly Statements of the Public Debt: http://www.savingsbonds.gov/govt/reports/pd/mspd/mspd.htm
+.. _MSPD: http://www.savingsbonds.gov/govt/reports/pd/mspd/mspd.htm
 
 .. _Bond_List_1840_1900.xls: http://people.brandeis.edu/~ghall/_build/data/Bond_List_1840_1900.xls
 
@@ -170,16 +172,16 @@ There are three excel files
       
     * Gov_Bond_Quant_1900_1918.xls_  -- provides the principal value outstanding for each loan
     
-    * Gov_Bond_Price_1900_1918.xls_ -- provides the market price for each loan   
+    * Gov_Bond_Price_1900_1927.xlsx_ -- provides the market price for each loan   
 
 The sources for the data are:
 
-    * The description of each bond comes from [Childs_1947]_.
+    * The description of each bond comes from [Childs_1947]_ and the MSPD_.
         
-    * The quantity outstanding data from the `Monthly Statements of the Public Debt`_.
+    * The quantity outstanding data from the MSPD_.
             
     * The price data are from the New York *Times*. January 1900 to March 1917 data are 
-      from "Bid and Asked Quotation" and April 1917 to December 1918 data are from 
+      from "Bid and Asked Quotation" and April 1917 to December 1927 data are from 
       "United States Govt. Bonds." From April 1917 to February 1919,
       there appeared a section in the *Times* titled "United States Govt. Bonds" which quoted 
       dealer prices, and these prices differ slightly from our normal source "Bid and Asked Quotation."  
@@ -191,15 +193,37 @@ organizes the data into structures.
 
 .. _Gov_Bond_Quant_1900_1918.xls: http://people.brandeis.edu/~ghall/_build/data/Gov_Bond_Quant_1900_1918.xls
 
-.. _Gov_Bond_Price_1900_1918.xls: http://people.brandeis.edu/~ghall/_build/data/Gov_Bond_Price_1900_1918.xls
+.. _Gov_Bond_Price_1900_1927.xlsx: http://people.brandeis.edu/~ghall/_build/data/Gov_Bond_Price_1900_1927.xlsx
 
 .. _bond_load_1900_1918.m: http://people.brandeis.edu/~ghall/_build/data/bond_load_1900_1918.m
 
 
-1919-1940
+1919-1941
 ---------
 
-To be posted soon.
+There are two excel files.
+
+    * Bond_List_1919_1941.xlsx_  -- list and provides basic information (e.g. name, term, coupon rate, ...) for the major
+      loans in the database
+      
+    * Gov_Bond_Quant_1919_1941.xlsx_  -- provides the principal value outstanding for each loan
+
+The matlab function bond_load_1919_1941.m_ reads in just Gov_Bond_Quant_1919_1941.xlsx and
+organizes the quantity data into structures.
+
+We collected prices through 1927, which are the price file   Beginning in 1925, prices from the New York *Times* are available 
+from the `CRSP US Treasury Database`_. 
+
+Prior to 1940, CRSP does not report the quantity outstanding for many securities.  So 
+Gov_Bond_Quant_1919_1941.xlsx_ provides a comprehensive record of the quantity outstanding for each individial security.
+
+.. _Bond_List_1919_1941.xlsx: http://people.brandeis.edu/~ghall/_build/data/Bond_List_1919_1941.xlsx
+
+.. _Gov_Bond_Quant_1919_1941.xlsx: http://people.brandeis.edu/~ghall/_build/data/Gov_Bond_Quant_1919_1941.xlsx
+
+.. _CRSP US Treasury Database: http://www.crsp.com/products/research-products/crsp-us-treasury-database
+
+.. _bond_load_1919_1941.m: http://people.brandeis.edu/~ghall/_build/data/bond_load_1919_1941.m
 
 More than you care to know about Gross Federal Debt
 ===================================================
@@ -209,7 +233,7 @@ From 1853 to 1981, gross debt is decomposed into three components: interest bear
 See the pages 61 to 63 of the Statistical 
 Appendix for the `1980 Annual Report`_ and `Public Debt 1790-1980.xlsx`_. 
  
-In the matlab script gross_debt_plot_1776_1918.m_, we attempt to construct this series using our bond-level data.  Overall, the two
+In the matlab script gross_debt_plot_1776_1941.m_, we attempt to construct this series using our bond-level data.  Overall, the two
 series are quite close.  From 1853 to 1917, we can match the interest-bearing component of the debt to the dollar.  However, the following 
 discrepancies exist between our series and the Treasury's series:
 
@@ -227,7 +251,7 @@ discrepancies exist between our series and the Treasury's series:
     records the Louisiana 6 per cent stock, the bond that funded the Louisiana Purchase, on their books beginning in 1803.  
     According to Bayley, this loan was not issued until the first quarter of 1804.
 
-    We suspect that difference in the reported timing of issues explains the difference between the two series in June 1918.
+    We suspect that difference in the reported timing of issues explains the discrepencies between the two series between 1918 and 1941.
 
 3.  Certain securities, such as the Bounty Land Script, are not included in the Treasury's debt figures some years but 
     are included in others.
@@ -260,7 +284,7 @@ We thank Senior Librarian Andrew Young at the U.S. Department of Treasury for lo
 the complete set of the `Monthly Statements of the Public Debt`_ as well 
 as pointing us to other useful documents.
 
-We thank Alex Bargar, Jeffrey Cheng, Rahim Damji Douglas McLaren, James Myatt, 
+We thank Alex Bargar, Jeffrey Cheng, Rahim Damji, Douglas McLaren, James Myatt, 
 David Robertson, Ainie Tan, and Robertson Wang for outstanding research assistance.
 
 .. _Becker-Friedman Institute: http://bfi.uchicago.edu/
