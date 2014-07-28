@@ -230,22 +230,15 @@ To watch the evolution of the marginal tax rates from 1913 to 1927 as movie.
 
     <video width="640" height="480" align=middle controls autoplay>
       <source src="_static/figures/tax_rate_movie.mp4" type="video/mp4">
-    </video>
-    
-The source of the tax brakcets are from the Tax Foundation_
-
-_http://taxfoundation.org/article/us-federal-individual-income-tax-rates-history-1913-2013-nominal-and-inflation-adjusted-brackets
-
-the income distribution data are from [PikettySaez2003].  The are available from
-Emmanuel Saez's website.
-
-http://eml.berkeley.edu/~saez/
+   
+Blah, blah
     
 .. figure::  _static/figures/min_max_marginal_income_taxes.png
     :scale: 60%
     :align: center
 
     **Maximum and Minimum Marginal Income Tax Rates**
+
 
 .. figure:: _static/figures/primary_deficit_to_gdp_1900_1940.png
     :scale: 60%

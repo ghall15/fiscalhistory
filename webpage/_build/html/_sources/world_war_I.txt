@@ -5,18 +5,19 @@ World War I
 ***********
 
 1. Key Events Prior to the War
+
    * Panic of 1907
    * establishment of the Federal Reserve
 
-* 1914 Crisis
+2. 1914 Crisis
 
-* Funding the War Effort
+3. Funding the War Effort
 
    * taxes
    
    * borrowing: the Liberty Loans
 
-* Refinancing of the War Debt
+4. Refinancing of the War Debt
 
     * moving from "project finance" to a permanent, liquid debt
 
@@ -25,6 +26,7 @@ World War I
 
 
 Key Events Prior to War
+=======================
 
     * 1907 Panic
 
@@ -221,26 +223,29 @@ Taxes
 
 * Rockoff, page 118, states these taxes accounted for 40\% of tax revenue
 
-.. figure:: _static/figures/1914.png
-    :scale: 60%
-    :align: center
 
-    **1914 Marginal Income Tax Rates**
+To watch the evolution of the marginal tax rates from 1913 to 1927 as movie.
 
-.. figure:: _static/figures/1918.png
-    :scale: 60%
-    :align: center
+.. raw:: html
 
-    **1918 Marginal Income Tax Rates**
-
-To watch the `evolution of the marginal tax rates`_ from 1913 to 192X as movie.
-
- .. _evolution of the marginal tax rates:file:///C:/Users/ghall/Documents/FiscalHistory/webpage/_static/figures/tax_rate_movie.avi
-
+    <video width="640" height="480" align=middle controls autoplay>
+      <source src="_static/figures/tax_rate_movie.mp4" type="video/mp4">
+    </video>
     
-**Maximum and Minimum Marginal Income Tax Rates**
-.. \centerline{\psfig{file=min_max_marginal_income_taxes.ps,width=3.5in}}
+The source of the tax brakcets are from the Tax Foundation_
 
+_http://taxfoundation.org/article/us-federal-individual-income-tax-rates-history-1913-2013-nominal-and-inflation-adjusted-brackets
+
+the income distribution data are from [PikettySaez2003].  The are available from
+Emmanuel Saez's website.
+
+http://eml.berkeley.edu/~saez/
+    
+.. figure::  _static/figures/min_max_marginal_income_taxes.png
+    :scale: 60%
+    :align: center
+
+    **Maximum and Minimum Marginal Income Tax Rates**
 
 .. figure:: _static/figures/primary_deficit_to_gdp_1900_1940.png
     :scale: 60%
@@ -449,7 +454,7 @@ Thus **lower** rates would lead to **more** tax revenue.
 
 
 Post-War Refinancing
----------------------
+====================
 
 * In October 1919, \$26.2 billion in debt
 

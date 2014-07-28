@@ -609,35 +609,46 @@ Implications for Federal Spending
 
      -- Thomas Jefferson to Edward Carrington, Paris, May 27, 1788
 
-.. figure:: _static/figures/per_cap_pre1790_receipts.png
-    :scale: 40%
-    :align: center
+.. table::
+   :class: borderless
+   
+   +---------------------------------------------------------+------------------------------------------------------------+
+   |  .. _figc:                                              |  .. figd:                                                  |
+   |                                                         |                                                            |
+   |.. figure:: _static/figures/per_cap_pre1790_receipts.png | .. figure:: _static/figures/per_cap_revenue_1791_1805.png  |
+   |     :scale: 40%                                         |      :scale: 40%                                           |
+   |     :align: center                                      |      :align: center                                        |                                             
+   |                                                         |                                                            |
+   |     Per Capita Continental Revenue by Type              |      Per Capita Federal Revenue by Type                    |
+   +---------------------------------------------------------+------------------------------------------------------------+
 
-.. figure:: _static/figures/per_cap_revenue_1791_1805.png
-    :scale: 40%
-    :align: center
+.. table::
+   :class: borderless
 
-    **Per Capita Federal Revenue by Type**
 
-.. figure:: _static/figures/per_cap_pre1790_expenditures.png
-    :scale: 40%
-    :align: center
+   +-------------------------------------------------------------+-----------------------------------------------------------------+
+   |  .. _fige:                                                  |  .. figf:                                                       |
+   |                                                             |                                                                 |
+   |.. figure:: _static/figures/per_cap_pre1790_expenditures.png | .. figure:: _static/figures/per_cap_expenditures_1791_1805.png  |
+   |     :scale: 40%                                             |      :scale: 40%                                                |
+   |     :align: center                                          |      :align: center                                             |                                             
+   |                                                             |                                                                 |
+   |     Per Capita Continental Expenditures by Type             |      Per Capita Federal Expenditures by Type                    |
+   +-------------------------------------------------------------+-----------------------------------------------------------------+
 
-.. figure:: _static/figures/per_cap_expenditures_1791_1805.png
-    :scale: 40%
-    :align: center
+.. table::
+   :class: borderless
 
-    **Per Capita Federal Expenditure by Type**
+   +-------------------------------------------------------------+-----------------------------------------------------------------------+
+   |  .. _figa:                                                  |  .. figb:                                                             |
+   |                                                             |                                                                       |
+   |.. figure:: _static/figures/pre1790_prim_deficit.png         | .. figure:: _static/figures/primary_deficit_per_capita_1791_1805.png  |
+   |     :scale: 40%                                             |      :scale: 40%                                                      |
+   |     :align: center                                          |      :align: center                                                   |                                             
+   |                                                             |                                                                       |
+   |     Per Capita Primary Deficit                              |      Per Capita Primary Deficit                                       |
+   +-------------------------------------------------------------+-----------------------------------------------------------------------+
 
-.. figure:: _static/figures/pre1790_prim_deficit.png
-    :scale: 40%
-    :align: center
-
-.. figure:: _static/figures/primary_deficit_per_capita_1791_1805.png
-    :scale: 40%
-    :align: center
-
-    **Primary Deficit Per Capita**
 
 Wrapping Up
 -----------
